@@ -1,0 +1,16 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/Volumes/disk2/ChenhuiLib/external/eigen/test/boostmultiprec.cpp"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"BuildOfficial"
+		],
+		"name" : "boostmultiprec_7"
+	}
+}

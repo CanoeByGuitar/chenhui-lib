@@ -1,0 +1,101 @@
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /Library/Developer/CommandLineTools/usr/bin/c++ 
+Build flags: 
+Id flags:  
+
+The output was:
+1
+ld: library not found for -lc++
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /Library/Developer/CommandLineTools/usr/bin/cc 
+Build flags: 
+Id flags:  
+
+The output was:
+1
+ld: library not found for -lSystem
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+
+
+Performing C++ SOURCE FILE Test COMPILER_SUPPORT_Wlogicalop failed with the following output:
+Change Dir: /Volumes/disk2/ChenhuiLib/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_a7000/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_a7000.dir/build.make CMakeFiles/cmTC_a7000.dir/build
+Building CXX object CMakeFiles/cmTC_a7000.dir/src.cxx.o
+/Library/Developer/CommandLineTools/usr/bin/c++ -DCOMPILER_SUPPORT_Wlogicalop  -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wshorten-64-to-32 -Werror -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk -mmacosx-version-min=11.6   -Wlogical-op -MD -MT CMakeFiles/cmTC_a7000.dir/src.cxx.o -MF CMakeFiles/cmTC_a7000.dir/src.cxx.o.d -o CMakeFiles/cmTC_a7000.dir/src.cxx.o -c /Volumes/disk2/ChenhuiLib/cmake-build-debug/CMakeFiles/CMakeTmp/src.cxx
+error: unknown warning option '-Wlogical-op'; did you mean '-Wlong-long'? [-Werror,-Wunknown-warning-option]
+make[1]: *** [CMakeFiles/cmTC_a7000.dir/src.cxx.o] Error 1
+make: *** [cmTC_a7000/fast] Error 2
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_SUPPORT_wd981 failed with the following output:
+Change Dir: /Volumes/disk2/ChenhuiLib/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_36d48/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_36d48.dir/build.make CMakeFiles/cmTC_36d48.dir/build
+Building CXX object CMakeFiles/cmTC_36d48.dir/src.cxx.o
+/Library/Developer/CommandLineTools/usr/bin/c++ -DCOMPILER_SUPPORT_wd981  -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wshorten-64-to-32 -Wenum-conversion -Wc++11-extensions -Wdouble-promotion -Wshadow -Wno-psabi -Wno-variadic-macros -Wno-long-long -fno-check-new -fno-common -fstrict-aliasing -Werror -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk -mmacosx-version-min=11.6   -wd981 -MD -MT CMakeFiles/cmTC_36d48.dir/src.cxx.o -MF CMakeFiles/cmTC_36d48.dir/src.cxx.o.d -o CMakeFiles/cmTC_36d48.dir/src.cxx.o -c /Volumes/disk2/ChenhuiLib/cmake-build-debug/CMakeFiles/CMakeTmp/src.cxx
+clang: error: unknown argument: '-wd981'
+make[1]: *** [CMakeFiles/cmTC_36d48.dir/src.cxx.o] Error 1
+make: *** [cmTC_36d48/fast] Error 2
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_SUPPORT_wd2304 failed with the following output:
+Change Dir: /Volumes/disk2/ChenhuiLib/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_d06c2/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_d06c2.dir/build.make CMakeFiles/cmTC_d06c2.dir/build
+Building CXX object CMakeFiles/cmTC_d06c2.dir/src.cxx.o
+/Library/Developer/CommandLineTools/usr/bin/c++ -DCOMPILER_SUPPORT_wd2304  -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wshorten-64-to-32 -Wenum-conversion -Wc++11-extensions -Wdouble-promotion -Wshadow -Wno-psabi -Wno-variadic-macros -Wno-long-long -fno-check-new -fno-common -fstrict-aliasing -Werror -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk -mmacosx-version-min=11.6   -wd2304 -MD -MT CMakeFiles/cmTC_d06c2.dir/src.cxx.o -MF CMakeFiles/cmTC_d06c2.dir/src.cxx.o.d -o CMakeFiles/cmTC_d06c2.dir/src.cxx.o -c /Volumes/disk2/ChenhuiLib/cmake-build-debug/CMakeFiles/CMakeTmp/src.cxx
+clang: error: unknown argument: '-wd2304'
+make[1]: *** [CMakeFiles/cmTC_d06c2.dir/src.cxx.o] Error 1
+make: *** [cmTC_d06c2/fast] Error 2
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_SUPPORT_STRICTANSI failed with the following output:
+Change Dir: /Volumes/disk2/ChenhuiLib/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_bb697/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_bb697.dir/build.make CMakeFiles/cmTC_bb697.dir/build
+Building CXX object CMakeFiles/cmTC_bb697.dir/src.cxx.o
+/Library/Developer/CommandLineTools/usr/bin/c++ -DCOMPILER_SUPPORT_STRICTANSI  -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wshorten-64-to-32 -Wenum-conversion -Wc++11-extensions -Wdouble-promotion -Wshadow -Wno-psabi -Wno-variadic-macros -Wno-long-long -fno-check-new -fno-common -fstrict-aliasing -Werror -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk -mmacosx-version-min=11.6   -strict-ansi -MD -MT CMakeFiles/cmTC_bb697.dir/src.cxx.o -MF CMakeFiles/cmTC_bb697.dir/src.cxx.o.d -o CMakeFiles/cmTC_bb697.dir/src.cxx.o -c /Volumes/disk2/ChenhuiLib/cmake-build-debug/CMakeFiles/CMakeTmp/src.cxx
+clang: error: unknown argument: '-strict-ansi'
+make[1]: *** [CMakeFiles/cmTC_bb697.dir/src.cxx.o] Error 1
+make: *** [cmTC_bb697/fast] Error 2
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_SUPPORT_OPENMP failed with the following output:
+Change Dir: /Volumes/disk2/ChenhuiLib/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_92e92/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_92e92.dir/build.make CMakeFiles/cmTC_92e92.dir/build
+Building CXX object CMakeFiles/cmTC_92e92.dir/src.cxx.o
+/Library/Developer/CommandLineTools/usr/bin/c++ -DCOMPILER_SUPPORT_OPENMP  -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wshorten-64-to-32 -Wenum-conversion -Wc++11-extensions -Wdouble-promotion -Wshadow -Wno-psabi -Wno-variadic-macros -Wno-long-long -fno-check-new -fno-common -fstrict-aliasing -Qunused-arguments -ansi  -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk -mmacosx-version-min=11.6   -fopenmp -MD -MT CMakeFiles/cmTC_92e92.dir/src.cxx.o -MF CMakeFiles/cmTC_92e92.dir/src.cxx.o.d -o CMakeFiles/cmTC_92e92.dir/src.cxx.o -c /Volumes/disk2/ChenhuiLib/cmake-build-debug/CMakeFiles/CMakeTmp/src.cxx
+clang: error: unsupported option '-fopenmp'
+make[1]: *** [CMakeFiles/cmTC_92e92.dir/src.cxx.o] Error 1
+make: *** [cmTC_92e92/fast] Error 2
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test _xhost_works failed with the following output:
+Change Dir: /Volumes/disk2/ChenhuiLib/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_ebe45/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_ebe45.dir/build.make CMakeFiles/cmTC_ebe45.dir/build
+Building CXX object CMakeFiles/cmTC_ebe45.dir/src.cxx.o
+/Library/Developer/CommandLineTools/usr/bin/c++ -D_xhost_works  -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk -mmacosx-version-min=11.6   -xHost -MD -MT CMakeFiles/cmTC_ebe45.dir/src.cxx.o -MF CMakeFiles/cmTC_ebe45.dir/src.cxx.o.d -o CMakeFiles/cmTC_ebe45.dir/src.cxx.o -c /Volumes/disk2/ChenhuiLib/cmake-build-debug/CMakeFiles/CMakeTmp/src.cxx
+clang: error: language not recognized: 'Host'
+clang: warning: /Volumes/disk2/ChenhuiLib/cmake-build-debug/CMakeFiles/CMakeTmp/src.cxx: 'linker' input unused [-Wunused-command-line-argument]
+make[1]: *** [CMakeFiles/cmTC_ebe45.dir/src.cxx.o] Error 1
+make: *** [cmTC_ebe45/fast] Error 2
+
+
+Source file was:
+int main() { return 0; }

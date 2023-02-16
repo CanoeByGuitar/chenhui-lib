@@ -1,0 +1,2 @@
+/Library/Developer/CommandLineTools/usr/bin/ar qc ../../build/lib/libmath.a CMakeFiles/math.dir/LinearSystemSolver.cpp.o
+/Library/Developer/CommandLineTools/usr/bin/ranlib ../../build/lib/libmath.a
