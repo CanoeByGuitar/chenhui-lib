@@ -4,17 +4,17 @@
 
 
 # Configuration directories and files
-SourceDirectory: /Volumes/disk2/ChenhuiLib/external/eigen
-BuildDirectory: /Volumes/disk2/ChenhuiLib/cmake-build-debug/external/eigen
+SourceDirectory: /home/wch/github/chenhui-lib/external/eigen
+BuildDirectory: /home/wch/github/chenhui-lib/cmake-build-debug/external/eigen
 
 # Where to place the cost data store
 CostDataFile: 
 
 # Site is something like machine.domain, i.e. pragmatic.crd
-Site: wangchenhuidemacbook-pro.local
+Site: desktop-pe9ro90
 
 # Build name is osname-revision-compiler, i.e. Linux-2.4.2-2smp-c++
-BuildName: darwin-20.6.0-clang++-12.0.5-sse2-64bit
+BuildName: linux-5.10.16.3-microsoft-standard-wsl2-_-9.4.0-sse2-64bit
 
 # Subprojects
 LabelsForSubprojects: 
@@ -26,8 +26,8 @@ SubmitURL: http://my.cdash.org/submit.php?project=Eigen
 NightlyStartTime: 00:00:00 UTC
 
 # Commands for the build/test/submit cycle
-ConfigureCommand: "/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake" "/Volumes/disk2/ChenhuiLib/external/eigen"
-MakeCommand: /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake --build . --target buildtests --config "${CTEST_CONFIGURATION_TYPE}" --  
+ConfigureCommand: "/usr/bin/cmake" "/home/wch/github/chenhui-lib/external/eigen"
+MakeCommand: /usr/bin/cmake --build . --target buildtests --config "${CTEST_CONFIGURATION_TYPE}" --  
 DefaultCTestConfigurationType: Release
 
 # version control
@@ -35,22 +35,22 @@ UpdateVersionOnly:
 
 # CVS options
 # Default is "-d -P -A"
-CVSCommand: 
-CVSUpdateOptions: 
+CVSCommand: CVSCOMMAND-NOTFOUND
+CVSUpdateOptions: -d -A -P
 
 # Subversion options
-SVNCommand: 
+SVNCommand: SVNCOMMAND-NOTFOUND
 SVNOptions: 
 SVNUpdateOptions: 
 
 # Git options
-GITCommand: 
+GITCommand: /usr/bin/git
 GITInitSubmodules: 
 GITUpdateOptions: 
 GITUpdateCustom: 
 
 # Perforce options
-P4Command: 
+P4Command: P4COMMAND-NOTFOUND
 P4Client: 
 P4Options: 
 P4UpdateOptions: 
@@ -62,17 +62,13 @@ UpdateOptions:
 UpdateType: 
 
 # Compiler info
-Compiler: /Library/Developer/CommandLineTools/usr/bin/c++
-CompilerVersion: 12.0.5.12050022
+Compiler: /usr/bin/c++
+CompilerVersion: 9.4.0
 
 # Dynamic analysis (MemCheck)
 PurifyCommand: 
 ValgrindCommand: 
 ValgrindCommandOptions: 
-DrMemoryCommand: 
-DrMemoryCommandOptions: 
-CudaSanitizerCommand: 
-CudaSanitizerCommandOptions: 
 MemoryCheckType: 
 MemoryCheckSanitizerOptions: 
 MemoryCheckCommand: MEMORYCHECK_COMMAND-NOTFOUND
@@ -82,6 +78,10 @@ MemoryCheckSuppressionFile:
 # Coverage
 CoverageCommand: /usr/bin/gcov
 CoverageExtraFlags: -l
+
+# Cluster commands
+SlurmBatchCommand: SLURM_SBATCH_COMMAND-NOTFOUND
+SlurmRunCommand: SLURM_SRUN_COMMAND-NOTFOUND
 
 # Testing options
 # TimeOut is the amount of time in seconds to wait for processes

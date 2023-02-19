@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="EigenDemos"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\external\;CMake Files\external\eigen\;CMake Files\external\eigen\cmake\;CMake Files\external\eigen\scripts\;CMake Files\external\eigen\doc\;CMake Files\external\eigen\doc\examples\;CMake Files\external\eigen\doc\special_examples\;CMake Files\external\eigen\doc\snippets\;CMake Files\external\eigen\unsupported\;CMake Files\external\eigen\unsupported\doc\;CMake Files\external\eigen\unsupported\doc\examples\;CMake Files\external\eigen\unsupported\doc\snippets\;CMake Files\external\eigen\unsupported\Eigen\;CMake Files\external\eigen\unsupported\Eigen\CXX11\;CMake Files\external\eigen\unsupported\test\;CMake Files\external\eigen\test\;CMake Files\external\eigen\failtest\;CMake Files\external\eigen\blas\;CMake Files\external\eigen\blas\testing\;CMake Files\external\eigen\lapack\;CMake Files\external\eigen\demos\;CMake Files\external\eigen\bench\;CMake Files\external\eigen\bench\spbench\;CMake Files\external\glfw\;CMake Files\external\glfw\CMake\;CMake Files\external\glfw\src\;CMake Files\external\spdlog\;CMake Files\external\spdlog\cmake\;CMake Files\external\glm\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\usr\;CMake Files\..\..\..\..\usr\lib\;CMake Files\..\..\..\..\usr\lib\x86_64-linux-gnu\;CMake Files\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\;CMake Files\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Boost-1.71.0\;CMake Files\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\boost_headers-1.71.0\;CMake Files\Renderer\;CMake Files\Physics\;CMake Files\Math\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/wch/github/chenhui-lib/cmake-build-release/external/eigen/demos"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j20 -f &quot;/home/wch/github/chenhui-lib/cmake-build-release/external/eigen/demos/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j20 -f &quot;/home/wch/github/chenhui-lib/cmake-build-release/external/eigen/demos/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j20 -f &quot;/home/wch/github/chenhui-lib/cmake-build-release/external/eigen/demos/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j20 -f &quot;/home/wch/github/chenhui-lib/cmake-build-release/external/eigen/demos/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="demos">
+				<Option working_dir="/home/wch/github/chenhui-lib/cmake-build-release/external/eigen/demos"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j20 -f &quot;/home/wch/github/chenhui-lib/cmake-build-release/external/eigen/demos/Makefile&quot;  VERBOSE=1 demos"/>
+					<CompileFile command="/usr/bin/make -j20 -f &quot;/home/wch/github/chenhui-lib/cmake-build-release/external/eigen/demos/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j20 -f &quot;/home/wch/github/chenhui-lib/cmake-build-release/external/eigen/demos/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j20 -f &quot;/home/wch/github/chenhui-lib/cmake-build-release/external/eigen/demos/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/wch/github/chenhui-lib/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/home/wch/github/chenhui-lib/external/eigen/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\external\eigen\"/>
+		</Unit>
+		<Unit filename="/home/wch/github/chenhui-lib/external/eigen/CTestConfig.cmake">
+			<Option virtualFolder="CMake Files\external\eigen\"/>
+		</Unit>
+		<Unit filename="/home/wch/github/chenhui-lib/external/eigen/CTestCustom.cmake.in">
+			<Option virtualFolder="CMake Files\external\eigen\"/>
+		</Unit>
+		<Unit filename="/home/wch/github/chenhui-lib/external/eigen/eigen3.pc.in">
+			<Option virtualFolder="CMake Files\external\eigen\"/>
+		</Unit>
+		<Unit filename="/home/wch/github/chenhui-lib/external/eigen/cmake/Eigen3Config.cmake.in">
+			<Option virtualFolder="CMake Files\external\eigen\cmake\"/>
+		</Unit>
+		<Unit filename="/home/wch/github/chenhui-lib/external/eigen/cmake/EigenConfigureTesting.cmake">
+			<Option virtualFolder="CMake Files\external\eigen\cmake\"/>
+		</Unit>
+		<Unit filename="/home/wch/github/chenhui-lib/external/eigen/cmake/EigenDetermineOSVersion.cmake">
+			<Option virtualFolder="CMake Files\external\eigen\cmake\"/>
+		</Unit>
+		<Unit filename="/home/wch/github/chenhui-lib/external/eigen/cmake/EigenSmokeTestList.cmake">
+			<Option virtualFolder="CMake Files\external\eigen\cmake\"/>
+		</Unit>
+		<Unit filename="/home/wch/github/chenhui-lib/external/eigen/cmake/EigenTesting.cmake">
+			<Option virtualFolder="CMake Files\external\eigen\cmake\"/>
+		</Unit>
+		<Unit filename="/home/wch/github/chenhui-lib/external/eigen/cmake/FindAdolc.cmake">
+			<Option virtualFolder="CMake Files\external\eigen\cmake\"/>
+		</Unit>
+		<Unit filename="/home/wch/github/chenhui-lib/external/eigen/cmake/FindBLAS.cmake">
+			<Option virtualFolder="CMake Files\external\eigen\cmake\"/>
+		</Unit>
+		<Unit filename="/home/wch/github/chenhui-lib/external/eigen/cmake/FindBLASEXT.cmake">
+			<Option virtualFolder="CMake Files\external\eigen\cmake\"/>
+		</Unit>
+		<Unit filename="/home/wch/github/chenhui-lib/external/eigen/cmake/FindCHOLMOD.cmake">
+			<Option virtualFolder="CMake Files\external\eigen\cmake\"/>
+		</Unit>
+		<Unit filename="/home/wch/github/chenhui-lib/external/eigen/cmake/FindFFTW.cmake">
+			<Option virtualFolder="CMake Files\external\eigen\cmake\"/>
+		</Unit>
+		<Unit filename="/home/wch/github/chenhui-lib/external/eigen/cmake/FindGoogleHash.cmake">
+			<Option virtualFolder="CMake Files\external\eigen\cmake\"/>
+		</Unit>
+		<Unit filename="/home/wch/github/chenhui-lib/external/eigen/cmake/FindHWLOC.cmake">
+			<Option virtualFolder="CMake Files\external\eigen\cmake\"/>
+		</Unit>
+		<Unit filename="/home/wch/github/chenhui-lib/external/eigen/cmake/FindKLU.cmake">
+			<Option virtualFolder="CMake Files\external\eigen\cmake\"/>
+		</Unit>
+		<Unit filename="/home/wch/github/chenhui-lib/external/eigen/cmake/FindMPFR.cmake">
+			<Option virtualFolder="CMake Files\external\eigen\cmake\"/>
+		</Unit>
+		<Unit filename="/home/wch/github/chenhui-lib/external/eigen/cmake/FindMPREAL.cmake">
+			<Option virtualFolder="CMake Files\external\eigen\cmake\"/>
+		</Unit>
+		<Unit filename="/home/wch/github/chenhui-lib/external/eigen/cmake/FindPASTIX.cmake">
+			<Option virtualFolder="CMake Files\external\eigen\cmake\"/>
+		</Unit>
+		<Unit filename="/home/wch/github/chenhui-lib/external/eigen/cmake/FindSPQR.cmake">
+			<Option virtualFolder="CMake Files\external\eigen\cmake\"/>
+		</Unit>
+		<Unit filename="/home/wch/github/chenhui-lib/external/eigen/cmake/FindStandardMathLibrary.cmake">
+			<Option virtualFolder="CMake Files\external\eigen\cmake\"/>
+		</Unit>
+		<Unit filename="/home/wch/github/chenhui-lib/external/eigen/cmake/FindSuperLU.cmake">
+			<Option virtualFolder="CMake Files\external\eigen\cmake\"/>
+		</Unit>
+		<Unit filename="/home/wch/github/chenhui-lib/external/eigen/cmake/FindUMFPACK.cmake">
+			<Option virtualFolder="CMake Files\external\eigen\cmake\"/>
+		</Unit>
+		<Unit filename="/home/wch/github/chenhui-lib/external/eigen/scripts/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\external\eigen\scripts\"/>
+		</Unit>
+		<Unit filename="/home/wch/github/chenhui-lib/external/eigen/scripts/buildtests.in">
+			<Option virtualFolder="CMake Files\external\eigen\scripts\"/>
+		</Unit>
+		<Unit filename="/home/wch/github/chenhui-lib/external/eigen/scripts/cdashtesting.cmake.in">
+			<Option virtualFolder="CMake Files\external\eigen\scripts\"/>
+		</Unit>
+		<Unit filename="/home/wch/github/chenhui-lib/external/eigen/scripts/check.in">
+			<Option virtualFolder="CMake Files\external\eigen\scripts\"/>
+		</Unit>
+		<Unit filename="/home/wch/github/chenhui-lib/external/eigen/scripts/debug.in">
+			<Option virtualFolder="CMake Files\external\eigen\scripts\"/>
+		</Unit>
+		<Unit filename="/home/wch/github/chenhui-lib/external/eigen/scripts/release.in">
+			<Option virtualFolder="CMake Files\external\eigen\scripts\"/>
+		</Unit>
+		<Unit filename="/home/wch/github/chenhui-lib/external/eigen/doc/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\external\eigen\doc\"/>
+		</Unit>
+		<Unit filename="/home/wch/github/chenhui-lib/external/eigen/doc/Doxyfile.in">
+			<Option virtualFolder="CMake Files\external\eigen\doc\"/>
+		</Unit>
+		<Unit filename="/home/wch/github/chenhui-lib/external/eigen/doc/eigendoxy_footer.html.in">
+			<Option virtualFolder="CMake Files\external\eigen\doc\"/>
+		</Unit>
+		<Unit filename="/home/wch/github/chenhui-lib/external/eigen/doc/eigendoxy_header.html.in">
+			<Option virtualFolder="CMake Files\external\eigen\doc\"/>
+		</Unit>
+		<Unit filename="/home/wch/github/chenhui-lib/external/eigen/doc/eigendoxy_layout.xml.in">
+			<Option virtualFolder="CMake Files\external\eigen\doc\"/>
+		</Unit>
+		<Unit filename="/home/wch/github/chenhui-lib/external/eigen/doc/examples/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\external\eigen\doc\examples\"/>
+		</Unit>
+		<Unit filename="/home/wch/github/chenhui-lib/external/eigen/doc/special_examples/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\external\eigen\doc\special_examples\"/>
+		</Unit>
+		<Unit filename="/home/wch/github/chenhui-lib/external/eigen/doc/snippets/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\external\eigen\doc\snippets\"/>
+		</Unit>
+		<Unit filename="/home/wch/github/chenhui-lib/external/eigen/doc/snippets/compile_snippet.cpp.in">
+			<Option virtualFolder="CMake Files\external\eigen\doc\snippets\"/>
+		</Unit>
+		<Unit filename="/home/wch/github/chenhui-lib/external/eigen/unsupported/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\external\eigen\unsupported\"/>
+		</Unit>
+		<Unit filename="/home/wch/github/chenhui-lib/external/eigen/unsupported/doc/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\external\eigen\unsupported\doc\"/>
+		</Unit>
+		<Unit filename="/home/wch/github/chenhui-lib/external/eigen/unsupported/doc/eigendoxy_layout.xml.in">
+			<Option virtualFolder="CMake Files\external\eigen\unsupported\doc\"/>
+		</Unit>
+		<Unit filename="/home/wch/github/chenhui-lib/external/eigen/unsupported/doc/examples/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\external\eigen\unsupported\doc\examples\"/>
+		</Unit>
+		<Unit filename="/home/wch/github/chenhui-lib/external/eigen/unsupported/doc/snippets/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\external\eigen\unsupported\doc\snippets\"/>
+		</Unit>
+		<Unit filename="/home/wch/github/chenhui-lib/external/eigen/unsupported/Eigen/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\external\eigen\unsupported\Eigen\"/>
+		</Unit>
+		<Unit filename="/home/wch/github/chenhui-lib/external/eigen/unsupported/Eigen/CXX11/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\external\eigen\unsupported\Eigen\CXX11\"/>
+		</Unit>
+		<Unit filename="/home/wch/github/chenhui-lib/external/eigen/unsupported/test/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\external\eigen\unsupported\test\"/>
+		</Unit>
+		<Unit filename="/home/wch/github/chenhui-lib/external/eigen/test/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\external\eigen\test\"/>
+		</Unit>
+		<Unit filename="/home/wch/github/chenhui-lib/external/eigen/failtest/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\external\eigen\failtest\"/>
+		</Unit>
+		<Unit filename="/home/wch/github/chenhui-lib/external/eigen/blas/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\external\eigen\blas\"/>
+		</Unit>
+		<Unit filename="/home/wch/github/chenhui-lib/external/eigen/blas/testing/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\external\eigen\blas\testing\"/>
+		</Unit>
+		<Unit filename="/home/wch/github/chenhui-lib/external/eigen/lapack/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\external\eigen\lapack\"/>
+		</Unit>
+		<Unit filename="/home/wch/github/chenhui-lib/external/eigen/demos/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\external\eigen\demos\"/>
+		</Unit>
+		<Unit filename="/home/wch/github/chenhui-lib/external/eigen/bench/spbench/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\external\eigen\bench\spbench\"/>
+		</Unit>
+		<Unit filename="/home/wch/github/chenhui-lib/external/glfw/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\external\glfw\"/>
+		</Unit>
+		<Unit filename="/home/wch/github/chenhui-lib/external/glfw/CMake/glfw3.pc.in">
+			<Option virtualFolder="CMake Files\external\glfw\CMake\"/>
+		</Unit>
+		<Unit filename="/home/wch/github/chenhui-lib/external/glfw/CMake/glfw3Config.cmake.in">
+			<Option virtualFolder="CMake Files\external\glfw\CMake\"/>
+		</Unit>
+		<Unit filename="/home/wch/github/chenhui-lib/external/glfw/src/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\external\glfw\src\"/>
+		</Unit>
+		<Unit filename="/home/wch/github/chenhui-lib/external/spdlog/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\external\spdlog\"/>
+		</Unit>
+		<Unit filename="/home/wch/github/chenhui-lib/external/spdlog/cmake/ide.cmake">
+			<Option virtualFolder="CMake Files\external\spdlog\cmake\"/>
+		</Unit>
+		<Unit filename="/home/wch/github/chenhui-lib/external/spdlog/cmake/utils.cmake">
+			<Option virtualFolder="CMake Files\external\spdlog\cmake\"/>
+		</Unit>
+		<Unit filename="/home/wch/github/chenhui-lib/external/glm/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\external\glm\"/>
+		</Unit>
+		<Unit filename="/home/wch/github/chenhui-lib/../../../../usr/lib/x86_64-linux-gnu/cmake/Boost-1.71.0/BoostConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Boost-1.71.0\"/>
+		</Unit>
+		<Unit filename="/home/wch/github/chenhui-lib/../../../../usr/lib/x86_64-linux-gnu/cmake/Boost-1.71.0/BoostConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Boost-1.71.0\"/>
+		</Unit>
+		<Unit filename="/home/wch/github/chenhui-lib/../../../../usr/lib/x86_64-linux-gnu/cmake/boost_headers-1.71.0/boost_headers-config-version.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\boost_headers-1.71.0\"/>
+		</Unit>
+		<Unit filename="/home/wch/github/chenhui-lib/../../../../usr/lib/x86_64-linux-gnu/cmake/boost_headers-1.71.0/boost_headers-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\boost_headers-1.71.0\"/>
+		</Unit>
+		<Unit filename="/home/wch/github/chenhui-lib/Renderer/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\Renderer\"/>
+		</Unit>
+		<Unit filename="/home/wch/github/chenhui-lib/Physics/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\Physics\"/>
+		</Unit>
+		<Unit filename="/home/wch/github/chenhui-lib/Math/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\Math\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

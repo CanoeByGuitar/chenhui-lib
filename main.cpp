@@ -14,9 +14,16 @@ int main(){
             0.5f,  -0.5f, 0.0f  // top
     };
     int particleNum = sizeof(particles) / sizeof(particles[0]) / 3;
+#ifdef __APPLE__
     Renderer::Particles model(particles, particleNum,
                               "/Volumes/disk2/ChenhuiLib/resources/shader/particle.vert",
                               "/Volumes/disk2/ChenhuiLib/resources/shader/particle.frag");
+#else
+    Renderer::Particles model(particles, particleNum,
+                              "/home/wch/github/chenhui-lib/resources/shader/particle.vert",
+                              "/home/wch/github/chenhui-lib/resources/shader/particle.frag");
+#endif
+
     scene.AddModel(&model);
 
     // draw

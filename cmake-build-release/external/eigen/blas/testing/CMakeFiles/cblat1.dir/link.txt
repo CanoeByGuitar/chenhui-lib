@@ -1,0 +1,1 @@
+/usr/bin/f95   -O3 -DNDEBUG -O3 CMakeFiles/cblat1.dir/cblat1.f.o  -o ../../../../../build/bin/cblat1  -Wl,-rpath,/home/wch/github/chenhui-lib/build/bin ../../../../../build/bin/libeigen_blas.so 

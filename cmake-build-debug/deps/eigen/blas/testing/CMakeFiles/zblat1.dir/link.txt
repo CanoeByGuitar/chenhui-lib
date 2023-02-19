@@ -1,1 +1,0 @@
-/Users/wangchenhui/brew-2.2.2/bin/gfortran -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk -mmacosx-version-min=11.6 CMakeFiles/zblat1.dir/zblat1.f.o -o zblat1  -Wl,-rpath,/Volumes/disk2/ChenhuiLib/cmake-build-debug/deps/eigen/blas ../libeigen_blas.dylib 
