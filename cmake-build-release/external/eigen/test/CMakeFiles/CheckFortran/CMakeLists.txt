@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.16.3)
+cmake_minimum_required(VERSION 3.20.2)
 project(CheckFortran Fortran)
 file(WRITE "${CMAKE_CURRENT_BINARY_DIR}/result.cmake"
   "set(CMAKE_Fortran_COMPILER \"${CMAKE_Fortran_COMPILER}\")\n"

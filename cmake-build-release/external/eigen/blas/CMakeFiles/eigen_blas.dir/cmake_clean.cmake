@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
+  "../../../../build/bin/libeigen_blas.dylib"
   "../../../../build/bin/libeigen_blas.pdb"
-  "../../../../build/bin/libeigen_blas.so"
   "CMakeFiles/eigen_blas.dir/complex_double.cpp.o"
   "CMakeFiles/eigen_blas.dir/complex_single.cpp.o"
   "CMakeFiles/eigen_blas.dir/double.cpp.o"

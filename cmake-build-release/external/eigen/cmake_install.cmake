@@ -1,4 +1,4 @@
-# Install script for directory: /home/wch/github/chenhui-lib/external/eigen
+# Install script for directory: /Volumes/disk2/ChenhuiLib/external/eigen
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -27,33 +27,33 @@ if(NOT CMAKE_INSTALL_COMPONENT)
   endif()
 endif()
 
-# Install shared libraries without execute permission?
-if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
-  set(CMAKE_INSTALL_SO_NO_EXE "1")
-endif()
-
 # Is this installation the result of a crosscompile?
 if(NOT DEFINED CMAKE_CROSSCOMPILING)
   set(CMAKE_CROSSCOMPILING "FALSE")
 endif()
 
+# Set default install directory permissions.
+if(NOT DEFINED CMAKE_OBJDUMP)
+  set(CMAKE_OBJDUMP "/Library/Developer/CommandLineTools/usr/bin/objdump")
+endif()
+
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xDevelx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/eigen3" TYPE FILE FILES "/home/wch/github/chenhui-lib/external/eigen/signature_of_eigen3_matrix_library")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/eigen3" TYPE FILE FILES "/Volumes/disk2/ChenhuiLib/external/eigen/signature_of_eigen3_matrix_library")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/pkgconfig" TYPE FILE FILES "/home/wch/github/chenhui-lib/cmake-build-release/external/eigen/eigen3.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/pkgconfig" TYPE FILE FILES "/Volumes/disk2/ChenhuiLib/cmake-build-release/external/eigen/eigen3.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xDevelx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/eigen3" TYPE DIRECTORY FILES "/home/wch/github/chenhui-lib/external/eigen/Eigen")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/eigen3" TYPE DIRECTORY FILES "/Volumes/disk2/ChenhuiLib/external/eigen/Eigen")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/share/eigen3/cmake/Eigen3Targets.cmake")
     file(DIFFERENT EXPORT_FILE_CHANGED FILES
          "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/share/eigen3/cmake/Eigen3Targets.cmake"
-         "/home/wch/github/chenhui-lib/cmake-build-release/external/eigen/CMakeFiles/Export/share/eigen3/cmake/Eigen3Targets.cmake")
+         "/Volumes/disk2/ChenhuiLib/cmake-build-release/external/eigen/CMakeFiles/Export/share/eigen3/cmake/Eigen3Targets.cmake")
     if(EXPORT_FILE_CHANGED)
       file(GLOB OLD_CONFIG_FILES "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/share/eigen3/cmake/Eigen3Targets-*.cmake")
       if(OLD_CONFIG_FILES)
@@ -62,21 +62,21 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
       endif()
     endif()
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/eigen3/cmake" TYPE FILE FILES "/home/wch/github/chenhui-lib/cmake-build-release/external/eigen/CMakeFiles/Export/share/eigen3/cmake/Eigen3Targets.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/eigen3/cmake" TYPE FILE FILES "/Volumes/disk2/ChenhuiLib/cmake-build-release/external/eigen/CMakeFiles/Export/share/eigen3/cmake/Eigen3Targets.cmake")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/eigen3/cmake" TYPE FILE FILES
-    "/home/wch/github/chenhui-lib/external/eigen/cmake/UseEigen3.cmake"
-    "/home/wch/github/chenhui-lib/cmake-build-release/external/eigen/Eigen3Config.cmake"
-    "/home/wch/github/chenhui-lib/cmake-build-release/external/eigen/Eigen3ConfigVersion.cmake"
+    "/Volumes/disk2/ChenhuiLib/external/eigen/cmake/UseEigen3.cmake"
+    "/Volumes/disk2/ChenhuiLib/cmake-build-release/external/eigen/Eigen3Config.cmake"
+    "/Volumes/disk2/ChenhuiLib/cmake-build-release/external/eigen/Eigen3ConfigVersion.cmake"
     )
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/wch/github/chenhui-lib/cmake-build-release/external/eigen/failtest/cmake_install.cmake")
-  include("/home/wch/github/chenhui-lib/cmake-build-release/external/eigen/unsupported/cmake_install.cmake")
+  include("/Volumes/disk2/ChenhuiLib/cmake-build-release/external/eigen/failtest/cmake_install.cmake")
+  include("/Volumes/disk2/ChenhuiLib/cmake-build-release/external/eigen/unsupported/cmake_install.cmake")
 
 endif()
 

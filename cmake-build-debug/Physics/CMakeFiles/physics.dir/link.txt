@@ -1,2 +1,2 @@
-/usr/bin/ar qc ../../build/lib/libphysics.a  CMakeFiles/physics.dir/MassSpringSim.cpp.o
-/usr/bin/ranlib ../../build/lib/libphysics.a
+/Library/Developer/CommandLineTools/usr/bin/ar qc ../../build/lib/libphysics.a CMakeFiles/physics.dir/MassSpringSim.cpp.o
+/Library/Developer/CommandLineTools/usr/bin/ranlib ../../build/lib/libphysics.a

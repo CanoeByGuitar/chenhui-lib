@@ -1,2 +1,2 @@
-/usr/bin/ar qc ../../build/lib/librenderer.a  CMakeFiles/renderer.dir/Texture.cpp.o CMakeFiles/renderer.dir/Buffer/FrameBuffer.cpp.o CMakeFiles/renderer.dir/Buffer/VertexBuffer.cpp.o CMakeFiles/renderer.dir/Buffer/IndexBuffer.cpp.o CMakeFiles/renderer.dir/Buffer/VertexArray.cpp.o CMakeFiles/renderer.dir/Scene.cpp.o CMakeFiles/renderer.dir/glad.c.o CMakeFiles/renderer.dir/Particle.cpp.o
-/usr/bin/ranlib ../../build/lib/librenderer.a
+/Library/Developer/CommandLineTools/usr/bin/ar qc ../../build/lib/librenderer.a CMakeFiles/renderer.dir/Texture.cpp.o CMakeFiles/renderer.dir/Buffer/FrameBuffer.cpp.o CMakeFiles/renderer.dir/Buffer/VertexBuffer.cpp.o CMakeFiles/renderer.dir/Buffer/IndexBuffer.cpp.o CMakeFiles/renderer.dir/Buffer/VertexArray.cpp.o CMakeFiles/renderer.dir/Scene.cpp.o CMakeFiles/renderer.dir/glad.c.o CMakeFiles/renderer.dir/Particle.cpp.o
+/Library/Developer/CommandLineTools/usr/bin/ranlib ../../build/lib/librenderer.a

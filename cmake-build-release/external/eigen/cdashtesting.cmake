@@ -1,9 +1,9 @@
 
-set(CTEST_SOURCE_DIRECTORY  "/home/wch/github/chenhui-lib")
-set(CTEST_BINARY_DIRECTORY  "/home/wch/github/chenhui-lib/cmake-build-release")
+set(CTEST_SOURCE_DIRECTORY  "/Volumes/disk2/ChenhuiLib")
+set(CTEST_BINARY_DIRECTORY  "/Volumes/disk2/ChenhuiLib/cmake-build-release")
 set(CTEST_CMAKE_GENERATOR   "Unix Makefiles")
-set(CTEST_BUILD_NAME        "linux-5.15.79.1-microsoft-standard-wsl2-_-9.4.0-sse2-64bit")
-set(CTEST_SITE              "desktop-pe9ro90")
+set(CTEST_BUILD_NAME        "darwin-20.6.0-clang++-12.0.5-sse2-64bit")
+set(CTEST_SITE              "wangchenhuidemacbook-pro.local")
 
 set(MODEL Experimental)
 if(${CTEST_SCRIPT_ARG} MATCHES Nightly)

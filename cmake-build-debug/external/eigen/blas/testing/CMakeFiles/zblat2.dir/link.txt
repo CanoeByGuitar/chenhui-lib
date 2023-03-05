@@ -1,1 +1,1 @@
-/usr/bin/f95   -g CMakeFiles/zblat2.dir/zblat2.f.o  -o ../../../../../build/bin/zblat2  -Wl,-rpath,/home/wch/github/chenhui-lib/build/bin ../../../../../build/bin/libeigen_blas.so 
+/Users/wangchenhui/brew-2.2.2/bin/gfortran -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk -mmacosx-version-min=11.6 CMakeFiles/zblat2.dir/zblat2.f.o -o ../../../../../build/bin/zblat2  -Wl,-rpath,/Volumes/disk2/ChenhuiLib/build/bin ../../../../../build/bin/libeigen_blas.dylib 

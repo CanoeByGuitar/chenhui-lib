@@ -36,7 +36,8 @@ include_directories(
         ${PROJECT_SOURCE_DIR}/external/glad/include/
         ${PROJECT_SOURCE_DIR}/external/glm
         ${PROJECT_SOURCE_DIR}/external/glfw/include/GLFW
-        ${PROJECT_SOURCE_DIR}/external/spdlog/include)
+        ${PROJECT_SOURCE_DIR}/external/spdlog/include
+        ${PROJECT_SOURCE_DIR}/external/eigen/)
 
 
 add_subdirectory(${PROJECT_SOURCE_DIR}/external/eigen)
@@ -47,6 +48,7 @@ add_subdirectory(${PROJECT_SOURCE_DIR}/external/glfw)
 add_subdirectory(${PROJECT_SOURCE_DIR}/Renderer)
 add_subdirectory(${PROJECT_SOURCE_DIR}/Physics)
 add_subdirectory(${PROJECT_SOURCE_DIR}/Math)
+add_subdirectory(${PROJECT_SOURCE_DIR}/MyRenderer)
 
 add_executable(main main.cpp)
 target_link_libraries(main PRIVATE eigen spdlog::spdlog renderer math physics)

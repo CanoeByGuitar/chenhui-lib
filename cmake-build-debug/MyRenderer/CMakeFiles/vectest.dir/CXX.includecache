@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Volumes/disk2/ChenhuiLib/MyRenderer/Vec3.h
+cmath
+-
+iostream
+-
+
+/Volumes/disk2/ChenhuiLib/MyRenderer/test/VecTest.cpp
+../Vec3.h
+/Volumes/disk2/ChenhuiLib/MyRenderer/Vec3.h
+
