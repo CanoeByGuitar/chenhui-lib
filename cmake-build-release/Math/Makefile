@@ -157,6 +157,21 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
+Math/CMakeFiles/testMath.dir/rule:
+	cd /home/wch/github/chenhui-lib/cmake-build-release && $(MAKE) -f CMakeFiles/Makefile2 Math/CMakeFiles/testMath.dir/rule
+.PHONY : Math/CMakeFiles/testMath.dir/rule
+
+# Convenience name for target.
+testMath: Math/CMakeFiles/testMath.dir/rule
+
+.PHONY : testMath
+
+# fast build rule for target.
+testMath/fast:
+	cd /home/wch/github/chenhui-lib/cmake-build-release && $(MAKE) -f Math/CMakeFiles/testMath.dir/build.make Math/CMakeFiles/testMath.dir/build
+.PHONY : testMath/fast
+
+# Convenience name for target.
 Math/CMakeFiles/math.dir/rule:
 	cd /home/wch/github/chenhui-lib/cmake-build-release && $(MAKE) -f CMakeFiles/Makefile2 Math/CMakeFiles/math.dir/rule
 .PHONY : Math/CMakeFiles/math.dir/rule
@@ -198,6 +213,60 @@ LinearSystemSolver.cpp.s:
 	cd /home/wch/github/chenhui-lib/cmake-build-release && $(MAKE) -f Math/CMakeFiles/math.dir/build.make Math/CMakeFiles/math.dir/LinearSystemSolver.cpp.s
 .PHONY : LinearSystemSolver.cpp.s
 
+SVD.o: SVD.cpp.o
+
+.PHONY : SVD.o
+
+# target to build an object file
+SVD.cpp.o:
+	cd /home/wch/github/chenhui-lib/cmake-build-release && $(MAKE) -f Math/CMakeFiles/math.dir/build.make Math/CMakeFiles/math.dir/SVD.cpp.o
+.PHONY : SVD.cpp.o
+
+SVD.i: SVD.cpp.i
+
+.PHONY : SVD.i
+
+# target to preprocess a source file
+SVD.cpp.i:
+	cd /home/wch/github/chenhui-lib/cmake-build-release && $(MAKE) -f Math/CMakeFiles/math.dir/build.make Math/CMakeFiles/math.dir/SVD.cpp.i
+.PHONY : SVD.cpp.i
+
+SVD.s: SVD.cpp.s
+
+.PHONY : SVD.s
+
+# target to generate assembly for a file
+SVD.cpp.s:
+	cd /home/wch/github/chenhui-lib/cmake-build-release && $(MAKE) -f Math/CMakeFiles/math.dir/build.make Math/CMakeFiles/math.dir/SVD.cpp.s
+.PHONY : SVD.cpp.s
+
+testMath.o: testMath.cpp.o
+
+.PHONY : testMath.o
+
+# target to build an object file
+testMath.cpp.o:
+	cd /home/wch/github/chenhui-lib/cmake-build-release && $(MAKE) -f Math/CMakeFiles/testMath.dir/build.make Math/CMakeFiles/testMath.dir/testMath.cpp.o
+.PHONY : testMath.cpp.o
+
+testMath.i: testMath.cpp.i
+
+.PHONY : testMath.i
+
+# target to preprocess a source file
+testMath.cpp.i:
+	cd /home/wch/github/chenhui-lib/cmake-build-release && $(MAKE) -f Math/CMakeFiles/testMath.dir/build.make Math/CMakeFiles/testMath.dir/testMath.cpp.i
+.PHONY : testMath.cpp.i
+
+testMath.s: testMath.cpp.s
+
+.PHONY : testMath.s
+
+# target to generate assembly for a file
+testMath.cpp.s:
+	cd /home/wch/github/chenhui-lib/cmake-build-release && $(MAKE) -f Math/CMakeFiles/testMath.dir/build.make Math/CMakeFiles/testMath.dir/testMath.cpp.s
+.PHONY : testMath.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -210,10 +279,17 @@ help:
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
+	@echo "... testMath"
 	@echo "... math"
 	@echo "... LinearSystemSolver.o"
 	@echo "... LinearSystemSolver.i"
 	@echo "... LinearSystemSolver.s"
+	@echo "... SVD.o"
+	@echo "... SVD.i"
+	@echo "... SVD.s"
+	@echo "... testMath.o"
+	@echo "... testMath.i"
+	@echo "... testMath.s"
 .PHONY : help
 
 

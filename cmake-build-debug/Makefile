@@ -19644,6 +19644,19 @@ physics/fast:
 .PHONY : physics/fast
 
 #=============================================================================
+# Target rules for targets named testMath
+
+# Build rule for target.
+testMath: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 testMath
+.PHONY : testMath
+
+# fast build rule for target.
+testMath/fast:
+	$(MAKE) -f Math/CMakeFiles/testMath.dir/build.make Math/CMakeFiles/testMath.dir/build
+.PHONY : testMath/fast
+
+#=============================================================================
 # Target rules for targets named math
 
 # Build rule for target.
@@ -19655,6 +19668,58 @@ math: cmake_check_build_system
 math/fast:
 	$(MAKE) -f Math/CMakeFiles/math.dir/build.make Math/CMakeFiles/math.dir/build
 .PHONY : math/fast
+
+#=============================================================================
+# Target rules for targets named raytriangle
+
+# Build rule for target.
+raytriangle: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 raytriangle
+.PHONY : raytriangle
+
+# fast build rule for target.
+raytriangle/fast:
+	$(MAKE) -f MyRenderer/CMakeFiles/raytriangle.dir/build.make MyRenderer/CMakeFiles/raytriangle.dir/build
+.PHONY : raytriangle/fast
+
+#=============================================================================
+# Target rules for targets named raycircle
+
+# Build rule for target.
+raycircle: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 raycircle
+.PHONY : raycircle
+
+# fast build rule for target.
+raycircle/fast:
+	$(MAKE) -f MyRenderer/CMakeFiles/raycircle.dir/build.make MyRenderer/CMakeFiles/raycircle.dir/build
+.PHONY : raycircle/fast
+
+#=============================================================================
+# Target rules for targets named vectest
+
+# Build rule for target.
+vectest: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 vectest
+.PHONY : vectest
+
+# fast build rule for target.
+vectest/fast:
+	$(MAKE) -f MyRenderer/CMakeFiles/vectest.dir/build.make MyRenderer/CMakeFiles/vectest.dir/build
+.PHONY : vectest/fast
+
+#=============================================================================
+# Target rules for targets named myrenderer
+
+# Build rule for target.
+myrenderer: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 myrenderer
+.PHONY : myrenderer
+
+# fast build rule for target.
+myrenderer/fast:
+	$(MAKE) -f MyRenderer/CMakeFiles/myrenderer.dir/build.make MyRenderer/CMakeFiles/myrenderer.dir/build
+.PHONY : myrenderer/fast
 
 main.o: main.cpp.o
 
@@ -21221,7 +21286,12 @@ help:
 	@echo "... glfw"
 	@echo "... renderer"
 	@echo "... physics"
+	@echo "... testMath"
 	@echo "... math"
+	@echo "... raytriangle"
+	@echo "... raycircle"
+	@echo "... vectest"
+	@echo "... myrenderer"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

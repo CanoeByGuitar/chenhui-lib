@@ -70,17 +70,32 @@ Math/CMakeFiles/math.dir/LinearSystemSolver.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/math.dir/LinearSystemSolver.cpp.s"
 	cd /home/wch/github/chenhui-lib/cmake-build-release/Math && /usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wch/github/chenhui-lib/Math/LinearSystemSolver.cpp -o CMakeFiles/math.dir/LinearSystemSolver.cpp.s
 
+Math/CMakeFiles/math.dir/SVD.cpp.o: Math/CMakeFiles/math.dir/flags.make
+Math/CMakeFiles/math.dir/SVD.cpp.o: ../Math/SVD.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wch/github/chenhui-lib/cmake-build-release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object Math/CMakeFiles/math.dir/SVD.cpp.o"
+	cd /home/wch/github/chenhui-lib/cmake-build-release/Math && /usr/bin/g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/math.dir/SVD.cpp.o -c /home/wch/github/chenhui-lib/Math/SVD.cpp
+
+Math/CMakeFiles/math.dir/SVD.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/math.dir/SVD.cpp.i"
+	cd /home/wch/github/chenhui-lib/cmake-build-release/Math && /usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wch/github/chenhui-lib/Math/SVD.cpp > CMakeFiles/math.dir/SVD.cpp.i
+
+Math/CMakeFiles/math.dir/SVD.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/math.dir/SVD.cpp.s"
+	cd /home/wch/github/chenhui-lib/cmake-build-release/Math && /usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wch/github/chenhui-lib/Math/SVD.cpp -o CMakeFiles/math.dir/SVD.cpp.s
+
 # Object files for target math
 math_OBJECTS = \
-"CMakeFiles/math.dir/LinearSystemSolver.cpp.o"
+"CMakeFiles/math.dir/LinearSystemSolver.cpp.o" \
+"CMakeFiles/math.dir/SVD.cpp.o"
 
 # External object files for target math
 math_EXTERNAL_OBJECTS =
 
 ../build/lib/libmath.a: Math/CMakeFiles/math.dir/LinearSystemSolver.cpp.o
+../build/lib/libmath.a: Math/CMakeFiles/math.dir/SVD.cpp.o
 ../build/lib/libmath.a: Math/CMakeFiles/math.dir/build.make
 ../build/lib/libmath.a: Math/CMakeFiles/math.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/wch/github/chenhui-lib/cmake-build-release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library ../../build/lib/libmath.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/wch/github/chenhui-lib/cmake-build-release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX static library ../../build/lib/libmath.a"
 	cd /home/wch/github/chenhui-lib/cmake-build-release/Math && $(CMAKE_COMMAND) -P CMakeFiles/math.dir/cmake_clean_target.cmake
 	cd /home/wch/github/chenhui-lib/cmake-build-release/Math && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/math.dir/link.txt --verbose=$(VERBOSE)
 

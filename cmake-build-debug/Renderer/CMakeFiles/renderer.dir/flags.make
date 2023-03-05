@@ -7,11 +7,11 @@ C_FLAGS = -g
 
 C_DEFINES = 
 
-C_INCLUDES = -I/home/wch/github/chenhui-lib/external -I/home/wch/github/chenhui-lib/external/glad/include -I/home/wch/github/chenhui-lib/external/glm -I/home/wch/github/chenhui-lib/external/glfw/include/GLFW -I/home/wch/github/chenhui-lib/external/spdlog/include -I/home/wch/github/chenhui-lib/external/glfw/include -I/home/wch/github/chenhui-lib 
+C_INCLUDES = -I/home/wch/github/chenhui-lib/external -I/home/wch/github/chenhui-lib/external/glad/include -I/home/wch/github/chenhui-lib/external/glm -I/home/wch/github/chenhui-lib/external/glfw/include/GLFW -I/home/wch/github/chenhui-lib/external/spdlog/include -I/home/wch/github/chenhui-lib/external/eigen -I/home/wch/github/chenhui-lib/external/glfw/include -I/home/wch/github/chenhui-lib 
 
 CXX_FLAGS = -g   -std=gnu++1z
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/wch/github/chenhui-lib/external -I/home/wch/github/chenhui-lib/external/glad/include -I/home/wch/github/chenhui-lib/external/glm -I/home/wch/github/chenhui-lib/external/glfw/include/GLFW -I/home/wch/github/chenhui-lib/external/spdlog/include -I/home/wch/github/chenhui-lib/external/glfw/include -I/home/wch/github/chenhui-lib 
+CXX_INCLUDES = -I/home/wch/github/chenhui-lib/external -I/home/wch/github/chenhui-lib/external/glad/include -I/home/wch/github/chenhui-lib/external/glm -I/home/wch/github/chenhui-lib/external/glfw/include/GLFW -I/home/wch/github/chenhui-lib/external/spdlog/include -I/home/wch/github/chenhui-lib/external/eigen -I/home/wch/github/chenhui-lib/external/glfw/include -I/home/wch/github/chenhui-lib 
 

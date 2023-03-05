@@ -1,0 +1,1 @@
+/usr/bin/g++-7  -O3 -DNDEBUG   CMakeFiles/testMath.dir/testMath.cpp.o  -o ../../build/bin/testMath  ../../build/lib/libmath.a ../../build/lib/libspdlog.a -lpthread 

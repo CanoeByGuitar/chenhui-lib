@@ -1665,4 +1665,15 @@
 /home/wch/github/chenhui-lib/cmake-build-release/Math/CMakeFiles/list_install_components.dir
 /home/wch/github/chenhui-lib/cmake-build-release/Math/CMakeFiles/rebuild_cache.dir
 /home/wch/github/chenhui-lib/cmake-build-release/Math/CMakeFiles/edit_cache.dir
+/home/wch/github/chenhui-lib/cmake-build-release/Math/CMakeFiles/testMath.dir
 /home/wch/github/chenhui-lib/cmake-build-release/Math/CMakeFiles/math.dir
+/home/wch/github/chenhui-lib/cmake-build-release/MyRenderer/CMakeFiles/install/strip.dir
+/home/wch/github/chenhui-lib/cmake-build-release/MyRenderer/CMakeFiles/install/local.dir
+/home/wch/github/chenhui-lib/cmake-build-release/MyRenderer/CMakeFiles/install.dir
+/home/wch/github/chenhui-lib/cmake-build-release/MyRenderer/CMakeFiles/list_install_components.dir
+/home/wch/github/chenhui-lib/cmake-build-release/MyRenderer/CMakeFiles/rebuild_cache.dir
+/home/wch/github/chenhui-lib/cmake-build-release/MyRenderer/CMakeFiles/raytriangle.dir
+/home/wch/github/chenhui-lib/cmake-build-release/MyRenderer/CMakeFiles/raycircle.dir
+/home/wch/github/chenhui-lib/cmake-build-release/MyRenderer/CMakeFiles/vectest.dir
+/home/wch/github/chenhui-lib/cmake-build-release/MyRenderer/CMakeFiles/edit_cache.dir
+/home/wch/github/chenhui-lib/cmake-build-release/MyRenderer/CMakeFiles/myrenderer.dir

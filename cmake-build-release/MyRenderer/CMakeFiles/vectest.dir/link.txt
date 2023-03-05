@@ -1,0 +1,1 @@
+/usr/bin/g++-7  -O3 -DNDEBUG   CMakeFiles/vectest.dir/test/VecTest.cpp.o  -o ../../build/bin/vectest 

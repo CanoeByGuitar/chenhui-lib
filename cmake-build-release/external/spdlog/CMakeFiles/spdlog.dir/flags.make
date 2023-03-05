@@ -6,5 +6,5 @@ CXX_FLAGS = -O3 -DNDEBUG   -std=c++1z
 
 CXX_DEFINES = -DSPDLOG_COMPILED_LIB
 
-CXX_INCLUDES = -I/home/wch/github/chenhui-lib/external -I/home/wch/github/chenhui-lib/external/glad/include -I/home/wch/github/chenhui-lib/external/glm -I/home/wch/github/chenhui-lib/external/glfw/include/GLFW -I/home/wch/github/chenhui-lib/external/spdlog/include 
+CXX_INCLUDES = -I/home/wch/github/chenhui-lib/external -I/home/wch/github/chenhui-lib/external/glad/include -I/home/wch/github/chenhui-lib/external/glm -I/home/wch/github/chenhui-lib/external/glfw/include/GLFW -I/home/wch/github/chenhui-lib/external/spdlog/include -I/home/wch/github/chenhui-lib/external/eigen 
 

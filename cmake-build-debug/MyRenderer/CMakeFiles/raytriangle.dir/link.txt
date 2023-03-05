@@ -1,0 +1,1 @@
+/usr/bin/g++-7  -g   CMakeFiles/raytriangle.dir/test/RayTriIntersect.cpp.o  -o ../../build/bin/raytriangle 

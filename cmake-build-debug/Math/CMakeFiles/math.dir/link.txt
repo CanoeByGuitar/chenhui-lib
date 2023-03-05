@@ -1,2 +1,2 @@
-/usr/bin/ar qc ../../build/lib/libmath.a  CMakeFiles/math.dir/LinearSystemSolver.cpp.o
+/usr/bin/ar qc ../../build/lib/libmath.a  CMakeFiles/math.dir/LinearSystemSolver.cpp.o CMakeFiles/math.dir/SVD.cpp.o
 /usr/bin/ranlib ../../build/lib/libmath.a

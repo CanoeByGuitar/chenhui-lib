@@ -26,6 +26,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "../external/glm"
   "../external/glfw/include/GLFW"
   "../external/spdlog/include"
+  "../external/eigen"
   )
 
 # Targets to which this target links.

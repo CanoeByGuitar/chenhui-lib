@@ -2,6 +2,7 @@ file(REMOVE_RECURSE
   "../../build/lib/libmath.a"
   "../../build/lib/libmath.pdb"
   "CMakeFiles/math.dir/LinearSystemSolver.cpp.o"
+  "CMakeFiles/math.dir/SVD.cpp.o"
 )
 
 # Per-language clean rules from dependency scanning.

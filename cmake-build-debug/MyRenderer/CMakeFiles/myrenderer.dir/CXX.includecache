@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Volumes/disk2/ChenhuiLib/MyRenderer/Ray.h
+Vec3.h
+/Volumes/disk2/ChenhuiLib/MyRenderer/Vec3.h
+
+/Volumes/disk2/ChenhuiLib/MyRenderer/Vec3.h
+cmath
+-
+iostream
+-
+
+/Volumes/disk2/ChenhuiLib/MyRenderer/main.cpp
+iostream
+-
+cmath
+-
+Vec3.h
+/Volumes/disk2/ChenhuiLib/MyRenderer/Vec3.h
+Ray.h
+/Volumes/disk2/ChenhuiLib/MyRenderer/Ray.h
+

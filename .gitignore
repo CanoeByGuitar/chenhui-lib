@@ -1,0 +1,9 @@
+/cmake-build-debug/
+/cmake-build-release/
+/build/
+/external/eigen/
+/external/glad/
+/external/glfw/
+/external/glm/
+/external/imgui/
+/external/spdlog/

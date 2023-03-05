@@ -46,6 +46,7 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("/home/wch/github/chenhui-lib/cmake-build-debug/Renderer/cmake_install.cmake")
   include("/home/wch/github/chenhui-lib/cmake-build-debug/Physics/cmake_install.cmake")
   include("/home/wch/github/chenhui-lib/cmake-build-debug/Math/cmake_install.cmake")
+  include("/home/wch/github/chenhui-lib/cmake-build-debug/MyRenderer/cmake_install.cmake")
 
 endif()
 

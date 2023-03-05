@@ -6,7 +6,7 @@ C_FLAGS = -g -fPIC   -Wall -std=c99
 
 C_DEFINES = -D_DEFAULT_SOURCE -D_GLFW_X11
 
-C_INCLUDES = -I/home/wch/github/chenhui-lib/external -I/home/wch/github/chenhui-lib/external/glad/include -I/home/wch/github/chenhui-lib/external/glm -I/home/wch/github/chenhui-lib/external/glfw/include/GLFW -I/home/wch/github/chenhui-lib/external/spdlog/include -I/home/wch/github/chenhui-lib/external/glfw/include -I/home/wch/github/chenhui-lib/external/glfw/src -I/home/wch/github/chenhui-lib/cmake-build-debug/external/glfw/src 
+C_INCLUDES = -I/home/wch/github/chenhui-lib/external -I/home/wch/github/chenhui-lib/external/glad/include -I/home/wch/github/chenhui-lib/external/glm -I/home/wch/github/chenhui-lib/external/glfw/include/GLFW -I/home/wch/github/chenhui-lib/external/spdlog/include -I/home/wch/github/chenhui-lib/external/eigen -I/home/wch/github/chenhui-lib/external/glfw/include -I/home/wch/github/chenhui-lib/external/glfw/src -I/home/wch/github/chenhui-lib/cmake-build-debug/external/glfw/src 
 
 # Custom flags: external/glfw/src/CMakeFiles/glfw.dir/context.c.o_FLAGS = -Wdeclaration-after-statement
 

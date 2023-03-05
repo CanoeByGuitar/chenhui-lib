@@ -5,6 +5,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/wch/github/chenhui-lib/Math/LinearSystemSolver.cpp" "/home/wch/github/chenhui-lib/cmake-build-release/Math/CMakeFiles/math.dir/LinearSystemSolver.cpp.o"
+  "/home/wch/github/chenhui-lib/Math/SVD.cpp" "/home/wch/github/chenhui-lib/cmake-build-release/Math/CMakeFiles/math.dir/SVD.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
