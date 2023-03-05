@@ -1,14 +1,14 @@
 Performing C++ SOURCE FILE Test COMPILER_SUPPORT_Wshorten64to32 failed with the following output:
 Change Dir: /home/wch/github/chenhui-lib/cmake-build-release/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_c2c10/fast && /usr/bin/make -f CMakeFiles/cmTC_c2c10.dir/build.make CMakeFiles/cmTC_c2c10.dir/build
+Run Build Command(s):/usr/bin/make cmTC_2dfd6/fast && /usr/bin/make -f CMakeFiles/cmTC_2dfd6.dir/build.make CMakeFiles/cmTC_2dfd6.dir/build
 make[1]: Entering directory '/home/wch/github/chenhui-lib/cmake-build-release/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_c2c10.dir/src.cxx.o
-/usr/bin/c++    -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -DCOMPILER_SUPPORT_Wshorten64to32 -Werror   -Wshorten-64-to-32 -o CMakeFiles/cmTC_c2c10.dir/src.cxx.o -c /home/wch/github/chenhui-lib/cmake-build-release/CMakeFiles/CMakeTmp/src.cxx
-c++: error: unrecognized command line option '-Wshorten-64-to-32'
-make[1]: *** [CMakeFiles/cmTC_c2c10.dir/build.make:66: CMakeFiles/cmTC_c2c10.dir/src.cxx.o] Error 1
+Building CXX object CMakeFiles/cmTC_2dfd6.dir/src.cxx.o
+/usr/bin/g++-7    -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -DCOMPILER_SUPPORT_Wshorten64to32 -Werror   -Wshorten-64-to-32 -o CMakeFiles/cmTC_2dfd6.dir/src.cxx.o -c /home/wch/github/chenhui-lib/cmake-build-release/CMakeFiles/CMakeTmp/src.cxx
+g++-7: error: unrecognized command line option '-Wshorten-64-to-32'
+make[1]: *** [CMakeFiles/cmTC_2dfd6.dir/build.make:66: CMakeFiles/cmTC_2dfd6.dir/src.cxx.o] Error 1
 make[1]: Leaving directory '/home/wch/github/chenhui-lib/cmake-build-release/CMakeFiles/CMakeTmp'
-make: *** [Makefile:121: cmTC_c2c10/fast] Error 2
+make: *** [Makefile:121: cmTC_2dfd6/fast] Error 2
 
 
 Source file was:
@@ -16,14 +16,14 @@ int main() { return 0; }
 Performing C++ SOURCE FILE Test COMPILER_SUPPORT_Wenumconversion failed with the following output:
 Change Dir: /home/wch/github/chenhui-lib/cmake-build-release/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_f909e/fast && /usr/bin/make -f CMakeFiles/cmTC_f909e.dir/build.make CMakeFiles/cmTC_f909e.dir/build
+Run Build Command(s):/usr/bin/make cmTC_d1a44/fast && /usr/bin/make -f CMakeFiles/cmTC_d1a44.dir/build.make CMakeFiles/cmTC_d1a44.dir/build
 make[1]: Entering directory '/home/wch/github/chenhui-lib/cmake-build-release/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_f909e.dir/src.cxx.o
-/usr/bin/c++    -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wlogical-op -DCOMPILER_SUPPORT_Wenumconversion -Werror   -Wenum-conversion -o CMakeFiles/cmTC_f909e.dir/src.cxx.o -c /home/wch/github/chenhui-lib/cmake-build-release/CMakeFiles/CMakeTmp/src.cxx
-c++: error: unrecognized command line option '-Wenum-conversion'; did you mean '-Wno-conversion'?
-make[1]: *** [CMakeFiles/cmTC_f909e.dir/build.make:66: CMakeFiles/cmTC_f909e.dir/src.cxx.o] Error 1
+Building CXX object CMakeFiles/cmTC_d1a44.dir/src.cxx.o
+/usr/bin/g++-7    -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wlogical-op -DCOMPILER_SUPPORT_Wenumconversion -Werror   -Wenum-conversion -o CMakeFiles/cmTC_d1a44.dir/src.cxx.o -c /home/wch/github/chenhui-lib/cmake-build-release/CMakeFiles/CMakeTmp/src.cxx
+g++-7: error: unrecognized command line option '-Wenum-conversion'; did you mean '-Wno-conversion'?
+make[1]: *** [CMakeFiles/cmTC_d1a44.dir/build.make:66: CMakeFiles/cmTC_d1a44.dir/src.cxx.o] Error 1
 make[1]: Leaving directory '/home/wch/github/chenhui-lib/cmake-build-release/CMakeFiles/CMakeTmp'
-make: *** [Makefile:121: cmTC_f909e/fast] Error 2
+make: *** [Makefile:121: cmTC_d1a44/fast] Error 2
 
 
 Source file was:
@@ -31,14 +31,14 @@ int main() { return 0; }
 Performing C++ SOURCE FILE Test COMPILER_SUPPORT_Wcpp11extensions failed with the following output:
 Change Dir: /home/wch/github/chenhui-lib/cmake-build-release/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_c74a3/fast && /usr/bin/make -f CMakeFiles/cmTC_c74a3.dir/build.make CMakeFiles/cmTC_c74a3.dir/build
+Run Build Command(s):/usr/bin/make cmTC_dc3c0/fast && /usr/bin/make -f CMakeFiles/cmTC_dc3c0.dir/build.make CMakeFiles/cmTC_dc3c0.dir/build
 make[1]: Entering directory '/home/wch/github/chenhui-lib/cmake-build-release/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_c74a3.dir/src.cxx.o
-/usr/bin/c++    -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wlogical-op -DCOMPILER_SUPPORT_Wcpp11extensions -Werror   -Wc++11-extensions -o CMakeFiles/cmTC_c74a3.dir/src.cxx.o -c /home/wch/github/chenhui-lib/cmake-build-release/CMakeFiles/CMakeTmp/src.cxx
-c++: error: unrecognized command line option '-Wc++11-extensions'; did you mean '-fms-extensions'?
-make[1]: *** [CMakeFiles/cmTC_c74a3.dir/build.make:66: CMakeFiles/cmTC_c74a3.dir/src.cxx.o] Error 1
+Building CXX object CMakeFiles/cmTC_dc3c0.dir/src.cxx.o
+/usr/bin/g++-7    -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wlogical-op -DCOMPILER_SUPPORT_Wcpp11extensions -Werror   -Wc++11-extensions -o CMakeFiles/cmTC_dc3c0.dir/src.cxx.o -c /home/wch/github/chenhui-lib/cmake-build-release/CMakeFiles/CMakeTmp/src.cxx
+g++-7: error: unrecognized command line option '-Wc++11-extensions'; did you mean '-fms-extensions'?
+make[1]: *** [CMakeFiles/cmTC_dc3c0.dir/build.make:66: CMakeFiles/cmTC_dc3c0.dir/src.cxx.o] Error 1
 make[1]: Leaving directory '/home/wch/github/chenhui-lib/cmake-build-release/CMakeFiles/CMakeTmp'
-make: *** [Makefile:121: cmTC_c74a3/fast] Error 2
+make: *** [Makefile:121: cmTC_dc3c0/fast] Error 2
 
 
 Source file was:
@@ -46,14 +46,14 @@ int main() { return 0; }
 Performing C++ SOURCE FILE Test COMPILER_SUPPORT_wd981 failed with the following output:
 Change Dir: /home/wch/github/chenhui-lib/cmake-build-release/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_2a732/fast && /usr/bin/make -f CMakeFiles/cmTC_2a732.dir/build.make CMakeFiles/cmTC_2a732.dir/build
+Run Build Command(s):/usr/bin/make cmTC_c2634/fast && /usr/bin/make -f CMakeFiles/cmTC_c2634.dir/build.make CMakeFiles/cmTC_c2634.dir/build
 make[1]: Entering directory '/home/wch/github/chenhui-lib/cmake-build-release/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_2a732.dir/src.cxx.o
-/usr/bin/c++    -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wlogical-op -Wdouble-promotion -Wshadow -Wno-psabi -Wno-variadic-macros -Wno-long-long -fno-check-new -fno-common -fstrict-aliasing -DCOMPILER_SUPPORT_wd981 -Werror   -wd981 -o CMakeFiles/cmTC_2a732.dir/src.cxx.o -c /home/wch/github/chenhui-lib/cmake-build-release/CMakeFiles/CMakeTmp/src.cxx
-c++: error: unrecognized command line option '-wd981'
-make[1]: *** [CMakeFiles/cmTC_2a732.dir/build.make:66: CMakeFiles/cmTC_2a732.dir/src.cxx.o] Error 1
+Building CXX object CMakeFiles/cmTC_c2634.dir/src.cxx.o
+/usr/bin/g++-7    -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wlogical-op -Wdouble-promotion -Wshadow -Wno-psabi -Wno-variadic-macros -Wno-long-long -fno-check-new -fno-common -fstrict-aliasing -DCOMPILER_SUPPORT_wd981 -Werror   -wd981 -o CMakeFiles/cmTC_c2634.dir/src.cxx.o -c /home/wch/github/chenhui-lib/cmake-build-release/CMakeFiles/CMakeTmp/src.cxx
+g++-7: error: unrecognized command line option '-wd981'
+make[1]: *** [CMakeFiles/cmTC_c2634.dir/build.make:66: CMakeFiles/cmTC_c2634.dir/src.cxx.o] Error 1
 make[1]: Leaving directory '/home/wch/github/chenhui-lib/cmake-build-release/CMakeFiles/CMakeTmp'
-make: *** [Makefile:121: cmTC_2a732/fast] Error 2
+make: *** [Makefile:121: cmTC_c2634/fast] Error 2
 
 
 Source file was:
@@ -61,14 +61,14 @@ int main() { return 0; }
 Performing C++ SOURCE FILE Test COMPILER_SUPPORT_wd2304 failed with the following output:
 Change Dir: /home/wch/github/chenhui-lib/cmake-build-release/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_e0ee5/fast && /usr/bin/make -f CMakeFiles/cmTC_e0ee5.dir/build.make CMakeFiles/cmTC_e0ee5.dir/build
+Run Build Command(s):/usr/bin/make cmTC_c4d2c/fast && /usr/bin/make -f CMakeFiles/cmTC_c4d2c.dir/build.make CMakeFiles/cmTC_c4d2c.dir/build
 make[1]: Entering directory '/home/wch/github/chenhui-lib/cmake-build-release/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_e0ee5.dir/src.cxx.o
-/usr/bin/c++    -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wlogical-op -Wdouble-promotion -Wshadow -Wno-psabi -Wno-variadic-macros -Wno-long-long -fno-check-new -fno-common -fstrict-aliasing -DCOMPILER_SUPPORT_wd2304 -Werror   -wd2304 -o CMakeFiles/cmTC_e0ee5.dir/src.cxx.o -c /home/wch/github/chenhui-lib/cmake-build-release/CMakeFiles/CMakeTmp/src.cxx
-c++: error: unrecognized command line option '-wd2304'
-make[1]: *** [CMakeFiles/cmTC_e0ee5.dir/build.make:66: CMakeFiles/cmTC_e0ee5.dir/src.cxx.o] Error 1
+Building CXX object CMakeFiles/cmTC_c4d2c.dir/src.cxx.o
+/usr/bin/g++-7    -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wlogical-op -Wdouble-promotion -Wshadow -Wno-psabi -Wno-variadic-macros -Wno-long-long -fno-check-new -fno-common -fstrict-aliasing -DCOMPILER_SUPPORT_wd2304 -Werror   -wd2304 -o CMakeFiles/cmTC_c4d2c.dir/src.cxx.o -c /home/wch/github/chenhui-lib/cmake-build-release/CMakeFiles/CMakeTmp/src.cxx
+g++-7: error: unrecognized command line option '-wd2304'
+make[1]: *** [CMakeFiles/cmTC_c4d2c.dir/build.make:66: CMakeFiles/cmTC_c4d2c.dir/src.cxx.o] Error 1
 make[1]: Leaving directory '/home/wch/github/chenhui-lib/cmake-build-release/CMakeFiles/CMakeTmp'
-make: *** [Makefile:121: cmTC_e0ee5/fast] Error 2
+make: *** [Makefile:121: cmTC_c4d2c/fast] Error 2
 
 
 Source file was:
@@ -76,14 +76,14 @@ int main() { return 0; }
 Performing C++ SOURCE FILE Test COMPILER_SUPPORT_STRICTANSI failed with the following output:
 Change Dir: /home/wch/github/chenhui-lib/cmake-build-release/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_64100/fast && /usr/bin/make -f CMakeFiles/cmTC_64100.dir/build.make CMakeFiles/cmTC_64100.dir/build
+Run Build Command(s):/usr/bin/make cmTC_6caee/fast && /usr/bin/make -f CMakeFiles/cmTC_6caee.dir/build.make CMakeFiles/cmTC_6caee.dir/build
 make[1]: Entering directory '/home/wch/github/chenhui-lib/cmake-build-release/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_64100.dir/src.cxx.o
-/usr/bin/c++    -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wlogical-op -Wdouble-promotion -Wshadow -Wno-psabi -Wno-variadic-macros -Wno-long-long -fno-check-new -fno-common -fstrict-aliasing -DCOMPILER_SUPPORT_STRICTANSI -Werror   -strict-ansi -o CMakeFiles/cmTC_64100.dir/src.cxx.o -c /home/wch/github/chenhui-lib/cmake-build-release/CMakeFiles/CMakeTmp/src.cxx
-c++: error: unrecognized command line option '-strict-ansi'; did you mean '-fstrict-enums'?
-make[1]: *** [CMakeFiles/cmTC_64100.dir/build.make:66: CMakeFiles/cmTC_64100.dir/src.cxx.o] Error 1
+Building CXX object CMakeFiles/cmTC_6caee.dir/src.cxx.o
+/usr/bin/g++-7    -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wlogical-op -Wdouble-promotion -Wshadow -Wno-psabi -Wno-variadic-macros -Wno-long-long -fno-check-new -fno-common -fstrict-aliasing -DCOMPILER_SUPPORT_STRICTANSI -Werror   -strict-ansi -o CMakeFiles/cmTC_6caee.dir/src.cxx.o -c /home/wch/github/chenhui-lib/cmake-build-release/CMakeFiles/CMakeTmp/src.cxx
+g++-7: error: unrecognized command line option '-strict-ansi'; did you mean '-fstrict-enums'?
+make[1]: *** [CMakeFiles/cmTC_6caee.dir/build.make:66: CMakeFiles/cmTC_6caee.dir/src.cxx.o] Error 1
 make[1]: Leaving directory '/home/wch/github/chenhui-lib/cmake-build-release/CMakeFiles/CMakeTmp'
-make: *** [Makefile:121: cmTC_64100/fast] Error 2
+make: *** [Makefile:121: cmTC_6caee/fast] Error 2
 
 
 Source file was:
@@ -91,14 +91,14 @@ int main() { return 0; }
 Performing C++ SOURCE FILE Test COMPILER_SUPPORT_Qunusedarguments failed with the following output:
 Change Dir: /home/wch/github/chenhui-lib/cmake-build-release/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_11156/fast && /usr/bin/make -f CMakeFiles/cmTC_11156.dir/build.make CMakeFiles/cmTC_11156.dir/build
+Run Build Command(s):/usr/bin/make cmTC_dc013/fast && /usr/bin/make -f CMakeFiles/cmTC_dc013.dir/build.make CMakeFiles/cmTC_dc013.dir/build
 make[1]: Entering directory '/home/wch/github/chenhui-lib/cmake-build-release/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_11156.dir/src.cxx.o
-/usr/bin/c++    -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wlogical-op -Wdouble-promotion -Wshadow -Wno-psabi -Wno-variadic-macros -Wno-long-long -fno-check-new -fno-common -fstrict-aliasing -DCOMPILER_SUPPORT_Qunusedarguments -Werror   -Qunused-arguments -o CMakeFiles/cmTC_11156.dir/src.cxx.o -c /home/wch/github/chenhui-lib/cmake-build-release/CMakeFiles/CMakeTmp/src.cxx
-c++: error: unrecognized command line option '-Qunused-arguments'
-make[1]: *** [CMakeFiles/cmTC_11156.dir/build.make:66: CMakeFiles/cmTC_11156.dir/src.cxx.o] Error 1
+Building CXX object CMakeFiles/cmTC_dc013.dir/src.cxx.o
+/usr/bin/g++-7    -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wlogical-op -Wdouble-promotion -Wshadow -Wno-psabi -Wno-variadic-macros -Wno-long-long -fno-check-new -fno-common -fstrict-aliasing -DCOMPILER_SUPPORT_Qunusedarguments -Werror   -Qunused-arguments -o CMakeFiles/cmTC_dc013.dir/src.cxx.o -c /home/wch/github/chenhui-lib/cmake-build-release/CMakeFiles/CMakeTmp/src.cxx
+g++-7: error: unrecognized command line option '-Qunused-arguments'; did you mean '-Wunused-parameter'?
+make[1]: *** [CMakeFiles/cmTC_dc013.dir/build.make:66: CMakeFiles/cmTC_dc013.dir/src.cxx.o] Error 1
 make[1]: Leaving directory '/home/wch/github/chenhui-lib/cmake-build-release/CMakeFiles/CMakeTmp'
-make: *** [Makefile:121: cmTC_11156/fast] Error 2
+make: *** [Makefile:121: cmTC_dc013/fast] Error 2
 
 
 Source file was:
@@ -106,21 +106,21 @@ int main() { return 0; }
 Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
 Change Dir: /home/wch/github/chenhui-lib/cmake-build-release/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_79e84/fast && /usr/bin/make -f CMakeFiles/cmTC_79e84.dir/build.make CMakeFiles/cmTC_79e84.dir/build
+Run Build Command(s):/usr/bin/make cmTC_f81aa/fast && /usr/bin/make -f CMakeFiles/cmTC_f81aa.dir/build.make CMakeFiles/cmTC_f81aa.dir/build
 make[1]: Entering directory '/home/wch/github/chenhui-lib/cmake-build-release/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_79e84.dir/src.c.o
-/usr/bin/cc   -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_79e84.dir/src.c.o   -c /home/wch/github/chenhui-lib/cmake-build-release/CMakeFiles/CMakeTmp/src.c
-Linking C executable cmTC_79e84
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_79e84.dir/link.txt --verbose=1
-/usr/bin/cc  -DCMAKE_HAVE_LIBC_PTHREAD    CMakeFiles/cmTC_79e84.dir/src.c.o  -o cmTC_79e84 
-/usr/bin/ld: CMakeFiles/cmTC_79e84.dir/src.c.o: in function `main':
-src.c:(.text+0x46): undefined reference to `pthread_create'
-/usr/bin/ld: src.c:(.text+0x52): undefined reference to `pthread_detach'
-/usr/bin/ld: src.c:(.text+0x63): undefined reference to `pthread_join'
+Building C object CMakeFiles/cmTC_f81aa.dir/src.c.o
+/usr/bin/gcc-7   -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_f81aa.dir/src.c.o   -c /home/wch/github/chenhui-lib/cmake-build-release/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_f81aa
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f81aa.dir/link.txt --verbose=1
+/usr/bin/gcc-7  -DCMAKE_HAVE_LIBC_PTHREAD    CMakeFiles/cmTC_f81aa.dir/src.c.o  -o cmTC_f81aa 
+/usr/bin/ld: CMakeFiles/cmTC_f81aa.dir/src.c.o: in function `main':
+src.c:(.text+0x3e): undefined reference to `pthread_create'
+/usr/bin/ld: src.c:(.text+0x4a): undefined reference to `pthread_detach'
+/usr/bin/ld: src.c:(.text+0x5b): undefined reference to `pthread_join'
 collect2: error: ld returned 1 exit status
-make[1]: *** [CMakeFiles/cmTC_79e84.dir/build.make:87: cmTC_79e84] Error 1
+make[1]: *** [CMakeFiles/cmTC_f81aa.dir/build.make:87: cmTC_f81aa] Error 1
 make[1]: Leaving directory '/home/wch/github/chenhui-lib/cmake-build-release/CMakeFiles/CMakeTmp'
-make: *** [Makefile:121: cmTC_79e84/fast] Error 2
+make: *** [Makefile:121: cmTC_f81aa/fast] Error 2
 
 
 Source file was:
@@ -146,18 +146,18 @@ int main(void)
 Determining if the function pthread_create exists in the pthreads failed with the following output:
 Change Dir: /home/wch/github/chenhui-lib/cmake-build-release/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_49ccf/fast && /usr/bin/make -f CMakeFiles/cmTC_49ccf.dir/build.make CMakeFiles/cmTC_49ccf.dir/build
+Run Build Command(s):/usr/bin/make cmTC_dbe87/fast && /usr/bin/make -f CMakeFiles/cmTC_dbe87.dir/build.make CMakeFiles/cmTC_dbe87.dir/build
 make[1]: Entering directory '/home/wch/github/chenhui-lib/cmake-build-release/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_49ccf.dir/CheckFunctionExists.c.o
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_49ccf.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
-Linking C executable cmTC_49ccf
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_49ccf.dir/link.txt --verbose=1
-/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_49ccf.dir/CheckFunctionExists.c.o  -o cmTC_49ccf  -lpthreads 
+Building C object CMakeFiles/cmTC_dbe87.dir/CheckFunctionExists.c.o
+/usr/bin/gcc-7   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_dbe87.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_dbe87
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_dbe87.dir/link.txt --verbose=1
+/usr/bin/gcc-7  -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_dbe87.dir/CheckFunctionExists.c.o  -o cmTC_dbe87  -lpthreads 
 /usr/bin/ld: cannot find -lpthreads
 collect2: error: ld returned 1 exit status
-make[1]: *** [CMakeFiles/cmTC_49ccf.dir/build.make:87: cmTC_49ccf] Error 1
+make[1]: *** [CMakeFiles/cmTC_dbe87.dir/build.make:87: cmTC_dbe87] Error 1
 make[1]: Leaving directory '/home/wch/github/chenhui-lib/cmake-build-release/CMakeFiles/CMakeTmp'
-make: *** [Makefile:121: cmTC_49ccf/fast] Error 2
+make: *** [Makefile:121: cmTC_dbe87/fast] Error 2
 
 
 

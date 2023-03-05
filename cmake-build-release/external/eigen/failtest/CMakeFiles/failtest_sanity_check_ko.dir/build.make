@@ -60,15 +60,15 @@ include external/eigen/failtest/CMakeFiles/failtest_sanity_check_ko.dir/flags.ma
 external/eigen/failtest/CMakeFiles/failtest_sanity_check_ko.dir/failtest_sanity_check.cpp.o: external/eigen/failtest/CMakeFiles/failtest_sanity_check_ko.dir/flags.make
 external/eigen/failtest/CMakeFiles/failtest_sanity_check_ko.dir/failtest_sanity_check.cpp.o: ../external/eigen/failtest/failtest_sanity_check.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wch/github/chenhui-lib/cmake-build-release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object external/eigen/failtest/CMakeFiles/failtest_sanity_check_ko.dir/failtest_sanity_check.cpp.o"
-	cd /home/wch/github/chenhui-lib/cmake-build-release/external/eigen/failtest && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/failtest_sanity_check_ko.dir/failtest_sanity_check.cpp.o -c /home/wch/github/chenhui-lib/external/eigen/failtest/failtest_sanity_check.cpp
+	cd /home/wch/github/chenhui-lib/cmake-build-release/external/eigen/failtest && /usr/bin/g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/failtest_sanity_check_ko.dir/failtest_sanity_check.cpp.o -c /home/wch/github/chenhui-lib/external/eigen/failtest/failtest_sanity_check.cpp
 
 external/eigen/failtest/CMakeFiles/failtest_sanity_check_ko.dir/failtest_sanity_check.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/failtest_sanity_check_ko.dir/failtest_sanity_check.cpp.i"
-	cd /home/wch/github/chenhui-lib/cmake-build-release/external/eigen/failtest && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wch/github/chenhui-lib/external/eigen/failtest/failtest_sanity_check.cpp > CMakeFiles/failtest_sanity_check_ko.dir/failtest_sanity_check.cpp.i
+	cd /home/wch/github/chenhui-lib/cmake-build-release/external/eigen/failtest && /usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wch/github/chenhui-lib/external/eigen/failtest/failtest_sanity_check.cpp > CMakeFiles/failtest_sanity_check_ko.dir/failtest_sanity_check.cpp.i
 
 external/eigen/failtest/CMakeFiles/failtest_sanity_check_ko.dir/failtest_sanity_check.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/failtest_sanity_check_ko.dir/failtest_sanity_check.cpp.s"
-	cd /home/wch/github/chenhui-lib/cmake-build-release/external/eigen/failtest && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wch/github/chenhui-lib/external/eigen/failtest/failtest_sanity_check.cpp -o CMakeFiles/failtest_sanity_check_ko.dir/failtest_sanity_check.cpp.s
+	cd /home/wch/github/chenhui-lib/cmake-build-release/external/eigen/failtest && /usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wch/github/chenhui-lib/external/eigen/failtest/failtest_sanity_check.cpp -o CMakeFiles/failtest_sanity_check_ko.dir/failtest_sanity_check.cpp.s
 
 # Object files for target failtest_sanity_check_ko
 failtest_sanity_check_ko_OBJECTS = \

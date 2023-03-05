@@ -60,15 +60,15 @@ include external/eigen/failtest/CMakeFiles/ref_5_ok.dir/flags.make
 external/eigen/failtest/CMakeFiles/ref_5_ok.dir/ref_5.cpp.o: external/eigen/failtest/CMakeFiles/ref_5_ok.dir/flags.make
 external/eigen/failtest/CMakeFiles/ref_5_ok.dir/ref_5.cpp.o: ../external/eigen/failtest/ref_5.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wch/github/chenhui-lib/cmake-build-release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object external/eigen/failtest/CMakeFiles/ref_5_ok.dir/ref_5.cpp.o"
-	cd /home/wch/github/chenhui-lib/cmake-build-release/external/eigen/failtest && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ref_5_ok.dir/ref_5.cpp.o -c /home/wch/github/chenhui-lib/external/eigen/failtest/ref_5.cpp
+	cd /home/wch/github/chenhui-lib/cmake-build-release/external/eigen/failtest && /usr/bin/g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ref_5_ok.dir/ref_5.cpp.o -c /home/wch/github/chenhui-lib/external/eigen/failtest/ref_5.cpp
 
 external/eigen/failtest/CMakeFiles/ref_5_ok.dir/ref_5.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ref_5_ok.dir/ref_5.cpp.i"
-	cd /home/wch/github/chenhui-lib/cmake-build-release/external/eigen/failtest && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wch/github/chenhui-lib/external/eigen/failtest/ref_5.cpp > CMakeFiles/ref_5_ok.dir/ref_5.cpp.i
+	cd /home/wch/github/chenhui-lib/cmake-build-release/external/eigen/failtest && /usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wch/github/chenhui-lib/external/eigen/failtest/ref_5.cpp > CMakeFiles/ref_5_ok.dir/ref_5.cpp.i
 
 external/eigen/failtest/CMakeFiles/ref_5_ok.dir/ref_5.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ref_5_ok.dir/ref_5.cpp.s"
-	cd /home/wch/github/chenhui-lib/cmake-build-release/external/eigen/failtest && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wch/github/chenhui-lib/external/eigen/failtest/ref_5.cpp -o CMakeFiles/ref_5_ok.dir/ref_5.cpp.s
+	cd /home/wch/github/chenhui-lib/cmake-build-release/external/eigen/failtest && /usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wch/github/chenhui-lib/external/eigen/failtest/ref_5.cpp -o CMakeFiles/ref_5_ok.dir/ref_5.cpp.s
 
 # Object files for target ref_5_ok
 ref_5_ok_OBJECTS = \

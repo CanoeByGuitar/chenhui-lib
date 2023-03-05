@@ -61,15 +61,15 @@ external/eigen/doc/snippets/CMakeFiles/compile_MatrixBase_cwiseProduct.dir/compi
 external/eigen/doc/snippets/CMakeFiles/compile_MatrixBase_cwiseProduct.dir/compile_MatrixBase_cwiseProduct.cpp.o: external/eigen/doc/snippets/compile_MatrixBase_cwiseProduct.cpp
 external/eigen/doc/snippets/CMakeFiles/compile_MatrixBase_cwiseProduct.dir/compile_MatrixBase_cwiseProduct.cpp.o: ../external/eigen/doc/snippets/MatrixBase_cwiseProduct.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wch/github/chenhui-lib/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object external/eigen/doc/snippets/CMakeFiles/compile_MatrixBase_cwiseProduct.dir/compile_MatrixBase_cwiseProduct.cpp.o"
-	cd /home/wch/github/chenhui-lib/cmake-build-debug/external/eigen/doc/snippets && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/compile_MatrixBase_cwiseProduct.dir/compile_MatrixBase_cwiseProduct.cpp.o -c /home/wch/github/chenhui-lib/cmake-build-debug/external/eigen/doc/snippets/compile_MatrixBase_cwiseProduct.cpp
+	cd /home/wch/github/chenhui-lib/cmake-build-debug/external/eigen/doc/snippets && /usr/bin/g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/compile_MatrixBase_cwiseProduct.dir/compile_MatrixBase_cwiseProduct.cpp.o -c /home/wch/github/chenhui-lib/cmake-build-debug/external/eigen/doc/snippets/compile_MatrixBase_cwiseProduct.cpp
 
 external/eigen/doc/snippets/CMakeFiles/compile_MatrixBase_cwiseProduct.dir/compile_MatrixBase_cwiseProduct.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/compile_MatrixBase_cwiseProduct.dir/compile_MatrixBase_cwiseProduct.cpp.i"
-	cd /home/wch/github/chenhui-lib/cmake-build-debug/external/eigen/doc/snippets && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wch/github/chenhui-lib/cmake-build-debug/external/eigen/doc/snippets/compile_MatrixBase_cwiseProduct.cpp > CMakeFiles/compile_MatrixBase_cwiseProduct.dir/compile_MatrixBase_cwiseProduct.cpp.i
+	cd /home/wch/github/chenhui-lib/cmake-build-debug/external/eigen/doc/snippets && /usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wch/github/chenhui-lib/cmake-build-debug/external/eigen/doc/snippets/compile_MatrixBase_cwiseProduct.cpp > CMakeFiles/compile_MatrixBase_cwiseProduct.dir/compile_MatrixBase_cwiseProduct.cpp.i
 
 external/eigen/doc/snippets/CMakeFiles/compile_MatrixBase_cwiseProduct.dir/compile_MatrixBase_cwiseProduct.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/compile_MatrixBase_cwiseProduct.dir/compile_MatrixBase_cwiseProduct.cpp.s"
-	cd /home/wch/github/chenhui-lib/cmake-build-debug/external/eigen/doc/snippets && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wch/github/chenhui-lib/cmake-build-debug/external/eigen/doc/snippets/compile_MatrixBase_cwiseProduct.cpp -o CMakeFiles/compile_MatrixBase_cwiseProduct.dir/compile_MatrixBase_cwiseProduct.cpp.s
+	cd /home/wch/github/chenhui-lib/cmake-build-debug/external/eigen/doc/snippets && /usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wch/github/chenhui-lib/cmake-build-debug/external/eigen/doc/snippets/compile_MatrixBase_cwiseProduct.cpp -o CMakeFiles/compile_MatrixBase_cwiseProduct.dir/compile_MatrixBase_cwiseProduct.cpp.s
 
 # Object files for target compile_MatrixBase_cwiseProduct
 compile_MatrixBase_cwiseProduct_OBJECTS = \

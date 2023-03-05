@@ -14,7 +14,7 @@ CostDataFile:
 Site: desktop-pe9ro90
 
 # Build name is osname-revision-compiler, i.e. Linux-2.4.2-2smp-c++
-BuildName: linux-5.15.79.1-microsoft-standard-wsl2-_-9.4.0-sse2-64bit
+BuildName: linux-5.15.79.1-microsoft-standard-wsl2-g++-7.5.0-sse2-64bit
 
 # Subprojects
 LabelsForSubprojects: 
@@ -62,8 +62,8 @@ UpdateOptions:
 UpdateType: 
 
 # Compiler info
-Compiler: /usr/bin/c++
-CompilerVersion: 9.4.0
+Compiler: /usr/bin/g++-7
+CompilerVersion: 7.5.0
 
 # Dynamic analysis (MemCheck)
 PurifyCommand: 

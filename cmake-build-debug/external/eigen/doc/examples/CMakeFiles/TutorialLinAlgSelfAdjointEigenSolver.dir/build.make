@@ -60,15 +60,15 @@ include external/eigen/doc/examples/CMakeFiles/TutorialLinAlgSelfAdjointEigenSol
 external/eigen/doc/examples/CMakeFiles/TutorialLinAlgSelfAdjointEigenSolver.dir/TutorialLinAlgSelfAdjointEigenSolver.cpp.o: external/eigen/doc/examples/CMakeFiles/TutorialLinAlgSelfAdjointEigenSolver.dir/flags.make
 external/eigen/doc/examples/CMakeFiles/TutorialLinAlgSelfAdjointEigenSolver.dir/TutorialLinAlgSelfAdjointEigenSolver.cpp.o: ../external/eigen/doc/examples/TutorialLinAlgSelfAdjointEigenSolver.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wch/github/chenhui-lib/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object external/eigen/doc/examples/CMakeFiles/TutorialLinAlgSelfAdjointEigenSolver.dir/TutorialLinAlgSelfAdjointEigenSolver.cpp.o"
-	cd /home/wch/github/chenhui-lib/cmake-build-debug/external/eigen/doc/examples && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/TutorialLinAlgSelfAdjointEigenSolver.dir/TutorialLinAlgSelfAdjointEigenSolver.cpp.o -c /home/wch/github/chenhui-lib/external/eigen/doc/examples/TutorialLinAlgSelfAdjointEigenSolver.cpp
+	cd /home/wch/github/chenhui-lib/cmake-build-debug/external/eigen/doc/examples && /usr/bin/g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/TutorialLinAlgSelfAdjointEigenSolver.dir/TutorialLinAlgSelfAdjointEigenSolver.cpp.o -c /home/wch/github/chenhui-lib/external/eigen/doc/examples/TutorialLinAlgSelfAdjointEigenSolver.cpp
 
 external/eigen/doc/examples/CMakeFiles/TutorialLinAlgSelfAdjointEigenSolver.dir/TutorialLinAlgSelfAdjointEigenSolver.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/TutorialLinAlgSelfAdjointEigenSolver.dir/TutorialLinAlgSelfAdjointEigenSolver.cpp.i"
-	cd /home/wch/github/chenhui-lib/cmake-build-debug/external/eigen/doc/examples && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wch/github/chenhui-lib/external/eigen/doc/examples/TutorialLinAlgSelfAdjointEigenSolver.cpp > CMakeFiles/TutorialLinAlgSelfAdjointEigenSolver.dir/TutorialLinAlgSelfAdjointEigenSolver.cpp.i
+	cd /home/wch/github/chenhui-lib/cmake-build-debug/external/eigen/doc/examples && /usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wch/github/chenhui-lib/external/eigen/doc/examples/TutorialLinAlgSelfAdjointEigenSolver.cpp > CMakeFiles/TutorialLinAlgSelfAdjointEigenSolver.dir/TutorialLinAlgSelfAdjointEigenSolver.cpp.i
 
 external/eigen/doc/examples/CMakeFiles/TutorialLinAlgSelfAdjointEigenSolver.dir/TutorialLinAlgSelfAdjointEigenSolver.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/TutorialLinAlgSelfAdjointEigenSolver.dir/TutorialLinAlgSelfAdjointEigenSolver.cpp.s"
-	cd /home/wch/github/chenhui-lib/cmake-build-debug/external/eigen/doc/examples && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wch/github/chenhui-lib/external/eigen/doc/examples/TutorialLinAlgSelfAdjointEigenSolver.cpp -o CMakeFiles/TutorialLinAlgSelfAdjointEigenSolver.dir/TutorialLinAlgSelfAdjointEigenSolver.cpp.s
+	cd /home/wch/github/chenhui-lib/cmake-build-debug/external/eigen/doc/examples && /usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wch/github/chenhui-lib/external/eigen/doc/examples/TutorialLinAlgSelfAdjointEigenSolver.cpp -o CMakeFiles/TutorialLinAlgSelfAdjointEigenSolver.dir/TutorialLinAlgSelfAdjointEigenSolver.cpp.s
 
 # Object files for target TutorialLinAlgSelfAdjointEigenSolver
 TutorialLinAlgSelfAdjointEigenSolver_OBJECTS = \

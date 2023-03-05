@@ -60,15 +60,15 @@ include external/eigen/test/CMakeFiles/geo_homogeneous_3.dir/flags.make
 external/eigen/test/CMakeFiles/geo_homogeneous_3.dir/geo_homogeneous.cpp.o: external/eigen/test/CMakeFiles/geo_homogeneous_3.dir/flags.make
 external/eigen/test/CMakeFiles/geo_homogeneous_3.dir/geo_homogeneous.cpp.o: ../external/eigen/test/geo_homogeneous.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wch/github/chenhui-lib/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object external/eigen/test/CMakeFiles/geo_homogeneous_3.dir/geo_homogeneous.cpp.o"
-	cd /home/wch/github/chenhui-lib/cmake-build-debug/external/eigen/test && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/geo_homogeneous_3.dir/geo_homogeneous.cpp.o -c /home/wch/github/chenhui-lib/external/eigen/test/geo_homogeneous.cpp
+	cd /home/wch/github/chenhui-lib/cmake-build-debug/external/eigen/test && /usr/bin/g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/geo_homogeneous_3.dir/geo_homogeneous.cpp.o -c /home/wch/github/chenhui-lib/external/eigen/test/geo_homogeneous.cpp
 
 external/eigen/test/CMakeFiles/geo_homogeneous_3.dir/geo_homogeneous.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/geo_homogeneous_3.dir/geo_homogeneous.cpp.i"
-	cd /home/wch/github/chenhui-lib/cmake-build-debug/external/eigen/test && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wch/github/chenhui-lib/external/eigen/test/geo_homogeneous.cpp > CMakeFiles/geo_homogeneous_3.dir/geo_homogeneous.cpp.i
+	cd /home/wch/github/chenhui-lib/cmake-build-debug/external/eigen/test && /usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wch/github/chenhui-lib/external/eigen/test/geo_homogeneous.cpp > CMakeFiles/geo_homogeneous_3.dir/geo_homogeneous.cpp.i
 
 external/eigen/test/CMakeFiles/geo_homogeneous_3.dir/geo_homogeneous.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/geo_homogeneous_3.dir/geo_homogeneous.cpp.s"
-	cd /home/wch/github/chenhui-lib/cmake-build-debug/external/eigen/test && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wch/github/chenhui-lib/external/eigen/test/geo_homogeneous.cpp -o CMakeFiles/geo_homogeneous_3.dir/geo_homogeneous.cpp.s
+	cd /home/wch/github/chenhui-lib/cmake-build-debug/external/eigen/test && /usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wch/github/chenhui-lib/external/eigen/test/geo_homogeneous.cpp -o CMakeFiles/geo_homogeneous_3.dir/geo_homogeneous.cpp.s
 
 # Object files for target geo_homogeneous_3
 geo_homogeneous_3_OBJECTS = \

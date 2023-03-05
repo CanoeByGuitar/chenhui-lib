@@ -60,15 +60,15 @@ include external/eigen/unsupported/test/CMakeFiles/matrix_exponential_9.dir/flag
 external/eigen/unsupported/test/CMakeFiles/matrix_exponential_9.dir/matrix_exponential.cpp.o: external/eigen/unsupported/test/CMakeFiles/matrix_exponential_9.dir/flags.make
 external/eigen/unsupported/test/CMakeFiles/matrix_exponential_9.dir/matrix_exponential.cpp.o: ../external/eigen/unsupported/test/matrix_exponential.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wch/github/chenhui-lib/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object external/eigen/unsupported/test/CMakeFiles/matrix_exponential_9.dir/matrix_exponential.cpp.o"
-	cd /home/wch/github/chenhui-lib/cmake-build-debug/external/eigen/unsupported/test && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/matrix_exponential_9.dir/matrix_exponential.cpp.o -c /home/wch/github/chenhui-lib/external/eigen/unsupported/test/matrix_exponential.cpp
+	cd /home/wch/github/chenhui-lib/cmake-build-debug/external/eigen/unsupported/test && /usr/bin/g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/matrix_exponential_9.dir/matrix_exponential.cpp.o -c /home/wch/github/chenhui-lib/external/eigen/unsupported/test/matrix_exponential.cpp
 
 external/eigen/unsupported/test/CMakeFiles/matrix_exponential_9.dir/matrix_exponential.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/matrix_exponential_9.dir/matrix_exponential.cpp.i"
-	cd /home/wch/github/chenhui-lib/cmake-build-debug/external/eigen/unsupported/test && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wch/github/chenhui-lib/external/eigen/unsupported/test/matrix_exponential.cpp > CMakeFiles/matrix_exponential_9.dir/matrix_exponential.cpp.i
+	cd /home/wch/github/chenhui-lib/cmake-build-debug/external/eigen/unsupported/test && /usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wch/github/chenhui-lib/external/eigen/unsupported/test/matrix_exponential.cpp > CMakeFiles/matrix_exponential_9.dir/matrix_exponential.cpp.i
 
 external/eigen/unsupported/test/CMakeFiles/matrix_exponential_9.dir/matrix_exponential.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/matrix_exponential_9.dir/matrix_exponential.cpp.s"
-	cd /home/wch/github/chenhui-lib/cmake-build-debug/external/eigen/unsupported/test && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wch/github/chenhui-lib/external/eigen/unsupported/test/matrix_exponential.cpp -o CMakeFiles/matrix_exponential_9.dir/matrix_exponential.cpp.s
+	cd /home/wch/github/chenhui-lib/cmake-build-debug/external/eigen/unsupported/test && /usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wch/github/chenhui-lib/external/eigen/unsupported/test/matrix_exponential.cpp -o CMakeFiles/matrix_exponential_9.dir/matrix_exponential.cpp.s
 
 # Object files for target matrix_exponential_9
 matrix_exponential_9_OBJECTS = \

@@ -60,15 +60,15 @@ include external/eigen/doc/examples/CMakeFiles/QuickStart_example2_dynamic.dir/f
 external/eigen/doc/examples/CMakeFiles/QuickStart_example2_dynamic.dir/QuickStart_example2_dynamic.cpp.o: external/eigen/doc/examples/CMakeFiles/QuickStart_example2_dynamic.dir/flags.make
 external/eigen/doc/examples/CMakeFiles/QuickStart_example2_dynamic.dir/QuickStart_example2_dynamic.cpp.o: ../external/eigen/doc/examples/QuickStart_example2_dynamic.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wch/github/chenhui-lib/cmake-build-release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object external/eigen/doc/examples/CMakeFiles/QuickStart_example2_dynamic.dir/QuickStart_example2_dynamic.cpp.o"
-	cd /home/wch/github/chenhui-lib/cmake-build-release/external/eigen/doc/examples && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/QuickStart_example2_dynamic.dir/QuickStart_example2_dynamic.cpp.o -c /home/wch/github/chenhui-lib/external/eigen/doc/examples/QuickStart_example2_dynamic.cpp
+	cd /home/wch/github/chenhui-lib/cmake-build-release/external/eigen/doc/examples && /usr/bin/g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/QuickStart_example2_dynamic.dir/QuickStart_example2_dynamic.cpp.o -c /home/wch/github/chenhui-lib/external/eigen/doc/examples/QuickStart_example2_dynamic.cpp
 
 external/eigen/doc/examples/CMakeFiles/QuickStart_example2_dynamic.dir/QuickStart_example2_dynamic.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/QuickStart_example2_dynamic.dir/QuickStart_example2_dynamic.cpp.i"
-	cd /home/wch/github/chenhui-lib/cmake-build-release/external/eigen/doc/examples && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wch/github/chenhui-lib/external/eigen/doc/examples/QuickStart_example2_dynamic.cpp > CMakeFiles/QuickStart_example2_dynamic.dir/QuickStart_example2_dynamic.cpp.i
+	cd /home/wch/github/chenhui-lib/cmake-build-release/external/eigen/doc/examples && /usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wch/github/chenhui-lib/external/eigen/doc/examples/QuickStart_example2_dynamic.cpp > CMakeFiles/QuickStart_example2_dynamic.dir/QuickStart_example2_dynamic.cpp.i
 
 external/eigen/doc/examples/CMakeFiles/QuickStart_example2_dynamic.dir/QuickStart_example2_dynamic.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/QuickStart_example2_dynamic.dir/QuickStart_example2_dynamic.cpp.s"
-	cd /home/wch/github/chenhui-lib/cmake-build-release/external/eigen/doc/examples && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wch/github/chenhui-lib/external/eigen/doc/examples/QuickStart_example2_dynamic.cpp -o CMakeFiles/QuickStart_example2_dynamic.dir/QuickStart_example2_dynamic.cpp.s
+	cd /home/wch/github/chenhui-lib/cmake-build-release/external/eigen/doc/examples && /usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wch/github/chenhui-lib/external/eigen/doc/examples/QuickStart_example2_dynamic.cpp -o CMakeFiles/QuickStart_example2_dynamic.dir/QuickStart_example2_dynamic.cpp.s
 
 # Object files for target QuickStart_example2_dynamic
 QuickStart_example2_dynamic_OBJECTS = \

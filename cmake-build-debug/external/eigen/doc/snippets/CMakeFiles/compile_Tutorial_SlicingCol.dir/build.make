@@ -61,15 +61,15 @@ external/eigen/doc/snippets/CMakeFiles/compile_Tutorial_SlicingCol.dir/compile_T
 external/eigen/doc/snippets/CMakeFiles/compile_Tutorial_SlicingCol.dir/compile_Tutorial_SlicingCol.cpp.o: external/eigen/doc/snippets/compile_Tutorial_SlicingCol.cpp
 external/eigen/doc/snippets/CMakeFiles/compile_Tutorial_SlicingCol.dir/compile_Tutorial_SlicingCol.cpp.o: ../external/eigen/doc/snippets/Tutorial_SlicingCol.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wch/github/chenhui-lib/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object external/eigen/doc/snippets/CMakeFiles/compile_Tutorial_SlicingCol.dir/compile_Tutorial_SlicingCol.cpp.o"
-	cd /home/wch/github/chenhui-lib/cmake-build-debug/external/eigen/doc/snippets && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/compile_Tutorial_SlicingCol.dir/compile_Tutorial_SlicingCol.cpp.o -c /home/wch/github/chenhui-lib/cmake-build-debug/external/eigen/doc/snippets/compile_Tutorial_SlicingCol.cpp
+	cd /home/wch/github/chenhui-lib/cmake-build-debug/external/eigen/doc/snippets && /usr/bin/g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/compile_Tutorial_SlicingCol.dir/compile_Tutorial_SlicingCol.cpp.o -c /home/wch/github/chenhui-lib/cmake-build-debug/external/eigen/doc/snippets/compile_Tutorial_SlicingCol.cpp
 
 external/eigen/doc/snippets/CMakeFiles/compile_Tutorial_SlicingCol.dir/compile_Tutorial_SlicingCol.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/compile_Tutorial_SlicingCol.dir/compile_Tutorial_SlicingCol.cpp.i"
-	cd /home/wch/github/chenhui-lib/cmake-build-debug/external/eigen/doc/snippets && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wch/github/chenhui-lib/cmake-build-debug/external/eigen/doc/snippets/compile_Tutorial_SlicingCol.cpp > CMakeFiles/compile_Tutorial_SlicingCol.dir/compile_Tutorial_SlicingCol.cpp.i
+	cd /home/wch/github/chenhui-lib/cmake-build-debug/external/eigen/doc/snippets && /usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wch/github/chenhui-lib/cmake-build-debug/external/eigen/doc/snippets/compile_Tutorial_SlicingCol.cpp > CMakeFiles/compile_Tutorial_SlicingCol.dir/compile_Tutorial_SlicingCol.cpp.i
 
 external/eigen/doc/snippets/CMakeFiles/compile_Tutorial_SlicingCol.dir/compile_Tutorial_SlicingCol.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/compile_Tutorial_SlicingCol.dir/compile_Tutorial_SlicingCol.cpp.s"
-	cd /home/wch/github/chenhui-lib/cmake-build-debug/external/eigen/doc/snippets && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wch/github/chenhui-lib/cmake-build-debug/external/eigen/doc/snippets/compile_Tutorial_SlicingCol.cpp -o CMakeFiles/compile_Tutorial_SlicingCol.dir/compile_Tutorial_SlicingCol.cpp.s
+	cd /home/wch/github/chenhui-lib/cmake-build-debug/external/eigen/doc/snippets && /usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wch/github/chenhui-lib/cmake-build-debug/external/eigen/doc/snippets/compile_Tutorial_SlicingCol.cpp -o CMakeFiles/compile_Tutorial_SlicingCol.dir/compile_Tutorial_SlicingCol.cpp.s
 
 # Object files for target compile_Tutorial_SlicingCol
 compile_Tutorial_SlicingCol_OBJECTS = \

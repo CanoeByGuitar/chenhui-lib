@@ -60,15 +60,15 @@ include external/eigen/test/CMakeFiles/sparse_block_4.dir/flags.make
 external/eigen/test/CMakeFiles/sparse_block_4.dir/sparse_block.cpp.o: external/eigen/test/CMakeFiles/sparse_block_4.dir/flags.make
 external/eigen/test/CMakeFiles/sparse_block_4.dir/sparse_block.cpp.o: ../external/eigen/test/sparse_block.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wch/github/chenhui-lib/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object external/eigen/test/CMakeFiles/sparse_block_4.dir/sparse_block.cpp.o"
-	cd /home/wch/github/chenhui-lib/cmake-build-debug/external/eigen/test && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sparse_block_4.dir/sparse_block.cpp.o -c /home/wch/github/chenhui-lib/external/eigen/test/sparse_block.cpp
+	cd /home/wch/github/chenhui-lib/cmake-build-debug/external/eigen/test && /usr/bin/g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sparse_block_4.dir/sparse_block.cpp.o -c /home/wch/github/chenhui-lib/external/eigen/test/sparse_block.cpp
 
 external/eigen/test/CMakeFiles/sparse_block_4.dir/sparse_block.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sparse_block_4.dir/sparse_block.cpp.i"
-	cd /home/wch/github/chenhui-lib/cmake-build-debug/external/eigen/test && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wch/github/chenhui-lib/external/eigen/test/sparse_block.cpp > CMakeFiles/sparse_block_4.dir/sparse_block.cpp.i
+	cd /home/wch/github/chenhui-lib/cmake-build-debug/external/eigen/test && /usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wch/github/chenhui-lib/external/eigen/test/sparse_block.cpp > CMakeFiles/sparse_block_4.dir/sparse_block.cpp.i
 
 external/eigen/test/CMakeFiles/sparse_block_4.dir/sparse_block.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sparse_block_4.dir/sparse_block.cpp.s"
-	cd /home/wch/github/chenhui-lib/cmake-build-debug/external/eigen/test && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wch/github/chenhui-lib/external/eigen/test/sparse_block.cpp -o CMakeFiles/sparse_block_4.dir/sparse_block.cpp.s
+	cd /home/wch/github/chenhui-lib/cmake-build-debug/external/eigen/test && /usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wch/github/chenhui-lib/external/eigen/test/sparse_block.cpp -o CMakeFiles/sparse_block_4.dir/sparse_block.cpp.s
 
 # Object files for target sparse_block_4
 sparse_block_4_OBJECTS = \

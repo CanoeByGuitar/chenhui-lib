@@ -61,15 +61,15 @@ external/eigen/doc/snippets/CMakeFiles/compile_PartialRedux_norm.dir/compile_Par
 external/eigen/doc/snippets/CMakeFiles/compile_PartialRedux_norm.dir/compile_PartialRedux_norm.cpp.o: external/eigen/doc/snippets/compile_PartialRedux_norm.cpp
 external/eigen/doc/snippets/CMakeFiles/compile_PartialRedux_norm.dir/compile_PartialRedux_norm.cpp.o: ../external/eigen/doc/snippets/PartialRedux_norm.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wch/github/chenhui-lib/cmake-build-release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object external/eigen/doc/snippets/CMakeFiles/compile_PartialRedux_norm.dir/compile_PartialRedux_norm.cpp.o"
-	cd /home/wch/github/chenhui-lib/cmake-build-release/external/eigen/doc/snippets && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/compile_PartialRedux_norm.dir/compile_PartialRedux_norm.cpp.o -c /home/wch/github/chenhui-lib/cmake-build-release/external/eigen/doc/snippets/compile_PartialRedux_norm.cpp
+	cd /home/wch/github/chenhui-lib/cmake-build-release/external/eigen/doc/snippets && /usr/bin/g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/compile_PartialRedux_norm.dir/compile_PartialRedux_norm.cpp.o -c /home/wch/github/chenhui-lib/cmake-build-release/external/eigen/doc/snippets/compile_PartialRedux_norm.cpp
 
 external/eigen/doc/snippets/CMakeFiles/compile_PartialRedux_norm.dir/compile_PartialRedux_norm.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/compile_PartialRedux_norm.dir/compile_PartialRedux_norm.cpp.i"
-	cd /home/wch/github/chenhui-lib/cmake-build-release/external/eigen/doc/snippets && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wch/github/chenhui-lib/cmake-build-release/external/eigen/doc/snippets/compile_PartialRedux_norm.cpp > CMakeFiles/compile_PartialRedux_norm.dir/compile_PartialRedux_norm.cpp.i
+	cd /home/wch/github/chenhui-lib/cmake-build-release/external/eigen/doc/snippets && /usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wch/github/chenhui-lib/cmake-build-release/external/eigen/doc/snippets/compile_PartialRedux_norm.cpp > CMakeFiles/compile_PartialRedux_norm.dir/compile_PartialRedux_norm.cpp.i
 
 external/eigen/doc/snippets/CMakeFiles/compile_PartialRedux_norm.dir/compile_PartialRedux_norm.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/compile_PartialRedux_norm.dir/compile_PartialRedux_norm.cpp.s"
-	cd /home/wch/github/chenhui-lib/cmake-build-release/external/eigen/doc/snippets && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wch/github/chenhui-lib/cmake-build-release/external/eigen/doc/snippets/compile_PartialRedux_norm.cpp -o CMakeFiles/compile_PartialRedux_norm.dir/compile_PartialRedux_norm.cpp.s
+	cd /home/wch/github/chenhui-lib/cmake-build-release/external/eigen/doc/snippets && /usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wch/github/chenhui-lib/cmake-build-release/external/eigen/doc/snippets/compile_PartialRedux_norm.cpp -o CMakeFiles/compile_PartialRedux_norm.dir/compile_PartialRedux_norm.cpp.s
 
 # Object files for target compile_PartialRedux_norm
 compile_PartialRedux_norm_OBJECTS = \

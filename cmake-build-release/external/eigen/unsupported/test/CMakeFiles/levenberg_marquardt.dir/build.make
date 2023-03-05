@@ -60,15 +60,15 @@ include external/eigen/unsupported/test/CMakeFiles/levenberg_marquardt.dir/flags
 external/eigen/unsupported/test/CMakeFiles/levenberg_marquardt.dir/levenberg_marquardt.cpp.o: external/eigen/unsupported/test/CMakeFiles/levenberg_marquardt.dir/flags.make
 external/eigen/unsupported/test/CMakeFiles/levenberg_marquardt.dir/levenberg_marquardt.cpp.o: ../external/eigen/unsupported/test/levenberg_marquardt.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wch/github/chenhui-lib/cmake-build-release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object external/eigen/unsupported/test/CMakeFiles/levenberg_marquardt.dir/levenberg_marquardt.cpp.o"
-	cd /home/wch/github/chenhui-lib/cmake-build-release/external/eigen/unsupported/test && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/levenberg_marquardt.dir/levenberg_marquardt.cpp.o -c /home/wch/github/chenhui-lib/external/eigen/unsupported/test/levenberg_marquardt.cpp
+	cd /home/wch/github/chenhui-lib/cmake-build-release/external/eigen/unsupported/test && /usr/bin/g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/levenberg_marquardt.dir/levenberg_marquardt.cpp.o -c /home/wch/github/chenhui-lib/external/eigen/unsupported/test/levenberg_marquardt.cpp
 
 external/eigen/unsupported/test/CMakeFiles/levenberg_marquardt.dir/levenberg_marquardt.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/levenberg_marquardt.dir/levenberg_marquardt.cpp.i"
-	cd /home/wch/github/chenhui-lib/cmake-build-release/external/eigen/unsupported/test && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wch/github/chenhui-lib/external/eigen/unsupported/test/levenberg_marquardt.cpp > CMakeFiles/levenberg_marquardt.dir/levenberg_marquardt.cpp.i
+	cd /home/wch/github/chenhui-lib/cmake-build-release/external/eigen/unsupported/test && /usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wch/github/chenhui-lib/external/eigen/unsupported/test/levenberg_marquardt.cpp > CMakeFiles/levenberg_marquardt.dir/levenberg_marquardt.cpp.i
 
 external/eigen/unsupported/test/CMakeFiles/levenberg_marquardt.dir/levenberg_marquardt.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/levenberg_marquardt.dir/levenberg_marquardt.cpp.s"
-	cd /home/wch/github/chenhui-lib/cmake-build-release/external/eigen/unsupported/test && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wch/github/chenhui-lib/external/eigen/unsupported/test/levenberg_marquardt.cpp -o CMakeFiles/levenberg_marquardt.dir/levenberg_marquardt.cpp.s
+	cd /home/wch/github/chenhui-lib/cmake-build-release/external/eigen/unsupported/test && /usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wch/github/chenhui-lib/external/eigen/unsupported/test/levenberg_marquardt.cpp -o CMakeFiles/levenberg_marquardt.dir/levenberg_marquardt.cpp.s
 
 # Object files for target levenberg_marquardt
 levenberg_marquardt_OBJECTS = \

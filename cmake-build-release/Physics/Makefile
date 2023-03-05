@@ -171,6 +171,141 @@ physics/fast:
 	cd /home/wch/github/chenhui-lib/cmake-build-release && $(MAKE) -f Physics/CMakeFiles/physics.dir/build.make Physics/CMakeFiles/physics.dir/build
 .PHONY : physics/fast
 
+MPM/ConstitutionModel.o: MPM/ConstitutionModel.cpp.o
+
+.PHONY : MPM/ConstitutionModel.o
+
+# target to build an object file
+MPM/ConstitutionModel.cpp.o:
+	cd /home/wch/github/chenhui-lib/cmake-build-release && $(MAKE) -f Physics/CMakeFiles/physics.dir/build.make Physics/CMakeFiles/physics.dir/MPM/ConstitutionModel.cpp.o
+.PHONY : MPM/ConstitutionModel.cpp.o
+
+MPM/ConstitutionModel.i: MPM/ConstitutionModel.cpp.i
+
+.PHONY : MPM/ConstitutionModel.i
+
+# target to preprocess a source file
+MPM/ConstitutionModel.cpp.i:
+	cd /home/wch/github/chenhui-lib/cmake-build-release && $(MAKE) -f Physics/CMakeFiles/physics.dir/build.make Physics/CMakeFiles/physics.dir/MPM/ConstitutionModel.cpp.i
+.PHONY : MPM/ConstitutionModel.cpp.i
+
+MPM/ConstitutionModel.s: MPM/ConstitutionModel.cpp.s
+
+.PHONY : MPM/ConstitutionModel.s
+
+# target to generate assembly for a file
+MPM/ConstitutionModel.cpp.s:
+	cd /home/wch/github/chenhui-lib/cmake-build-release && $(MAKE) -f Physics/CMakeFiles/physics.dir/build.make Physics/CMakeFiles/physics.dir/MPM/ConstitutionModel.cpp.s
+.PHONY : MPM/ConstitutionModel.cpp.s
+
+MPM/MpmGrid.o: MPM/MpmGrid.cpp.o
+
+.PHONY : MPM/MpmGrid.o
+
+# target to build an object file
+MPM/MpmGrid.cpp.o:
+	cd /home/wch/github/chenhui-lib/cmake-build-release && $(MAKE) -f Physics/CMakeFiles/physics.dir/build.make Physics/CMakeFiles/physics.dir/MPM/MpmGrid.cpp.o
+.PHONY : MPM/MpmGrid.cpp.o
+
+MPM/MpmGrid.i: MPM/MpmGrid.cpp.i
+
+.PHONY : MPM/MpmGrid.i
+
+# target to preprocess a source file
+MPM/MpmGrid.cpp.i:
+	cd /home/wch/github/chenhui-lib/cmake-build-release && $(MAKE) -f Physics/CMakeFiles/physics.dir/build.make Physics/CMakeFiles/physics.dir/MPM/MpmGrid.cpp.i
+.PHONY : MPM/MpmGrid.cpp.i
+
+MPM/MpmGrid.s: MPM/MpmGrid.cpp.s
+
+.PHONY : MPM/MpmGrid.s
+
+# target to generate assembly for a file
+MPM/MpmGrid.cpp.s:
+	cd /home/wch/github/chenhui-lib/cmake-build-release && $(MAKE) -f Physics/CMakeFiles/physics.dir/build.make Physics/CMakeFiles/physics.dir/MPM/MpmGrid.cpp.s
+.PHONY : MPM/MpmGrid.cpp.s
+
+MPM/MpmParticle.o: MPM/MpmParticle.cpp.o
+
+.PHONY : MPM/MpmParticle.o
+
+# target to build an object file
+MPM/MpmParticle.cpp.o:
+	cd /home/wch/github/chenhui-lib/cmake-build-release && $(MAKE) -f Physics/CMakeFiles/physics.dir/build.make Physics/CMakeFiles/physics.dir/MPM/MpmParticle.cpp.o
+.PHONY : MPM/MpmParticle.cpp.o
+
+MPM/MpmParticle.i: MPM/MpmParticle.cpp.i
+
+.PHONY : MPM/MpmParticle.i
+
+# target to preprocess a source file
+MPM/MpmParticle.cpp.i:
+	cd /home/wch/github/chenhui-lib/cmake-build-release && $(MAKE) -f Physics/CMakeFiles/physics.dir/build.make Physics/CMakeFiles/physics.dir/MPM/MpmParticle.cpp.i
+.PHONY : MPM/MpmParticle.cpp.i
+
+MPM/MpmParticle.s: MPM/MpmParticle.cpp.s
+
+.PHONY : MPM/MpmParticle.s
+
+# target to generate assembly for a file
+MPM/MpmParticle.cpp.s:
+	cd /home/wch/github/chenhui-lib/cmake-build-release && $(MAKE) -f Physics/CMakeFiles/physics.dir/build.make Physics/CMakeFiles/physics.dir/MPM/MpmParticle.cpp.s
+.PHONY : MPM/MpmParticle.cpp.s
+
+MPM/MpmSimulationBase.o: MPM/MpmSimulationBase.cpp.o
+
+.PHONY : MPM/MpmSimulationBase.o
+
+# target to build an object file
+MPM/MpmSimulationBase.cpp.o:
+	cd /home/wch/github/chenhui-lib/cmake-build-release && $(MAKE) -f Physics/CMakeFiles/physics.dir/build.make Physics/CMakeFiles/physics.dir/MPM/MpmSimulationBase.cpp.o
+.PHONY : MPM/MpmSimulationBase.cpp.o
+
+MPM/MpmSimulationBase.i: MPM/MpmSimulationBase.cpp.i
+
+.PHONY : MPM/MpmSimulationBase.i
+
+# target to preprocess a source file
+MPM/MpmSimulationBase.cpp.i:
+	cd /home/wch/github/chenhui-lib/cmake-build-release && $(MAKE) -f Physics/CMakeFiles/physics.dir/build.make Physics/CMakeFiles/physics.dir/MPM/MpmSimulationBase.cpp.i
+.PHONY : MPM/MpmSimulationBase.cpp.i
+
+MPM/MpmSimulationBase.s: MPM/MpmSimulationBase.cpp.s
+
+.PHONY : MPM/MpmSimulationBase.s
+
+# target to generate assembly for a file
+MPM/MpmSimulationBase.cpp.s:
+	cd /home/wch/github/chenhui-lib/cmake-build-release && $(MAKE) -f Physics/CMakeFiles/physics.dir/build.make Physics/CMakeFiles/physics.dir/MPM/MpmSimulationBase.cpp.s
+.PHONY : MPM/MpmSimulationBase.cpp.s
+
+MPM/MpmUtils.o: MPM/MpmUtils.cpp.o
+
+.PHONY : MPM/MpmUtils.o
+
+# target to build an object file
+MPM/MpmUtils.cpp.o:
+	cd /home/wch/github/chenhui-lib/cmake-build-release && $(MAKE) -f Physics/CMakeFiles/physics.dir/build.make Physics/CMakeFiles/physics.dir/MPM/MpmUtils.cpp.o
+.PHONY : MPM/MpmUtils.cpp.o
+
+MPM/MpmUtils.i: MPM/MpmUtils.cpp.i
+
+.PHONY : MPM/MpmUtils.i
+
+# target to preprocess a source file
+MPM/MpmUtils.cpp.i:
+	cd /home/wch/github/chenhui-lib/cmake-build-release && $(MAKE) -f Physics/CMakeFiles/physics.dir/build.make Physics/CMakeFiles/physics.dir/MPM/MpmUtils.cpp.i
+.PHONY : MPM/MpmUtils.cpp.i
+
+MPM/MpmUtils.s: MPM/MpmUtils.cpp.s
+
+.PHONY : MPM/MpmUtils.s
+
+# target to generate assembly for a file
+MPM/MpmUtils.cpp.s:
+	cd /home/wch/github/chenhui-lib/cmake-build-release && $(MAKE) -f Physics/CMakeFiles/physics.dir/build.make Physics/CMakeFiles/physics.dir/MPM/MpmUtils.cpp.s
+.PHONY : MPM/MpmUtils.cpp.s
+
 MassSpringSim.o: MassSpringSim.cpp.o
 
 .PHONY : MassSpringSim.o
@@ -211,6 +346,21 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... physics"
+	@echo "... MPM/ConstitutionModel.o"
+	@echo "... MPM/ConstitutionModel.i"
+	@echo "... MPM/ConstitutionModel.s"
+	@echo "... MPM/MpmGrid.o"
+	@echo "... MPM/MpmGrid.i"
+	@echo "... MPM/MpmGrid.s"
+	@echo "... MPM/MpmParticle.o"
+	@echo "... MPM/MpmParticle.i"
+	@echo "... MPM/MpmParticle.s"
+	@echo "... MPM/MpmSimulationBase.o"
+	@echo "... MPM/MpmSimulationBase.i"
+	@echo "... MPM/MpmSimulationBase.s"
+	@echo "... MPM/MpmUtils.o"
+	@echo "... MPM/MpmUtils.i"
+	@echo "... MPM/MpmUtils.s"
 	@echo "... MassSpringSim.o"
 	@echo "... MassSpringSim.i"
 	@echo "... MassSpringSim.s"

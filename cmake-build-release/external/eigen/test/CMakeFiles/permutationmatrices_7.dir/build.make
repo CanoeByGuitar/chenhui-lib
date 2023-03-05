@@ -60,15 +60,15 @@ include external/eigen/test/CMakeFiles/permutationmatrices_7.dir/flags.make
 external/eigen/test/CMakeFiles/permutationmatrices_7.dir/permutationmatrices.cpp.o: external/eigen/test/CMakeFiles/permutationmatrices_7.dir/flags.make
 external/eigen/test/CMakeFiles/permutationmatrices_7.dir/permutationmatrices.cpp.o: ../external/eigen/test/permutationmatrices.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wch/github/chenhui-lib/cmake-build-release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object external/eigen/test/CMakeFiles/permutationmatrices_7.dir/permutationmatrices.cpp.o"
-	cd /home/wch/github/chenhui-lib/cmake-build-release/external/eigen/test && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/permutationmatrices_7.dir/permutationmatrices.cpp.o -c /home/wch/github/chenhui-lib/external/eigen/test/permutationmatrices.cpp
+	cd /home/wch/github/chenhui-lib/cmake-build-release/external/eigen/test && /usr/bin/g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/permutationmatrices_7.dir/permutationmatrices.cpp.o -c /home/wch/github/chenhui-lib/external/eigen/test/permutationmatrices.cpp
 
 external/eigen/test/CMakeFiles/permutationmatrices_7.dir/permutationmatrices.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/permutationmatrices_7.dir/permutationmatrices.cpp.i"
-	cd /home/wch/github/chenhui-lib/cmake-build-release/external/eigen/test && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wch/github/chenhui-lib/external/eigen/test/permutationmatrices.cpp > CMakeFiles/permutationmatrices_7.dir/permutationmatrices.cpp.i
+	cd /home/wch/github/chenhui-lib/cmake-build-release/external/eigen/test && /usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wch/github/chenhui-lib/external/eigen/test/permutationmatrices.cpp > CMakeFiles/permutationmatrices_7.dir/permutationmatrices.cpp.i
 
 external/eigen/test/CMakeFiles/permutationmatrices_7.dir/permutationmatrices.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/permutationmatrices_7.dir/permutationmatrices.cpp.s"
-	cd /home/wch/github/chenhui-lib/cmake-build-release/external/eigen/test && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wch/github/chenhui-lib/external/eigen/test/permutationmatrices.cpp -o CMakeFiles/permutationmatrices_7.dir/permutationmatrices.cpp.s
+	cd /home/wch/github/chenhui-lib/cmake-build-release/external/eigen/test && /usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wch/github/chenhui-lib/external/eigen/test/permutationmatrices.cpp -o CMakeFiles/permutationmatrices_7.dir/permutationmatrices.cpp.s
 
 # Object files for target permutationmatrices_7
 permutationmatrices_7_OBJECTS = \

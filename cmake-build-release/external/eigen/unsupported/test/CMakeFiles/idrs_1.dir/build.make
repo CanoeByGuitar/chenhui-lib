@@ -60,15 +60,15 @@ include external/eigen/unsupported/test/CMakeFiles/idrs_1.dir/flags.make
 external/eigen/unsupported/test/CMakeFiles/idrs_1.dir/idrs.cpp.o: external/eigen/unsupported/test/CMakeFiles/idrs_1.dir/flags.make
 external/eigen/unsupported/test/CMakeFiles/idrs_1.dir/idrs.cpp.o: ../external/eigen/unsupported/test/idrs.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wch/github/chenhui-lib/cmake-build-release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object external/eigen/unsupported/test/CMakeFiles/idrs_1.dir/idrs.cpp.o"
-	cd /home/wch/github/chenhui-lib/cmake-build-release/external/eigen/unsupported/test && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/idrs_1.dir/idrs.cpp.o -c /home/wch/github/chenhui-lib/external/eigen/unsupported/test/idrs.cpp
+	cd /home/wch/github/chenhui-lib/cmake-build-release/external/eigen/unsupported/test && /usr/bin/g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/idrs_1.dir/idrs.cpp.o -c /home/wch/github/chenhui-lib/external/eigen/unsupported/test/idrs.cpp
 
 external/eigen/unsupported/test/CMakeFiles/idrs_1.dir/idrs.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/idrs_1.dir/idrs.cpp.i"
-	cd /home/wch/github/chenhui-lib/cmake-build-release/external/eigen/unsupported/test && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wch/github/chenhui-lib/external/eigen/unsupported/test/idrs.cpp > CMakeFiles/idrs_1.dir/idrs.cpp.i
+	cd /home/wch/github/chenhui-lib/cmake-build-release/external/eigen/unsupported/test && /usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wch/github/chenhui-lib/external/eigen/unsupported/test/idrs.cpp > CMakeFiles/idrs_1.dir/idrs.cpp.i
 
 external/eigen/unsupported/test/CMakeFiles/idrs_1.dir/idrs.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/idrs_1.dir/idrs.cpp.s"
-	cd /home/wch/github/chenhui-lib/cmake-build-release/external/eigen/unsupported/test && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wch/github/chenhui-lib/external/eigen/unsupported/test/idrs.cpp -o CMakeFiles/idrs_1.dir/idrs.cpp.s
+	cd /home/wch/github/chenhui-lib/cmake-build-release/external/eigen/unsupported/test && /usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wch/github/chenhui-lib/external/eigen/unsupported/test/idrs.cpp -o CMakeFiles/idrs_1.dir/idrs.cpp.s
 
 # Object files for target idrs_1
 idrs_1_OBJECTS = \

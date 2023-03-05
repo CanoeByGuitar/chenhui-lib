@@ -61,15 +61,15 @@ external/eigen/doc/snippets/CMakeFiles/compile_DirectionWise_replicate_int.dir/c
 external/eigen/doc/snippets/CMakeFiles/compile_DirectionWise_replicate_int.dir/compile_DirectionWise_replicate_int.cpp.o: external/eigen/doc/snippets/compile_DirectionWise_replicate_int.cpp
 external/eigen/doc/snippets/CMakeFiles/compile_DirectionWise_replicate_int.dir/compile_DirectionWise_replicate_int.cpp.o: ../external/eigen/doc/snippets/DirectionWise_replicate_int.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wch/github/chenhui-lib/cmake-build-release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object external/eigen/doc/snippets/CMakeFiles/compile_DirectionWise_replicate_int.dir/compile_DirectionWise_replicate_int.cpp.o"
-	cd /home/wch/github/chenhui-lib/cmake-build-release/external/eigen/doc/snippets && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/compile_DirectionWise_replicate_int.dir/compile_DirectionWise_replicate_int.cpp.o -c /home/wch/github/chenhui-lib/cmake-build-release/external/eigen/doc/snippets/compile_DirectionWise_replicate_int.cpp
+	cd /home/wch/github/chenhui-lib/cmake-build-release/external/eigen/doc/snippets && /usr/bin/g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/compile_DirectionWise_replicate_int.dir/compile_DirectionWise_replicate_int.cpp.o -c /home/wch/github/chenhui-lib/cmake-build-release/external/eigen/doc/snippets/compile_DirectionWise_replicate_int.cpp
 
 external/eigen/doc/snippets/CMakeFiles/compile_DirectionWise_replicate_int.dir/compile_DirectionWise_replicate_int.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/compile_DirectionWise_replicate_int.dir/compile_DirectionWise_replicate_int.cpp.i"
-	cd /home/wch/github/chenhui-lib/cmake-build-release/external/eigen/doc/snippets && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wch/github/chenhui-lib/cmake-build-release/external/eigen/doc/snippets/compile_DirectionWise_replicate_int.cpp > CMakeFiles/compile_DirectionWise_replicate_int.dir/compile_DirectionWise_replicate_int.cpp.i
+	cd /home/wch/github/chenhui-lib/cmake-build-release/external/eigen/doc/snippets && /usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wch/github/chenhui-lib/cmake-build-release/external/eigen/doc/snippets/compile_DirectionWise_replicate_int.cpp > CMakeFiles/compile_DirectionWise_replicate_int.dir/compile_DirectionWise_replicate_int.cpp.i
 
 external/eigen/doc/snippets/CMakeFiles/compile_DirectionWise_replicate_int.dir/compile_DirectionWise_replicate_int.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/compile_DirectionWise_replicate_int.dir/compile_DirectionWise_replicate_int.cpp.s"
-	cd /home/wch/github/chenhui-lib/cmake-build-release/external/eigen/doc/snippets && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wch/github/chenhui-lib/cmake-build-release/external/eigen/doc/snippets/compile_DirectionWise_replicate_int.cpp -o CMakeFiles/compile_DirectionWise_replicate_int.dir/compile_DirectionWise_replicate_int.cpp.s
+	cd /home/wch/github/chenhui-lib/cmake-build-release/external/eigen/doc/snippets && /usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wch/github/chenhui-lib/cmake-build-release/external/eigen/doc/snippets/compile_DirectionWise_replicate_int.cpp -o CMakeFiles/compile_DirectionWise_replicate_int.dir/compile_DirectionWise_replicate_int.cpp.s
 
 # Object files for target compile_DirectionWise_replicate_int
 compile_DirectionWise_replicate_int_OBJECTS = \

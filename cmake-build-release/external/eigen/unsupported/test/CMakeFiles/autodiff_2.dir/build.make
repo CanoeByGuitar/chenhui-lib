@@ -60,15 +60,15 @@ include external/eigen/unsupported/test/CMakeFiles/autodiff_2.dir/flags.make
 external/eigen/unsupported/test/CMakeFiles/autodiff_2.dir/autodiff.cpp.o: external/eigen/unsupported/test/CMakeFiles/autodiff_2.dir/flags.make
 external/eigen/unsupported/test/CMakeFiles/autodiff_2.dir/autodiff.cpp.o: ../external/eigen/unsupported/test/autodiff.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wch/github/chenhui-lib/cmake-build-release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object external/eigen/unsupported/test/CMakeFiles/autodiff_2.dir/autodiff.cpp.o"
-	cd /home/wch/github/chenhui-lib/cmake-build-release/external/eigen/unsupported/test && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/autodiff_2.dir/autodiff.cpp.o -c /home/wch/github/chenhui-lib/external/eigen/unsupported/test/autodiff.cpp
+	cd /home/wch/github/chenhui-lib/cmake-build-release/external/eigen/unsupported/test && /usr/bin/g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/autodiff_2.dir/autodiff.cpp.o -c /home/wch/github/chenhui-lib/external/eigen/unsupported/test/autodiff.cpp
 
 external/eigen/unsupported/test/CMakeFiles/autodiff_2.dir/autodiff.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/autodiff_2.dir/autodiff.cpp.i"
-	cd /home/wch/github/chenhui-lib/cmake-build-release/external/eigen/unsupported/test && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wch/github/chenhui-lib/external/eigen/unsupported/test/autodiff.cpp > CMakeFiles/autodiff_2.dir/autodiff.cpp.i
+	cd /home/wch/github/chenhui-lib/cmake-build-release/external/eigen/unsupported/test && /usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wch/github/chenhui-lib/external/eigen/unsupported/test/autodiff.cpp > CMakeFiles/autodiff_2.dir/autodiff.cpp.i
 
 external/eigen/unsupported/test/CMakeFiles/autodiff_2.dir/autodiff.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/autodiff_2.dir/autodiff.cpp.s"
-	cd /home/wch/github/chenhui-lib/cmake-build-release/external/eigen/unsupported/test && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wch/github/chenhui-lib/external/eigen/unsupported/test/autodiff.cpp -o CMakeFiles/autodiff_2.dir/autodiff.cpp.s
+	cd /home/wch/github/chenhui-lib/cmake-build-release/external/eigen/unsupported/test && /usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wch/github/chenhui-lib/external/eigen/unsupported/test/autodiff.cpp -o CMakeFiles/autodiff_2.dir/autodiff.cpp.s
 
 # Object files for target autodiff_2
 autodiff_2_OBJECTS = \

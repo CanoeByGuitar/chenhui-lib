@@ -61,15 +61,15 @@ external/eigen/doc/snippets/CMakeFiles/compile_tut_arithmetic_redux_minmax.dir/c
 external/eigen/doc/snippets/CMakeFiles/compile_tut_arithmetic_redux_minmax.dir/compile_tut_arithmetic_redux_minmax.cpp.o: external/eigen/doc/snippets/compile_tut_arithmetic_redux_minmax.cpp
 external/eigen/doc/snippets/CMakeFiles/compile_tut_arithmetic_redux_minmax.dir/compile_tut_arithmetic_redux_minmax.cpp.o: ../external/eigen/doc/snippets/tut_arithmetic_redux_minmax.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wch/github/chenhui-lib/cmake-build-release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object external/eigen/doc/snippets/CMakeFiles/compile_tut_arithmetic_redux_minmax.dir/compile_tut_arithmetic_redux_minmax.cpp.o"
-	cd /home/wch/github/chenhui-lib/cmake-build-release/external/eigen/doc/snippets && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/compile_tut_arithmetic_redux_minmax.dir/compile_tut_arithmetic_redux_minmax.cpp.o -c /home/wch/github/chenhui-lib/cmake-build-release/external/eigen/doc/snippets/compile_tut_arithmetic_redux_minmax.cpp
+	cd /home/wch/github/chenhui-lib/cmake-build-release/external/eigen/doc/snippets && /usr/bin/g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/compile_tut_arithmetic_redux_minmax.dir/compile_tut_arithmetic_redux_minmax.cpp.o -c /home/wch/github/chenhui-lib/cmake-build-release/external/eigen/doc/snippets/compile_tut_arithmetic_redux_minmax.cpp
 
 external/eigen/doc/snippets/CMakeFiles/compile_tut_arithmetic_redux_minmax.dir/compile_tut_arithmetic_redux_minmax.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/compile_tut_arithmetic_redux_minmax.dir/compile_tut_arithmetic_redux_minmax.cpp.i"
-	cd /home/wch/github/chenhui-lib/cmake-build-release/external/eigen/doc/snippets && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wch/github/chenhui-lib/cmake-build-release/external/eigen/doc/snippets/compile_tut_arithmetic_redux_minmax.cpp > CMakeFiles/compile_tut_arithmetic_redux_minmax.dir/compile_tut_arithmetic_redux_minmax.cpp.i
+	cd /home/wch/github/chenhui-lib/cmake-build-release/external/eigen/doc/snippets && /usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wch/github/chenhui-lib/cmake-build-release/external/eigen/doc/snippets/compile_tut_arithmetic_redux_minmax.cpp > CMakeFiles/compile_tut_arithmetic_redux_minmax.dir/compile_tut_arithmetic_redux_minmax.cpp.i
 
 external/eigen/doc/snippets/CMakeFiles/compile_tut_arithmetic_redux_minmax.dir/compile_tut_arithmetic_redux_minmax.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/compile_tut_arithmetic_redux_minmax.dir/compile_tut_arithmetic_redux_minmax.cpp.s"
-	cd /home/wch/github/chenhui-lib/cmake-build-release/external/eigen/doc/snippets && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wch/github/chenhui-lib/cmake-build-release/external/eigen/doc/snippets/compile_tut_arithmetic_redux_minmax.cpp -o CMakeFiles/compile_tut_arithmetic_redux_minmax.dir/compile_tut_arithmetic_redux_minmax.cpp.s
+	cd /home/wch/github/chenhui-lib/cmake-build-release/external/eigen/doc/snippets && /usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wch/github/chenhui-lib/cmake-build-release/external/eigen/doc/snippets/compile_tut_arithmetic_redux_minmax.cpp -o CMakeFiles/compile_tut_arithmetic_redux_minmax.dir/compile_tut_arithmetic_redux_minmax.cpp.s
 
 # Object files for target compile_tut_arithmetic_redux_minmax
 compile_tut_arithmetic_redux_minmax_OBJECTS = \

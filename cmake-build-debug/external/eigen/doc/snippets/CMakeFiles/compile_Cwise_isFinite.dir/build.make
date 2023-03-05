@@ -61,15 +61,15 @@ external/eigen/doc/snippets/CMakeFiles/compile_Cwise_isFinite.dir/compile_Cwise_
 external/eigen/doc/snippets/CMakeFiles/compile_Cwise_isFinite.dir/compile_Cwise_isFinite.cpp.o: external/eigen/doc/snippets/compile_Cwise_isFinite.cpp
 external/eigen/doc/snippets/CMakeFiles/compile_Cwise_isFinite.dir/compile_Cwise_isFinite.cpp.o: ../external/eigen/doc/snippets/Cwise_isFinite.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wch/github/chenhui-lib/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object external/eigen/doc/snippets/CMakeFiles/compile_Cwise_isFinite.dir/compile_Cwise_isFinite.cpp.o"
-	cd /home/wch/github/chenhui-lib/cmake-build-debug/external/eigen/doc/snippets && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/compile_Cwise_isFinite.dir/compile_Cwise_isFinite.cpp.o -c /home/wch/github/chenhui-lib/cmake-build-debug/external/eigen/doc/snippets/compile_Cwise_isFinite.cpp
+	cd /home/wch/github/chenhui-lib/cmake-build-debug/external/eigen/doc/snippets && /usr/bin/g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/compile_Cwise_isFinite.dir/compile_Cwise_isFinite.cpp.o -c /home/wch/github/chenhui-lib/cmake-build-debug/external/eigen/doc/snippets/compile_Cwise_isFinite.cpp
 
 external/eigen/doc/snippets/CMakeFiles/compile_Cwise_isFinite.dir/compile_Cwise_isFinite.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/compile_Cwise_isFinite.dir/compile_Cwise_isFinite.cpp.i"
-	cd /home/wch/github/chenhui-lib/cmake-build-debug/external/eigen/doc/snippets && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wch/github/chenhui-lib/cmake-build-debug/external/eigen/doc/snippets/compile_Cwise_isFinite.cpp > CMakeFiles/compile_Cwise_isFinite.dir/compile_Cwise_isFinite.cpp.i
+	cd /home/wch/github/chenhui-lib/cmake-build-debug/external/eigen/doc/snippets && /usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wch/github/chenhui-lib/cmake-build-debug/external/eigen/doc/snippets/compile_Cwise_isFinite.cpp > CMakeFiles/compile_Cwise_isFinite.dir/compile_Cwise_isFinite.cpp.i
 
 external/eigen/doc/snippets/CMakeFiles/compile_Cwise_isFinite.dir/compile_Cwise_isFinite.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/compile_Cwise_isFinite.dir/compile_Cwise_isFinite.cpp.s"
-	cd /home/wch/github/chenhui-lib/cmake-build-debug/external/eigen/doc/snippets && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wch/github/chenhui-lib/cmake-build-debug/external/eigen/doc/snippets/compile_Cwise_isFinite.cpp -o CMakeFiles/compile_Cwise_isFinite.dir/compile_Cwise_isFinite.cpp.s
+	cd /home/wch/github/chenhui-lib/cmake-build-debug/external/eigen/doc/snippets && /usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wch/github/chenhui-lib/cmake-build-debug/external/eigen/doc/snippets/compile_Cwise_isFinite.cpp -o CMakeFiles/compile_Cwise_isFinite.dir/compile_Cwise_isFinite.cpp.s
 
 # Object files for target compile_Cwise_isFinite
 compile_Cwise_isFinite_OBJECTS = \

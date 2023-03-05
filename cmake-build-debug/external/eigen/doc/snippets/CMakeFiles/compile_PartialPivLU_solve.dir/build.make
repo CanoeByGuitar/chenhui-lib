@@ -61,15 +61,15 @@ external/eigen/doc/snippets/CMakeFiles/compile_PartialPivLU_solve.dir/compile_Pa
 external/eigen/doc/snippets/CMakeFiles/compile_PartialPivLU_solve.dir/compile_PartialPivLU_solve.cpp.o: external/eigen/doc/snippets/compile_PartialPivLU_solve.cpp
 external/eigen/doc/snippets/CMakeFiles/compile_PartialPivLU_solve.dir/compile_PartialPivLU_solve.cpp.o: ../external/eigen/doc/snippets/PartialPivLU_solve.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wch/github/chenhui-lib/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object external/eigen/doc/snippets/CMakeFiles/compile_PartialPivLU_solve.dir/compile_PartialPivLU_solve.cpp.o"
-	cd /home/wch/github/chenhui-lib/cmake-build-debug/external/eigen/doc/snippets && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/compile_PartialPivLU_solve.dir/compile_PartialPivLU_solve.cpp.o -c /home/wch/github/chenhui-lib/cmake-build-debug/external/eigen/doc/snippets/compile_PartialPivLU_solve.cpp
+	cd /home/wch/github/chenhui-lib/cmake-build-debug/external/eigen/doc/snippets && /usr/bin/g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/compile_PartialPivLU_solve.dir/compile_PartialPivLU_solve.cpp.o -c /home/wch/github/chenhui-lib/cmake-build-debug/external/eigen/doc/snippets/compile_PartialPivLU_solve.cpp
 
 external/eigen/doc/snippets/CMakeFiles/compile_PartialPivLU_solve.dir/compile_PartialPivLU_solve.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/compile_PartialPivLU_solve.dir/compile_PartialPivLU_solve.cpp.i"
-	cd /home/wch/github/chenhui-lib/cmake-build-debug/external/eigen/doc/snippets && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wch/github/chenhui-lib/cmake-build-debug/external/eigen/doc/snippets/compile_PartialPivLU_solve.cpp > CMakeFiles/compile_PartialPivLU_solve.dir/compile_PartialPivLU_solve.cpp.i
+	cd /home/wch/github/chenhui-lib/cmake-build-debug/external/eigen/doc/snippets && /usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wch/github/chenhui-lib/cmake-build-debug/external/eigen/doc/snippets/compile_PartialPivLU_solve.cpp > CMakeFiles/compile_PartialPivLU_solve.dir/compile_PartialPivLU_solve.cpp.i
 
 external/eigen/doc/snippets/CMakeFiles/compile_PartialPivLU_solve.dir/compile_PartialPivLU_solve.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/compile_PartialPivLU_solve.dir/compile_PartialPivLU_solve.cpp.s"
-	cd /home/wch/github/chenhui-lib/cmake-build-debug/external/eigen/doc/snippets && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wch/github/chenhui-lib/cmake-build-debug/external/eigen/doc/snippets/compile_PartialPivLU_solve.cpp -o CMakeFiles/compile_PartialPivLU_solve.dir/compile_PartialPivLU_solve.cpp.s
+	cd /home/wch/github/chenhui-lib/cmake-build-debug/external/eigen/doc/snippets && /usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wch/github/chenhui-lib/cmake-build-debug/external/eigen/doc/snippets/compile_PartialPivLU_solve.cpp -o CMakeFiles/compile_PartialPivLU_solve.dir/compile_PartialPivLU_solve.cpp.s
 
 # Object files for target compile_PartialPivLU_solve
 compile_PartialPivLU_solve_OBJECTS = \

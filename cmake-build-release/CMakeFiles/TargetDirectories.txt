@@ -1,9 +1,10 @@
-/home/wch/github/chenhui-lib/cmake-build-release/CMakeFiles/install/strip.dir
 /home/wch/github/chenhui-lib/cmake-build-release/CMakeFiles/install/local.dir
 /home/wch/github/chenhui-lib/cmake-build-release/CMakeFiles/install.dir
 /home/wch/github/chenhui-lib/cmake-build-release/CMakeFiles/list_install_components.dir
 /home/wch/github/chenhui-lib/cmake-build-release/CMakeFiles/rebuild_cache.dir
 /home/wch/github/chenhui-lib/cmake-build-release/CMakeFiles/edit_cache.dir
+/home/wch/github/chenhui-lib/cmake-build-release/CMakeFiles/install/strip.dir
+/home/wch/github/chenhui-lib/cmake-build-release/CMakeFiles/testeigen.dir
 /home/wch/github/chenhui-lib/cmake-build-release/CMakeFiles/main.dir
 /home/wch/github/chenhui-lib/cmake-build-release/external/eigen/CMakeFiles/install/strip.dir
 /home/wch/github/chenhui-lib/cmake-build-release/external/eigen/CMakeFiles/install/local.dir

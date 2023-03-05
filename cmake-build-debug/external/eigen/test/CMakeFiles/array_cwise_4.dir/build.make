@@ -60,15 +60,15 @@ include external/eigen/test/CMakeFiles/array_cwise_4.dir/flags.make
 external/eigen/test/CMakeFiles/array_cwise_4.dir/array_cwise.cpp.o: external/eigen/test/CMakeFiles/array_cwise_4.dir/flags.make
 external/eigen/test/CMakeFiles/array_cwise_4.dir/array_cwise.cpp.o: ../external/eigen/test/array_cwise.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wch/github/chenhui-lib/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object external/eigen/test/CMakeFiles/array_cwise_4.dir/array_cwise.cpp.o"
-	cd /home/wch/github/chenhui-lib/cmake-build-debug/external/eigen/test && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/array_cwise_4.dir/array_cwise.cpp.o -c /home/wch/github/chenhui-lib/external/eigen/test/array_cwise.cpp
+	cd /home/wch/github/chenhui-lib/cmake-build-debug/external/eigen/test && /usr/bin/g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/array_cwise_4.dir/array_cwise.cpp.o -c /home/wch/github/chenhui-lib/external/eigen/test/array_cwise.cpp
 
 external/eigen/test/CMakeFiles/array_cwise_4.dir/array_cwise.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/array_cwise_4.dir/array_cwise.cpp.i"
-	cd /home/wch/github/chenhui-lib/cmake-build-debug/external/eigen/test && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wch/github/chenhui-lib/external/eigen/test/array_cwise.cpp > CMakeFiles/array_cwise_4.dir/array_cwise.cpp.i
+	cd /home/wch/github/chenhui-lib/cmake-build-debug/external/eigen/test && /usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wch/github/chenhui-lib/external/eigen/test/array_cwise.cpp > CMakeFiles/array_cwise_4.dir/array_cwise.cpp.i
 
 external/eigen/test/CMakeFiles/array_cwise_4.dir/array_cwise.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/array_cwise_4.dir/array_cwise.cpp.s"
-	cd /home/wch/github/chenhui-lib/cmake-build-debug/external/eigen/test && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wch/github/chenhui-lib/external/eigen/test/array_cwise.cpp -o CMakeFiles/array_cwise_4.dir/array_cwise.cpp.s
+	cd /home/wch/github/chenhui-lib/cmake-build-debug/external/eigen/test && /usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wch/github/chenhui-lib/external/eigen/test/array_cwise.cpp -o CMakeFiles/array_cwise_4.dir/array_cwise.cpp.s
 
 # Object files for target array_cwise_4
 array_cwise_4_OBJECTS = \

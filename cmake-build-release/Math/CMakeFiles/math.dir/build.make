@@ -60,15 +60,15 @@ include Math/CMakeFiles/math.dir/flags.make
 Math/CMakeFiles/math.dir/LinearSystemSolver.cpp.o: Math/CMakeFiles/math.dir/flags.make
 Math/CMakeFiles/math.dir/LinearSystemSolver.cpp.o: ../Math/LinearSystemSolver.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wch/github/chenhui-lib/cmake-build-release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object Math/CMakeFiles/math.dir/LinearSystemSolver.cpp.o"
-	cd /home/wch/github/chenhui-lib/cmake-build-release/Math && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/math.dir/LinearSystemSolver.cpp.o -c /home/wch/github/chenhui-lib/Math/LinearSystemSolver.cpp
+	cd /home/wch/github/chenhui-lib/cmake-build-release/Math && /usr/bin/g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/math.dir/LinearSystemSolver.cpp.o -c /home/wch/github/chenhui-lib/Math/LinearSystemSolver.cpp
 
 Math/CMakeFiles/math.dir/LinearSystemSolver.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/math.dir/LinearSystemSolver.cpp.i"
-	cd /home/wch/github/chenhui-lib/cmake-build-release/Math && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wch/github/chenhui-lib/Math/LinearSystemSolver.cpp > CMakeFiles/math.dir/LinearSystemSolver.cpp.i
+	cd /home/wch/github/chenhui-lib/cmake-build-release/Math && /usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wch/github/chenhui-lib/Math/LinearSystemSolver.cpp > CMakeFiles/math.dir/LinearSystemSolver.cpp.i
 
 Math/CMakeFiles/math.dir/LinearSystemSolver.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/math.dir/LinearSystemSolver.cpp.s"
-	cd /home/wch/github/chenhui-lib/cmake-build-release/Math && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wch/github/chenhui-lib/Math/LinearSystemSolver.cpp -o CMakeFiles/math.dir/LinearSystemSolver.cpp.s
+	cd /home/wch/github/chenhui-lib/cmake-build-release/Math && /usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wch/github/chenhui-lib/Math/LinearSystemSolver.cpp -o CMakeFiles/math.dir/LinearSystemSolver.cpp.s
 
 # Object files for target math
 math_OBJECTS = \

@@ -60,15 +60,15 @@ include external/eigen/test/CMakeFiles/array_reverse_2.dir/flags.make
 external/eigen/test/CMakeFiles/array_reverse_2.dir/array_reverse.cpp.o: external/eigen/test/CMakeFiles/array_reverse_2.dir/flags.make
 external/eigen/test/CMakeFiles/array_reverse_2.dir/array_reverse.cpp.o: ../external/eigen/test/array_reverse.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wch/github/chenhui-lib/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object external/eigen/test/CMakeFiles/array_reverse_2.dir/array_reverse.cpp.o"
-	cd /home/wch/github/chenhui-lib/cmake-build-debug/external/eigen/test && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/array_reverse_2.dir/array_reverse.cpp.o -c /home/wch/github/chenhui-lib/external/eigen/test/array_reverse.cpp
+	cd /home/wch/github/chenhui-lib/cmake-build-debug/external/eigen/test && /usr/bin/g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/array_reverse_2.dir/array_reverse.cpp.o -c /home/wch/github/chenhui-lib/external/eigen/test/array_reverse.cpp
 
 external/eigen/test/CMakeFiles/array_reverse_2.dir/array_reverse.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/array_reverse_2.dir/array_reverse.cpp.i"
-	cd /home/wch/github/chenhui-lib/cmake-build-debug/external/eigen/test && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wch/github/chenhui-lib/external/eigen/test/array_reverse.cpp > CMakeFiles/array_reverse_2.dir/array_reverse.cpp.i
+	cd /home/wch/github/chenhui-lib/cmake-build-debug/external/eigen/test && /usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wch/github/chenhui-lib/external/eigen/test/array_reverse.cpp > CMakeFiles/array_reverse_2.dir/array_reverse.cpp.i
 
 external/eigen/test/CMakeFiles/array_reverse_2.dir/array_reverse.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/array_reverse_2.dir/array_reverse.cpp.s"
-	cd /home/wch/github/chenhui-lib/cmake-build-debug/external/eigen/test && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wch/github/chenhui-lib/external/eigen/test/array_reverse.cpp -o CMakeFiles/array_reverse_2.dir/array_reverse.cpp.s
+	cd /home/wch/github/chenhui-lib/cmake-build-debug/external/eigen/test && /usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wch/github/chenhui-lib/external/eigen/test/array_reverse.cpp -o CMakeFiles/array_reverse_2.dir/array_reverse.cpp.s
 
 # Object files for target array_reverse_2
 array_reverse_2_OBJECTS = \

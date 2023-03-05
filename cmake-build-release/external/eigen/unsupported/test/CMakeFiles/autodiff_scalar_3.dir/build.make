@@ -60,15 +60,15 @@ include external/eigen/unsupported/test/CMakeFiles/autodiff_scalar_3.dir/flags.m
 external/eigen/unsupported/test/CMakeFiles/autodiff_scalar_3.dir/autodiff_scalar.cpp.o: external/eigen/unsupported/test/CMakeFiles/autodiff_scalar_3.dir/flags.make
 external/eigen/unsupported/test/CMakeFiles/autodiff_scalar_3.dir/autodiff_scalar.cpp.o: ../external/eigen/unsupported/test/autodiff_scalar.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wch/github/chenhui-lib/cmake-build-release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object external/eigen/unsupported/test/CMakeFiles/autodiff_scalar_3.dir/autodiff_scalar.cpp.o"
-	cd /home/wch/github/chenhui-lib/cmake-build-release/external/eigen/unsupported/test && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/autodiff_scalar_3.dir/autodiff_scalar.cpp.o -c /home/wch/github/chenhui-lib/external/eigen/unsupported/test/autodiff_scalar.cpp
+	cd /home/wch/github/chenhui-lib/cmake-build-release/external/eigen/unsupported/test && /usr/bin/g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/autodiff_scalar_3.dir/autodiff_scalar.cpp.o -c /home/wch/github/chenhui-lib/external/eigen/unsupported/test/autodiff_scalar.cpp
 
 external/eigen/unsupported/test/CMakeFiles/autodiff_scalar_3.dir/autodiff_scalar.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/autodiff_scalar_3.dir/autodiff_scalar.cpp.i"
-	cd /home/wch/github/chenhui-lib/cmake-build-release/external/eigen/unsupported/test && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wch/github/chenhui-lib/external/eigen/unsupported/test/autodiff_scalar.cpp > CMakeFiles/autodiff_scalar_3.dir/autodiff_scalar.cpp.i
+	cd /home/wch/github/chenhui-lib/cmake-build-release/external/eigen/unsupported/test && /usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wch/github/chenhui-lib/external/eigen/unsupported/test/autodiff_scalar.cpp > CMakeFiles/autodiff_scalar_3.dir/autodiff_scalar.cpp.i
 
 external/eigen/unsupported/test/CMakeFiles/autodiff_scalar_3.dir/autodiff_scalar.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/autodiff_scalar_3.dir/autodiff_scalar.cpp.s"
-	cd /home/wch/github/chenhui-lib/cmake-build-release/external/eigen/unsupported/test && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wch/github/chenhui-lib/external/eigen/unsupported/test/autodiff_scalar.cpp -o CMakeFiles/autodiff_scalar_3.dir/autodiff_scalar.cpp.s
+	cd /home/wch/github/chenhui-lib/cmake-build-release/external/eigen/unsupported/test && /usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wch/github/chenhui-lib/external/eigen/unsupported/test/autodiff_scalar.cpp -o CMakeFiles/autodiff_scalar_3.dir/autodiff_scalar.cpp.s
 
 # Object files for target autodiff_scalar_3
 autodiff_scalar_3_OBJECTS = \

@@ -60,15 +60,15 @@ include external/eigen/test/CMakeFiles/array_for_matrix_8.dir/flags.make
 external/eigen/test/CMakeFiles/array_for_matrix_8.dir/array_for_matrix.cpp.o: external/eigen/test/CMakeFiles/array_for_matrix_8.dir/flags.make
 external/eigen/test/CMakeFiles/array_for_matrix_8.dir/array_for_matrix.cpp.o: ../external/eigen/test/array_for_matrix.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wch/github/chenhui-lib/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object external/eigen/test/CMakeFiles/array_for_matrix_8.dir/array_for_matrix.cpp.o"
-	cd /home/wch/github/chenhui-lib/cmake-build-debug/external/eigen/test && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/array_for_matrix_8.dir/array_for_matrix.cpp.o -c /home/wch/github/chenhui-lib/external/eigen/test/array_for_matrix.cpp
+	cd /home/wch/github/chenhui-lib/cmake-build-debug/external/eigen/test && /usr/bin/g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/array_for_matrix_8.dir/array_for_matrix.cpp.o -c /home/wch/github/chenhui-lib/external/eigen/test/array_for_matrix.cpp
 
 external/eigen/test/CMakeFiles/array_for_matrix_8.dir/array_for_matrix.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/array_for_matrix_8.dir/array_for_matrix.cpp.i"
-	cd /home/wch/github/chenhui-lib/cmake-build-debug/external/eigen/test && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wch/github/chenhui-lib/external/eigen/test/array_for_matrix.cpp > CMakeFiles/array_for_matrix_8.dir/array_for_matrix.cpp.i
+	cd /home/wch/github/chenhui-lib/cmake-build-debug/external/eigen/test && /usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wch/github/chenhui-lib/external/eigen/test/array_for_matrix.cpp > CMakeFiles/array_for_matrix_8.dir/array_for_matrix.cpp.i
 
 external/eigen/test/CMakeFiles/array_for_matrix_8.dir/array_for_matrix.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/array_for_matrix_8.dir/array_for_matrix.cpp.s"
-	cd /home/wch/github/chenhui-lib/cmake-build-debug/external/eigen/test && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wch/github/chenhui-lib/external/eigen/test/array_for_matrix.cpp -o CMakeFiles/array_for_matrix_8.dir/array_for_matrix.cpp.s
+	cd /home/wch/github/chenhui-lib/cmake-build-debug/external/eigen/test && /usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wch/github/chenhui-lib/external/eigen/test/array_for_matrix.cpp -o CMakeFiles/array_for_matrix_8.dir/array_for_matrix.cpp.s
 
 # Object files for target array_for_matrix_8
 array_for_matrix_8_OBJECTS = \

@@ -60,15 +60,15 @@ include external/eigen/doc/examples/CMakeFiles/Tutorial_BlockOperations_vector.d
 external/eigen/doc/examples/CMakeFiles/Tutorial_BlockOperations_vector.dir/Tutorial_BlockOperations_vector.cpp.o: external/eigen/doc/examples/CMakeFiles/Tutorial_BlockOperations_vector.dir/flags.make
 external/eigen/doc/examples/CMakeFiles/Tutorial_BlockOperations_vector.dir/Tutorial_BlockOperations_vector.cpp.o: ../external/eigen/doc/examples/Tutorial_BlockOperations_vector.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wch/github/chenhui-lib/cmake-build-release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object external/eigen/doc/examples/CMakeFiles/Tutorial_BlockOperations_vector.dir/Tutorial_BlockOperations_vector.cpp.o"
-	cd /home/wch/github/chenhui-lib/cmake-build-release/external/eigen/doc/examples && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Tutorial_BlockOperations_vector.dir/Tutorial_BlockOperations_vector.cpp.o -c /home/wch/github/chenhui-lib/external/eigen/doc/examples/Tutorial_BlockOperations_vector.cpp
+	cd /home/wch/github/chenhui-lib/cmake-build-release/external/eigen/doc/examples && /usr/bin/g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Tutorial_BlockOperations_vector.dir/Tutorial_BlockOperations_vector.cpp.o -c /home/wch/github/chenhui-lib/external/eigen/doc/examples/Tutorial_BlockOperations_vector.cpp
 
 external/eigen/doc/examples/CMakeFiles/Tutorial_BlockOperations_vector.dir/Tutorial_BlockOperations_vector.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Tutorial_BlockOperations_vector.dir/Tutorial_BlockOperations_vector.cpp.i"
-	cd /home/wch/github/chenhui-lib/cmake-build-release/external/eigen/doc/examples && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wch/github/chenhui-lib/external/eigen/doc/examples/Tutorial_BlockOperations_vector.cpp > CMakeFiles/Tutorial_BlockOperations_vector.dir/Tutorial_BlockOperations_vector.cpp.i
+	cd /home/wch/github/chenhui-lib/cmake-build-release/external/eigen/doc/examples && /usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wch/github/chenhui-lib/external/eigen/doc/examples/Tutorial_BlockOperations_vector.cpp > CMakeFiles/Tutorial_BlockOperations_vector.dir/Tutorial_BlockOperations_vector.cpp.i
 
 external/eigen/doc/examples/CMakeFiles/Tutorial_BlockOperations_vector.dir/Tutorial_BlockOperations_vector.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Tutorial_BlockOperations_vector.dir/Tutorial_BlockOperations_vector.cpp.s"
-	cd /home/wch/github/chenhui-lib/cmake-build-release/external/eigen/doc/examples && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wch/github/chenhui-lib/external/eigen/doc/examples/Tutorial_BlockOperations_vector.cpp -o CMakeFiles/Tutorial_BlockOperations_vector.dir/Tutorial_BlockOperations_vector.cpp.s
+	cd /home/wch/github/chenhui-lib/cmake-build-release/external/eigen/doc/examples && /usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wch/github/chenhui-lib/external/eigen/doc/examples/Tutorial_BlockOperations_vector.cpp -o CMakeFiles/Tutorial_BlockOperations_vector.dir/Tutorial_BlockOperations_vector.cpp.s
 
 # Object files for target Tutorial_BlockOperations_vector
 Tutorial_BlockOperations_vector_OBJECTS = \

@@ -60,15 +60,15 @@ include external/eigen/test/CMakeFiles/selfadjoint_5.dir/flags.make
 external/eigen/test/CMakeFiles/selfadjoint_5.dir/selfadjoint.cpp.o: external/eigen/test/CMakeFiles/selfadjoint_5.dir/flags.make
 external/eigen/test/CMakeFiles/selfadjoint_5.dir/selfadjoint.cpp.o: ../external/eigen/test/selfadjoint.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wch/github/chenhui-lib/cmake-build-release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object external/eigen/test/CMakeFiles/selfadjoint_5.dir/selfadjoint.cpp.o"
-	cd /home/wch/github/chenhui-lib/cmake-build-release/external/eigen/test && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/selfadjoint_5.dir/selfadjoint.cpp.o -c /home/wch/github/chenhui-lib/external/eigen/test/selfadjoint.cpp
+	cd /home/wch/github/chenhui-lib/cmake-build-release/external/eigen/test && /usr/bin/g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/selfadjoint_5.dir/selfadjoint.cpp.o -c /home/wch/github/chenhui-lib/external/eigen/test/selfadjoint.cpp
 
 external/eigen/test/CMakeFiles/selfadjoint_5.dir/selfadjoint.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/selfadjoint_5.dir/selfadjoint.cpp.i"
-	cd /home/wch/github/chenhui-lib/cmake-build-release/external/eigen/test && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wch/github/chenhui-lib/external/eigen/test/selfadjoint.cpp > CMakeFiles/selfadjoint_5.dir/selfadjoint.cpp.i
+	cd /home/wch/github/chenhui-lib/cmake-build-release/external/eigen/test && /usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wch/github/chenhui-lib/external/eigen/test/selfadjoint.cpp > CMakeFiles/selfadjoint_5.dir/selfadjoint.cpp.i
 
 external/eigen/test/CMakeFiles/selfadjoint_5.dir/selfadjoint.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/selfadjoint_5.dir/selfadjoint.cpp.s"
-	cd /home/wch/github/chenhui-lib/cmake-build-release/external/eigen/test && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wch/github/chenhui-lib/external/eigen/test/selfadjoint.cpp -o CMakeFiles/selfadjoint_5.dir/selfadjoint.cpp.s
+	cd /home/wch/github/chenhui-lib/cmake-build-release/external/eigen/test && /usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wch/github/chenhui-lib/external/eigen/test/selfadjoint.cpp -o CMakeFiles/selfadjoint_5.dir/selfadjoint.cpp.s
 
 # Object files for target selfadjoint_5
 selfadjoint_5_OBJECTS = \

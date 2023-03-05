@@ -60,15 +60,15 @@ include external/eigen/doc/examples/CMakeFiles/tut_arithmetic_scalar_mul_div.dir
 external/eigen/doc/examples/CMakeFiles/tut_arithmetic_scalar_mul_div.dir/tut_arithmetic_scalar_mul_div.cpp.o: external/eigen/doc/examples/CMakeFiles/tut_arithmetic_scalar_mul_div.dir/flags.make
 external/eigen/doc/examples/CMakeFiles/tut_arithmetic_scalar_mul_div.dir/tut_arithmetic_scalar_mul_div.cpp.o: ../external/eigen/doc/examples/tut_arithmetic_scalar_mul_div.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wch/github/chenhui-lib/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object external/eigen/doc/examples/CMakeFiles/tut_arithmetic_scalar_mul_div.dir/tut_arithmetic_scalar_mul_div.cpp.o"
-	cd /home/wch/github/chenhui-lib/cmake-build-debug/external/eigen/doc/examples && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tut_arithmetic_scalar_mul_div.dir/tut_arithmetic_scalar_mul_div.cpp.o -c /home/wch/github/chenhui-lib/external/eigen/doc/examples/tut_arithmetic_scalar_mul_div.cpp
+	cd /home/wch/github/chenhui-lib/cmake-build-debug/external/eigen/doc/examples && /usr/bin/g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tut_arithmetic_scalar_mul_div.dir/tut_arithmetic_scalar_mul_div.cpp.o -c /home/wch/github/chenhui-lib/external/eigen/doc/examples/tut_arithmetic_scalar_mul_div.cpp
 
 external/eigen/doc/examples/CMakeFiles/tut_arithmetic_scalar_mul_div.dir/tut_arithmetic_scalar_mul_div.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tut_arithmetic_scalar_mul_div.dir/tut_arithmetic_scalar_mul_div.cpp.i"
-	cd /home/wch/github/chenhui-lib/cmake-build-debug/external/eigen/doc/examples && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wch/github/chenhui-lib/external/eigen/doc/examples/tut_arithmetic_scalar_mul_div.cpp > CMakeFiles/tut_arithmetic_scalar_mul_div.dir/tut_arithmetic_scalar_mul_div.cpp.i
+	cd /home/wch/github/chenhui-lib/cmake-build-debug/external/eigen/doc/examples && /usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wch/github/chenhui-lib/external/eigen/doc/examples/tut_arithmetic_scalar_mul_div.cpp > CMakeFiles/tut_arithmetic_scalar_mul_div.dir/tut_arithmetic_scalar_mul_div.cpp.i
 
 external/eigen/doc/examples/CMakeFiles/tut_arithmetic_scalar_mul_div.dir/tut_arithmetic_scalar_mul_div.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tut_arithmetic_scalar_mul_div.dir/tut_arithmetic_scalar_mul_div.cpp.s"
-	cd /home/wch/github/chenhui-lib/cmake-build-debug/external/eigen/doc/examples && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wch/github/chenhui-lib/external/eigen/doc/examples/tut_arithmetic_scalar_mul_div.cpp -o CMakeFiles/tut_arithmetic_scalar_mul_div.dir/tut_arithmetic_scalar_mul_div.cpp.s
+	cd /home/wch/github/chenhui-lib/cmake-build-debug/external/eigen/doc/examples && /usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wch/github/chenhui-lib/external/eigen/doc/examples/tut_arithmetic_scalar_mul_div.cpp -o CMakeFiles/tut_arithmetic_scalar_mul_div.dir/tut_arithmetic_scalar_mul_div.cpp.s
 
 # Object files for target tut_arithmetic_scalar_mul_div
 tut_arithmetic_scalar_mul_div_OBJECTS = \

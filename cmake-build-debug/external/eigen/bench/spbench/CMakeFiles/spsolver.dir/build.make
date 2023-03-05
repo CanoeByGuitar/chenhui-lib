@@ -60,15 +60,15 @@ include external/eigen/bench/spbench/CMakeFiles/spsolver.dir/flags.make
 external/eigen/bench/spbench/CMakeFiles/spsolver.dir/sp_solver.cpp.o: external/eigen/bench/spbench/CMakeFiles/spsolver.dir/flags.make
 external/eigen/bench/spbench/CMakeFiles/spsolver.dir/sp_solver.cpp.o: ../external/eigen/bench/spbench/sp_solver.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wch/github/chenhui-lib/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object external/eigen/bench/spbench/CMakeFiles/spsolver.dir/sp_solver.cpp.o"
-	cd /home/wch/github/chenhui-lib/cmake-build-debug/external/eigen/bench/spbench && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/spsolver.dir/sp_solver.cpp.o -c /home/wch/github/chenhui-lib/external/eigen/bench/spbench/sp_solver.cpp
+	cd /home/wch/github/chenhui-lib/cmake-build-debug/external/eigen/bench/spbench && /usr/bin/g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/spsolver.dir/sp_solver.cpp.o -c /home/wch/github/chenhui-lib/external/eigen/bench/spbench/sp_solver.cpp
 
 external/eigen/bench/spbench/CMakeFiles/spsolver.dir/sp_solver.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/spsolver.dir/sp_solver.cpp.i"
-	cd /home/wch/github/chenhui-lib/cmake-build-debug/external/eigen/bench/spbench && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wch/github/chenhui-lib/external/eigen/bench/spbench/sp_solver.cpp > CMakeFiles/spsolver.dir/sp_solver.cpp.i
+	cd /home/wch/github/chenhui-lib/cmake-build-debug/external/eigen/bench/spbench && /usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wch/github/chenhui-lib/external/eigen/bench/spbench/sp_solver.cpp > CMakeFiles/spsolver.dir/sp_solver.cpp.i
 
 external/eigen/bench/spbench/CMakeFiles/spsolver.dir/sp_solver.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/spsolver.dir/sp_solver.cpp.s"
-	cd /home/wch/github/chenhui-lib/cmake-build-debug/external/eigen/bench/spbench && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wch/github/chenhui-lib/external/eigen/bench/spbench/sp_solver.cpp -o CMakeFiles/spsolver.dir/sp_solver.cpp.s
+	cd /home/wch/github/chenhui-lib/cmake-build-debug/external/eigen/bench/spbench && /usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wch/github/chenhui-lib/external/eigen/bench/spbench/sp_solver.cpp -o CMakeFiles/spsolver.dir/sp_solver.cpp.s
 
 # Object files for target spsolver
 spsolver_OBJECTS = \

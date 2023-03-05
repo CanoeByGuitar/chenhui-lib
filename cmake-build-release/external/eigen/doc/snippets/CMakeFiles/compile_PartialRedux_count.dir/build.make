@@ -61,15 +61,15 @@ external/eigen/doc/snippets/CMakeFiles/compile_PartialRedux_count.dir/compile_Pa
 external/eigen/doc/snippets/CMakeFiles/compile_PartialRedux_count.dir/compile_PartialRedux_count.cpp.o: external/eigen/doc/snippets/compile_PartialRedux_count.cpp
 external/eigen/doc/snippets/CMakeFiles/compile_PartialRedux_count.dir/compile_PartialRedux_count.cpp.o: ../external/eigen/doc/snippets/PartialRedux_count.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wch/github/chenhui-lib/cmake-build-release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object external/eigen/doc/snippets/CMakeFiles/compile_PartialRedux_count.dir/compile_PartialRedux_count.cpp.o"
-	cd /home/wch/github/chenhui-lib/cmake-build-release/external/eigen/doc/snippets && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/compile_PartialRedux_count.dir/compile_PartialRedux_count.cpp.o -c /home/wch/github/chenhui-lib/cmake-build-release/external/eigen/doc/snippets/compile_PartialRedux_count.cpp
+	cd /home/wch/github/chenhui-lib/cmake-build-release/external/eigen/doc/snippets && /usr/bin/g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/compile_PartialRedux_count.dir/compile_PartialRedux_count.cpp.o -c /home/wch/github/chenhui-lib/cmake-build-release/external/eigen/doc/snippets/compile_PartialRedux_count.cpp
 
 external/eigen/doc/snippets/CMakeFiles/compile_PartialRedux_count.dir/compile_PartialRedux_count.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/compile_PartialRedux_count.dir/compile_PartialRedux_count.cpp.i"
-	cd /home/wch/github/chenhui-lib/cmake-build-release/external/eigen/doc/snippets && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wch/github/chenhui-lib/cmake-build-release/external/eigen/doc/snippets/compile_PartialRedux_count.cpp > CMakeFiles/compile_PartialRedux_count.dir/compile_PartialRedux_count.cpp.i
+	cd /home/wch/github/chenhui-lib/cmake-build-release/external/eigen/doc/snippets && /usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wch/github/chenhui-lib/cmake-build-release/external/eigen/doc/snippets/compile_PartialRedux_count.cpp > CMakeFiles/compile_PartialRedux_count.dir/compile_PartialRedux_count.cpp.i
 
 external/eigen/doc/snippets/CMakeFiles/compile_PartialRedux_count.dir/compile_PartialRedux_count.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/compile_PartialRedux_count.dir/compile_PartialRedux_count.cpp.s"
-	cd /home/wch/github/chenhui-lib/cmake-build-release/external/eigen/doc/snippets && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wch/github/chenhui-lib/cmake-build-release/external/eigen/doc/snippets/compile_PartialRedux_count.cpp -o CMakeFiles/compile_PartialRedux_count.dir/compile_PartialRedux_count.cpp.s
+	cd /home/wch/github/chenhui-lib/cmake-build-release/external/eigen/doc/snippets && /usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wch/github/chenhui-lib/cmake-build-release/external/eigen/doc/snippets/compile_PartialRedux_count.cpp -o CMakeFiles/compile_PartialRedux_count.dir/compile_PartialRedux_count.cpp.s
 
 # Object files for target compile_PartialRedux_count
 compile_PartialRedux_count_OBJECTS = \

@@ -60,15 +60,15 @@ include external/eigen/test/CMakeFiles/evaluators.dir/flags.make
 external/eigen/test/CMakeFiles/evaluators.dir/evaluators.cpp.o: external/eigen/test/CMakeFiles/evaluators.dir/flags.make
 external/eigen/test/CMakeFiles/evaluators.dir/evaluators.cpp.o: ../external/eigen/test/evaluators.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wch/github/chenhui-lib/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object external/eigen/test/CMakeFiles/evaluators.dir/evaluators.cpp.o"
-	cd /home/wch/github/chenhui-lib/cmake-build-debug/external/eigen/test && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/evaluators.dir/evaluators.cpp.o -c /home/wch/github/chenhui-lib/external/eigen/test/evaluators.cpp
+	cd /home/wch/github/chenhui-lib/cmake-build-debug/external/eigen/test && /usr/bin/g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/evaluators.dir/evaluators.cpp.o -c /home/wch/github/chenhui-lib/external/eigen/test/evaluators.cpp
 
 external/eigen/test/CMakeFiles/evaluators.dir/evaluators.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/evaluators.dir/evaluators.cpp.i"
-	cd /home/wch/github/chenhui-lib/cmake-build-debug/external/eigen/test && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wch/github/chenhui-lib/external/eigen/test/evaluators.cpp > CMakeFiles/evaluators.dir/evaluators.cpp.i
+	cd /home/wch/github/chenhui-lib/cmake-build-debug/external/eigen/test && /usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wch/github/chenhui-lib/external/eigen/test/evaluators.cpp > CMakeFiles/evaluators.dir/evaluators.cpp.i
 
 external/eigen/test/CMakeFiles/evaluators.dir/evaluators.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/evaluators.dir/evaluators.cpp.s"
-	cd /home/wch/github/chenhui-lib/cmake-build-debug/external/eigen/test && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wch/github/chenhui-lib/external/eigen/test/evaluators.cpp -o CMakeFiles/evaluators.dir/evaluators.cpp.s
+	cd /home/wch/github/chenhui-lib/cmake-build-debug/external/eigen/test && /usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wch/github/chenhui-lib/external/eigen/test/evaluators.cpp -o CMakeFiles/evaluators.dir/evaluators.cpp.s
 
 # Object files for target evaluators
 evaluators_OBJECTS = \

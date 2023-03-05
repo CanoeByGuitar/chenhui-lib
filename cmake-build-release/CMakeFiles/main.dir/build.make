@@ -60,15 +60,15 @@ include CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/main.cpp.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/main.cpp.o: ../main.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wch/github/chenhui-lib/cmake-build-release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/main.dir/main.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/main.cpp.o -c /home/wch/github/chenhui-lib/main.cpp
+	/usr/bin/g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/main.cpp.o -c /home/wch/github/chenhui-lib/main.cpp
 
 CMakeFiles/main.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wch/github/chenhui-lib/main.cpp > CMakeFiles/main.dir/main.cpp.i
+	/usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wch/github/chenhui-lib/main.cpp > CMakeFiles/main.dir/main.cpp.i
 
 CMakeFiles/main.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wch/github/chenhui-lib/main.cpp -o CMakeFiles/main.dir/main.cpp.s
+	/usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wch/github/chenhui-lib/main.cpp -o CMakeFiles/main.dir/main.cpp.s
 
 # Object files for target main
 main_OBJECTS = \
@@ -83,6 +83,10 @@ main_EXTERNAL_OBJECTS =
 ../build/bin/main: ../build/lib/librenderer.a
 ../build/bin/main: ../build/lib/libmath.a
 ../build/bin/main: ../build/lib/libphysics.a
+../build/bin/main: ../build/lib/libspdlog.a
+../build/bin/main: ../build/lib/librenderer.a
+../build/bin/main: ../build/lib/libmath.a
+../build/bin/main: ../build/lib/libphysics.a
 ../build/bin/main: ../build/lib/libglfw3.a
 ../build/bin/main: /usr/lib/x86_64-linux-gnu/librt.so
 ../build/bin/main: /usr/lib/x86_64-linux-gnu/libm.so
@@ -90,6 +94,7 @@ main_EXTERNAL_OBJECTS =
 ../build/bin/main: /usr/lib/x86_64-linux-gnu/libGLX.so
 ../build/bin/main: /usr/lib/x86_64-linux-gnu/libGLU.so
 ../build/bin/main: ../build/lib/libspdlog.a
+../build/bin/main: /usr/lib/x86_64-linux-gnu/libtbb.so.2
 ../build/bin/main: CMakeFiles/main.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/wch/github/chenhui-lib/cmake-build-release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable ../build/bin/main"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/main.dir/link.txt --verbose=$(VERBOSE)
