@@ -144,7 +144,9 @@ namespace mpm{
     }
 
     void MpmSimulator::P2G() {
+        for(int iter = 0; iter < simInfo.particleSize; iter++){
 
+        }
     }
 
     void MpmSimulator::AddGravity() {
@@ -186,7 +188,7 @@ namespace mpm{
     void MpmSimulator::UpdateGridVelocity(float dt) {
         for(int i = 0; i< activeNodes.size(); i++){
             int index = activeNodes[i];
-
+            grids[index].vel += dt * grids[index].force / grids[index].mass;
         }
     }
 
