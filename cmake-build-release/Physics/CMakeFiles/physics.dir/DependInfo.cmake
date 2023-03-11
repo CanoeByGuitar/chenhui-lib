@@ -1,26 +1,37 @@
+
+# Consider dependencies only in project.
+set(CMAKE_DEPENDS_IN_PROJECT_ONLY OFF)
+
 # The set of languages for which implicit dependencies are needed:
 set(CMAKE_DEPENDS_LANGUAGES
   "CXX"
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/wch/github/chenhui-lib/Physics/MPM/ConstitutionModel.cpp" "/home/wch/github/chenhui-lib/cmake-build-release/Physics/CMakeFiles/physics.dir/MPM/ConstitutionModel.cpp.o"
-  "/home/wch/github/chenhui-lib/Physics/MPM/MpmGrid.cpp" "/home/wch/github/chenhui-lib/cmake-build-release/Physics/CMakeFiles/physics.dir/MPM/MpmGrid.cpp.o"
-  "/home/wch/github/chenhui-lib/Physics/MPM/MpmParticle.cpp" "/home/wch/github/chenhui-lib/cmake-build-release/Physics/CMakeFiles/physics.dir/MPM/MpmParticle.cpp.o"
-  "/home/wch/github/chenhui-lib/Physics/MPM/MpmSimulationBase.cpp" "/home/wch/github/chenhui-lib/cmake-build-release/Physics/CMakeFiles/physics.dir/MPM/MpmSimulationBase.cpp.o"
-  "/home/wch/github/chenhui-lib/Physics/MPM/MpmUtils.cpp" "/home/wch/github/chenhui-lib/cmake-build-release/Physics/CMakeFiles/physics.dir/MPM/MpmUtils.cpp.o"
-  "/home/wch/github/chenhui-lib/Physics/MassSpringSim.cpp" "/home/wch/github/chenhui-lib/cmake-build-release/Physics/CMakeFiles/physics.dir/MassSpringSim.cpp.o"
+  "/Volumes/disk2/ChenhuiLib/Physics/MPM/ConstitutionModel.cpp" "/Volumes/disk2/ChenhuiLib/cmake-build-release/Physics/CMakeFiles/physics.dir/MPM/ConstitutionModel.cpp.o"
+  "/Volumes/disk2/ChenhuiLib/Physics/MPM/MpmGrid.cpp" "/Volumes/disk2/ChenhuiLib/cmake-build-release/Physics/CMakeFiles/physics.dir/MPM/MpmGrid.cpp.o"
+  "/Volumes/disk2/ChenhuiLib/Physics/MPM/MpmParticle.cpp" "/Volumes/disk2/ChenhuiLib/cmake-build-release/Physics/CMakeFiles/physics.dir/MPM/MpmParticle.cpp.o"
+  "/Volumes/disk2/ChenhuiLib/Physics/MPM/MpmSimulationBase.cpp" "/Volumes/disk2/ChenhuiLib/cmake-build-release/Physics/CMakeFiles/physics.dir/MPM/MpmSimulationBase.cpp.o"
+  "/Volumes/disk2/ChenhuiLib/Physics/MPM/MpmUtils.cpp" "/Volumes/disk2/ChenhuiLib/cmake-build-release/Physics/CMakeFiles/physics.dir/MPM/MpmUtils.cpp.o"
+  "/Volumes/disk2/ChenhuiLib/Physics/MassSpringSim.cpp" "/Volumes/disk2/ChenhuiLib/cmake-build-release/Physics/CMakeFiles/physics.dir/MassSpringSim.cpp.o"
   )
-set(CMAKE_CXX_COMPILER_ID "GNU")
+set(CMAKE_CXX_COMPILER_ID "AppleClang")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
+  "/Users/wangchenhui/brew-2.2.2/Cellar/glew/2.2.0_1/include/GL"
+  "/Users/wangchenhui/brew-2.2.2/Cellar/glfw/3.3.7/include/GLFW"
   "../external"
   "../external/glad/include"
   "../external/glm"
   "../external/glfw/include/GLFW"
   "../external/spdlog/include"
   "../external/eigen"
+  "/Users/wangchenhui/brew-2.2.2/include"
+  )
+
+# The set of dependency files which are needed:
+set(CMAKE_DEPENDS_DEPENDENCY_FILES
   )
 
 # Targets to which this target links.

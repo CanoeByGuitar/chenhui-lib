@@ -1,15 +1,21 @@
+
+# Consider dependencies only in project.
+set(CMAKE_DEPENDS_IN_PROJECT_ONLY OFF)
+
 # The set of languages for which implicit dependencies are needed:
 set(CMAKE_DEPENDS_LANGUAGES
   "CXX"
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/wch/github/chenhui-lib/external/eigen/unsupported/doc/examples/BVH_Example.cpp" "/home/wch/github/chenhui-lib/cmake-build-debug/external/eigen/unsupported/doc/examples/CMakeFiles/example_BVH_Example.dir/BVH_Example.cpp.o"
+  "/Volumes/disk2/ChenhuiLib/external/eigen/unsupported/doc/examples/BVH_Example.cpp" "/Volumes/disk2/ChenhuiLib/cmake-build-debug/external/eigen/unsupported/doc/examples/CMakeFiles/example_BVH_Example.dir/BVH_Example.cpp.o"
   )
-set(CMAKE_CXX_COMPILER_ID "GNU")
+set(CMAKE_CXX_COMPILER_ID "AppleClang")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
+  "/Users/wangchenhui/brew-2.2.2/Cellar/glew/2.2.0_1/include/GL"
+  "/Users/wangchenhui/brew-2.2.2/Cellar/glfw/3.3.7/include/GLFW"
   "../external"
   "../external/glad/include"
   "../external/glm"
@@ -18,6 +24,10 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "../external/eigen"
   "../external/eigen/unsupported/doc/examples/../../../unsupported"
   "../external/eigen/unsupported/doc/examples/../../../unsupported/test"
+  )
+
+# The set of dependency files which are needed:
+set(CMAKE_DEPENDS_DEPENDENCY_FILES
   )
 
 # Targets to which this target links.

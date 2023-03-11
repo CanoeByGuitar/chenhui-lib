@@ -1,1 +1,1 @@
-/usr/bin/f95   -O3 -DNDEBUG -O3 CMakeFiles/sblat3.dir/sblat3.f.o  -o ../../../../../build/bin/sblat3  -Wl,-rpath,/home/wch/github/chenhui-lib/build/bin ../../../../../build/bin/libeigen_blas.so 
+/Users/wangchenhui/brew-2.2.2/bin/gfortran -O3 -DNDEBUG -O3 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk -mmacosx-version-min=11.6 CMakeFiles/sblat3.dir/sblat3.f.o -o ../../../../../build/bin/sblat3  -Wl,-rpath,/Volumes/disk2/ChenhuiLib/build/bin ../../../../../build/bin/libeigen_blas.dylib 

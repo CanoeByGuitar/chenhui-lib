@@ -51,11 +51,14 @@ add_subdirectory(${PROJECT_SOURCE_DIR}/Physics)
 add_subdirectory(${PROJECT_SOURCE_DIR}/Math)
 add_subdirectory(${PROJECT_SOURCE_DIR}/MyRenderer)
 
-add_executable(main main.cpp)
-target_link_libraries(main PRIVATE eigen spdlog::spdlog renderer math physics)
+add_executable(opengl_renderer main.cpp)
+target_link_libraries(opengl_renderer PRIVATE eigen spdlog::spdlog renderer math physics)
 
-add_executable(testeigen testEigen.cpp)
-target_link_libraries(main PRIVATE eigen spdlog::spdlog renderer math physics)
+add_executable(learn_opengl learn_opengl.cpp)
+target_link_libraries(learn_opengl PRIVATE eigen spdlog::spdlog renderer math physics)
+
+#add_executable(testeigen testEigen.cpp)
+#target_link_libraries(testeigen PRIVATE eigen spdlog::spdlog renderer math physics)
 #######################################
 # speed up eigen
 #include(CheckCXXCompilerFlag)

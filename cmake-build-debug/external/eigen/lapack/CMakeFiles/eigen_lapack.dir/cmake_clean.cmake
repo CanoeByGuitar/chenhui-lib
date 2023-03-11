@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
+  "../../../../build/bin/libeigen_lapack.dylib"
   "../../../../build/bin/libeigen_lapack.pdb"
-  "../../../../build/bin/libeigen_lapack.so"
   "CMakeFiles/eigen_lapack.dir/__/blas/xerbla.cpp.o"
   "CMakeFiles/eigen_lapack.dir/clacgv.f.o"
   "CMakeFiles/eigen_lapack.dir/cladiv.f.o"
