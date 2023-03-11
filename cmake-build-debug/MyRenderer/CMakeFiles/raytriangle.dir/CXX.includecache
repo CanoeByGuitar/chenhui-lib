@@ -564,39 +564,39 @@ spdlog-inl.h
 
 ../external/spdlog/include/spdlog/version.h
 
-/Volumes/disk2/ChenhuiLib/MyRenderer/Geometry.h
+/home/wch/github/chenhui-lib/MyRenderer/Geometry.h
 Vec3.h
-/Volumes/disk2/ChenhuiLib/MyRenderer/Vec3.h
+/home/wch/github/chenhui-lib/MyRenderer/Vec3.h
 Ray.h
-/Volumes/disk2/ChenhuiLib/MyRenderer/Ray.h
+/home/wch/github/chenhui-lib/MyRenderer/Ray.h
 Material.h
-/Volumes/disk2/ChenhuiLib/MyRenderer/Material.h
+/home/wch/github/chenhui-lib/MyRenderer/Material.h
 spdlog/spdlog.h
-/Volumes/disk2/ChenhuiLib/MyRenderer/spdlog/spdlog.h
+/home/wch/github/chenhui-lib/MyRenderer/spdlog/spdlog.h
 
-/Volumes/disk2/ChenhuiLib/MyRenderer/Material.h
+/home/wch/github/chenhui-lib/MyRenderer/Material.h
 
-/Volumes/disk2/ChenhuiLib/MyRenderer/Ray.h
+/home/wch/github/chenhui-lib/MyRenderer/Ray.h
 Vec3.h
-/Volumes/disk2/ChenhuiLib/MyRenderer/Vec3.h
+/home/wch/github/chenhui-lib/MyRenderer/Vec3.h
 
-/Volumes/disk2/ChenhuiLib/MyRenderer/Vec3.h
+/home/wch/github/chenhui-lib/MyRenderer/Vec3.h
 cmath
 -
 iostream
 -
 
-/Volumes/disk2/ChenhuiLib/MyRenderer/test/RayTriIntersect.cpp
+/home/wch/github/chenhui-lib/MyRenderer/test/RayTriIntersect.cpp
 iostream
 -
 cmath
 -
 ../Vec3.h
-/Volumes/disk2/ChenhuiLib/MyRenderer/Vec3.h
+/home/wch/github/chenhui-lib/MyRenderer/Vec3.h
 ../Ray.h
-/Volumes/disk2/ChenhuiLib/MyRenderer/Ray.h
+/home/wch/github/chenhui-lib/MyRenderer/Ray.h
 ../Geometry.h
-/Volumes/disk2/ChenhuiLib/MyRenderer/Geometry.h
+/home/wch/github/chenhui-lib/MyRenderer/Geometry.h
 spdlog/spdlog.h
 -
 
