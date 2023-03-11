@@ -14,7 +14,7 @@ CostDataFile:
 Site: DESKTOP-PE9RO90
 
 # Build name is osname-revision-compiler, i.e. Linux-2.4.2-2smp-c++
-BuildName: linux-5.15.79.1-microsoft-standard-wsl2-g++-7.5.0-sse2-64bit
+BuildName: linux-5.15.90.1-microsoft-standard-wsl2-g++-7.5.0-sse2-64bit
 
 # Subprojects
 LabelsForSubprojects: 

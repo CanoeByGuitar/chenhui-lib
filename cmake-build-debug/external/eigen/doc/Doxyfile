@@ -34,7 +34,7 @@ PROJECT_NAME           = Eigen
 
 # EIGEN_VERSION is set in the root CMakeLists.txt
 
-PROJECT_NUMBER         = "3.4.0 (git rev 3e3dc01fcfd884d41d542541a43db9bd47415458)"
+PROJECT_NUMBER         = "3.4.0 (git rev b7630a165a782bf49545f102abf02e5744ddee58)"
 
 # Using the PROJECT_BRIEF tag one can provide an optional one line description
 # for a project that appears at the top of each page and should give viewer

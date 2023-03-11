@@ -45,11 +45,11 @@ int main() {
             float py = b + (t - b) / image_height * (i + 0.5);
 
             Ray r1(vec3(0, 0, 0), vec3(0, 0, -focal_length) + px * horizontal + py * vertical);
-            Triangle tri(vec3(0, 0, -1), vec3(0, 0.3, -1), vec3(-0.3, 0, -1));
+            Triangle tri(nullptr, vec3(0, 0, -1), vec3(0, 0.3, -1), vec3(-0.3, 0, -1));
 
             auto ray_color = [&tri, &i, &j](Ray r) {
                 Intersection inter;
-                if (tri.getIntersect(r, inter)) {
+                if (tri.getIntersect(r,0, 1e9, inter)) {
 //                spdlog::info("True.  index:({},{})", i, j);
                     return vec3(1, 0, 0);
                 } else {

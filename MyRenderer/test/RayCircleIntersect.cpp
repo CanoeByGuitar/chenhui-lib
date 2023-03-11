@@ -40,13 +40,13 @@ int main() {
             float py = b + (t - b) / image_height * (i + 0.5);
 
             Ray r1(origin, vec3(0, 0, -focal_length) + px * horizontal + py * vertical);
-            Circle circle(vec3(-0.6, 0.3, -1), 0.3);
+            Circle circle(nullptr, vec3(-0.6, 0.3, -1), 0.3);
 
 
 
             auto ray_color = [&circle, &i, &j](Ray r){
                 Intersection inter;
-                if(circle.getIntersect(r, inter)){
+                if(circle.getIntersect(r,0, 1e9,  inter)){
                     spdlog::info("True.  index:({},{})", i, j);
                     return vec3(1, 0, 0);
                 }else{

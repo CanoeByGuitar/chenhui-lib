@@ -56,6 +56,18 @@ CMAKE_BINARY_DIR = /home/wch/github/chenhui-lib/cmake-build-debug
 #=============================================================================
 # Targets provided globally by CMake.
 
+# Special rule for the target install/strip
+install/strip: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip
+
+# Special rule for the target install/strip
+install/strip/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip/fast
+
 # Special rule for the target install/local
 install/local: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
@@ -112,18 +124,6 @@ edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
 
-# Special rule for the target install/strip
-install/strip: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
-.PHONY : install/strip
-
-# Special rule for the target install/strip
-install/strip/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
-.PHONY : install/strip/fast
-
 # The main all target
 all: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/wch/github/chenhui-lib/cmake-build-debug/CMakeFiles /home/wch/github/chenhui-lib/cmake-build-debug/CMakeFiles/progress.marks
@@ -157,30 +157,30 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named testeigen
+# Target rules for targets named learn_opengl
 
 # Build rule for target.
-testeigen: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 testeigen
-.PHONY : testeigen
+learn_opengl: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 learn_opengl
+.PHONY : learn_opengl
 
 # fast build rule for target.
-testeigen/fast:
-	$(MAKE) -f CMakeFiles/testeigen.dir/build.make CMakeFiles/testeigen.dir/build
-.PHONY : testeigen/fast
+learn_opengl/fast:
+	$(MAKE) -f CMakeFiles/learn_opengl.dir/build.make CMakeFiles/learn_opengl.dir/build
+.PHONY : learn_opengl/fast
 
 #=============================================================================
-# Target rules for targets named main
+# Target rules for targets named opengl_renderer
 
 # Build rule for target.
-main: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 main
-.PHONY : main
+opengl_renderer: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 opengl_renderer
+.PHONY : opengl_renderer
 
 # fast build rule for target.
-main/fast:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
-.PHONY : main/fast
+opengl_renderer/fast:
+	$(MAKE) -f CMakeFiles/opengl_renderer.dir/build.make CMakeFiles/opengl_renderer.dir/build
+.PHONY : opengl_renderer/fast
 
 #=============================================================================
 # Target rules for targets named uninstall
@@ -19670,45 +19670,6 @@ math/fast:
 .PHONY : math/fast
 
 #=============================================================================
-# Target rules for targets named raytriangle
-
-# Build rule for target.
-raytriangle: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 raytriangle
-.PHONY : raytriangle
-
-# fast build rule for target.
-raytriangle/fast:
-	$(MAKE) -f MyRenderer/CMakeFiles/raytriangle.dir/build.make MyRenderer/CMakeFiles/raytriangle.dir/build
-.PHONY : raytriangle/fast
-
-#=============================================================================
-# Target rules for targets named raycircle
-
-# Build rule for target.
-raycircle: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 raycircle
-.PHONY : raycircle
-
-# fast build rule for target.
-raycircle/fast:
-	$(MAKE) -f MyRenderer/CMakeFiles/raycircle.dir/build.make MyRenderer/CMakeFiles/raycircle.dir/build
-.PHONY : raycircle/fast
-
-#=============================================================================
-# Target rules for targets named vectest
-
-# Build rule for target.
-vectest: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 vectest
-.PHONY : vectest
-
-# fast build rule for target.
-vectest/fast:
-	$(MAKE) -f MyRenderer/CMakeFiles/vectest.dir/build.make MyRenderer/CMakeFiles/vectest.dir/build
-.PHONY : vectest/fast
-
-#=============================================================================
 # Target rules for targets named myrenderer
 
 # Build rule for target.
@@ -19721,13 +19682,157 @@ myrenderer/fast:
 	$(MAKE) -f MyRenderer/CMakeFiles/myrenderer.dir/build.make MyRenderer/CMakeFiles/myrenderer.dir/build
 .PHONY : myrenderer/fast
 
+#=============================================================================
+# Target rules for targets named AntiAliasingTest
+
+# Build rule for target.
+AntiAliasingTest: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 AntiAliasingTest
+.PHONY : AntiAliasingTest
+
+# fast build rule for target.
+AntiAliasingTest/fast:
+	$(MAKE) -f MyRenderer/CMakeFiles/AntiAliasingTest.dir/build.make MyRenderer/CMakeFiles/AntiAliasingTest.dir/build
+.PHONY : AntiAliasingTest/fast
+
+#=============================================================================
+# Target rules for targets named BlinnPhongShading
+
+# Build rule for target.
+BlinnPhongShading: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 BlinnPhongShading
+.PHONY : BlinnPhongShading
+
+# fast build rule for target.
+BlinnPhongShading/fast:
+	$(MAKE) -f MyRenderer/CMakeFiles/BlinnPhongShading.dir/build.make MyRenderer/CMakeFiles/BlinnPhongShading.dir/build
+.PHONY : BlinnPhongShading/fast
+
+#=============================================================================
+# Target rules for targets named LambertianShadingTest
+
+# Build rule for target.
+LambertianShadingTest: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 LambertianShadingTest
+.PHONY : LambertianShadingTest
+
+# fast build rule for target.
+LambertianShadingTest/fast:
+	$(MAKE) -f MyRenderer/CMakeFiles/LambertianShadingTest.dir/build.make MyRenderer/CMakeFiles/LambertianShadingTest.dir/build
+.PHONY : LambertianShadingTest/fast
+
+#=============================================================================
+# Target rules for targets named RayTriIntersect
+
+# Build rule for target.
+RayTriIntersect: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 RayTriIntersect
+.PHONY : RayTriIntersect
+
+# fast build rule for target.
+RayTriIntersect/fast:
+	$(MAKE) -f MyRenderer/CMakeFiles/RayTriIntersect.dir/build.make MyRenderer/CMakeFiles/RayTriIntersect.dir/build
+.PHONY : RayTriIntersect/fast
+
+#=============================================================================
+# Target rules for targets named VecTest
+
+# Build rule for target.
+VecTest: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 VecTest
+.PHONY : VecTest
+
+# fast build rule for target.
+VecTest/fast:
+	$(MAKE) -f MyRenderer/CMakeFiles/VecTest.dir/build.make MyRenderer/CMakeFiles/VecTest.dir/build
+.PHONY : VecTest/fast
+
+#=============================================================================
+# Target rules for targets named RayCircleIntersect
+
+# Build rule for target.
+RayCircleIntersect: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 RayCircleIntersect
+.PHONY : RayCircleIntersect
+
+# fast build rule for target.
+RayCircleIntersect/fast:
+	$(MAKE) -f MyRenderer/CMakeFiles/RayCircleIntersect.dir/build.make MyRenderer/CMakeFiles/RayCircleIntersect.dir/build
+.PHONY : RayCircleIntersect/fast
+
+#=============================================================================
+# Target rules for targets named SurfaceNormal
+
+# Build rule for target.
+SurfaceNormal: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 SurfaceNormal
+.PHONY : SurfaceNormal
+
+# fast build rule for target.
+SurfaceNormal/fast:
+	$(MAKE) -f MyRenderer/CMakeFiles/SurfaceNormal.dir/build.make MyRenderer/CMakeFiles/SurfaceNormal.dir/build
+.PHONY : SurfaceNormal/fast
+
+#=============================================================================
+# Target rules for targets named RayIntersectMultiObjects
+
+# Build rule for target.
+RayIntersectMultiObjects: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 RayIntersectMultiObjects
+.PHONY : RayIntersectMultiObjects
+
+# fast build rule for target.
+RayIntersectMultiObjects/fast:
+	$(MAKE) -f MyRenderer/CMakeFiles/RayIntersectMultiObjects.dir/build.make MyRenderer/CMakeFiles/RayIntersectMultiObjects.dir/build
+.PHONY : RayIntersectMultiObjects/fast
+
+#=============================================================================
+# Target rules for targets named RayPolygonIntersect
+
+# Build rule for target.
+RayPolygonIntersect: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 RayPolygonIntersect
+.PHONY : RayPolygonIntersect
+
+# fast build rule for target.
+RayPolygonIntersect/fast:
+	$(MAKE) -f MyRenderer/CMakeFiles/RayPolygonIntersect.dir/build.make MyRenderer/CMakeFiles/RayPolygonIntersect.dir/build
+.PHONY : RayPolygonIntersect/fast
+
+learn_opengl.o: learn_opengl.cpp.o
+
+.PHONY : learn_opengl.o
+
+# target to build an object file
+learn_opengl.cpp.o:
+	$(MAKE) -f CMakeFiles/learn_opengl.dir/build.make CMakeFiles/learn_opengl.dir/learn_opengl.cpp.o
+.PHONY : learn_opengl.cpp.o
+
+learn_opengl.i: learn_opengl.cpp.i
+
+.PHONY : learn_opengl.i
+
+# target to preprocess a source file
+learn_opengl.cpp.i:
+	$(MAKE) -f CMakeFiles/learn_opengl.dir/build.make CMakeFiles/learn_opengl.dir/learn_opengl.cpp.i
+.PHONY : learn_opengl.cpp.i
+
+learn_opengl.s: learn_opengl.cpp.s
+
+.PHONY : learn_opengl.s
+
+# target to generate assembly for a file
+learn_opengl.cpp.s:
+	$(MAKE) -f CMakeFiles/learn_opengl.dir/build.make CMakeFiles/learn_opengl.dir/learn_opengl.cpp.s
+.PHONY : learn_opengl.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
 
 # target to build an object file
 main.cpp.o:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/main.cpp.o
+	$(MAKE) -f CMakeFiles/opengl_renderer.dir/build.make CMakeFiles/opengl_renderer.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -19736,7 +19841,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/main.cpp.i
+	$(MAKE) -f CMakeFiles/opengl_renderer.dir/build.make CMakeFiles/opengl_renderer.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -19745,35 +19850,8 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/main.cpp.s
+	$(MAKE) -f CMakeFiles/opengl_renderer.dir/build.make CMakeFiles/opengl_renderer.dir/main.cpp.s
 .PHONY : main.cpp.s
-
-testEigen.o: testEigen.cpp.o
-
-.PHONY : testEigen.o
-
-# target to build an object file
-testEigen.cpp.o:
-	$(MAKE) -f CMakeFiles/testeigen.dir/build.make CMakeFiles/testeigen.dir/testEigen.cpp.o
-.PHONY : testEigen.cpp.o
-
-testEigen.i: testEigen.cpp.i
-
-.PHONY : testEigen.i
-
-# target to preprocess a source file
-testEigen.cpp.i:
-	$(MAKE) -f CMakeFiles/testeigen.dir/build.make CMakeFiles/testeigen.dir/testEigen.cpp.i
-.PHONY : testEigen.cpp.i
-
-testEigen.s: testEigen.cpp.s
-
-.PHONY : testEigen.s
-
-# target to generate assembly for a file
-testEigen.cpp.s:
-	$(MAKE) -f CMakeFiles/testeigen.dir/build.make CMakeFiles/testeigen.dir/testEigen.cpp.s
-.PHONY : testEigen.cpp.s
 
 # Help Target
 help:
@@ -19781,14 +19859,14 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
+	@echo "... install/strip"
 	@echo "... install/local"
 	@echo "... install"
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... install/strip"
-	@echo "... testeigen"
-	@echo "... main"
+	@echo "... learn_opengl"
+	@echo "... opengl_renderer"
 	@echo "... uninstall"
 	@echo "... ContinuousSubmit"
 	@echo "... NightlyMemCheck"
@@ -21288,16 +21366,22 @@ help:
 	@echo "... physics"
 	@echo "... testMath"
 	@echo "... math"
-	@echo "... raytriangle"
-	@echo "... raycircle"
-	@echo "... vectest"
 	@echo "... myrenderer"
+	@echo "... AntiAliasingTest"
+	@echo "... BlinnPhongShading"
+	@echo "... LambertianShadingTest"
+	@echo "... RayTriIntersect"
+	@echo "... VecTest"
+	@echo "... RayCircleIntersect"
+	@echo "... SurfaceNormal"
+	@echo "... RayIntersectMultiObjects"
+	@echo "... RayPolygonIntersect"
+	@echo "... learn_opengl.o"
+	@echo "... learn_opengl.i"
+	@echo "... learn_opengl.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
-	@echo "... testEigen.o"
-	@echo "... testEigen.i"
-	@echo "... testEigen.s"
 .PHONY : help
 
 

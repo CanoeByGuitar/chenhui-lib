@@ -265,8 +265,8 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/testeigen.dir/DependInfo.cmake"
-  "CMakeFiles/main.dir/DependInfo.cmake"
+  "CMakeFiles/learn_opengl.dir/DependInfo.cmake"
+  "CMakeFiles/opengl_renderer.dir/DependInfo.cmake"
   "external/eigen/CMakeFiles/uninstall.dir/DependInfo.cmake"
   "external/eigen/CMakeFiles/ContinuousSubmit.dir/DependInfo.cmake"
   "external/eigen/CMakeFiles/NightlyMemCheck.dir/DependInfo.cmake"
@@ -1766,8 +1766,14 @@ set(CMAKE_DEPEND_INFO_FILES
   "Physics/CMakeFiles/physics.dir/DependInfo.cmake"
   "Math/CMakeFiles/testMath.dir/DependInfo.cmake"
   "Math/CMakeFiles/math.dir/DependInfo.cmake"
-  "MyRenderer/CMakeFiles/raytriangle.dir/DependInfo.cmake"
-  "MyRenderer/CMakeFiles/raycircle.dir/DependInfo.cmake"
-  "MyRenderer/CMakeFiles/vectest.dir/DependInfo.cmake"
   "MyRenderer/CMakeFiles/myrenderer.dir/DependInfo.cmake"
+  "MyRenderer/CMakeFiles/AntiAliasingTest.dir/DependInfo.cmake"
+  "MyRenderer/CMakeFiles/BlinnPhongShading.dir/DependInfo.cmake"
+  "MyRenderer/CMakeFiles/LambertianShadingTest.dir/DependInfo.cmake"
+  "MyRenderer/CMakeFiles/RayTriIntersect.dir/DependInfo.cmake"
+  "MyRenderer/CMakeFiles/VecTest.dir/DependInfo.cmake"
+  "MyRenderer/CMakeFiles/RayCircleIntersect.dir/DependInfo.cmake"
+  "MyRenderer/CMakeFiles/SurfaceNormal.dir/DependInfo.cmake"
+  "MyRenderer/CMakeFiles/RayIntersectMultiObjects.dir/DependInfo.cmake"
+  "MyRenderer/CMakeFiles/RayPolygonIntersect.dir/DependInfo.cmake"
   )

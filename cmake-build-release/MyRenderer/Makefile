@@ -68,18 +68,6 @@ install/strip/fast: preinstall/fast
 	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
 .PHONY : install/strip/fast
 
-# Special rule for the target install/local
-install/local: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
-.PHONY : install/local
-
-# Special rule for the target install/local
-install/local/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
-.PHONY : install/local/fast
-
 # Special rule for the target install
 install: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
@@ -92,15 +80,28 @@ install/fast: preinstall/fast
 	/usr/bin/cmake -P cmake_install.cmake
 .PHONY : install/fast
 
-# Special rule for the target list_install_components
-list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Devel\" \"Unspecified\""
-.PHONY : list_install_components
+# Special rule for the target install/local
+install/local: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local
 
-# Special rule for the target list_install_components
-list_install_components/fast: list_install_components
+# Special rule for the target install/local
+install/local/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local/fast
 
-.PHONY : list_install_components/fast
+# Special rule for the target edit_cache
+edit_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+.PHONY : edit_cache
+
+# Special rule for the target edit_cache
+edit_cache/fast: edit_cache
+
+.PHONY : edit_cache/fast
 
 # Special rule for the target rebuild_cache
 rebuild_cache:
@@ -113,16 +114,15 @@ rebuild_cache/fast: rebuild_cache
 
 .PHONY : rebuild_cache/fast
 
-# Special rule for the target edit_cache
-edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
-.PHONY : edit_cache
+# Special rule for the target list_install_components
+list_install_components:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Devel\" \"Unspecified\""
+.PHONY : list_install_components
 
-# Special rule for the target edit_cache
-edit_cache/fast: edit_cache
+# Special rule for the target list_install_components
+list_install_components/fast: list_install_components
 
-.PHONY : edit_cache/fast
+.PHONY : list_install_components/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -157,51 +157,6 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-MyRenderer/CMakeFiles/raytriangle.dir/rule:
-	cd /home/wch/github/chenhui-lib/cmake-build-release && $(MAKE) -f CMakeFiles/Makefile2 MyRenderer/CMakeFiles/raytriangle.dir/rule
-.PHONY : MyRenderer/CMakeFiles/raytriangle.dir/rule
-
-# Convenience name for target.
-raytriangle: MyRenderer/CMakeFiles/raytriangle.dir/rule
-
-.PHONY : raytriangle
-
-# fast build rule for target.
-raytriangle/fast:
-	cd /home/wch/github/chenhui-lib/cmake-build-release && $(MAKE) -f MyRenderer/CMakeFiles/raytriangle.dir/build.make MyRenderer/CMakeFiles/raytriangle.dir/build
-.PHONY : raytriangle/fast
-
-# Convenience name for target.
-MyRenderer/CMakeFiles/raycircle.dir/rule:
-	cd /home/wch/github/chenhui-lib/cmake-build-release && $(MAKE) -f CMakeFiles/Makefile2 MyRenderer/CMakeFiles/raycircle.dir/rule
-.PHONY : MyRenderer/CMakeFiles/raycircle.dir/rule
-
-# Convenience name for target.
-raycircle: MyRenderer/CMakeFiles/raycircle.dir/rule
-
-.PHONY : raycircle
-
-# fast build rule for target.
-raycircle/fast:
-	cd /home/wch/github/chenhui-lib/cmake-build-release && $(MAKE) -f MyRenderer/CMakeFiles/raycircle.dir/build.make MyRenderer/CMakeFiles/raycircle.dir/build
-.PHONY : raycircle/fast
-
-# Convenience name for target.
-MyRenderer/CMakeFiles/vectest.dir/rule:
-	cd /home/wch/github/chenhui-lib/cmake-build-release && $(MAKE) -f CMakeFiles/Makefile2 MyRenderer/CMakeFiles/vectest.dir/rule
-.PHONY : MyRenderer/CMakeFiles/vectest.dir/rule
-
-# Convenience name for target.
-vectest: MyRenderer/CMakeFiles/vectest.dir/rule
-
-.PHONY : vectest
-
-# fast build rule for target.
-vectest/fast:
-	cd /home/wch/github/chenhui-lib/cmake-build-release && $(MAKE) -f MyRenderer/CMakeFiles/vectest.dir/build.make MyRenderer/CMakeFiles/vectest.dir/build
-.PHONY : vectest/fast
-
-# Convenience name for target.
 MyRenderer/CMakeFiles/myrenderer.dir/rule:
 	cd /home/wch/github/chenhui-lib/cmake-build-release && $(MAKE) -f CMakeFiles/Makefile2 MyRenderer/CMakeFiles/myrenderer.dir/rule
 .PHONY : MyRenderer/CMakeFiles/myrenderer.dir/rule
@@ -215,6 +170,141 @@ myrenderer: MyRenderer/CMakeFiles/myrenderer.dir/rule
 myrenderer/fast:
 	cd /home/wch/github/chenhui-lib/cmake-build-release && $(MAKE) -f MyRenderer/CMakeFiles/myrenderer.dir/build.make MyRenderer/CMakeFiles/myrenderer.dir/build
 .PHONY : myrenderer/fast
+
+# Convenience name for target.
+MyRenderer/CMakeFiles/AntiAliasingTest.dir/rule:
+	cd /home/wch/github/chenhui-lib/cmake-build-release && $(MAKE) -f CMakeFiles/Makefile2 MyRenderer/CMakeFiles/AntiAliasingTest.dir/rule
+.PHONY : MyRenderer/CMakeFiles/AntiAliasingTest.dir/rule
+
+# Convenience name for target.
+AntiAliasingTest: MyRenderer/CMakeFiles/AntiAliasingTest.dir/rule
+
+.PHONY : AntiAliasingTest
+
+# fast build rule for target.
+AntiAliasingTest/fast:
+	cd /home/wch/github/chenhui-lib/cmake-build-release && $(MAKE) -f MyRenderer/CMakeFiles/AntiAliasingTest.dir/build.make MyRenderer/CMakeFiles/AntiAliasingTest.dir/build
+.PHONY : AntiAliasingTest/fast
+
+# Convenience name for target.
+MyRenderer/CMakeFiles/BlinnPhongShading.dir/rule:
+	cd /home/wch/github/chenhui-lib/cmake-build-release && $(MAKE) -f CMakeFiles/Makefile2 MyRenderer/CMakeFiles/BlinnPhongShading.dir/rule
+.PHONY : MyRenderer/CMakeFiles/BlinnPhongShading.dir/rule
+
+# Convenience name for target.
+BlinnPhongShading: MyRenderer/CMakeFiles/BlinnPhongShading.dir/rule
+
+.PHONY : BlinnPhongShading
+
+# fast build rule for target.
+BlinnPhongShading/fast:
+	cd /home/wch/github/chenhui-lib/cmake-build-release && $(MAKE) -f MyRenderer/CMakeFiles/BlinnPhongShading.dir/build.make MyRenderer/CMakeFiles/BlinnPhongShading.dir/build
+.PHONY : BlinnPhongShading/fast
+
+# Convenience name for target.
+MyRenderer/CMakeFiles/LambertianShadingTest.dir/rule:
+	cd /home/wch/github/chenhui-lib/cmake-build-release && $(MAKE) -f CMakeFiles/Makefile2 MyRenderer/CMakeFiles/LambertianShadingTest.dir/rule
+.PHONY : MyRenderer/CMakeFiles/LambertianShadingTest.dir/rule
+
+# Convenience name for target.
+LambertianShadingTest: MyRenderer/CMakeFiles/LambertianShadingTest.dir/rule
+
+.PHONY : LambertianShadingTest
+
+# fast build rule for target.
+LambertianShadingTest/fast:
+	cd /home/wch/github/chenhui-lib/cmake-build-release && $(MAKE) -f MyRenderer/CMakeFiles/LambertianShadingTest.dir/build.make MyRenderer/CMakeFiles/LambertianShadingTest.dir/build
+.PHONY : LambertianShadingTest/fast
+
+# Convenience name for target.
+MyRenderer/CMakeFiles/RayTriIntersect.dir/rule:
+	cd /home/wch/github/chenhui-lib/cmake-build-release && $(MAKE) -f CMakeFiles/Makefile2 MyRenderer/CMakeFiles/RayTriIntersect.dir/rule
+.PHONY : MyRenderer/CMakeFiles/RayTriIntersect.dir/rule
+
+# Convenience name for target.
+RayTriIntersect: MyRenderer/CMakeFiles/RayTriIntersect.dir/rule
+
+.PHONY : RayTriIntersect
+
+# fast build rule for target.
+RayTriIntersect/fast:
+	cd /home/wch/github/chenhui-lib/cmake-build-release && $(MAKE) -f MyRenderer/CMakeFiles/RayTriIntersect.dir/build.make MyRenderer/CMakeFiles/RayTriIntersect.dir/build
+.PHONY : RayTriIntersect/fast
+
+# Convenience name for target.
+MyRenderer/CMakeFiles/VecTest.dir/rule:
+	cd /home/wch/github/chenhui-lib/cmake-build-release && $(MAKE) -f CMakeFiles/Makefile2 MyRenderer/CMakeFiles/VecTest.dir/rule
+.PHONY : MyRenderer/CMakeFiles/VecTest.dir/rule
+
+# Convenience name for target.
+VecTest: MyRenderer/CMakeFiles/VecTest.dir/rule
+
+.PHONY : VecTest
+
+# fast build rule for target.
+VecTest/fast:
+	cd /home/wch/github/chenhui-lib/cmake-build-release && $(MAKE) -f MyRenderer/CMakeFiles/VecTest.dir/build.make MyRenderer/CMakeFiles/VecTest.dir/build
+.PHONY : VecTest/fast
+
+# Convenience name for target.
+MyRenderer/CMakeFiles/RayCircleIntersect.dir/rule:
+	cd /home/wch/github/chenhui-lib/cmake-build-release && $(MAKE) -f CMakeFiles/Makefile2 MyRenderer/CMakeFiles/RayCircleIntersect.dir/rule
+.PHONY : MyRenderer/CMakeFiles/RayCircleIntersect.dir/rule
+
+# Convenience name for target.
+RayCircleIntersect: MyRenderer/CMakeFiles/RayCircleIntersect.dir/rule
+
+.PHONY : RayCircleIntersect
+
+# fast build rule for target.
+RayCircleIntersect/fast:
+	cd /home/wch/github/chenhui-lib/cmake-build-release && $(MAKE) -f MyRenderer/CMakeFiles/RayCircleIntersect.dir/build.make MyRenderer/CMakeFiles/RayCircleIntersect.dir/build
+.PHONY : RayCircleIntersect/fast
+
+# Convenience name for target.
+MyRenderer/CMakeFiles/SurfaceNormal.dir/rule:
+	cd /home/wch/github/chenhui-lib/cmake-build-release && $(MAKE) -f CMakeFiles/Makefile2 MyRenderer/CMakeFiles/SurfaceNormal.dir/rule
+.PHONY : MyRenderer/CMakeFiles/SurfaceNormal.dir/rule
+
+# Convenience name for target.
+SurfaceNormal: MyRenderer/CMakeFiles/SurfaceNormal.dir/rule
+
+.PHONY : SurfaceNormal
+
+# fast build rule for target.
+SurfaceNormal/fast:
+	cd /home/wch/github/chenhui-lib/cmake-build-release && $(MAKE) -f MyRenderer/CMakeFiles/SurfaceNormal.dir/build.make MyRenderer/CMakeFiles/SurfaceNormal.dir/build
+.PHONY : SurfaceNormal/fast
+
+# Convenience name for target.
+MyRenderer/CMakeFiles/RayIntersectMultiObjects.dir/rule:
+	cd /home/wch/github/chenhui-lib/cmake-build-release && $(MAKE) -f CMakeFiles/Makefile2 MyRenderer/CMakeFiles/RayIntersectMultiObjects.dir/rule
+.PHONY : MyRenderer/CMakeFiles/RayIntersectMultiObjects.dir/rule
+
+# Convenience name for target.
+RayIntersectMultiObjects: MyRenderer/CMakeFiles/RayIntersectMultiObjects.dir/rule
+
+.PHONY : RayIntersectMultiObjects
+
+# fast build rule for target.
+RayIntersectMultiObjects/fast:
+	cd /home/wch/github/chenhui-lib/cmake-build-release && $(MAKE) -f MyRenderer/CMakeFiles/RayIntersectMultiObjects.dir/build.make MyRenderer/CMakeFiles/RayIntersectMultiObjects.dir/build
+.PHONY : RayIntersectMultiObjects/fast
+
+# Convenience name for target.
+MyRenderer/CMakeFiles/RayPolygonIntersect.dir/rule:
+	cd /home/wch/github/chenhui-lib/cmake-build-release && $(MAKE) -f CMakeFiles/Makefile2 MyRenderer/CMakeFiles/RayPolygonIntersect.dir/rule
+.PHONY : MyRenderer/CMakeFiles/RayPolygonIntersect.dir/rule
+
+# Convenience name for target.
+RayPolygonIntersect: MyRenderer/CMakeFiles/RayPolygonIntersect.dir/rule
+
+.PHONY : RayPolygonIntersect
+
+# fast build rule for target.
+RayPolygonIntersect/fast:
+	cd /home/wch/github/chenhui-lib/cmake-build-release && $(MAKE) -f MyRenderer/CMakeFiles/RayPolygonIntersect.dir/build.make MyRenderer/CMakeFiles/RayPolygonIntersect.dir/build
+.PHONY : RayPolygonIntersect/fast
 
 main.o: main.cpp.o
 
@@ -243,13 +333,94 @@ main.cpp.s:
 	cd /home/wch/github/chenhui-lib/cmake-build-release && $(MAKE) -f MyRenderer/CMakeFiles/myrenderer.dir/build.make MyRenderer/CMakeFiles/myrenderer.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+test/AntiAliasingTest.o: test/AntiAliasingTest.cpp.o
+
+.PHONY : test/AntiAliasingTest.o
+
+# target to build an object file
+test/AntiAliasingTest.cpp.o:
+	cd /home/wch/github/chenhui-lib/cmake-build-release && $(MAKE) -f MyRenderer/CMakeFiles/AntiAliasingTest.dir/build.make MyRenderer/CMakeFiles/AntiAliasingTest.dir/test/AntiAliasingTest.cpp.o
+.PHONY : test/AntiAliasingTest.cpp.o
+
+test/AntiAliasingTest.i: test/AntiAliasingTest.cpp.i
+
+.PHONY : test/AntiAliasingTest.i
+
+# target to preprocess a source file
+test/AntiAliasingTest.cpp.i:
+	cd /home/wch/github/chenhui-lib/cmake-build-release && $(MAKE) -f MyRenderer/CMakeFiles/AntiAliasingTest.dir/build.make MyRenderer/CMakeFiles/AntiAliasingTest.dir/test/AntiAliasingTest.cpp.i
+.PHONY : test/AntiAliasingTest.cpp.i
+
+test/AntiAliasingTest.s: test/AntiAliasingTest.cpp.s
+
+.PHONY : test/AntiAliasingTest.s
+
+# target to generate assembly for a file
+test/AntiAliasingTest.cpp.s:
+	cd /home/wch/github/chenhui-lib/cmake-build-release && $(MAKE) -f MyRenderer/CMakeFiles/AntiAliasingTest.dir/build.make MyRenderer/CMakeFiles/AntiAliasingTest.dir/test/AntiAliasingTest.cpp.s
+.PHONY : test/AntiAliasingTest.cpp.s
+
+test/BlinnPhongShading.o: test/BlinnPhongShading.cpp.o
+
+.PHONY : test/BlinnPhongShading.o
+
+# target to build an object file
+test/BlinnPhongShading.cpp.o:
+	cd /home/wch/github/chenhui-lib/cmake-build-release && $(MAKE) -f MyRenderer/CMakeFiles/BlinnPhongShading.dir/build.make MyRenderer/CMakeFiles/BlinnPhongShading.dir/test/BlinnPhongShading.cpp.o
+.PHONY : test/BlinnPhongShading.cpp.o
+
+test/BlinnPhongShading.i: test/BlinnPhongShading.cpp.i
+
+.PHONY : test/BlinnPhongShading.i
+
+# target to preprocess a source file
+test/BlinnPhongShading.cpp.i:
+	cd /home/wch/github/chenhui-lib/cmake-build-release && $(MAKE) -f MyRenderer/CMakeFiles/BlinnPhongShading.dir/build.make MyRenderer/CMakeFiles/BlinnPhongShading.dir/test/BlinnPhongShading.cpp.i
+.PHONY : test/BlinnPhongShading.cpp.i
+
+test/BlinnPhongShading.s: test/BlinnPhongShading.cpp.s
+
+.PHONY : test/BlinnPhongShading.s
+
+# target to generate assembly for a file
+test/BlinnPhongShading.cpp.s:
+	cd /home/wch/github/chenhui-lib/cmake-build-release && $(MAKE) -f MyRenderer/CMakeFiles/BlinnPhongShading.dir/build.make MyRenderer/CMakeFiles/BlinnPhongShading.dir/test/BlinnPhongShading.cpp.s
+.PHONY : test/BlinnPhongShading.cpp.s
+
+test/LambertianShadingTest.o: test/LambertianShadingTest.cpp.o
+
+.PHONY : test/LambertianShadingTest.o
+
+# target to build an object file
+test/LambertianShadingTest.cpp.o:
+	cd /home/wch/github/chenhui-lib/cmake-build-release && $(MAKE) -f MyRenderer/CMakeFiles/LambertianShadingTest.dir/build.make MyRenderer/CMakeFiles/LambertianShadingTest.dir/test/LambertianShadingTest.cpp.o
+.PHONY : test/LambertianShadingTest.cpp.o
+
+test/LambertianShadingTest.i: test/LambertianShadingTest.cpp.i
+
+.PHONY : test/LambertianShadingTest.i
+
+# target to preprocess a source file
+test/LambertianShadingTest.cpp.i:
+	cd /home/wch/github/chenhui-lib/cmake-build-release && $(MAKE) -f MyRenderer/CMakeFiles/LambertianShadingTest.dir/build.make MyRenderer/CMakeFiles/LambertianShadingTest.dir/test/LambertianShadingTest.cpp.i
+.PHONY : test/LambertianShadingTest.cpp.i
+
+test/LambertianShadingTest.s: test/LambertianShadingTest.cpp.s
+
+.PHONY : test/LambertianShadingTest.s
+
+# target to generate assembly for a file
+test/LambertianShadingTest.cpp.s:
+	cd /home/wch/github/chenhui-lib/cmake-build-release && $(MAKE) -f MyRenderer/CMakeFiles/LambertianShadingTest.dir/build.make MyRenderer/CMakeFiles/LambertianShadingTest.dir/test/LambertianShadingTest.cpp.s
+.PHONY : test/LambertianShadingTest.cpp.s
+
 test/RayCircleIntersect.o: test/RayCircleIntersect.cpp.o
 
 .PHONY : test/RayCircleIntersect.o
 
 # target to build an object file
 test/RayCircleIntersect.cpp.o:
-	cd /home/wch/github/chenhui-lib/cmake-build-release && $(MAKE) -f MyRenderer/CMakeFiles/raycircle.dir/build.make MyRenderer/CMakeFiles/raycircle.dir/test/RayCircleIntersect.cpp.o
+	cd /home/wch/github/chenhui-lib/cmake-build-release && $(MAKE) -f MyRenderer/CMakeFiles/RayCircleIntersect.dir/build.make MyRenderer/CMakeFiles/RayCircleIntersect.dir/test/RayCircleIntersect.cpp.o
 .PHONY : test/RayCircleIntersect.cpp.o
 
 test/RayCircleIntersect.i: test/RayCircleIntersect.cpp.i
@@ -258,7 +429,7 @@ test/RayCircleIntersect.i: test/RayCircleIntersect.cpp.i
 
 # target to preprocess a source file
 test/RayCircleIntersect.cpp.i:
-	cd /home/wch/github/chenhui-lib/cmake-build-release && $(MAKE) -f MyRenderer/CMakeFiles/raycircle.dir/build.make MyRenderer/CMakeFiles/raycircle.dir/test/RayCircleIntersect.cpp.i
+	cd /home/wch/github/chenhui-lib/cmake-build-release && $(MAKE) -f MyRenderer/CMakeFiles/RayCircleIntersect.dir/build.make MyRenderer/CMakeFiles/RayCircleIntersect.dir/test/RayCircleIntersect.cpp.i
 .PHONY : test/RayCircleIntersect.cpp.i
 
 test/RayCircleIntersect.s: test/RayCircleIntersect.cpp.s
@@ -267,8 +438,62 @@ test/RayCircleIntersect.s: test/RayCircleIntersect.cpp.s
 
 # target to generate assembly for a file
 test/RayCircleIntersect.cpp.s:
-	cd /home/wch/github/chenhui-lib/cmake-build-release && $(MAKE) -f MyRenderer/CMakeFiles/raycircle.dir/build.make MyRenderer/CMakeFiles/raycircle.dir/test/RayCircleIntersect.cpp.s
+	cd /home/wch/github/chenhui-lib/cmake-build-release && $(MAKE) -f MyRenderer/CMakeFiles/RayCircleIntersect.dir/build.make MyRenderer/CMakeFiles/RayCircleIntersect.dir/test/RayCircleIntersect.cpp.s
 .PHONY : test/RayCircleIntersect.cpp.s
+
+test/RayIntersectMultiObjects.o: test/RayIntersectMultiObjects.cpp.o
+
+.PHONY : test/RayIntersectMultiObjects.o
+
+# target to build an object file
+test/RayIntersectMultiObjects.cpp.o:
+	cd /home/wch/github/chenhui-lib/cmake-build-release && $(MAKE) -f MyRenderer/CMakeFiles/RayIntersectMultiObjects.dir/build.make MyRenderer/CMakeFiles/RayIntersectMultiObjects.dir/test/RayIntersectMultiObjects.cpp.o
+.PHONY : test/RayIntersectMultiObjects.cpp.o
+
+test/RayIntersectMultiObjects.i: test/RayIntersectMultiObjects.cpp.i
+
+.PHONY : test/RayIntersectMultiObjects.i
+
+# target to preprocess a source file
+test/RayIntersectMultiObjects.cpp.i:
+	cd /home/wch/github/chenhui-lib/cmake-build-release && $(MAKE) -f MyRenderer/CMakeFiles/RayIntersectMultiObjects.dir/build.make MyRenderer/CMakeFiles/RayIntersectMultiObjects.dir/test/RayIntersectMultiObjects.cpp.i
+.PHONY : test/RayIntersectMultiObjects.cpp.i
+
+test/RayIntersectMultiObjects.s: test/RayIntersectMultiObjects.cpp.s
+
+.PHONY : test/RayIntersectMultiObjects.s
+
+# target to generate assembly for a file
+test/RayIntersectMultiObjects.cpp.s:
+	cd /home/wch/github/chenhui-lib/cmake-build-release && $(MAKE) -f MyRenderer/CMakeFiles/RayIntersectMultiObjects.dir/build.make MyRenderer/CMakeFiles/RayIntersectMultiObjects.dir/test/RayIntersectMultiObjects.cpp.s
+.PHONY : test/RayIntersectMultiObjects.cpp.s
+
+test/RayPolygonIntersect.o: test/RayPolygonIntersect.cpp.o
+
+.PHONY : test/RayPolygonIntersect.o
+
+# target to build an object file
+test/RayPolygonIntersect.cpp.o:
+	cd /home/wch/github/chenhui-lib/cmake-build-release && $(MAKE) -f MyRenderer/CMakeFiles/RayPolygonIntersect.dir/build.make MyRenderer/CMakeFiles/RayPolygonIntersect.dir/test/RayPolygonIntersect.cpp.o
+.PHONY : test/RayPolygonIntersect.cpp.o
+
+test/RayPolygonIntersect.i: test/RayPolygonIntersect.cpp.i
+
+.PHONY : test/RayPolygonIntersect.i
+
+# target to preprocess a source file
+test/RayPolygonIntersect.cpp.i:
+	cd /home/wch/github/chenhui-lib/cmake-build-release && $(MAKE) -f MyRenderer/CMakeFiles/RayPolygonIntersect.dir/build.make MyRenderer/CMakeFiles/RayPolygonIntersect.dir/test/RayPolygonIntersect.cpp.i
+.PHONY : test/RayPolygonIntersect.cpp.i
+
+test/RayPolygonIntersect.s: test/RayPolygonIntersect.cpp.s
+
+.PHONY : test/RayPolygonIntersect.s
+
+# target to generate assembly for a file
+test/RayPolygonIntersect.cpp.s:
+	cd /home/wch/github/chenhui-lib/cmake-build-release && $(MAKE) -f MyRenderer/CMakeFiles/RayPolygonIntersect.dir/build.make MyRenderer/CMakeFiles/RayPolygonIntersect.dir/test/RayPolygonIntersect.cpp.s
+.PHONY : test/RayPolygonIntersect.cpp.s
 
 test/RayTriIntersect.o: test/RayTriIntersect.cpp.o
 
@@ -276,7 +501,7 @@ test/RayTriIntersect.o: test/RayTriIntersect.cpp.o
 
 # target to build an object file
 test/RayTriIntersect.cpp.o:
-	cd /home/wch/github/chenhui-lib/cmake-build-release && $(MAKE) -f MyRenderer/CMakeFiles/raytriangle.dir/build.make MyRenderer/CMakeFiles/raytriangle.dir/test/RayTriIntersect.cpp.o
+	cd /home/wch/github/chenhui-lib/cmake-build-release && $(MAKE) -f MyRenderer/CMakeFiles/RayTriIntersect.dir/build.make MyRenderer/CMakeFiles/RayTriIntersect.dir/test/RayTriIntersect.cpp.o
 .PHONY : test/RayTriIntersect.cpp.o
 
 test/RayTriIntersect.i: test/RayTriIntersect.cpp.i
@@ -285,7 +510,7 @@ test/RayTriIntersect.i: test/RayTriIntersect.cpp.i
 
 # target to preprocess a source file
 test/RayTriIntersect.cpp.i:
-	cd /home/wch/github/chenhui-lib/cmake-build-release && $(MAKE) -f MyRenderer/CMakeFiles/raytriangle.dir/build.make MyRenderer/CMakeFiles/raytriangle.dir/test/RayTriIntersect.cpp.i
+	cd /home/wch/github/chenhui-lib/cmake-build-release && $(MAKE) -f MyRenderer/CMakeFiles/RayTriIntersect.dir/build.make MyRenderer/CMakeFiles/RayTriIntersect.dir/test/RayTriIntersect.cpp.i
 .PHONY : test/RayTriIntersect.cpp.i
 
 test/RayTriIntersect.s: test/RayTriIntersect.cpp.s
@@ -294,8 +519,35 @@ test/RayTriIntersect.s: test/RayTriIntersect.cpp.s
 
 # target to generate assembly for a file
 test/RayTriIntersect.cpp.s:
-	cd /home/wch/github/chenhui-lib/cmake-build-release && $(MAKE) -f MyRenderer/CMakeFiles/raytriangle.dir/build.make MyRenderer/CMakeFiles/raytriangle.dir/test/RayTriIntersect.cpp.s
+	cd /home/wch/github/chenhui-lib/cmake-build-release && $(MAKE) -f MyRenderer/CMakeFiles/RayTriIntersect.dir/build.make MyRenderer/CMakeFiles/RayTriIntersect.dir/test/RayTriIntersect.cpp.s
 .PHONY : test/RayTriIntersect.cpp.s
+
+test/SurfaceNormal.o: test/SurfaceNormal.cpp.o
+
+.PHONY : test/SurfaceNormal.o
+
+# target to build an object file
+test/SurfaceNormal.cpp.o:
+	cd /home/wch/github/chenhui-lib/cmake-build-release && $(MAKE) -f MyRenderer/CMakeFiles/SurfaceNormal.dir/build.make MyRenderer/CMakeFiles/SurfaceNormal.dir/test/SurfaceNormal.cpp.o
+.PHONY : test/SurfaceNormal.cpp.o
+
+test/SurfaceNormal.i: test/SurfaceNormal.cpp.i
+
+.PHONY : test/SurfaceNormal.i
+
+# target to preprocess a source file
+test/SurfaceNormal.cpp.i:
+	cd /home/wch/github/chenhui-lib/cmake-build-release && $(MAKE) -f MyRenderer/CMakeFiles/SurfaceNormal.dir/build.make MyRenderer/CMakeFiles/SurfaceNormal.dir/test/SurfaceNormal.cpp.i
+.PHONY : test/SurfaceNormal.cpp.i
+
+test/SurfaceNormal.s: test/SurfaceNormal.cpp.s
+
+.PHONY : test/SurfaceNormal.s
+
+# target to generate assembly for a file
+test/SurfaceNormal.cpp.s:
+	cd /home/wch/github/chenhui-lib/cmake-build-release && $(MAKE) -f MyRenderer/CMakeFiles/SurfaceNormal.dir/build.make MyRenderer/CMakeFiles/SurfaceNormal.dir/test/SurfaceNormal.cpp.s
+.PHONY : test/SurfaceNormal.cpp.s
 
 test/VecTest.o: test/VecTest.cpp.o
 
@@ -303,7 +555,7 @@ test/VecTest.o: test/VecTest.cpp.o
 
 # target to build an object file
 test/VecTest.cpp.o:
-	cd /home/wch/github/chenhui-lib/cmake-build-release && $(MAKE) -f MyRenderer/CMakeFiles/vectest.dir/build.make MyRenderer/CMakeFiles/vectest.dir/test/VecTest.cpp.o
+	cd /home/wch/github/chenhui-lib/cmake-build-release && $(MAKE) -f MyRenderer/CMakeFiles/VecTest.dir/build.make MyRenderer/CMakeFiles/VecTest.dir/test/VecTest.cpp.o
 .PHONY : test/VecTest.cpp.o
 
 test/VecTest.i: test/VecTest.cpp.i
@@ -312,7 +564,7 @@ test/VecTest.i: test/VecTest.cpp.i
 
 # target to preprocess a source file
 test/VecTest.cpp.i:
-	cd /home/wch/github/chenhui-lib/cmake-build-release && $(MAKE) -f MyRenderer/CMakeFiles/vectest.dir/build.make MyRenderer/CMakeFiles/vectest.dir/test/VecTest.cpp.i
+	cd /home/wch/github/chenhui-lib/cmake-build-release && $(MAKE) -f MyRenderer/CMakeFiles/VecTest.dir/build.make MyRenderer/CMakeFiles/VecTest.dir/test/VecTest.cpp.i
 .PHONY : test/VecTest.cpp.i
 
 test/VecTest.s: test/VecTest.cpp.s
@@ -321,7 +573,7 @@ test/VecTest.s: test/VecTest.cpp.s
 
 # target to generate assembly for a file
 test/VecTest.cpp.s:
-	cd /home/wch/github/chenhui-lib/cmake-build-release && $(MAKE) -f MyRenderer/CMakeFiles/vectest.dir/build.make MyRenderer/CMakeFiles/vectest.dir/test/VecTest.cpp.s
+	cd /home/wch/github/chenhui-lib/cmake-build-release && $(MAKE) -f MyRenderer/CMakeFiles/VecTest.dir/build.make MyRenderer/CMakeFiles/VecTest.dir/test/VecTest.cpp.s
 .PHONY : test/VecTest.cpp.s
 
 # Help Target
@@ -331,24 +583,48 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... install/strip"
-	@echo "... install/local"
 	@echo "... install"
-	@echo "... list_install_components"
-	@echo "... rebuild_cache"
-	@echo "... raytriangle"
-	@echo "... raycircle"
-	@echo "... vectest"
-	@echo "... edit_cache"
 	@echo "... myrenderer"
+	@echo "... AntiAliasingTest"
+	@echo "... BlinnPhongShading"
+	@echo "... LambertianShadingTest"
+	@echo "... RayTriIntersect"
+	@echo "... VecTest"
+	@echo "... RayCircleIntersect"
+	@echo "... SurfaceNormal"
+	@echo "... RayIntersectMultiObjects"
+	@echo "... install/local"
+	@echo "... RayPolygonIntersect"
+	@echo "... edit_cache"
+	@echo "... rebuild_cache"
+	@echo "... list_install_components"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... test/AntiAliasingTest.o"
+	@echo "... test/AntiAliasingTest.i"
+	@echo "... test/AntiAliasingTest.s"
+	@echo "... test/BlinnPhongShading.o"
+	@echo "... test/BlinnPhongShading.i"
+	@echo "... test/BlinnPhongShading.s"
+	@echo "... test/LambertianShadingTest.o"
+	@echo "... test/LambertianShadingTest.i"
+	@echo "... test/LambertianShadingTest.s"
 	@echo "... test/RayCircleIntersect.o"
 	@echo "... test/RayCircleIntersect.i"
 	@echo "... test/RayCircleIntersect.s"
+	@echo "... test/RayIntersectMultiObjects.o"
+	@echo "... test/RayIntersectMultiObjects.i"
+	@echo "... test/RayIntersectMultiObjects.s"
+	@echo "... test/RayPolygonIntersect.o"
+	@echo "... test/RayPolygonIntersect.i"
+	@echo "... test/RayPolygonIntersect.s"
 	@echo "... test/RayTriIntersect.o"
 	@echo "... test/RayTriIntersect.i"
 	@echo "... test/RayTriIntersect.s"
+	@echo "... test/SurfaceNormal.o"
+	@echo "... test/SurfaceNormal.i"
+	@echo "... test/SurfaceNormal.s"
 	@echo "... test/VecTest.o"
 	@echo "... test/VecTest.i"
 	@echo "... test/VecTest.s"

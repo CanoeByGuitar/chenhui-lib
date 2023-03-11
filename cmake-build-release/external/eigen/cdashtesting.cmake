@@ -2,7 +2,7 @@
 set(CTEST_SOURCE_DIRECTORY  "/home/wch/github/chenhui-lib")
 set(CTEST_BINARY_DIRECTORY  "/home/wch/github/chenhui-lib/cmake-build-release")
 set(CTEST_CMAKE_GENERATOR   "Unix Makefiles")
-set(CTEST_BUILD_NAME        "linux-5.15.79.1-microsoft-standard-wsl2-g++-7.5.0-sse2-64bit")
+set(CTEST_BUILD_NAME        "linux-5.15.90.1-microsoft-standard-wsl2-g++-7.5.0-sse2-64bit")
 set(CTEST_SITE              "DESKTOP-PE9RO90")
 
 set(MODEL Experimental)
