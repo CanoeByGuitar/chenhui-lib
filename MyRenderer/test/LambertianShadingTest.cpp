@@ -13,12 +13,7 @@
 #include "../Utils.h"
 #define INF 1e9
 
-// light
-struct Light{
-    vec3 pos;
-    float intensity;
-    Light(const vec3& pos, float i):pos(pos),intensity(i){}
-};
+#include "../Light.h"
 
 vec3 ray_color(SurfaceList &world, Ray r, Light light){
     Intersection inter1;
@@ -70,8 +65,6 @@ int main() {
     // Render
     FILE *fp = fopen("LambertianTest.ppm", "wb");
     (void) fprintf(fp, "P6\n%d %d\n255\n", image_width, image_height);
-
-
 
 
     for(int i = image_height - 1; i >= 0; i--){

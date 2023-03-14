@@ -12,16 +12,11 @@
 #include <spdlog/spdlog.h>
 #include "../Camera.h"
 #include "../Utils.h"
-
+#include "../Light.h"
 #define INF 1e9
 
-// light
-struct Light {
-    vec3 pos;
-    float intensity;
 
-    Light(const vec3 &pos, float i) : pos(pos), intensity(i) {}
-};
+
 
 vec3 ray_color(SurfaceList &world, Ray r, const std::vector<Light> &light_list, int pow_num) {
     Intersection inter1;
@@ -41,7 +36,8 @@ vec3 ray_color(SurfaceList &world, Ray r, const std::vector<Light> &light_list, 
             auto l = light_ray.direction();
             auto h = unit_vec((v + l));
             Intersection inter2;
-            if (world.getIntersect(light_ray, 0.f, INF, inter2)) {
+            float ksi = 1e-6;
+            if (world.getIntersect(light_ray, ksi, INF, inter2)) {
                 // light cannot arrive at obj
             } else {
                 auto I = light.intensity;
@@ -87,7 +83,7 @@ int main() {
 
 
     // Render
-    FILE *fp = fopen("BlinnPhongTest.ppm", "wb");
+    FILE *fp = fopen("BlinnPhongTest2.ppm", "wb");
     (void) fprintf(fp, "P6\n%d %d\n255\n", image_width, image_height);
 
 
