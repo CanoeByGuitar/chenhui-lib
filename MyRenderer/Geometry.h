@@ -13,6 +13,7 @@
 #include "spdlog/spdlog.h"
 #include <vector>
 #include <memory>
+#include "Intersection.h"
 
 struct Bounds {
     vec3 pMin, pMax;
@@ -22,27 +23,17 @@ struct Bounds {
     Bounds(const vec3 &a, const vec3 &b) : pMin(a), pMax(b) {}
 };
 
-class Intersection {
-public:
-    Intersection() {
-        t = 0;
-        normal = vec3();
-        point = vec3();
-        front_face = true;
-    }
 
-    float t;
-    vec3 normal;
-    vec3 point;
-    bool front_face;
-    Material *m;
-};
 
 
 class Surface {
 public:
     Surface(Material *mat) {
         m = mat;
+    }
+
+    Surface(std::shared_ptr<ObjMaterial> mat) {
+        mtl = mat;
     }
 
 
@@ -52,11 +43,13 @@ public:
 
 protected:
     Material *m;
+    std::shared_ptr<ObjMaterial> mtl;
 };
 
 class Circle : public Surface {
 public:
     Circle(Material *mat, const vec3 &c, float r) : Surface(mat), center(c), radius(r) {}
+    Circle(std::shared_ptr<ObjMaterial> mtl, const vec3 &c, float r) : Surface(mtl), center(c), radius(r) {}
 
     Bounds getBounds() override {
         return Bounds(center - vec3(radius), center + vec3(radius));
@@ -88,6 +81,7 @@ public:
                 inter.front_face = false;
             }
             inter.m = m;
+            inter.mtl = mtl;
             return true;
         }
 //        return false;

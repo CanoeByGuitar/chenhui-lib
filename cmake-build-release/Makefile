@@ -19701,17 +19701,30 @@ VecTest/fast:
 .PHONY : VecTest/fast
 
 #=============================================================================
-# Target rules for targets named RayTriIntersect
+# Target rules for targets named RecursiveRay
 
 # Build rule for target.
-RayTriIntersect: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 RayTriIntersect
-.PHONY : RayTriIntersect
+RecursiveRay: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 RecursiveRay
+.PHONY : RecursiveRay
 
 # fast build rule for target.
-RayTriIntersect/fast:
-	$(MAKE) $(MAKESILENT) -f MyRenderer/CMakeFiles/RayTriIntersect.dir/build.make MyRenderer/CMakeFiles/RayTriIntersect.dir/build
-.PHONY : RayTriIntersect/fast
+RecursiveRay/fast:
+	$(MAKE) $(MAKESILENT) -f MyRenderer/CMakeFiles/RecursiveRay.dir/build.make MyRenderer/CMakeFiles/RecursiveRay.dir/build
+.PHONY : RecursiveRay/fast
+
+#=============================================================================
+# Target rules for targets named FinalScene
+
+# Build rule for target.
+FinalScene: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 FinalScene
+.PHONY : FinalScene
+
+# fast build rule for target.
+FinalScene/fast:
+	$(MAKE) $(MAKESILENT) -f MyRenderer/CMakeFiles/FinalScene.dir/build.make MyRenderer/CMakeFiles/FinalScene.dir/build
+.PHONY : FinalScene/fast
 
 #=============================================================================
 # Target rules for targets named RayPolygonIntersect
@@ -19792,6 +19805,19 @@ SurfaceNormal/fast:
 .PHONY : SurfaceNormal/fast
 
 #=============================================================================
+# Target rules for targets named FuzzyTest
+
+# Build rule for target.
+FuzzyTest: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 FuzzyTest
+.PHONY : FuzzyTest
+
+# fast build rule for target.
+FuzzyTest/fast:
+	$(MAKE) $(MAKESILENT) -f MyRenderer/CMakeFiles/FuzzyTest.dir/build.make MyRenderer/CMakeFiles/FuzzyTest.dir/build
+.PHONY : FuzzyTest/fast
+
+#=============================================================================
 # Target rules for targets named AntiAliasingTest
 
 # Build rule for target.
@@ -19803,6 +19829,32 @@ AntiAliasingTest: cmake_check_build_system
 AntiAliasingTest/fast:
 	$(MAKE) $(MAKESILENT) -f MyRenderer/CMakeFiles/AntiAliasingTest.dir/build.make MyRenderer/CMakeFiles/AntiAliasingTest.dir/build
 .PHONY : AntiAliasingTest/fast
+
+#=============================================================================
+# Target rules for targets named RayTriIntersect
+
+# Build rule for target.
+RayTriIntersect: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 RayTriIntersect
+.PHONY : RayTriIntersect
+
+# fast build rule for target.
+RayTriIntersect/fast:
+	$(MAKE) $(MAKESILENT) -f MyRenderer/CMakeFiles/RayTriIntersect.dir/build.make MyRenderer/CMakeFiles/RayTriIntersect.dir/build
+.PHONY : RayTriIntersect/fast
+
+#=============================================================================
+# Target rules for targets named MaterialClassTest
+
+# Build rule for target.
+MaterialClassTest: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MaterialClassTest
+.PHONY : MaterialClassTest
+
+# fast build rule for target.
+MaterialClassTest/fast:
+	$(MAKE) $(MAKESILENT) -f MyRenderer/CMakeFiles/MaterialClassTest.dir/build.make MyRenderer/CMakeFiles/MaterialClassTest.dir/build
+.PHONY : MaterialClassTest/fast
 
 #=============================================================================
 # Target rules for targets named myrenderer
@@ -20064,7 +20116,10 @@ help:
 	@echo "... EulerAngles_3"
 	@echo "... EulerAngles_4"
 	@echo "... FFT"
+	@echo "... FinalScene"
+	@echo "... FuzzyTest"
 	@echo "... LambertianShadingTest"
+	@echo "... MaterialClassTest"
 	@echo "... NonLinearOptimization"
 	@echo "... NumericalDiff"
 	@echo "... QuickStart_example"
@@ -20074,6 +20129,7 @@ help:
 	@echo "... RayIntersectMultiObjects"
 	@echo "... RayPolygonIntersect"
 	@echo "... RayTriIntersect"
+	@echo "... RecursiveRay"
 	@echo "... SurfaceNormal"
 	@echo "... TemplateKeyword_flexible"
 	@echo "... TemplateKeyword_simple"

@@ -98,16 +98,6 @@ list_install_components:
 list_install_components/fast: list_install_components
 .PHONY : list_install_components/fast
 
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-.PHONY : rebuild_cache/fast
-
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
@@ -117,6 +107,16 @@ edit_cache:
 # Special rule for the target edit_cache
 edit_cache/fast: edit_cache
 .PHONY : edit_cache/fast
+
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+.PHONY : rebuild_cache/fast
 
 # Special rule for the target install
 install: preinstall
@@ -176,18 +176,32 @@ VecTest/fast:
 .PHONY : VecTest/fast
 
 # Convenience name for target.
-MyRenderer/CMakeFiles/RayTriIntersect.dir/rule:
-	cd /Volumes/disk2/ChenhuiLib/cmake-build-release && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MyRenderer/CMakeFiles/RayTriIntersect.dir/rule
-.PHONY : MyRenderer/CMakeFiles/RayTriIntersect.dir/rule
+MyRenderer/CMakeFiles/RecursiveRay.dir/rule:
+	cd /Volumes/disk2/ChenhuiLib/cmake-build-release && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MyRenderer/CMakeFiles/RecursiveRay.dir/rule
+.PHONY : MyRenderer/CMakeFiles/RecursiveRay.dir/rule
 
 # Convenience name for target.
-RayTriIntersect: MyRenderer/CMakeFiles/RayTriIntersect.dir/rule
-.PHONY : RayTriIntersect
+RecursiveRay: MyRenderer/CMakeFiles/RecursiveRay.dir/rule
+.PHONY : RecursiveRay
 
 # fast build rule for target.
-RayTriIntersect/fast:
-	cd /Volumes/disk2/ChenhuiLib/cmake-build-release && $(MAKE) $(MAKESILENT) -f MyRenderer/CMakeFiles/RayTriIntersect.dir/build.make MyRenderer/CMakeFiles/RayTriIntersect.dir/build
-.PHONY : RayTriIntersect/fast
+RecursiveRay/fast:
+	cd /Volumes/disk2/ChenhuiLib/cmake-build-release && $(MAKE) $(MAKESILENT) -f MyRenderer/CMakeFiles/RecursiveRay.dir/build.make MyRenderer/CMakeFiles/RecursiveRay.dir/build
+.PHONY : RecursiveRay/fast
+
+# Convenience name for target.
+MyRenderer/CMakeFiles/FinalScene.dir/rule:
+	cd /Volumes/disk2/ChenhuiLib/cmake-build-release && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MyRenderer/CMakeFiles/FinalScene.dir/rule
+.PHONY : MyRenderer/CMakeFiles/FinalScene.dir/rule
+
+# Convenience name for target.
+FinalScene: MyRenderer/CMakeFiles/FinalScene.dir/rule
+.PHONY : FinalScene
+
+# fast build rule for target.
+FinalScene/fast:
+	cd /Volumes/disk2/ChenhuiLib/cmake-build-release && $(MAKE) $(MAKESILENT) -f MyRenderer/CMakeFiles/FinalScene.dir/build.make MyRenderer/CMakeFiles/FinalScene.dir/build
+.PHONY : FinalScene/fast
 
 # Convenience name for target.
 MyRenderer/CMakeFiles/RayPolygonIntersect.dir/rule:
@@ -274,6 +288,20 @@ SurfaceNormal/fast:
 .PHONY : SurfaceNormal/fast
 
 # Convenience name for target.
+MyRenderer/CMakeFiles/FuzzyTest.dir/rule:
+	cd /Volumes/disk2/ChenhuiLib/cmake-build-release && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MyRenderer/CMakeFiles/FuzzyTest.dir/rule
+.PHONY : MyRenderer/CMakeFiles/FuzzyTest.dir/rule
+
+# Convenience name for target.
+FuzzyTest: MyRenderer/CMakeFiles/FuzzyTest.dir/rule
+.PHONY : FuzzyTest
+
+# fast build rule for target.
+FuzzyTest/fast:
+	cd /Volumes/disk2/ChenhuiLib/cmake-build-release && $(MAKE) $(MAKESILENT) -f MyRenderer/CMakeFiles/FuzzyTest.dir/build.make MyRenderer/CMakeFiles/FuzzyTest.dir/build
+.PHONY : FuzzyTest/fast
+
+# Convenience name for target.
 MyRenderer/CMakeFiles/AntiAliasingTest.dir/rule:
 	cd /Volumes/disk2/ChenhuiLib/cmake-build-release && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MyRenderer/CMakeFiles/AntiAliasingTest.dir/rule
 .PHONY : MyRenderer/CMakeFiles/AntiAliasingTest.dir/rule
@@ -286,6 +314,34 @@ AntiAliasingTest: MyRenderer/CMakeFiles/AntiAliasingTest.dir/rule
 AntiAliasingTest/fast:
 	cd /Volumes/disk2/ChenhuiLib/cmake-build-release && $(MAKE) $(MAKESILENT) -f MyRenderer/CMakeFiles/AntiAliasingTest.dir/build.make MyRenderer/CMakeFiles/AntiAliasingTest.dir/build
 .PHONY : AntiAliasingTest/fast
+
+# Convenience name for target.
+MyRenderer/CMakeFiles/RayTriIntersect.dir/rule:
+	cd /Volumes/disk2/ChenhuiLib/cmake-build-release && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MyRenderer/CMakeFiles/RayTriIntersect.dir/rule
+.PHONY : MyRenderer/CMakeFiles/RayTriIntersect.dir/rule
+
+# Convenience name for target.
+RayTriIntersect: MyRenderer/CMakeFiles/RayTriIntersect.dir/rule
+.PHONY : RayTriIntersect
+
+# fast build rule for target.
+RayTriIntersect/fast:
+	cd /Volumes/disk2/ChenhuiLib/cmake-build-release && $(MAKE) $(MAKESILENT) -f MyRenderer/CMakeFiles/RayTriIntersect.dir/build.make MyRenderer/CMakeFiles/RayTriIntersect.dir/build
+.PHONY : RayTriIntersect/fast
+
+# Convenience name for target.
+MyRenderer/CMakeFiles/MaterialClassTest.dir/rule:
+	cd /Volumes/disk2/ChenhuiLib/cmake-build-release && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MyRenderer/CMakeFiles/MaterialClassTest.dir/rule
+.PHONY : MyRenderer/CMakeFiles/MaterialClassTest.dir/rule
+
+# Convenience name for target.
+MaterialClassTest: MyRenderer/CMakeFiles/MaterialClassTest.dir/rule
+.PHONY : MaterialClassTest
+
+# fast build rule for target.
+MaterialClassTest/fast:
+	cd /Volumes/disk2/ChenhuiLib/cmake-build-release && $(MAKE) $(MAKESILENT) -f MyRenderer/CMakeFiles/MaterialClassTest.dir/build.make MyRenderer/CMakeFiles/MaterialClassTest.dir/build
+.PHONY : MaterialClassTest/fast
 
 # Convenience name for target.
 MyRenderer/CMakeFiles/myrenderer.dir/rule:
@@ -373,6 +429,54 @@ test/BlinnPhongShading.cpp.s:
 	cd /Volumes/disk2/ChenhuiLib/cmake-build-release && $(MAKE) $(MAKESILENT) -f MyRenderer/CMakeFiles/BlinnPhongShading.dir/build.make MyRenderer/CMakeFiles/BlinnPhongShading.dir/test/BlinnPhongShading.cpp.s
 .PHONY : test/BlinnPhongShading.cpp.s
 
+test/FinalScene.o: test/FinalScene.cpp.o
+.PHONY : test/FinalScene.o
+
+# target to build an object file
+test/FinalScene.cpp.o:
+	cd /Volumes/disk2/ChenhuiLib/cmake-build-release && $(MAKE) $(MAKESILENT) -f MyRenderer/CMakeFiles/FinalScene.dir/build.make MyRenderer/CMakeFiles/FinalScene.dir/test/FinalScene.cpp.o
+.PHONY : test/FinalScene.cpp.o
+
+test/FinalScene.i: test/FinalScene.cpp.i
+.PHONY : test/FinalScene.i
+
+# target to preprocess a source file
+test/FinalScene.cpp.i:
+	cd /Volumes/disk2/ChenhuiLib/cmake-build-release && $(MAKE) $(MAKESILENT) -f MyRenderer/CMakeFiles/FinalScene.dir/build.make MyRenderer/CMakeFiles/FinalScene.dir/test/FinalScene.cpp.i
+.PHONY : test/FinalScene.cpp.i
+
+test/FinalScene.s: test/FinalScene.cpp.s
+.PHONY : test/FinalScene.s
+
+# target to generate assembly for a file
+test/FinalScene.cpp.s:
+	cd /Volumes/disk2/ChenhuiLib/cmake-build-release && $(MAKE) $(MAKESILENT) -f MyRenderer/CMakeFiles/FinalScene.dir/build.make MyRenderer/CMakeFiles/FinalScene.dir/test/FinalScene.cpp.s
+.PHONY : test/FinalScene.cpp.s
+
+test/FuzzyTest.o: test/FuzzyTest.cpp.o
+.PHONY : test/FuzzyTest.o
+
+# target to build an object file
+test/FuzzyTest.cpp.o:
+	cd /Volumes/disk2/ChenhuiLib/cmake-build-release && $(MAKE) $(MAKESILENT) -f MyRenderer/CMakeFiles/FuzzyTest.dir/build.make MyRenderer/CMakeFiles/FuzzyTest.dir/test/FuzzyTest.cpp.o
+.PHONY : test/FuzzyTest.cpp.o
+
+test/FuzzyTest.i: test/FuzzyTest.cpp.i
+.PHONY : test/FuzzyTest.i
+
+# target to preprocess a source file
+test/FuzzyTest.cpp.i:
+	cd /Volumes/disk2/ChenhuiLib/cmake-build-release && $(MAKE) $(MAKESILENT) -f MyRenderer/CMakeFiles/FuzzyTest.dir/build.make MyRenderer/CMakeFiles/FuzzyTest.dir/test/FuzzyTest.cpp.i
+.PHONY : test/FuzzyTest.cpp.i
+
+test/FuzzyTest.s: test/FuzzyTest.cpp.s
+.PHONY : test/FuzzyTest.s
+
+# target to generate assembly for a file
+test/FuzzyTest.cpp.s:
+	cd /Volumes/disk2/ChenhuiLib/cmake-build-release && $(MAKE) $(MAKESILENT) -f MyRenderer/CMakeFiles/FuzzyTest.dir/build.make MyRenderer/CMakeFiles/FuzzyTest.dir/test/FuzzyTest.cpp.s
+.PHONY : test/FuzzyTest.cpp.s
+
 test/LambertianShadingTest.o: test/LambertianShadingTest.cpp.o
 .PHONY : test/LambertianShadingTest.o
 
@@ -396,6 +500,30 @@ test/LambertianShadingTest.s: test/LambertianShadingTest.cpp.s
 test/LambertianShadingTest.cpp.s:
 	cd /Volumes/disk2/ChenhuiLib/cmake-build-release && $(MAKE) $(MAKESILENT) -f MyRenderer/CMakeFiles/LambertianShadingTest.dir/build.make MyRenderer/CMakeFiles/LambertianShadingTest.dir/test/LambertianShadingTest.cpp.s
 .PHONY : test/LambertianShadingTest.cpp.s
+
+test/MaterialClassTest.o: test/MaterialClassTest.cpp.o
+.PHONY : test/MaterialClassTest.o
+
+# target to build an object file
+test/MaterialClassTest.cpp.o:
+	cd /Volumes/disk2/ChenhuiLib/cmake-build-release && $(MAKE) $(MAKESILENT) -f MyRenderer/CMakeFiles/MaterialClassTest.dir/build.make MyRenderer/CMakeFiles/MaterialClassTest.dir/test/MaterialClassTest.cpp.o
+.PHONY : test/MaterialClassTest.cpp.o
+
+test/MaterialClassTest.i: test/MaterialClassTest.cpp.i
+.PHONY : test/MaterialClassTest.i
+
+# target to preprocess a source file
+test/MaterialClassTest.cpp.i:
+	cd /Volumes/disk2/ChenhuiLib/cmake-build-release && $(MAKE) $(MAKESILENT) -f MyRenderer/CMakeFiles/MaterialClassTest.dir/build.make MyRenderer/CMakeFiles/MaterialClassTest.dir/test/MaterialClassTest.cpp.i
+.PHONY : test/MaterialClassTest.cpp.i
+
+test/MaterialClassTest.s: test/MaterialClassTest.cpp.s
+.PHONY : test/MaterialClassTest.s
+
+# target to generate assembly for a file
+test/MaterialClassTest.cpp.s:
+	cd /Volumes/disk2/ChenhuiLib/cmake-build-release && $(MAKE) $(MAKESILENT) -f MyRenderer/CMakeFiles/MaterialClassTest.dir/build.make MyRenderer/CMakeFiles/MaterialClassTest.dir/test/MaterialClassTest.cpp.s
+.PHONY : test/MaterialClassTest.cpp.s
 
 test/RayCircleIntersect.o: test/RayCircleIntersect.cpp.o
 .PHONY : test/RayCircleIntersect.o
@@ -493,6 +621,30 @@ test/RayTriIntersect.cpp.s:
 	cd /Volumes/disk2/ChenhuiLib/cmake-build-release && $(MAKE) $(MAKESILENT) -f MyRenderer/CMakeFiles/RayTriIntersect.dir/build.make MyRenderer/CMakeFiles/RayTriIntersect.dir/test/RayTriIntersect.cpp.s
 .PHONY : test/RayTriIntersect.cpp.s
 
+test/RecursiveRay.o: test/RecursiveRay.cpp.o
+.PHONY : test/RecursiveRay.o
+
+# target to build an object file
+test/RecursiveRay.cpp.o:
+	cd /Volumes/disk2/ChenhuiLib/cmake-build-release && $(MAKE) $(MAKESILENT) -f MyRenderer/CMakeFiles/RecursiveRay.dir/build.make MyRenderer/CMakeFiles/RecursiveRay.dir/test/RecursiveRay.cpp.o
+.PHONY : test/RecursiveRay.cpp.o
+
+test/RecursiveRay.i: test/RecursiveRay.cpp.i
+.PHONY : test/RecursiveRay.i
+
+# target to preprocess a source file
+test/RecursiveRay.cpp.i:
+	cd /Volumes/disk2/ChenhuiLib/cmake-build-release && $(MAKE) $(MAKESILENT) -f MyRenderer/CMakeFiles/RecursiveRay.dir/build.make MyRenderer/CMakeFiles/RecursiveRay.dir/test/RecursiveRay.cpp.i
+.PHONY : test/RecursiveRay.cpp.i
+
+test/RecursiveRay.s: test/RecursiveRay.cpp.s
+.PHONY : test/RecursiveRay.s
+
+# target to generate assembly for a file
+test/RecursiveRay.cpp.s:
+	cd /Volumes/disk2/ChenhuiLib/cmake-build-release && $(MAKE) $(MAKESILENT) -f MyRenderer/CMakeFiles/RecursiveRay.dir/build.make MyRenderer/CMakeFiles/RecursiveRay.dir/test/RecursiveRay.cpp.s
+.PHONY : test/RecursiveRay.cpp.s
+
 test/SurfaceNormal.o: test/SurfaceNormal.cpp.o
 .PHONY : test/SurfaceNormal.o
 
@@ -555,11 +707,15 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... AntiAliasingTest"
 	@echo "... BlinnPhongShading"
+	@echo "... FinalScene"
+	@echo "... FuzzyTest"
 	@echo "... LambertianShadingTest"
+	@echo "... MaterialClassTest"
 	@echo "... RayCircleIntersect"
 	@echo "... RayIntersectMultiObjects"
 	@echo "... RayPolygonIntersect"
 	@echo "... RayTriIntersect"
+	@echo "... RecursiveRay"
 	@echo "... SurfaceNormal"
 	@echo "... VecTest"
 	@echo "... myrenderer"
@@ -572,9 +728,18 @@ help:
 	@echo "... test/BlinnPhongShading.o"
 	@echo "... test/BlinnPhongShading.i"
 	@echo "... test/BlinnPhongShading.s"
+	@echo "... test/FinalScene.o"
+	@echo "... test/FinalScene.i"
+	@echo "... test/FinalScene.s"
+	@echo "... test/FuzzyTest.o"
+	@echo "... test/FuzzyTest.i"
+	@echo "... test/FuzzyTest.s"
 	@echo "... test/LambertianShadingTest.o"
 	@echo "... test/LambertianShadingTest.i"
 	@echo "... test/LambertianShadingTest.s"
+	@echo "... test/MaterialClassTest.o"
+	@echo "... test/MaterialClassTest.i"
+	@echo "... test/MaterialClassTest.s"
 	@echo "... test/RayCircleIntersect.o"
 	@echo "... test/RayCircleIntersect.i"
 	@echo "... test/RayCircleIntersect.s"
@@ -587,6 +752,9 @@ help:
 	@echo "... test/RayTriIntersect.o"
 	@echo "... test/RayTriIntersect.i"
 	@echo "... test/RayTriIntersect.s"
+	@echo "... test/RecursiveRay.o"
+	@echo "... test/RecursiveRay.i"
+	@echo "... test/RecursiveRay.s"
 	@echo "... test/SurfaceNormal.o"
 	@echo "... test/SurfaceNormal.i"
 	@echo "... test/SurfaceNormal.s"

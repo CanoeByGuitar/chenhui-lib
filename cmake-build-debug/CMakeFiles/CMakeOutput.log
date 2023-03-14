@@ -1156,3 +1156,94 @@ Linking CXX executable cmTC_60b91
 
 Source file was:
 int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_SUPPORT_std=cpp03 succeeded with the following output:
+Change Dir: /Volumes/disk2/ChenhuiLib/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_2308b/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_2308b.dir/build.make CMakeFiles/cmTC_2308b.dir/build
+Building CXX object CMakeFiles/cmTC_2308b.dir/src.cxx.o
+/Library/Developer/CommandLineTools/usr/bin/c++ -DCOMPILER_SUPPORT_std=cpp03  -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk -mmacosx-version-min=11.6   -std=c++03 -MD -MT CMakeFiles/cmTC_2308b.dir/src.cxx.o -MF CMakeFiles/cmTC_2308b.dir/src.cxx.o.d -o CMakeFiles/cmTC_2308b.dir/src.cxx.o -c /Volumes/disk2/ChenhuiLib/cmake-build-debug/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_2308b
+/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2308b.dir/link.txt --verbose=1
+/Library/Developer/CommandLineTools/usr/bin/c++  -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk -mmacosx-version-min=11.6 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_2308b.dir/src.cxx.o -o cmTC_2308b 
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_SUPPORT_std=cpp03 succeeded with the following output:
+Change Dir: /Volumes/disk2/ChenhuiLib/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_82800/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_82800.dir/build.make CMakeFiles/cmTC_82800.dir/build
+Building CXX object CMakeFiles/cmTC_82800.dir/src.cxx.o
+/Library/Developer/CommandLineTools/usr/bin/c++ -DCOMPILER_SUPPORT_std=cpp03  -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk -mmacosx-version-min=11.6   -std=c++03 -MD -MT CMakeFiles/cmTC_82800.dir/src.cxx.o -MF CMakeFiles/cmTC_82800.dir/src.cxx.o.d -o CMakeFiles/cmTC_82800.dir/src.cxx.o -c /Volumes/disk2/ChenhuiLib/cmake-build-debug/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_82800
+/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E cmake_link_script CMakeFiles/cmTC_82800.dir/link.txt --verbose=1
+/Library/Developer/CommandLineTools/usr/bin/c++  -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk -mmacosx-version-min=11.6 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_82800.dir/src.cxx.o -o cmTC_82800 
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_SUPPORT_std=cpp03 succeeded with the following output:
+Change Dir: /Volumes/disk2/ChenhuiLib/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_94e15/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_94e15.dir/build.make CMakeFiles/cmTC_94e15.dir/build
+Building CXX object CMakeFiles/cmTC_94e15.dir/src.cxx.o
+/Library/Developer/CommandLineTools/usr/bin/c++ -DCOMPILER_SUPPORT_std=cpp03  -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk -mmacosx-version-min=11.6   -std=c++03 -MD -MT CMakeFiles/cmTC_94e15.dir/src.cxx.o -MF CMakeFiles/cmTC_94e15.dir/src.cxx.o.d -o CMakeFiles/cmTC_94e15.dir/src.cxx.o -c /Volumes/disk2/ChenhuiLib/cmake-build-debug/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_94e15
+/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E cmake_link_script CMakeFiles/cmTC_94e15.dir/link.txt --verbose=1
+/Library/Developer/CommandLineTools/usr/bin/c++  -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk -mmacosx-version-min=11.6 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_94e15.dir/src.cxx.o -o cmTC_94e15 
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_SUPPORT_std=cpp03 succeeded with the following output:
+Change Dir: /Volumes/disk2/ChenhuiLib/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_9863b/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_9863b.dir/build.make CMakeFiles/cmTC_9863b.dir/build
+Building CXX object CMakeFiles/cmTC_9863b.dir/src.cxx.o
+/Library/Developer/CommandLineTools/usr/bin/c++ -DCOMPILER_SUPPORT_std=cpp03  -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk -mmacosx-version-min=11.6   -std=c++03 -MD -MT CMakeFiles/cmTC_9863b.dir/src.cxx.o -MF CMakeFiles/cmTC_9863b.dir/src.cxx.o.d -o CMakeFiles/cmTC_9863b.dir/src.cxx.o -c /Volumes/disk2/ChenhuiLib/cmake-build-debug/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_9863b
+/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9863b.dir/link.txt --verbose=1
+/Library/Developer/CommandLineTools/usr/bin/c++  -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk -mmacosx-version-min=11.6 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_9863b.dir/src.cxx.o -o cmTC_9863b 
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_SUPPORT_std=cpp03 succeeded with the following output:
+Change Dir: /Volumes/disk2/ChenhuiLib/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_15678/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_15678.dir/build.make CMakeFiles/cmTC_15678.dir/build
+Building CXX object CMakeFiles/cmTC_15678.dir/src.cxx.o
+/Library/Developer/CommandLineTools/usr/bin/c++ -DCOMPILER_SUPPORT_std=cpp03  -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk -mmacosx-version-min=11.6   -std=c++03 -MD -MT CMakeFiles/cmTC_15678.dir/src.cxx.o -MF CMakeFiles/cmTC_15678.dir/src.cxx.o.d -o CMakeFiles/cmTC_15678.dir/src.cxx.o -c /Volumes/disk2/ChenhuiLib/cmake-build-debug/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_15678
+/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E cmake_link_script CMakeFiles/cmTC_15678.dir/link.txt --verbose=1
+/Library/Developer/CommandLineTools/usr/bin/c++  -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk -mmacosx-version-min=11.6 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_15678.dir/src.cxx.o -o cmTC_15678 
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_SUPPORT_std=cpp03 succeeded with the following output:
+Change Dir: /Volumes/disk2/ChenhuiLib/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_d2ed3/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_d2ed3.dir/build.make CMakeFiles/cmTC_d2ed3.dir/build
+Building CXX object CMakeFiles/cmTC_d2ed3.dir/src.cxx.o
+/Library/Developer/CommandLineTools/usr/bin/c++ -DCOMPILER_SUPPORT_std=cpp03  -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk -mmacosx-version-min=11.6   -std=c++03 -MD -MT CMakeFiles/cmTC_d2ed3.dir/src.cxx.o -MF CMakeFiles/cmTC_d2ed3.dir/src.cxx.o.d -o CMakeFiles/cmTC_d2ed3.dir/src.cxx.o -c /Volumes/disk2/ChenhuiLib/cmake-build-debug/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_d2ed3
+/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d2ed3.dir/link.txt --verbose=1
+/Library/Developer/CommandLineTools/usr/bin/c++  -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk -mmacosx-version-min=11.6 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_d2ed3.dir/src.cxx.o -o cmTC_d2ed3 
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_SUPPORT_std=cpp03 succeeded with the following output:
+Change Dir: /Volumes/disk2/ChenhuiLib/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_68958/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_68958.dir/build.make CMakeFiles/cmTC_68958.dir/build
+Building CXX object CMakeFiles/cmTC_68958.dir/src.cxx.o
+/Library/Developer/CommandLineTools/usr/bin/c++ -DCOMPILER_SUPPORT_std=cpp03  -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk -mmacosx-version-min=11.6   -std=c++03 -MD -MT CMakeFiles/cmTC_68958.dir/src.cxx.o -MF CMakeFiles/cmTC_68958.dir/src.cxx.o.d -o CMakeFiles/cmTC_68958.dir/src.cxx.o -c /Volumes/disk2/ChenhuiLib/cmake-build-debug/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_68958
+/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E cmake_link_script CMakeFiles/cmTC_68958.dir/link.txt --verbose=1
+/Library/Developer/CommandLineTools/usr/bin/c++  -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk -mmacosx-version-min=11.6 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_68958.dir/src.cxx.o -o cmTC_68958 
+
+
+Source file was:
+int main() { return 0; }
