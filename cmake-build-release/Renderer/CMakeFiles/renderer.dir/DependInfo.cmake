@@ -17,6 +17,7 @@ set(CMAKE_C_TARGET_INCLUDE_PATH
   "../external/glfw/include/GLFW"
   "../external/spdlog/include"
   "../external/eigen"
+  "../external/partio/src/lib"
   "../external/glfw/include"
   "../"
   )
@@ -39,6 +40,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "../external/glfw/include/GLFW"
   "../external/spdlog/include"
   "../external/eigen"
+  "../external/partio/src/lib"
   "../external/glfw/include"
   "../"
   )

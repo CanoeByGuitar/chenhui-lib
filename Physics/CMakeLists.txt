@@ -18,4 +18,4 @@ target_sources(physics
 )
 
 find_package(TBB CONFIG REQUIRED)
-target_link_libraries(physics PRIVATE eigen TBB::tbb)
+target_link_libraries(physics PRIVATE eigen TBB::tbb spdlog::spdlog partio)

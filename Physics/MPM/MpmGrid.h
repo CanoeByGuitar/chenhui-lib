@@ -10,11 +10,16 @@
 
 using namespace Eigen;
 
-class Grid{
-public:
-    float mass;
-    Vector3f vel;
-    Vector3f force;
-    Vector3i Xi;
-};
+namespace mpm {
+    class Grid {
+    public:
+        float mass;
+        Vector3f vel_in;
+        Vector3f vel;
+        Vector3f force;
+        Vector3i Xi;
+
+    };
+}
+
 #endif //CHENHUI_MPMGRID_H

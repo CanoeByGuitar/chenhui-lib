@@ -6,5 +6,5 @@ Fortran_FLAGS = -g
 
 Fortran_DEFINES = 
 
-Fortran_INCLUDES = -I/home/wch/github/chenhui-lib/external -I/home/wch/github/chenhui-lib/external/glad/include -I/home/wch/github/chenhui-lib/external/glm -I/home/wch/github/chenhui-lib/external/glfw/include/GLFW -I/home/wch/github/chenhui-lib/external/spdlog/include -I/home/wch/github/chenhui-lib/external/eigen 
+Fortran_INCLUDES = -I/home/wch/github/chenhui-lib/external -I/home/wch/github/chenhui-lib/external/glad/include -I/home/wch/github/chenhui-lib/external/glm -I/home/wch/github/chenhui-lib/external/glfw/include/GLFW -I/home/wch/github/chenhui-lib/external/spdlog/include -I/home/wch/github/chenhui-lib/external/eigen -I/home/wch/github/chenhui-lib/external/partio/src/lib 
 

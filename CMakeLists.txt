@@ -38,18 +38,20 @@ include_directories(
         ${PROJECT_SOURCE_DIR}/external/glm
         ${PROJECT_SOURCE_DIR}/external/glfw/include/GLFW
         ${PROJECT_SOURCE_DIR}/external/spdlog/include
-        ${PROJECT_SOURCE_DIR}/external/eigen/)
+        ${PROJECT_SOURCE_DIR}/external/eigen/
+        ${PROJECT_SOURCE_DIR}/external/partio/src/lib)
 
 
 add_subdirectory(${PROJECT_SOURCE_DIR}/external/eigen)
 add_subdirectory(${PROJECT_SOURCE_DIR}/external/spdlog)
 add_subdirectory(${PROJECT_SOURCE_DIR}/external/glm)
 add_subdirectory(${PROJECT_SOURCE_DIR}/external/glfw)
-
+add_subdirectory(${PROJECT_SOURCE_DIR}/external/partio)
 add_subdirectory(${PROJECT_SOURCE_DIR}/Renderer)
 add_subdirectory(${PROJECT_SOURCE_DIR}/Physics)
 add_subdirectory(${PROJECT_SOURCE_DIR}/Math)
 add_subdirectory(${PROJECT_SOURCE_DIR}/MyRenderer)
+
 
 add_executable(opengl_renderer main.cpp)
 target_link_libraries(opengl_renderer PRIVATE eigen spdlog::spdlog renderer math physics)
@@ -57,6 +59,8 @@ target_link_libraries(opengl_renderer PRIVATE eigen spdlog::spdlog renderer math
 add_executable(learn_opengl learn_opengl.cpp)
 target_link_libraries(learn_opengl PRIVATE eigen spdlog::spdlog renderer math physics)
 
+add_executable(MpmTest MpmTest.cpp)
+target_link_libraries(MpmTest PRIVATE renderer physics spdlog::spdlog)
 #add_executable(testeigen testEigen.cpp)
 #target_link_libraries(testeigen PRIVATE eigen spdlog::spdlog renderer math physics)
 #######################################

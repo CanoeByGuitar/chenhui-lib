@@ -60,80 +60,80 @@ include Physics/CMakeFiles/physics.dir/flags.make
 Physics/CMakeFiles/physics.dir/MassSpringSim.cpp.o: Physics/CMakeFiles/physics.dir/flags.make
 Physics/CMakeFiles/physics.dir/MassSpringSim.cpp.o: ../Physics/MassSpringSim.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wch/github/chenhui-lib/cmake-build-release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object Physics/CMakeFiles/physics.dir/MassSpringSim.cpp.o"
-	cd /home/wch/github/chenhui-lib/cmake-build-release/Physics && /usr/bin/g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/physics.dir/MassSpringSim.cpp.o -c /home/wch/github/chenhui-lib/Physics/MassSpringSim.cpp
+	cd /home/wch/github/chenhui-lib/cmake-build-release/Physics && /usr/bin/g++-9  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/physics.dir/MassSpringSim.cpp.o -c /home/wch/github/chenhui-lib/Physics/MassSpringSim.cpp
 
 Physics/CMakeFiles/physics.dir/MassSpringSim.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/physics.dir/MassSpringSim.cpp.i"
-	cd /home/wch/github/chenhui-lib/cmake-build-release/Physics && /usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wch/github/chenhui-lib/Physics/MassSpringSim.cpp > CMakeFiles/physics.dir/MassSpringSim.cpp.i
+	cd /home/wch/github/chenhui-lib/cmake-build-release/Physics && /usr/bin/g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wch/github/chenhui-lib/Physics/MassSpringSim.cpp > CMakeFiles/physics.dir/MassSpringSim.cpp.i
 
 Physics/CMakeFiles/physics.dir/MassSpringSim.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/physics.dir/MassSpringSim.cpp.s"
-	cd /home/wch/github/chenhui-lib/cmake-build-release/Physics && /usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wch/github/chenhui-lib/Physics/MassSpringSim.cpp -o CMakeFiles/physics.dir/MassSpringSim.cpp.s
+	cd /home/wch/github/chenhui-lib/cmake-build-release/Physics && /usr/bin/g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wch/github/chenhui-lib/Physics/MassSpringSim.cpp -o CMakeFiles/physics.dir/MassSpringSim.cpp.s
 
 Physics/CMakeFiles/physics.dir/MPM/MpmSimulationBase.cpp.o: Physics/CMakeFiles/physics.dir/flags.make
 Physics/CMakeFiles/physics.dir/MPM/MpmSimulationBase.cpp.o: ../Physics/MPM/MpmSimulationBase.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wch/github/chenhui-lib/cmake-build-release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object Physics/CMakeFiles/physics.dir/MPM/MpmSimulationBase.cpp.o"
-	cd /home/wch/github/chenhui-lib/cmake-build-release/Physics && /usr/bin/g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/physics.dir/MPM/MpmSimulationBase.cpp.o -c /home/wch/github/chenhui-lib/Physics/MPM/MpmSimulationBase.cpp
+	cd /home/wch/github/chenhui-lib/cmake-build-release/Physics && /usr/bin/g++-9  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/physics.dir/MPM/MpmSimulationBase.cpp.o -c /home/wch/github/chenhui-lib/Physics/MPM/MpmSimulationBase.cpp
 
 Physics/CMakeFiles/physics.dir/MPM/MpmSimulationBase.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/physics.dir/MPM/MpmSimulationBase.cpp.i"
-	cd /home/wch/github/chenhui-lib/cmake-build-release/Physics && /usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wch/github/chenhui-lib/Physics/MPM/MpmSimulationBase.cpp > CMakeFiles/physics.dir/MPM/MpmSimulationBase.cpp.i
+	cd /home/wch/github/chenhui-lib/cmake-build-release/Physics && /usr/bin/g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wch/github/chenhui-lib/Physics/MPM/MpmSimulationBase.cpp > CMakeFiles/physics.dir/MPM/MpmSimulationBase.cpp.i
 
 Physics/CMakeFiles/physics.dir/MPM/MpmSimulationBase.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/physics.dir/MPM/MpmSimulationBase.cpp.s"
-	cd /home/wch/github/chenhui-lib/cmake-build-release/Physics && /usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wch/github/chenhui-lib/Physics/MPM/MpmSimulationBase.cpp -o CMakeFiles/physics.dir/MPM/MpmSimulationBase.cpp.s
+	cd /home/wch/github/chenhui-lib/cmake-build-release/Physics && /usr/bin/g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wch/github/chenhui-lib/Physics/MPM/MpmSimulationBase.cpp -o CMakeFiles/physics.dir/MPM/MpmSimulationBase.cpp.s
 
 Physics/CMakeFiles/physics.dir/MPM/MpmGrid.cpp.o: Physics/CMakeFiles/physics.dir/flags.make
 Physics/CMakeFiles/physics.dir/MPM/MpmGrid.cpp.o: ../Physics/MPM/MpmGrid.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wch/github/chenhui-lib/cmake-build-release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object Physics/CMakeFiles/physics.dir/MPM/MpmGrid.cpp.o"
-	cd /home/wch/github/chenhui-lib/cmake-build-release/Physics && /usr/bin/g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/physics.dir/MPM/MpmGrid.cpp.o -c /home/wch/github/chenhui-lib/Physics/MPM/MpmGrid.cpp
+	cd /home/wch/github/chenhui-lib/cmake-build-release/Physics && /usr/bin/g++-9  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/physics.dir/MPM/MpmGrid.cpp.o -c /home/wch/github/chenhui-lib/Physics/MPM/MpmGrid.cpp
 
 Physics/CMakeFiles/physics.dir/MPM/MpmGrid.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/physics.dir/MPM/MpmGrid.cpp.i"
-	cd /home/wch/github/chenhui-lib/cmake-build-release/Physics && /usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wch/github/chenhui-lib/Physics/MPM/MpmGrid.cpp > CMakeFiles/physics.dir/MPM/MpmGrid.cpp.i
+	cd /home/wch/github/chenhui-lib/cmake-build-release/Physics && /usr/bin/g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wch/github/chenhui-lib/Physics/MPM/MpmGrid.cpp > CMakeFiles/physics.dir/MPM/MpmGrid.cpp.i
 
 Physics/CMakeFiles/physics.dir/MPM/MpmGrid.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/physics.dir/MPM/MpmGrid.cpp.s"
-	cd /home/wch/github/chenhui-lib/cmake-build-release/Physics && /usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wch/github/chenhui-lib/Physics/MPM/MpmGrid.cpp -o CMakeFiles/physics.dir/MPM/MpmGrid.cpp.s
+	cd /home/wch/github/chenhui-lib/cmake-build-release/Physics && /usr/bin/g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wch/github/chenhui-lib/Physics/MPM/MpmGrid.cpp -o CMakeFiles/physics.dir/MPM/MpmGrid.cpp.s
 
 Physics/CMakeFiles/physics.dir/MPM/MpmParticle.cpp.o: Physics/CMakeFiles/physics.dir/flags.make
 Physics/CMakeFiles/physics.dir/MPM/MpmParticle.cpp.o: ../Physics/MPM/MpmParticle.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wch/github/chenhui-lib/cmake-build-release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object Physics/CMakeFiles/physics.dir/MPM/MpmParticle.cpp.o"
-	cd /home/wch/github/chenhui-lib/cmake-build-release/Physics && /usr/bin/g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/physics.dir/MPM/MpmParticle.cpp.o -c /home/wch/github/chenhui-lib/Physics/MPM/MpmParticle.cpp
+	cd /home/wch/github/chenhui-lib/cmake-build-release/Physics && /usr/bin/g++-9  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/physics.dir/MPM/MpmParticle.cpp.o -c /home/wch/github/chenhui-lib/Physics/MPM/MpmParticle.cpp
 
 Physics/CMakeFiles/physics.dir/MPM/MpmParticle.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/physics.dir/MPM/MpmParticle.cpp.i"
-	cd /home/wch/github/chenhui-lib/cmake-build-release/Physics && /usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wch/github/chenhui-lib/Physics/MPM/MpmParticle.cpp > CMakeFiles/physics.dir/MPM/MpmParticle.cpp.i
+	cd /home/wch/github/chenhui-lib/cmake-build-release/Physics && /usr/bin/g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wch/github/chenhui-lib/Physics/MPM/MpmParticle.cpp > CMakeFiles/physics.dir/MPM/MpmParticle.cpp.i
 
 Physics/CMakeFiles/physics.dir/MPM/MpmParticle.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/physics.dir/MPM/MpmParticle.cpp.s"
-	cd /home/wch/github/chenhui-lib/cmake-build-release/Physics && /usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wch/github/chenhui-lib/Physics/MPM/MpmParticle.cpp -o CMakeFiles/physics.dir/MPM/MpmParticle.cpp.s
+	cd /home/wch/github/chenhui-lib/cmake-build-release/Physics && /usr/bin/g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wch/github/chenhui-lib/Physics/MPM/MpmParticle.cpp -o CMakeFiles/physics.dir/MPM/MpmParticle.cpp.s
 
 Physics/CMakeFiles/physics.dir/MPM/ConstitutionModel.cpp.o: Physics/CMakeFiles/physics.dir/flags.make
 Physics/CMakeFiles/physics.dir/MPM/ConstitutionModel.cpp.o: ../Physics/MPM/ConstitutionModel.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wch/github/chenhui-lib/cmake-build-release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object Physics/CMakeFiles/physics.dir/MPM/ConstitutionModel.cpp.o"
-	cd /home/wch/github/chenhui-lib/cmake-build-release/Physics && /usr/bin/g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/physics.dir/MPM/ConstitutionModel.cpp.o -c /home/wch/github/chenhui-lib/Physics/MPM/ConstitutionModel.cpp
+	cd /home/wch/github/chenhui-lib/cmake-build-release/Physics && /usr/bin/g++-9  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/physics.dir/MPM/ConstitutionModel.cpp.o -c /home/wch/github/chenhui-lib/Physics/MPM/ConstitutionModel.cpp
 
 Physics/CMakeFiles/physics.dir/MPM/ConstitutionModel.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/physics.dir/MPM/ConstitutionModel.cpp.i"
-	cd /home/wch/github/chenhui-lib/cmake-build-release/Physics && /usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wch/github/chenhui-lib/Physics/MPM/ConstitutionModel.cpp > CMakeFiles/physics.dir/MPM/ConstitutionModel.cpp.i
+	cd /home/wch/github/chenhui-lib/cmake-build-release/Physics && /usr/bin/g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wch/github/chenhui-lib/Physics/MPM/ConstitutionModel.cpp > CMakeFiles/physics.dir/MPM/ConstitutionModel.cpp.i
 
 Physics/CMakeFiles/physics.dir/MPM/ConstitutionModel.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/physics.dir/MPM/ConstitutionModel.cpp.s"
-	cd /home/wch/github/chenhui-lib/cmake-build-release/Physics && /usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wch/github/chenhui-lib/Physics/MPM/ConstitutionModel.cpp -o CMakeFiles/physics.dir/MPM/ConstitutionModel.cpp.s
+	cd /home/wch/github/chenhui-lib/cmake-build-release/Physics && /usr/bin/g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wch/github/chenhui-lib/Physics/MPM/ConstitutionModel.cpp -o CMakeFiles/physics.dir/MPM/ConstitutionModel.cpp.s
 
 Physics/CMakeFiles/physics.dir/MPM/MpmUtils.cpp.o: Physics/CMakeFiles/physics.dir/flags.make
 Physics/CMakeFiles/physics.dir/MPM/MpmUtils.cpp.o: ../Physics/MPM/MpmUtils.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wch/github/chenhui-lib/cmake-build-release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object Physics/CMakeFiles/physics.dir/MPM/MpmUtils.cpp.o"
-	cd /home/wch/github/chenhui-lib/cmake-build-release/Physics && /usr/bin/g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/physics.dir/MPM/MpmUtils.cpp.o -c /home/wch/github/chenhui-lib/Physics/MPM/MpmUtils.cpp
+	cd /home/wch/github/chenhui-lib/cmake-build-release/Physics && /usr/bin/g++-9  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/physics.dir/MPM/MpmUtils.cpp.o -c /home/wch/github/chenhui-lib/Physics/MPM/MpmUtils.cpp
 
 Physics/CMakeFiles/physics.dir/MPM/MpmUtils.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/physics.dir/MPM/MpmUtils.cpp.i"
-	cd /home/wch/github/chenhui-lib/cmake-build-release/Physics && /usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wch/github/chenhui-lib/Physics/MPM/MpmUtils.cpp > CMakeFiles/physics.dir/MPM/MpmUtils.cpp.i
+	cd /home/wch/github/chenhui-lib/cmake-build-release/Physics && /usr/bin/g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wch/github/chenhui-lib/Physics/MPM/MpmUtils.cpp > CMakeFiles/physics.dir/MPM/MpmUtils.cpp.i
 
 Physics/CMakeFiles/physics.dir/MPM/MpmUtils.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/physics.dir/MPM/MpmUtils.cpp.s"
-	cd /home/wch/github/chenhui-lib/cmake-build-release/Physics && /usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wch/github/chenhui-lib/Physics/MPM/MpmUtils.cpp -o CMakeFiles/physics.dir/MPM/MpmUtils.cpp.s
+	cd /home/wch/github/chenhui-lib/cmake-build-release/Physics && /usr/bin/g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wch/github/chenhui-lib/Physics/MPM/MpmUtils.cpp -o CMakeFiles/physics.dir/MPM/MpmUtils.cpp.s
 
 # Object files for target physics
 physics_OBJECTS = \

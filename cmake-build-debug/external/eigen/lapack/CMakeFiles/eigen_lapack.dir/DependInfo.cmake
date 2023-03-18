@@ -26,6 +26,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "../external/glfw/include/GLFW"
   "../external/spdlog/include"
   "../external/eigen"
+  "../external/partio/src/lib"
   "../external/eigen/lapack/../blas"
   )
 set(CMAKE_DEPENDS_CHECK_Fortran
@@ -85,6 +86,7 @@ set(CMAKE_Fortran_TARGET_INCLUDE_PATH
   "../external/glfw/include/GLFW"
   "../external/spdlog/include"
   "../external/eigen"
+  "../external/partio/src/lib"
   "../external/eigen/lapack/../blas"
   )
 

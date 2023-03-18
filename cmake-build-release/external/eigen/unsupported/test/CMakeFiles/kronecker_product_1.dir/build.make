@@ -60,15 +60,15 @@ include external/eigen/unsupported/test/CMakeFiles/kronecker_product_1.dir/flags
 external/eigen/unsupported/test/CMakeFiles/kronecker_product_1.dir/kronecker_product.cpp.o: external/eigen/unsupported/test/CMakeFiles/kronecker_product_1.dir/flags.make
 external/eigen/unsupported/test/CMakeFiles/kronecker_product_1.dir/kronecker_product.cpp.o: ../external/eigen/unsupported/test/kronecker_product.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wch/github/chenhui-lib/cmake-build-release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object external/eigen/unsupported/test/CMakeFiles/kronecker_product_1.dir/kronecker_product.cpp.o"
-	cd /home/wch/github/chenhui-lib/cmake-build-release/external/eigen/unsupported/test && /usr/bin/g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/kronecker_product_1.dir/kronecker_product.cpp.o -c /home/wch/github/chenhui-lib/external/eigen/unsupported/test/kronecker_product.cpp
+	cd /home/wch/github/chenhui-lib/cmake-build-release/external/eigen/unsupported/test && /usr/bin/g++-9  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/kronecker_product_1.dir/kronecker_product.cpp.o -c /home/wch/github/chenhui-lib/external/eigen/unsupported/test/kronecker_product.cpp
 
 external/eigen/unsupported/test/CMakeFiles/kronecker_product_1.dir/kronecker_product.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/kronecker_product_1.dir/kronecker_product.cpp.i"
-	cd /home/wch/github/chenhui-lib/cmake-build-release/external/eigen/unsupported/test && /usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wch/github/chenhui-lib/external/eigen/unsupported/test/kronecker_product.cpp > CMakeFiles/kronecker_product_1.dir/kronecker_product.cpp.i
+	cd /home/wch/github/chenhui-lib/cmake-build-release/external/eigen/unsupported/test && /usr/bin/g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wch/github/chenhui-lib/external/eigen/unsupported/test/kronecker_product.cpp > CMakeFiles/kronecker_product_1.dir/kronecker_product.cpp.i
 
 external/eigen/unsupported/test/CMakeFiles/kronecker_product_1.dir/kronecker_product.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/kronecker_product_1.dir/kronecker_product.cpp.s"
-	cd /home/wch/github/chenhui-lib/cmake-build-release/external/eigen/unsupported/test && /usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wch/github/chenhui-lib/external/eigen/unsupported/test/kronecker_product.cpp -o CMakeFiles/kronecker_product_1.dir/kronecker_product.cpp.s
+	cd /home/wch/github/chenhui-lib/cmake-build-release/external/eigen/unsupported/test && /usr/bin/g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wch/github/chenhui-lib/external/eigen/unsupported/test/kronecker_product.cpp -o CMakeFiles/kronecker_product_1.dir/kronecker_product.cpp.s
 
 # Object files for target kronecker_product_1
 kronecker_product_1_OBJECTS = \

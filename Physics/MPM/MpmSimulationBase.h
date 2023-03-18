@@ -14,7 +14,12 @@
 #include <vector>
 #include "spdlog/spdlog.h"
 #include "MpmUtils.h"
+#include <tbb/spin_mutex.h>
+#include <tbb/concurrent_vector.h>
+
 using namespace Eigen;
+
+#define using_tbb true
 
 namespace mpm{
     struct SimInfo{
@@ -48,6 +53,9 @@ namespace mpm{
         void AddObject(const std::vector<Vector3f> &positions,
                        Material *mtl);
 
+        void AddObject(const std::vector<Vector3f> &positions,
+                       Material *mtl, Vector3f transform);
+
         void SetConstitutionModel(const std::shared_ptr<ConstitutionModel> &cm);
 
         void SetTransferScheme(TransferScheme ts);
@@ -62,9 +70,10 @@ namespace mpm{
         SimInfo simInfo;
         Particle *particles;
         Grid *grids;
+        tbb::spin_mutex *gridMutexs;
         std::shared_ptr<ConstitutionModel> consitutionModel = std::make_shared<NeoHookean_Piola>();
         TransferScheme transferScheme = TransferScheme::APIC;
-        std::vector<int> activeNodes;
+        tbb::concurrent_vector<int> activeNodes;
 
         void Prestep();
         void P2G();
@@ -80,21 +89,6 @@ namespace mpm{
         void SolveGridBoundary(int thickness = 2);
 
     };
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 }
 #endif //CHENHUI_MPMSIMULATIONBASE_H

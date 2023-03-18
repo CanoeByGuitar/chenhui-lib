@@ -10,9 +10,10 @@
 #include "ConstitutionModel.h"
 
 using namespace Eigen;
-namespace mpm{
-    class Particle{
+namespace mpm {
 
+    class Material;
+    class Particle {
     public:
         Vector3f pos;
         Vector3f vel;

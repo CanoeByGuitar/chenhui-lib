@@ -16,6 +16,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "../external/glfw/include/GLFW"
   "../external/spdlog/include"
   "../external/eigen"
+  "../external/partio/src/lib"
   "../external/eigen/unsupported/test/../../test"
   "../external/eigen/unsupported/test/../../unsupported"
   "../external/eigen/unsupported/test/../../Eigen"

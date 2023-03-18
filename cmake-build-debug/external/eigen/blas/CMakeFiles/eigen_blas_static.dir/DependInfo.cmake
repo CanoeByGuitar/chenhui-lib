@@ -36,6 +36,7 @@ set(CMAKE_C_TARGET_INCLUDE_PATH
   "../external/glfw/include/GLFW"
   "../external/spdlog/include"
   "../external/eigen"
+  "../external/partio/src/lib"
   )
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/wch/github/chenhui-lib/external/eigen/blas/complex_double.cpp" "/home/wch/github/chenhui-lib/cmake-build-debug/external/eigen/blas/CMakeFiles/eigen_blas_static.dir/complex_double.cpp.o"
@@ -54,6 +55,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "../external/glfw/include/GLFW"
   "../external/spdlog/include"
   "../external/eigen"
+  "../external/partio/src/lib"
   )
 set(CMAKE_DEPENDS_CHECK_Fortran
   "/home/wch/github/chenhui-lib/external/eigen/blas/fortran/complexdots.f" "/home/wch/github/chenhui-lib/cmake-build-debug/external/eigen/blas/CMakeFiles/eigen_blas_static.dir/fortran/complexdots.f.o"
@@ -70,6 +72,7 @@ set(CMAKE_Fortran_TARGET_INCLUDE_PATH
   "../external/glfw/include/GLFW"
   "../external/spdlog/include"
   "../external/eigen"
+  "../external/partio/src/lib"
   )
 
 # Targets to which this target links.

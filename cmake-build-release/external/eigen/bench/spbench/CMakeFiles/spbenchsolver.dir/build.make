@@ -60,15 +60,15 @@ include external/eigen/bench/spbench/CMakeFiles/spbenchsolver.dir/flags.make
 external/eigen/bench/spbench/CMakeFiles/spbenchsolver.dir/spbenchsolver.cpp.o: external/eigen/bench/spbench/CMakeFiles/spbenchsolver.dir/flags.make
 external/eigen/bench/spbench/CMakeFiles/spbenchsolver.dir/spbenchsolver.cpp.o: ../external/eigen/bench/spbench/spbenchsolver.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wch/github/chenhui-lib/cmake-build-release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object external/eigen/bench/spbench/CMakeFiles/spbenchsolver.dir/spbenchsolver.cpp.o"
-	cd /home/wch/github/chenhui-lib/cmake-build-release/external/eigen/bench/spbench && /usr/bin/g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/spbenchsolver.dir/spbenchsolver.cpp.o -c /home/wch/github/chenhui-lib/external/eigen/bench/spbench/spbenchsolver.cpp
+	cd /home/wch/github/chenhui-lib/cmake-build-release/external/eigen/bench/spbench && /usr/bin/g++-9  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/spbenchsolver.dir/spbenchsolver.cpp.o -c /home/wch/github/chenhui-lib/external/eigen/bench/spbench/spbenchsolver.cpp
 
 external/eigen/bench/spbench/CMakeFiles/spbenchsolver.dir/spbenchsolver.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/spbenchsolver.dir/spbenchsolver.cpp.i"
-	cd /home/wch/github/chenhui-lib/cmake-build-release/external/eigen/bench/spbench && /usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wch/github/chenhui-lib/external/eigen/bench/spbench/spbenchsolver.cpp > CMakeFiles/spbenchsolver.dir/spbenchsolver.cpp.i
+	cd /home/wch/github/chenhui-lib/cmake-build-release/external/eigen/bench/spbench && /usr/bin/g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wch/github/chenhui-lib/external/eigen/bench/spbench/spbenchsolver.cpp > CMakeFiles/spbenchsolver.dir/spbenchsolver.cpp.i
 
 external/eigen/bench/spbench/CMakeFiles/spbenchsolver.dir/spbenchsolver.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/spbenchsolver.dir/spbenchsolver.cpp.s"
-	cd /home/wch/github/chenhui-lib/cmake-build-release/external/eigen/bench/spbench && /usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wch/github/chenhui-lib/external/eigen/bench/spbench/spbenchsolver.cpp -o CMakeFiles/spbenchsolver.dir/spbenchsolver.cpp.s
+	cd /home/wch/github/chenhui-lib/cmake-build-release/external/eigen/bench/spbench && /usr/bin/g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wch/github/chenhui-lib/external/eigen/bench/spbench/spbenchsolver.cpp -o CMakeFiles/spbenchsolver.dir/spbenchsolver.cpp.s
 
 # Object files for target spbenchsolver
 spbenchsolver_OBJECTS = \

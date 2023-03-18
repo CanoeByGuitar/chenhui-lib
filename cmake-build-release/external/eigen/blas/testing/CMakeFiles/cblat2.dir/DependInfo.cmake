@@ -18,6 +18,7 @@ set(CMAKE_Fortran_TARGET_INCLUDE_PATH
   "../external/glfw/include/GLFW"
   "../external/spdlog/include"
   "../external/eigen"
+  "../external/partio/src/lib"
   )
 
 # Targets to which this target links.

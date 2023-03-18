@@ -12,6 +12,7 @@
 using namespace Eigen;
 
 namespace mpm {
+    class Particle;
     struct Material{
         float E = 50.0f; // Young's modules
         float nu = 0.3f; // Possion's ratio
@@ -35,8 +36,23 @@ namespace mpm {
     };
 
     class NeoHookean_Piola : public ConstitutionModel{
-        virtual Matrix3f calStressTensor(const Particle &particle);
-        virtual float calcPsi(const Particle &particle);
+        Matrix3f calStressTensor(const Particle &particle) override;
+        float calcPsi(const Particle &particle) override;
+    };
+
+//    class QuatraticVolumePenalty : public ConstitutionModel{
+//        Matrix3f calStressTensor(const Particle &particle) override;
+//        float calcPsi(const Particle &particle) override;
+//    };
+
+    class NeoHookean_Fluid : public ConstitutionModel{
+        Matrix3f calStressTensor(const Particle &particle) override;
+        float calcPsi(const Particle &particle) override;
+    };
+
+    class CDMPM_Fluid : public ConstitutionModel{
+        Matrix3f calStressTensor(const Particle &particle) override;
+        float calcPsi(const Particle &particle) override;
     };
 
 }

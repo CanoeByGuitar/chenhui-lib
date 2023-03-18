@@ -60,15 +60,15 @@ include MyRenderer/CMakeFiles/myrenderer.dir/flags.make
 MyRenderer/CMakeFiles/myrenderer.dir/main.cpp.o: MyRenderer/CMakeFiles/myrenderer.dir/flags.make
 MyRenderer/CMakeFiles/myrenderer.dir/main.cpp.o: ../MyRenderer/main.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wch/github/chenhui-lib/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object MyRenderer/CMakeFiles/myrenderer.dir/main.cpp.o"
-	cd /home/wch/github/chenhui-lib/cmake-build-debug/MyRenderer && /usr/bin/g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/myrenderer.dir/main.cpp.o -c /home/wch/github/chenhui-lib/MyRenderer/main.cpp
+	cd /home/wch/github/chenhui-lib/cmake-build-debug/MyRenderer && /usr/bin/g++-9  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/myrenderer.dir/main.cpp.o -c /home/wch/github/chenhui-lib/MyRenderer/main.cpp
 
 MyRenderer/CMakeFiles/myrenderer.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/myrenderer.dir/main.cpp.i"
-	cd /home/wch/github/chenhui-lib/cmake-build-debug/MyRenderer && /usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wch/github/chenhui-lib/MyRenderer/main.cpp > CMakeFiles/myrenderer.dir/main.cpp.i
+	cd /home/wch/github/chenhui-lib/cmake-build-debug/MyRenderer && /usr/bin/g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wch/github/chenhui-lib/MyRenderer/main.cpp > CMakeFiles/myrenderer.dir/main.cpp.i
 
 MyRenderer/CMakeFiles/myrenderer.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/myrenderer.dir/main.cpp.s"
-	cd /home/wch/github/chenhui-lib/cmake-build-debug/MyRenderer && /usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wch/github/chenhui-lib/MyRenderer/main.cpp -o CMakeFiles/myrenderer.dir/main.cpp.s
+	cd /home/wch/github/chenhui-lib/cmake-build-debug/MyRenderer && /usr/bin/g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wch/github/chenhui-lib/MyRenderer/main.cpp -o CMakeFiles/myrenderer.dir/main.cpp.s
 
 # Object files for target myrenderer
 myrenderer_OBJECTS = \

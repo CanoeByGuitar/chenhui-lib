@@ -3,18 +3,24 @@
 //
 
 #include "MpmSimulationBase.h"
-namespace mpm{
-    MpmSimulator::MpmSimulator(): simInfo() {}
+
+namespace mpm {
+    MpmSimulator::MpmSimulator() : simInfo() {}
 
     MpmSimulator::~MpmSimulator() {
-        if(particles){
+        if (particles) {
             delete[] particles;
             particles = nullptr;
         }
 
-        if(grids){
+        if (grids) {
             delete[] grids;
             grids = nullptr;
+        }
+
+        if (gridMutexs) {
+            delete[] gridMutexs;
+            gridMutexs = nullptr;
         }
     }
 
@@ -32,29 +38,28 @@ namespace mpm{
         simInfo.gridL = L;
         simInfo.gridSize = W * H * L;
         grids = new Grid[simInfo.gridSize];
-
+        gridMutexs = new tbb::spin_mutex[simInfo.gridSize];
         spdlog::info("MPM simulation space info : \n"
                      "\tgrid_size: {}->{}x{}x{}\n"
                      "\tgrid dx: {}\n"
                      "\tgrid gravity: ({},{},{})\n"
                      "\tworld area: ({},{},{})",
-                     simInfo.gridSize, W, H, L,simInfo.h,
-                     simInfo.gravity[0],simInfo.gravity[1],simInfo.gravity[2],
-                     simInfo.worldArea[0],simInfo.worldArea[1],simInfo.worldArea[2]);
+                     simInfo.gridSize, W, H, L, simInfo.h,
+                     simInfo.gravity[0], simInfo.gravity[1], simInfo.gravity[2],
+                     simInfo.worldArea[0], simInfo.worldArea[1], simInfo.worldArea[2]);
 
-        for(int i = 0; i < W; i++){
-            for(int j = 0; j < H; j++){
-                for(int k = 0; k < L; k++){
+        for (int i = 0; i < W; i++) {
+            for (int j = 0; j < H; j++) {
+                for (int k = 0; k < L; k++) {
                     int index = i * H * L + j * L + k;
                     grids[index].mass = 0;
                     grids[index].force = Vector3f::Zero();
                     grids[index].vel = Vector3f::Zero();
+                    grids[index].vel_in = Vector3f::Zero();
                     grids[index].Xi = Vector3i(i, j, k);
                 }
             }
         }
-
-
     }
 
     void MpmSimulator::AddObject(const std::vector<Vector3f> &positions, const std::vector<Vector3f> &velocities,
@@ -62,18 +67,43 @@ namespace mpm{
         assert(positions.size() == velocities.size() && mtl != nullptr);
         auto newSize = simInfo.particleSize + positions.size();
 
-        if(particles){
+        if (particles) {
             Particle *newPaticles = new Particle[newSize];
             memcpy(newPaticles, particles, simInfo.particleSize * sizeof(Particle));
             delete[] particles;
             particles = newPaticles;
-        }else{
+        } else {
             particles = new Particle[newSize];
         }
 
-        for(int i = simInfo.particleSize; i < newSize; i++){
+        for (int i = simInfo.particleSize; i < newSize; i++) {
             particles[i].pos = positions[i - simInfo.particleSize];
             particles[i].vel = velocities[i - simInfo.particleSize];
+            particles[i].F = Matrix3f::Identity();
+            particles[i].Fe = Matrix3f::Identity();
+            particles[i].Fp = Matrix3f::Identity();
+            particles[i].Bp = Matrix3f::Zero();
+            particles[i].mtl = mtl;
+        }
+
+        simInfo.particleSize = newSize;
+    }
+
+    void MpmSimulator::AddObject(const std::vector<Vector3f> &positions, Material *mtl, Vector3f transform) {
+        assert(mtl != nullptr);
+        auto newSize = simInfo.particleSize + positions.size();
+
+        if (particles) {
+            Particle *newPaticles = new Particle[newSize];
+            memcpy(newPaticles, particles, simInfo.particleSize * sizeof(Particle));
+            delete[] particles;
+            particles = newPaticles;
+        } else {
+            particles = new Particle[newSize];
+        }
+
+        for (int i = simInfo.particleSize; i < newSize; i++) {
+            particles[i].pos = positions[i - simInfo.particleSize] + transform;
             particles[i].F = Matrix3f::Identity();
             particles[i].Fe = Matrix3f::Identity();
             particles[i].Fp = Matrix3f::Identity();
@@ -88,16 +118,16 @@ namespace mpm{
         assert(mtl != nullptr);
         auto newSize = simInfo.particleSize + positions.size();
 
-        if(particles){
+        if (particles) {
             Particle *newPaticles = new Particle[newSize];
             memcpy(newPaticles, particles, simInfo.particleSize * sizeof(Particle));
             delete[] particles;
             particles = newPaticles;
-        }else{
+        } else {
             particles = new Particle[newSize];
         }
 
-        for(int i = simInfo.particleSize; i < newSize; i++){
+        for (int i = simInfo.particleSize; i < newSize; i++) {
             particles[i].pos = positions[i - simInfo.particleSize];
             particles[i].F = Matrix3f::Identity();
             particles[i].Fe = Matrix3f::Identity();
@@ -110,55 +140,210 @@ namespace mpm{
     }
 
     void MpmSimulator::SetConstitutionModel(const std::shared_ptr<ConstitutionModel> &cm) {
-        consitutionModel = cm;
+        this->consitutionModel = cm;
     }
 
     void MpmSimulator::SetTransferScheme(MpmSimulator::TransferScheme ts) {
-        transferScheme = ts;
-        if(ts == TransferScheme::FLIP95){
+        this->transferScheme = ts;
+        if (ts == TransferScheme::FLIP95) {
             simInfo.alpha = 0.95f;
-        }else if(ts == TransferScheme::FLIP99){
+        } else if (ts == TransferScheme::FLIP99) {
             simInfo.alpha = 0.99f;
         }
     }
 
     void MpmSimulator::Substep(float dt) {
+        //TICK(Prestep)
+        Prestep();
+        //TOCK(Prestep)
 
+        //        TICK(P2G)
+        P2G();
+        //        TOCK(P2G)
+
+
+        //TICK(AddGravity)
+        AddGravity();
+        //TOCK(AddGravity)
+
+        //TICK(UpdateGridForce)
+        UpdateGridForce();
+        //TOCK(UpdateGridForce)
+
+        //TICK(UpdateGridVelocity)
+        UpdateGridVelocity(dt);
+        //TOCK(UpdateGridVelocity)
+
+        //TICK(SolveGridBoundary)
+        SolveGridBoundary(2);
+        //TOCK(SolveGridBoundary)
+
+        //TICK(UpdateF)
+        UpdateF(dt);
+        //TOCK(UpdateF)
+
+        //TICK(G2P)
+        G2P();
+        //TOCK(G2P)
+
+        //TICK(Advection)
+        Advection(dt);
+        //TOCK(Advection)
+
+        simInfo.curStep++;
     }
 
     std::vector<Vector3f> MpmSimulator::GetPosition() const {
-        return std::vector<Vector3f>();
+#if using_tbb == 1
+        std::vector<Vector3f> positions(simInfo.particleSize);
+        tbb::parallel_for(0, simInfo.particleSize, [&](int i) {
+            positions[i] = particles[i].pos;
+        });
+#elif
+        for (int i = 0; i < simInfo.particleSize; i++) {
+            positions[i] = particles[i].pos;
+        }
+#endif
+        return positions;
     }
 
     void MpmSimulator::ClearSimulation() {
+        if (particles) {
+            delete[] particles;
+            particles = nullptr;
+        }
 
+        if (grids) {
+            delete[] grids;
+            grids = nullptr;
+        }
+
+        if (gridMutexs) {
+            delete[] gridMutexs;
+            gridMutexs = nullptr;
+        }
     }
 
     void MpmSimulator::Prestep() {
-        for(int i = 0; i < simInfo.gridSize; i++){
+#if using_tbb == 1
+        tbb::parallel_for(0, simInfo.gridSize, [&](int i) {
             grids[i].mass = 0;
             grids[i].force = Vector3f::Zero();
             grids[i].vel = Vector3f::Zero();
+            grids[i].vel_in = Vector3f::Zero();
+        });
+#elif
+        for (int i = 0; i < simInfo.gridSize; i++) {
+            grids[i].mass = 0;
+            grids[i].force = Vector3f::Zero();
+            grids[i].vel = Vector3f::Zero();
+            grids[i].vel_in = Vector3f::Zero();
         }
+#endif
         activeNodes.resize(0);
     }
 
     void MpmSimulator::P2G() {
-        for(int iter = 0; iter < simInfo.particleSize; iter++){
+#if using_tbb == 1
+        tbb::parallel_for(0, (int) simInfo.particleSize, [&](int iter) {
+            Vector3f gs_particle_pos = particles[iter].pos / simInfo.h;
+            auto [base_node, wp, dwp] = quatraticInterpolation(gs_particle_pos);
+            auto particle = particles[iter];
+            auto mass = particle.mtl->mass;
+            for (int i = 0; i < 3; i++) {
+                for (int j = 0; j < 3; j++) {
+                    for (int k = 0; k < 3; k++) {
+                        Vector3i curr_node = base_node + Vector3i(i, j, k);
+                        int index = curr_node[0] * simInfo.gridH * simInfo.gridL + curr_node[1] * simInfo.gridL + curr_node[2];
 
+                        // check if particles out of boundaries
+                        assert(0 <= index && index < simInfo.gridSize);
+
+                        float wijk = wp(i, 0) * wp(j, 1) * wp(k, 2);
+                        Vector3f plus = Vector3f::Zero();
+                        if (transferScheme == TransferScheme::APIC) {
+                            plus = 4 * particles[iter].Bp *
+                                   (curr_node.cast<float>() - gs_particle_pos);
+                        }
+
+                        // critical: one grid attributes may be modified by other threads if not forbidden
+                        {
+                            tbb::spin_mutex::scoped_lock lock(gridMutexs[index]);
+                            grids[index].vel_in += wijk * mass * (particles[iter].vel + plus);
+                            grids[index].mass += wijk * mass;
+                        }
+                    }
+                }
+            }
+        });
+        tbb::parallel_for(0, (int) simInfo.gridSize, [&](int iter) {
+            if (grids[iter].mass > 1e-15) {
+                // critical
+                activeNodes.push_back(iter);
+                grids[iter].vel_in = grids[iter].vel_in / grids[iter].mass;
+            } else {
+                grids[iter].vel_in = Vector3f::Zero();
+            }
+        });
+#elif
+        for (int iter = 0; iter < simInfo.particleSize; iter++) {
+            Vector3f gs_particle_pos = particles[iter].pos / simInfo.h;
+            auto [base_node, wp, dwp] = quatraticInterpolation(gs_particle_pos);
+            auto particle = particles[iter];
+            auto mass = particle.mtl->mass;
+            for (int i = 0; i < 3; i++) {
+                for (int j = 0; j < 3; j++) {
+                    for (int k = 0; k < 3; k++) {
+                        Vector3i curr_node = base_node + Vector3i(i, j, k);
+                        int index = curr_node[0] * simInfo.gridH * simInfo.gridL + curr_node[1] * simInfo.gridL + curr_node[2];
+
+                        // check if particles out of boundaries
+                        MPM_ASSERT(0 <= index && index < simInfo.gridSize, " PARTICLE OUT OF GRID at Transfer_P2G");
+
+                        float wijk = wp(i, 0) * wp(j, 1) * wp(k, 2);
+                        Vector3f plus = Vector3f::Zero();
+                        if (transferScheme == TransferScheme::APIC) {
+                            plus = 4 * particles[iter].Bp *
+                                   (curr_node.cast<float>() - gs_particle_pos);
+                        }
+
+                        // grids momentum
+                        grids[index].vel_in += wijk * mass * (particles[iter].vel + plus);
+                        grids[index].mass += wijk * mass;
+                    }
+                }
+            }
         }
+
+        for (int iter = 0; iter < simInfo.gridSize; iter++) {
+            if (grids[iter].mass > 1e-15) {
+                activeNodes.push_back(iter);
+                grids[iter].vel_in = grids[iter].vel_in / grids[iter].mass;
+            } else {
+                grids[iter].vel_in = Vector3f::Zero();
+            }
+        }
+#endif
     }
 
     void MpmSimulator::AddGravity() {
-        for(int i = 0; i < activeNodes.size(); i++){
+#if using_tbb == 1
+        tbb::parallel_for(0, (int) activeNodes.size(), [&](int i) {
+            int index = activeNodes[i];
+            grids[index].force += simInfo.gravity * grids[index].mass;
+        });
+#elif
+        for (int i = 0; i < activeNodes.size(); i++) {
             int index = activeNodes[i];
             grids[index].force += simInfo.gravity * grids[index].mass;
         }
+#endif
     }
 
     void MpmSimulator::UpdateGridForce() {
         // update grid forcing from particles F
-        for(int iter = 0; iter < simInfo.particleSize; iter++){
+#ifdef using_tbb == 1
+        tbb::parallel_for(0, (int) simInfo.particleSize, [&](int iter) {
             auto F = particles[iter].F;
             auto volP = particles[iter].mtl->volume;
             auto h = simInfo.h;
@@ -167,46 +352,243 @@ namespace mpm{
 
             auto [baseNode, wp, dwp] = quatraticInterpolation(particles[iter].pos / h);
 
-            for(int i = 0; i < 3; i++){
-                for(int j = 0; j < 3; j++){
-                    for(int k = 0; k < 3; k++){
+            for (int i = 0; i < 3; i++) {
+                for (int j = 0; j < 3; j++) {
+                    for (int k = 0; k < 3; k++) {
                         Vector3i curNode = baseNode + Vector3i(i, j, k);
-                        Vector3f gradWip {
-                            dwp(i, 0) * wp(j, 1) * wp(k, 2) / h,
-                            wp(i, 0) * dwp(j, 1) * wp(k, 2) / h,
-                            wp(i, 0) * wp(j, 1) * dwp(k, 2) / h
-                        };
+                        Vector3f gradWip{
+                                dwp(i, 0) * wp(j, 1) * wp(k, 2) / h,
+                                wp(i, 0) * dwp(j, 1) * wp(k, 2) / h,
+                                wp(i, 0) * wp(j, 1) * dwp(k, 2) / h};
                         auto index = curNode.x() * simInfo.gridH * simInfo.gridL +
-                                curNode.y() * simInfo.gridL + curNode.z();
+                                     curNode.y() * simInfo.gridL + curNode.z();
+                        // MPM course p43
+                        {
+                            // critical
+                            tbb::spin_mutex::scoped_lock lock(gridMutexs[index]);
+                            grids[index].force -= volP * (piola * F.transpose()) * gradWip;
+                        }
+                    }
+                }
+            }
+        });
+#elif
+        for (int iter = 0; iter < simInfo.particleSize; iter++) {
+            auto F = particles[iter].F;
+            auto volP = particles[iter].mtl->volume;
+            auto h = simInfo.h;
+
+            Matrix3f piola = consitutionModel->calStressTensor(particles[iter]);
+
+            auto [baseNode, wp, dwp] = quatraticInterpolation(particles[iter].pos / h);
+
+            for (int i = 0; i < 3; i++) {
+                for (int j = 0; j < 3; j++) {
+                    for (int k = 0; k < 3; k++) {
+                        Vector3i curNode = baseNode + Vector3i(i, j, k);
+                        Vector3f gradWip{
+                                dwp(i, 0) * wp(j, 1) * wp(k, 2) / h,
+                                wp(i, 0) * dwp(j, 1) * wp(k, 2) / h,
+                                wp(i, 0) * wp(j, 1) * dwp(k, 2) / h};
+                        auto index = curNode.x() * simInfo.gridH * simInfo.gridL +
+                                     curNode.y() * simInfo.gridL + curNode.z();
+                        // MPM course p43
                         grids[index].force -= volP * (piola * F.transpose()) * gradWip;
+                    }
+                }
+            }
+        }
+#endif
+    }
+
+    void MpmSimulator::UpdateGridVelocity(float dt) {
+        tbb::parallel_for(0, (int) activeNodes.size(), [&](int i) {
+            int index = activeNodes[i];
+            grids[index].vel = grids[index].vel_in + dt * grids[index].force / grids[index].mass;
+        });
+        //        for (int i = 0; i < activeNodes.size(); i++) {
+        //            int index = activeNodes[i];
+        //            grids[index].vel = grids[index].vel_in + dt * grids[index].force / grids[index].mass;
+        //        }
+    }
+
+    void MpmSimulator::UpdateF(float dt) {
+        // mpm course p42
+        tbb::parallel_for(0, (int) simInfo.particleSize, [&](int iter) {
+            auto F = particles[iter].F;
+            auto h = simInfo.h;
+            auto [base_node, wp, dwp] = quatraticInterpolation(particles[iter].pos / h);
+
+            Matrix3f weight = Matrix3f::Zero();
+            for (int i = 0; i < 3; i++) {
+                for (int j = 0; j < 3; j++) {
+                    for (int k = 0; k < 3; k++) {
+                        Vector3i curr_node = base_node + Vector3i(i, j, k);
+                        Vector3f grad_wip{dwp(i, 0) * wp(j, 1) * wp(k, 2) / h,
+                                          wp(i, 0) * dwp(j, 1) * wp(k, 2) / h,
+                                          wp(i, 0) * wp(j, 1) * dwp(k, 2) / h};
+                        int index = curr_node[0] * simInfo.gridH * simInfo.gridL + curr_node[1] * simInfo.gridL + curr_node[2];
+
+                        weight += grids[index].vel * grad_wip.transpose();
+                    }
+                }
+            }
+            particles[iter].F = F + dt * weight * F;
+        });
+        //        for (int iter = 0; iter < simInfo.particleSize; iter++) {
+        //            auto F = particles[iter].F;
+        //            auto h = simInfo.h;
+        //            auto [base_node, wp, dwp] = quatraticInterpolation(particles[iter].pos / h);
+        //
+        //            Matrix3f weight = Matrix3f::Zero();
+        //            for (int i = 0; i < 3; i++) {
+        //                for (int j = 0; j < 3; j++) {
+        //                    for (int k = 0; k < 3; k++) {
+        //                        Vector3i curr_node = base_node + Vector3i(i, j, k);
+        //                        Vector3f grad_wip{dwp(i, 0) * wp(j, 1) * wp(k, 2) / h,
+        //                                          wp(i, 0) * dwp(j, 1) * wp(k, 2) / h,
+        //                                          wp(i, 0) * wp(j, 1) * dwp(k, 2) / h};
+        //                        int index = curr_node[0] * simInfo.gridH * simInfo.gridL
+        //                                    + curr_node[1] * simInfo.gridL + curr_node[2];
+        //
+        //                        weight += grids[index].vel * grad_wip.transpose();
+        //                    }
+        //                }
+        //            }
+        //            particles[iter].F = F + dt * weight * F;
+        //        }
+    }
+
+    void MpmSimulator::G2P() {
+        tbb::parallel_for(0, (int) simInfo.particleSize, [&](int iter) {
+            Vector3f gs_particle_pos = particles[iter].pos / simInfo.h;
+            auto [base_node, wp, dwp] = quatraticInterpolation(gs_particle_pos);
+
+            Vector3f v_pic = Vector3f::Zero();
+            Vector3f v_flip = particles[iter].vel;
+            particles[iter].Bp = Matrix3f::Zero();
+
+            for (int i = 0; i < 3; i++) {
+                for (int j = 0; j < 3; j++) {
+                    for (int k = 0; k < 3; k++) {
+                        Vector3i curr_node = base_node + Vector3i(i, j, k);
+                        auto wijk = wp(i, 0) * wp(j, 1) * wp(k, 2);
+                        int index = curr_node[0] * simInfo.gridH * simInfo.gridL + curr_node[1] * simInfo.gridL + curr_node[2];
+                        assert(0 <= index && index < simInfo.gridSize);
+
+                        v_pic += wijk * grids[index].vel;
+                        v_flip += wijk * (grids[index].vel - grids[index].vel_in);
+                        particles[iter].Bp += wijk * grids[index].vel *
+                                              (curr_node.cast<float>() - gs_particle_pos).transpose();
+
+                        switch (transferScheme) {
+                            case TransferScheme::APIC:
+                                particles[iter].vel = v_pic;
+                            case TransferScheme::FLIP99:
+                            case TransferScheme::FLIP95:
+                                particles[iter].vel =
+                                        (1 - simInfo.alpha) * v_pic + simInfo.alpha * v_flip;
+                        }
+                    }
+                }
+            }
+        });
+        //        for (int iter = 0; iter < simInfo.particleSize; iter++) {
+        //            Vector3f gs_particle_pos = particles[iter].pos / simInfo.h;
+        //            auto [base_node, wp, dwp] = quatraticInterpolation(gs_particle_pos);
+        //
+        //            Vector3f v_pic = Vector3f::Zero();
+        //            Vector3f v_flip = particles[iter].vel;
+        //            particles[iter].Bp = Matrix3f::Zero();
+        //
+        //            for (int i = 0; i < 3; i++) {
+        //                for (int j = 0; j < 3; j++) {
+        //                    for (int k = 0; k < 3; k++) {
+        //                        Vector3i curr_node = base_node + Vector3i(i, j, k);
+        //                        auto wijk = wp(i, 0) * wp(j, 1) * wp(k, 2);
+        //                        int index = curr_node[0] * simInfo.gridH * simInfo.gridL
+        //                                    + curr_node[1] * simInfo.gridL + curr_node[2];
+        //                        assert(0 <= index && index < simInfo.gridSize);
+        //
+        //                        v_pic += wijk * grids[index].vel;
+        //                        v_flip += wijk * (grids[index].vel - grids[index].vel_in);
+        //                        particles[iter].Bp += wijk * grids[index].vel *
+        //                                              (curr_node.cast<float>() - gs_particle_pos).transpose();
+        //
+        //                        switch (transferScheme) {
+        //                            case TransferScheme::APIC:
+        //                                particles[iter].vel = v_pic;
+        //                            case TransferScheme::FLIP99:
+        //                            case TransferScheme::FLIP95:
+        //                                particles[iter].vel =
+        //                                        (1 - simInfo.alpha) * v_pic + simInfo.alpha * v_flip;
+        //                        }
+        //                    }
+        //                }
+        //            }
+        //        }
+    }
+
+    void MpmSimulator::Advection(float dt) {
+        tbb::parallel_for(0, (int) simInfo.particleSize, [&](int i) {
+            particles[i].pos += dt * particles[i].vel;
+        });
+        //        for (int i = 0; i < simInfo.particleSize; i++) {
+        //            particles[i].pos += dt * particles[i].vel;
+        //        }
+    }
+
+    void MpmSimulator::SolveGridBoundary(int thickness) {
+        auto [W, H, L] = std::tie(simInfo.gridW, simInfo.gridH, simInfo.gridL);
+        // check x-axis bound
+        for (int i = 0; i < thickness; i++) {
+            for (int j = 0; j < H; j++) {
+                for (int k = 0; k < L; k++) {
+                    int index1 = i * H * L + j * L + k;
+                    int index2 = (W - i - 1) * H * L + j * L + k;
+                    if (grids[index1].vel[0] < 0) {
+                        grids[index1].vel[0] = 0.0f;
+                    }
+                    if (grids[index2].vel[0] < 0) {
+                        grids[index2].vel[0] = 0.0f;
+                    }
+                }
+            }
+        }
+
+
+        // check y-axis bound
+        for (int i = 0; i < W; i++) {
+            for (int j = 0; j < thickness; j++) {
+                for (int k = 0; k < L; k++) {
+                    int index1 = i * H * L + j * L + k;
+                    int index2 = i * H * L + (H - j - 1) * L + k;
+                    if (grids[index1].vel[1] < 0) {
+                        grids[index1].vel[1] = 0.0f;
+                    }
+                    if (grids[index2].vel[1] < 0) {
+                        grids[index2].vel[1] = 0.0f;
+                    }
+                }
+            }
+        }
+
+        // check z-axis bound
+        for (int i = 0; i < W; i++) {
+            for (int j = 0; j < H; j++) {
+                for (int k = 0; k < thickness; k++) {
+                    int index1 = i * H * L + j * L + k;
+                    int index2 = i * H * L + j * L + (L - k - 1);
+                    if (grids[index1].vel[2] < 0) {
+                        grids[index1].vel[2] = 0.0f;
+                    }
+                    if (grids[index2].vel[2] < 0) {
+                        grids[index2].vel[2] = 0.0f;
                     }
                 }
             }
         }
     }
 
-    void MpmSimulator::UpdateGridVelocity(float dt) {
-        for(int i = 0; i< activeNodes.size(); i++){
-            int index = activeNodes[i];
-            grids[index].vel += dt * grids[index].force / grids[index].mass;
-        }
-    }
 
-    void MpmSimulator::UpdateF(float dt) {
-
-    }
-
-    void MpmSimulator::G2P() {
-
-    }
-
-    void MpmSimulator::Advection(float dt) {
-
-    }
-
-    void MpmSimulator::SolveGridBoundary(int thickness) {
-
-    }
-}
-
-
+}// namespace mpm

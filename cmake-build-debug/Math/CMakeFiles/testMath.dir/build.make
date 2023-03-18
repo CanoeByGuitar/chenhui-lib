@@ -60,15 +60,15 @@ include Math/CMakeFiles/testMath.dir/flags.make
 Math/CMakeFiles/testMath.dir/testMath.cpp.o: Math/CMakeFiles/testMath.dir/flags.make
 Math/CMakeFiles/testMath.dir/testMath.cpp.o: ../Math/testMath.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wch/github/chenhui-lib/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object Math/CMakeFiles/testMath.dir/testMath.cpp.o"
-	cd /home/wch/github/chenhui-lib/cmake-build-debug/Math && /usr/bin/g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/testMath.dir/testMath.cpp.o -c /home/wch/github/chenhui-lib/Math/testMath.cpp
+	cd /home/wch/github/chenhui-lib/cmake-build-debug/Math && /usr/bin/g++-9  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/testMath.dir/testMath.cpp.o -c /home/wch/github/chenhui-lib/Math/testMath.cpp
 
 Math/CMakeFiles/testMath.dir/testMath.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/testMath.dir/testMath.cpp.i"
-	cd /home/wch/github/chenhui-lib/cmake-build-debug/Math && /usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wch/github/chenhui-lib/Math/testMath.cpp > CMakeFiles/testMath.dir/testMath.cpp.i
+	cd /home/wch/github/chenhui-lib/cmake-build-debug/Math && /usr/bin/g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wch/github/chenhui-lib/Math/testMath.cpp > CMakeFiles/testMath.dir/testMath.cpp.i
 
 Math/CMakeFiles/testMath.dir/testMath.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/testMath.dir/testMath.cpp.s"
-	cd /home/wch/github/chenhui-lib/cmake-build-debug/Math && /usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wch/github/chenhui-lib/Math/testMath.cpp -o CMakeFiles/testMath.dir/testMath.cpp.s
+	cd /home/wch/github/chenhui-lib/cmake-build-debug/Math && /usr/bin/g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wch/github/chenhui-lib/Math/testMath.cpp -o CMakeFiles/testMath.dir/testMath.cpp.s
 
 # Object files for target testMath
 testMath_OBJECTS = \

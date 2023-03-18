@@ -5,6 +5,8 @@
 #ifndef CHENHUI_INTERSECTION_H
 #define CHENHUI_INTERSECTION_H
 
+#include <memory>
+
 class Material;
 class ObjMaterial;
 class Intersection {

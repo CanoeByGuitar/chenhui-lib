@@ -60,93 +60,93 @@ include external/spdlog/CMakeFiles/spdlog.dir/flags.make
 external/spdlog/CMakeFiles/spdlog.dir/src/spdlog.cpp.o: external/spdlog/CMakeFiles/spdlog.dir/flags.make
 external/spdlog/CMakeFiles/spdlog.dir/src/spdlog.cpp.o: ../external/spdlog/src/spdlog.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wch/github/chenhui-lib/cmake-build-release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object external/spdlog/CMakeFiles/spdlog.dir/src/spdlog.cpp.o"
-	cd /home/wch/github/chenhui-lib/cmake-build-release/external/spdlog && /usr/bin/g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/spdlog.dir/src/spdlog.cpp.o -c /home/wch/github/chenhui-lib/external/spdlog/src/spdlog.cpp
+	cd /home/wch/github/chenhui-lib/cmake-build-release/external/spdlog && /usr/bin/g++-9  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/spdlog.dir/src/spdlog.cpp.o -c /home/wch/github/chenhui-lib/external/spdlog/src/spdlog.cpp
 
 external/spdlog/CMakeFiles/spdlog.dir/src/spdlog.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/spdlog.dir/src/spdlog.cpp.i"
-	cd /home/wch/github/chenhui-lib/cmake-build-release/external/spdlog && /usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wch/github/chenhui-lib/external/spdlog/src/spdlog.cpp > CMakeFiles/spdlog.dir/src/spdlog.cpp.i
+	cd /home/wch/github/chenhui-lib/cmake-build-release/external/spdlog && /usr/bin/g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wch/github/chenhui-lib/external/spdlog/src/spdlog.cpp > CMakeFiles/spdlog.dir/src/spdlog.cpp.i
 
 external/spdlog/CMakeFiles/spdlog.dir/src/spdlog.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/spdlog.dir/src/spdlog.cpp.s"
-	cd /home/wch/github/chenhui-lib/cmake-build-release/external/spdlog && /usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wch/github/chenhui-lib/external/spdlog/src/spdlog.cpp -o CMakeFiles/spdlog.dir/src/spdlog.cpp.s
+	cd /home/wch/github/chenhui-lib/cmake-build-release/external/spdlog && /usr/bin/g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wch/github/chenhui-lib/external/spdlog/src/spdlog.cpp -o CMakeFiles/spdlog.dir/src/spdlog.cpp.s
 
 external/spdlog/CMakeFiles/spdlog.dir/src/stdout_sinks.cpp.o: external/spdlog/CMakeFiles/spdlog.dir/flags.make
 external/spdlog/CMakeFiles/spdlog.dir/src/stdout_sinks.cpp.o: ../external/spdlog/src/stdout_sinks.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wch/github/chenhui-lib/cmake-build-release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object external/spdlog/CMakeFiles/spdlog.dir/src/stdout_sinks.cpp.o"
-	cd /home/wch/github/chenhui-lib/cmake-build-release/external/spdlog && /usr/bin/g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/spdlog.dir/src/stdout_sinks.cpp.o -c /home/wch/github/chenhui-lib/external/spdlog/src/stdout_sinks.cpp
+	cd /home/wch/github/chenhui-lib/cmake-build-release/external/spdlog && /usr/bin/g++-9  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/spdlog.dir/src/stdout_sinks.cpp.o -c /home/wch/github/chenhui-lib/external/spdlog/src/stdout_sinks.cpp
 
 external/spdlog/CMakeFiles/spdlog.dir/src/stdout_sinks.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/spdlog.dir/src/stdout_sinks.cpp.i"
-	cd /home/wch/github/chenhui-lib/cmake-build-release/external/spdlog && /usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wch/github/chenhui-lib/external/spdlog/src/stdout_sinks.cpp > CMakeFiles/spdlog.dir/src/stdout_sinks.cpp.i
+	cd /home/wch/github/chenhui-lib/cmake-build-release/external/spdlog && /usr/bin/g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wch/github/chenhui-lib/external/spdlog/src/stdout_sinks.cpp > CMakeFiles/spdlog.dir/src/stdout_sinks.cpp.i
 
 external/spdlog/CMakeFiles/spdlog.dir/src/stdout_sinks.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/spdlog.dir/src/stdout_sinks.cpp.s"
-	cd /home/wch/github/chenhui-lib/cmake-build-release/external/spdlog && /usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wch/github/chenhui-lib/external/spdlog/src/stdout_sinks.cpp -o CMakeFiles/spdlog.dir/src/stdout_sinks.cpp.s
+	cd /home/wch/github/chenhui-lib/cmake-build-release/external/spdlog && /usr/bin/g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wch/github/chenhui-lib/external/spdlog/src/stdout_sinks.cpp -o CMakeFiles/spdlog.dir/src/stdout_sinks.cpp.s
 
 external/spdlog/CMakeFiles/spdlog.dir/src/color_sinks.cpp.o: external/spdlog/CMakeFiles/spdlog.dir/flags.make
 external/spdlog/CMakeFiles/spdlog.dir/src/color_sinks.cpp.o: ../external/spdlog/src/color_sinks.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wch/github/chenhui-lib/cmake-build-release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object external/spdlog/CMakeFiles/spdlog.dir/src/color_sinks.cpp.o"
-	cd /home/wch/github/chenhui-lib/cmake-build-release/external/spdlog && /usr/bin/g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/spdlog.dir/src/color_sinks.cpp.o -c /home/wch/github/chenhui-lib/external/spdlog/src/color_sinks.cpp
+	cd /home/wch/github/chenhui-lib/cmake-build-release/external/spdlog && /usr/bin/g++-9  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/spdlog.dir/src/color_sinks.cpp.o -c /home/wch/github/chenhui-lib/external/spdlog/src/color_sinks.cpp
 
 external/spdlog/CMakeFiles/spdlog.dir/src/color_sinks.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/spdlog.dir/src/color_sinks.cpp.i"
-	cd /home/wch/github/chenhui-lib/cmake-build-release/external/spdlog && /usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wch/github/chenhui-lib/external/spdlog/src/color_sinks.cpp > CMakeFiles/spdlog.dir/src/color_sinks.cpp.i
+	cd /home/wch/github/chenhui-lib/cmake-build-release/external/spdlog && /usr/bin/g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wch/github/chenhui-lib/external/spdlog/src/color_sinks.cpp > CMakeFiles/spdlog.dir/src/color_sinks.cpp.i
 
 external/spdlog/CMakeFiles/spdlog.dir/src/color_sinks.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/spdlog.dir/src/color_sinks.cpp.s"
-	cd /home/wch/github/chenhui-lib/cmake-build-release/external/spdlog && /usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wch/github/chenhui-lib/external/spdlog/src/color_sinks.cpp -o CMakeFiles/spdlog.dir/src/color_sinks.cpp.s
+	cd /home/wch/github/chenhui-lib/cmake-build-release/external/spdlog && /usr/bin/g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wch/github/chenhui-lib/external/spdlog/src/color_sinks.cpp -o CMakeFiles/spdlog.dir/src/color_sinks.cpp.s
 
 external/spdlog/CMakeFiles/spdlog.dir/src/file_sinks.cpp.o: external/spdlog/CMakeFiles/spdlog.dir/flags.make
 external/spdlog/CMakeFiles/spdlog.dir/src/file_sinks.cpp.o: ../external/spdlog/src/file_sinks.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wch/github/chenhui-lib/cmake-build-release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object external/spdlog/CMakeFiles/spdlog.dir/src/file_sinks.cpp.o"
-	cd /home/wch/github/chenhui-lib/cmake-build-release/external/spdlog && /usr/bin/g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/spdlog.dir/src/file_sinks.cpp.o -c /home/wch/github/chenhui-lib/external/spdlog/src/file_sinks.cpp
+	cd /home/wch/github/chenhui-lib/cmake-build-release/external/spdlog && /usr/bin/g++-9  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/spdlog.dir/src/file_sinks.cpp.o -c /home/wch/github/chenhui-lib/external/spdlog/src/file_sinks.cpp
 
 external/spdlog/CMakeFiles/spdlog.dir/src/file_sinks.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/spdlog.dir/src/file_sinks.cpp.i"
-	cd /home/wch/github/chenhui-lib/cmake-build-release/external/spdlog && /usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wch/github/chenhui-lib/external/spdlog/src/file_sinks.cpp > CMakeFiles/spdlog.dir/src/file_sinks.cpp.i
+	cd /home/wch/github/chenhui-lib/cmake-build-release/external/spdlog && /usr/bin/g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wch/github/chenhui-lib/external/spdlog/src/file_sinks.cpp > CMakeFiles/spdlog.dir/src/file_sinks.cpp.i
 
 external/spdlog/CMakeFiles/spdlog.dir/src/file_sinks.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/spdlog.dir/src/file_sinks.cpp.s"
-	cd /home/wch/github/chenhui-lib/cmake-build-release/external/spdlog && /usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wch/github/chenhui-lib/external/spdlog/src/file_sinks.cpp -o CMakeFiles/spdlog.dir/src/file_sinks.cpp.s
+	cd /home/wch/github/chenhui-lib/cmake-build-release/external/spdlog && /usr/bin/g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wch/github/chenhui-lib/external/spdlog/src/file_sinks.cpp -o CMakeFiles/spdlog.dir/src/file_sinks.cpp.s
 
 external/spdlog/CMakeFiles/spdlog.dir/src/async.cpp.o: external/spdlog/CMakeFiles/spdlog.dir/flags.make
 external/spdlog/CMakeFiles/spdlog.dir/src/async.cpp.o: ../external/spdlog/src/async.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wch/github/chenhui-lib/cmake-build-release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object external/spdlog/CMakeFiles/spdlog.dir/src/async.cpp.o"
-	cd /home/wch/github/chenhui-lib/cmake-build-release/external/spdlog && /usr/bin/g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/spdlog.dir/src/async.cpp.o -c /home/wch/github/chenhui-lib/external/spdlog/src/async.cpp
+	cd /home/wch/github/chenhui-lib/cmake-build-release/external/spdlog && /usr/bin/g++-9  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/spdlog.dir/src/async.cpp.o -c /home/wch/github/chenhui-lib/external/spdlog/src/async.cpp
 
 external/spdlog/CMakeFiles/spdlog.dir/src/async.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/spdlog.dir/src/async.cpp.i"
-	cd /home/wch/github/chenhui-lib/cmake-build-release/external/spdlog && /usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wch/github/chenhui-lib/external/spdlog/src/async.cpp > CMakeFiles/spdlog.dir/src/async.cpp.i
+	cd /home/wch/github/chenhui-lib/cmake-build-release/external/spdlog && /usr/bin/g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wch/github/chenhui-lib/external/spdlog/src/async.cpp > CMakeFiles/spdlog.dir/src/async.cpp.i
 
 external/spdlog/CMakeFiles/spdlog.dir/src/async.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/spdlog.dir/src/async.cpp.s"
-	cd /home/wch/github/chenhui-lib/cmake-build-release/external/spdlog && /usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wch/github/chenhui-lib/external/spdlog/src/async.cpp -o CMakeFiles/spdlog.dir/src/async.cpp.s
+	cd /home/wch/github/chenhui-lib/cmake-build-release/external/spdlog && /usr/bin/g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wch/github/chenhui-lib/external/spdlog/src/async.cpp -o CMakeFiles/spdlog.dir/src/async.cpp.s
 
 external/spdlog/CMakeFiles/spdlog.dir/src/cfg.cpp.o: external/spdlog/CMakeFiles/spdlog.dir/flags.make
 external/spdlog/CMakeFiles/spdlog.dir/src/cfg.cpp.o: ../external/spdlog/src/cfg.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wch/github/chenhui-lib/cmake-build-release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object external/spdlog/CMakeFiles/spdlog.dir/src/cfg.cpp.o"
-	cd /home/wch/github/chenhui-lib/cmake-build-release/external/spdlog && /usr/bin/g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/spdlog.dir/src/cfg.cpp.o -c /home/wch/github/chenhui-lib/external/spdlog/src/cfg.cpp
+	cd /home/wch/github/chenhui-lib/cmake-build-release/external/spdlog && /usr/bin/g++-9  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/spdlog.dir/src/cfg.cpp.o -c /home/wch/github/chenhui-lib/external/spdlog/src/cfg.cpp
 
 external/spdlog/CMakeFiles/spdlog.dir/src/cfg.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/spdlog.dir/src/cfg.cpp.i"
-	cd /home/wch/github/chenhui-lib/cmake-build-release/external/spdlog && /usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wch/github/chenhui-lib/external/spdlog/src/cfg.cpp > CMakeFiles/spdlog.dir/src/cfg.cpp.i
+	cd /home/wch/github/chenhui-lib/cmake-build-release/external/spdlog && /usr/bin/g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wch/github/chenhui-lib/external/spdlog/src/cfg.cpp > CMakeFiles/spdlog.dir/src/cfg.cpp.i
 
 external/spdlog/CMakeFiles/spdlog.dir/src/cfg.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/spdlog.dir/src/cfg.cpp.s"
-	cd /home/wch/github/chenhui-lib/cmake-build-release/external/spdlog && /usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wch/github/chenhui-lib/external/spdlog/src/cfg.cpp -o CMakeFiles/spdlog.dir/src/cfg.cpp.s
+	cd /home/wch/github/chenhui-lib/cmake-build-release/external/spdlog && /usr/bin/g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wch/github/chenhui-lib/external/spdlog/src/cfg.cpp -o CMakeFiles/spdlog.dir/src/cfg.cpp.s
 
 external/spdlog/CMakeFiles/spdlog.dir/src/bundled_fmtlib_format.cpp.o: external/spdlog/CMakeFiles/spdlog.dir/flags.make
 external/spdlog/CMakeFiles/spdlog.dir/src/bundled_fmtlib_format.cpp.o: ../external/spdlog/src/bundled_fmtlib_format.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wch/github/chenhui-lib/cmake-build-release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object external/spdlog/CMakeFiles/spdlog.dir/src/bundled_fmtlib_format.cpp.o"
-	cd /home/wch/github/chenhui-lib/cmake-build-release/external/spdlog && /usr/bin/g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/spdlog.dir/src/bundled_fmtlib_format.cpp.o -c /home/wch/github/chenhui-lib/external/spdlog/src/bundled_fmtlib_format.cpp
+	cd /home/wch/github/chenhui-lib/cmake-build-release/external/spdlog && /usr/bin/g++-9  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/spdlog.dir/src/bundled_fmtlib_format.cpp.o -c /home/wch/github/chenhui-lib/external/spdlog/src/bundled_fmtlib_format.cpp
 
 external/spdlog/CMakeFiles/spdlog.dir/src/bundled_fmtlib_format.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/spdlog.dir/src/bundled_fmtlib_format.cpp.i"
-	cd /home/wch/github/chenhui-lib/cmake-build-release/external/spdlog && /usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wch/github/chenhui-lib/external/spdlog/src/bundled_fmtlib_format.cpp > CMakeFiles/spdlog.dir/src/bundled_fmtlib_format.cpp.i
+	cd /home/wch/github/chenhui-lib/cmake-build-release/external/spdlog && /usr/bin/g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wch/github/chenhui-lib/external/spdlog/src/bundled_fmtlib_format.cpp > CMakeFiles/spdlog.dir/src/bundled_fmtlib_format.cpp.i
 
 external/spdlog/CMakeFiles/spdlog.dir/src/bundled_fmtlib_format.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/spdlog.dir/src/bundled_fmtlib_format.cpp.s"
-	cd /home/wch/github/chenhui-lib/cmake-build-release/external/spdlog && /usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wch/github/chenhui-lib/external/spdlog/src/bundled_fmtlib_format.cpp -o CMakeFiles/spdlog.dir/src/bundled_fmtlib_format.cpp.s
+	cd /home/wch/github/chenhui-lib/cmake-build-release/external/spdlog && /usr/bin/g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wch/github/chenhui-lib/external/spdlog/src/bundled_fmtlib_format.cpp -o CMakeFiles/spdlog.dir/src/bundled_fmtlib_format.cpp.s
 
 # Object files for target spdlog
 spdlog_OBJECTS = \

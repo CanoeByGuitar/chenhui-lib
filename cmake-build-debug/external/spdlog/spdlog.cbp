@@ -5,7 +5,7 @@
 		<Option title="spdlog"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="gcc"/>
-		<Option virtualFolders="CMake Files\;CMake Files\external\;CMake Files\external\eigen\;CMake Files\external\eigen\cmake\;CMake Files\external\eigen\scripts\;CMake Files\external\eigen\doc\;CMake Files\external\eigen\doc\examples\;CMake Files\external\eigen\doc\special_examples\;CMake Files\external\eigen\doc\snippets\;CMake Files\external\eigen\unsupported\;CMake Files\external\eigen\unsupported\doc\;CMake Files\external\eigen\unsupported\doc\examples\;CMake Files\external\eigen\unsupported\doc\snippets\;CMake Files\external\eigen\unsupported\Eigen\;CMake Files\external\eigen\unsupported\Eigen\CXX11\;CMake Files\external\eigen\unsupported\test\;CMake Files\external\eigen\test\;CMake Files\external\eigen\failtest\;CMake Files\external\eigen\blas\;CMake Files\external\eigen\blas\testing\;CMake Files\external\eigen\lapack\;CMake Files\external\eigen\demos\;CMake Files\external\eigen\bench\;CMake Files\external\eigen\bench\spbench\;CMake Files\external\glfw\;CMake Files\external\glfw\CMake\;CMake Files\external\glfw\src\;CMake Files\external\spdlog\;CMake Files\external\spdlog\cmake\;CMake Files\external\glm\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\usr\;CMake Files\..\..\..\..\usr\lib\;CMake Files\..\..\..\..\usr\lib\x86_64-linux-gnu\;CMake Files\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\;CMake Files\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Boost-1.71.0\;CMake Files\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\boost_headers-1.71.0\;CMake Files\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\TBB\;CMake Files\Renderer\;CMake Files\Physics\;CMake Files\Math\;CMake Files\MyRenderer\;"/>
+		<Option virtualFolders="CMake Files\;CMake Files\external\;CMake Files\external\eigen\;CMake Files\external\eigen\cmake\;CMake Files\external\eigen\scripts\;CMake Files\external\eigen\doc\;CMake Files\external\eigen\doc\examples\;CMake Files\external\eigen\doc\special_examples\;CMake Files\external\eigen\doc\snippets\;CMake Files\external\eigen\unsupported\;CMake Files\external\eigen\unsupported\doc\;CMake Files\external\eigen\unsupported\doc\examples\;CMake Files\external\eigen\unsupported\doc\snippets\;CMake Files\external\eigen\unsupported\Eigen\;CMake Files\external\eigen\unsupported\Eigen\CXX11\;CMake Files\external\eigen\unsupported\test\;CMake Files\external\eigen\test\;CMake Files\external\eigen\failtest\;CMake Files\external\eigen\blas\;CMake Files\external\eigen\blas\testing\;CMake Files\external\eigen\lapack\;CMake Files\external\eigen\demos\;CMake Files\external\eigen\bench\;CMake Files\external\eigen\bench\spbench\;CMake Files\external\glfw\;CMake Files\external\glfw\CMake\;CMake Files\external\glfw\src\;CMake Files\external\spdlog\;CMake Files\external\spdlog\cmake\;CMake Files\external\glm\;CMake Files\external\partio\;CMake Files\external\partio\src\;CMake Files\external\partio\src\lib\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\usr\;CMake Files\..\..\..\..\usr\lib\;CMake Files\..\..\..\..\usr\lib\x86_64-linux-gnu\;CMake Files\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\;CMake Files\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Boost-1.71.0\;CMake Files\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\boost_headers-1.71.0\;CMake Files\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\TBB\;CMake Files\Renderer\;CMake Files\Physics\;CMake Files\Math\;CMake Files\MyRenderer\;"/>
 		<Build>
 			<Target title="all">
 				<Option working_dir="/home/wch/github/chenhui-lib/cmake-build-debug/external/spdlog"/>
@@ -31,10 +31,11 @@
 					<Add directory="/home/wch/github/chenhui-lib/external/glfw/include/GLFW"/>
 					<Add directory="/home/wch/github/chenhui-lib/external/spdlog/include"/>
 					<Add directory="/home/wch/github/chenhui-lib/external/eigen"/>
-					<Add directory="/usr/include/c++/7"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
-					<Add directory="/usr/include/c++/7/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/home/wch/github/chenhui-lib/external/partio/src/lib"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/usr/include/x86_64-linux-gnu"/>
 					<Add directory="/usr/include"/>
@@ -60,10 +61,11 @@
 					<Add directory="/home/wch/github/chenhui-lib/external/glfw/include/GLFW"/>
 					<Add directory="/home/wch/github/chenhui-lib/external/spdlog/include"/>
 					<Add directory="/home/wch/github/chenhui-lib/external/eigen"/>
-					<Add directory="/usr/include/c++/7"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
-					<Add directory="/usr/include/c++/7/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/home/wch/github/chenhui-lib/external/partio/src/lib"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/usr/include/x86_64-linux-gnu"/>
 					<Add directory="/usr/include"/>
@@ -579,6 +581,12 @@
 		</Unit>
 		<Unit filename="/home/wch/github/chenhui-lib/external/glm/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\external\glm\"/>
+		</Unit>
+		<Unit filename="/home/wch/github/chenhui-lib/external/partio/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\external\partio\"/>
+		</Unit>
+		<Unit filename="/home/wch/github/chenhui-lib/external/partio/src/lib/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\external\partio\src\lib\"/>
 		</Unit>
 		<Unit filename="/home/wch/github/chenhui-lib/../../../../usr/lib/x86_64-linux-gnu/cmake/Boost-1.71.0/BoostConfig.cmake">
 			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Boost-1.71.0\"/>
