@@ -93,9 +93,9 @@ namespace Renderer {
 
 
         shader->use();
-        glPointSize(10.0f);
+        glPointSize(3.0f);
 //        glBindVertexArray(1);
-        glDrawArrays(GL_TRIANGLES, 0, m_particleModel->getNum());
+        glDrawArrays(GL_POINTS, 0, m_particleModel->getNum());
 
         glfwSwapBuffers(m_window);
         glfwPollEvents();
@@ -161,6 +161,7 @@ namespace Renderer {
         if (glfwGetKey(m_window, GLFW_KEY_D) == GLFW_PRESS)
             m_camera.ProcessOnKeyboard(RIGHT, m_dt);
     }
+
 
 
 }

@@ -6,12 +6,14 @@
 #define CHENHUI_PARTICLE_H
 
 #include "Shader.h"
+#include <vector>
+#include <tbb/parallel_for.h>
 
 namespace Renderer{
     class Particles{
     public:
         Particles(float* data, int num, const char* vertexPath = "",const char* fragmentPath = "");
-
+        ~Particles();
 
         float *getData() const;
 
@@ -19,10 +21,12 @@ namespace Renderer{
 
         Shader *getShader() const;
 
+        void updateData(std::vector<float> &&data);
     private:
-        float* m_data;
+
         int m_num;
         Shader* m_shader;
+        float* m_data;
     };
 }
 

@@ -1624,6 +1624,20 @@ fmt/format.h
 format-inl.h
 ../external/spdlog/include/spdlog/fmt/bundled/format-inl.h
 
+../external/spdlog/include/spdlog/fmt/bundled/ostream.h
+fstream
+-
+ostream
+-
+ext/stdio_filebuf.h
+-
+ext/stdio_sync_filebuf.h
+-
+__std_stream
+-
+format.h
+../external/spdlog/include/spdlog/fmt/bundled/format.h
+
 ../external/spdlog/include/spdlog/fmt/bundled/xchar.h
 cwchar
 -
@@ -1640,6 +1654,12 @@ spdlog/fmt/bundled/format.h
 fmt/core.h
 -
 fmt/format.h
+-
+
+../external/spdlog/include/spdlog/fmt/ostr.h
+spdlog/fmt/bundled/ostream.h
+-
+fmt/ostream.h
 -
 
 ../external/spdlog/include/spdlog/fmt/xchar.h
@@ -1783,6 +1803,24 @@ spdlog/formatter.h
 -
 sink-inl.h
 ../external/spdlog/include/spdlog/sinks/sink-inl.h
+
+../external/spdlog/include/spdlog/sinks/stdout_color_sinks-inl.h
+spdlog/sinks/stdout_color_sinks.h
+-
+spdlog/logger.h
+-
+spdlog/common.h
+-
+
+../external/spdlog/include/spdlog/sinks/stdout_color_sinks.h
+spdlog/sinks/wincolor_sink.h
+-
+spdlog/sinks/ansicolor_sink.h
+-
+spdlog/details/synchronous_factory.h
+-
+stdout_color_sinks-inl.h
+../external/spdlog/include/spdlog/sinks/stdout_color_sinks-inl.h
 
 ../external/spdlog/include/spdlog/sinks/wincolor_sink-inl.h
 spdlog/sinks/wincolor_sink.h
@@ -1935,6 +1973,10 @@ tbb/tick_count.h
 -
 spdlog/fmt/bundled/color.h
 -
+spdlog/fmt/ostr.h
+/home/wch/github/chenhui-lib/Physics/MPM/spdlog/fmt/ostr.h
+spdlog/sinks/stdout_color_sinks.h
+/home/wch/github/chenhui-lib/Physics/MPM/spdlog/sinks/stdout_color_sinks.h
 
 /home/wch/github/chenhui-lib/Physics/MassSpringSim.cpp
 MassSpringSim.h

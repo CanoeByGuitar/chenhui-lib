@@ -194,14 +194,32 @@ namespace mpm {
     }
 
     std::vector<Vector3f> MpmSimulator::GetPosition() const {
-#if using_tbb == 1
         std::vector<Vector3f> positions(simInfo.particleSize);
+#if using_tbb == 1
         tbb::parallel_for(0, simInfo.particleSize, [&](int i) {
             positions[i] = particles[i].pos;
         });
-#elif
+#else
         for (int i = 0; i < simInfo.particleSize; i++) {
             positions[i] = particles[i].pos;
+        }
+#endif
+        return positions;
+    }
+
+    std::vector<float> MpmSimulator::GetPositionToRenderer() const {
+        std::vector<float> positions(simInfo.particleSize * 3);
+#if using_tbb == 1
+        tbb::parallel_for(0, simInfo.particleSize, [&](int i) {
+            positions[3 * i] = particles[i].pos[0];
+            positions[3 * i + 1] = particles[i].pos[1];
+            positions[3 * i + 2] = particles[i].pos[2];
+        });
+#else
+        for(int i = 0; i < simInfo.particleSize; i++) {
+            positions[3 * i] = particles[i].pos[0];
+            positions[3 * i + 1] = particles[i].pos[1];
+            positions[3 * i + 2] = particles[i].pos[2];
         }
 #endif
         return positions;
@@ -232,7 +250,7 @@ namespace mpm {
             grids[i].vel = Vector3f::Zero();
             grids[i].vel_in = Vector3f::Zero();
         });
-#elif
+#else
         for (int i = 0; i < simInfo.gridSize; i++) {
             grids[i].mass = 0;
             grids[i].force = Vector3f::Zero();
@@ -257,7 +275,7 @@ namespace mpm {
                         int index = curr_node[0] * simInfo.gridH * simInfo.gridL + curr_node[1] * simInfo.gridL + curr_node[2];
 
                         // check if particles out of boundaries
-                        assert(0 <= index && index < simInfo.gridSize);
+                        MPM_ASSERT(0 <= index && index < simInfo.gridSize, " PARTICLE OUT OF GRID at Transfer_P2G");
 
                         float wijk = wp(i, 0) * wp(j, 1) * wp(k, 2);
                         Vector3f plus = Vector3f::Zero();
@@ -285,7 +303,7 @@ namespace mpm {
                 grids[iter].vel_in = Vector3f::Zero();
             }
         });
-#elif
+#else
         for (int iter = 0; iter < simInfo.particleSize; iter++) {
             Vector3f gs_particle_pos = particles[iter].pos / simInfo.h;
             auto [base_node, wp, dwp] = quatraticInterpolation(gs_particle_pos);
@@ -298,7 +316,9 @@ namespace mpm {
                         int index = curr_node[0] * simInfo.gridH * simInfo.gridL + curr_node[1] * simInfo.gridL + curr_node[2];
 
                         // check if particles out of boundaries
-                        MPM_ASSERT(0 <= index && index < simInfo.gridSize, " PARTICLE OUT OF GRID at Transfer_P2G");
+                        MPM_ASSERT(0 <= index && index < simInfo.gridSize, " PARTICLE OUT OF GRID P2G.  index = (" + std::to_string(curr_node[0] + i)+ " "
+                                                                                   + std::to_string(curr_node[1] + j)+ " "
+                                                                                   + std::to_string(curr_node[2] + k) + ")");
 
                         float wijk = wp(i, 0) * wp(j, 1) * wp(k, 2);
                         Vector3f plus = Vector3f::Zero();
@@ -332,7 +352,7 @@ namespace mpm {
             int index = activeNodes[i];
             grids[index].force += simInfo.gravity * grids[index].mass;
         });
-#elif
+#else
         for (int i = 0; i < activeNodes.size(); i++) {
             int index = activeNodes[i];
             grids[index].force += simInfo.gravity * grids[index].mass;
@@ -340,9 +360,9 @@ namespace mpm {
 #endif
     }
 
+    // update grid forcing from particles F
     void MpmSimulator::UpdateGridForce() {
-        // update grid forcing from particles F
-#ifdef using_tbb == 1
+#if using_tbb == 1
         tbb::parallel_for(0, (int) simInfo.particleSize, [&](int iter) {
             auto F = particles[iter].F;
             auto volP = particles[iter].mtl->volume;
@@ -362,6 +382,7 @@ namespace mpm {
                                 wp(i, 0) * wp(j, 1) * dwp(k, 2) / h};
                         auto index = curNode.x() * simInfo.gridH * simInfo.gridL +
                                      curNode.y() * simInfo.gridL + curNode.z();
+                        MPM_ASSERT(0 <= index && index < simInfo.gridSize, " PARTICLE OUT OF GRID at UpdateGridForce");
                         // MPM course p43
                         {
                             // critical
@@ -372,7 +393,7 @@ namespace mpm {
                 }
             }
         });
-#elif
+#else
         for (int iter = 0; iter < simInfo.particleSize; iter++) {
             auto F = particles[iter].F;
             auto volP = particles[iter].mtl->volume;
@@ -392,6 +413,7 @@ namespace mpm {
                                 wp(i, 0) * wp(j, 1) * dwp(k, 2) / h};
                         auto index = curNode.x() * simInfo.gridH * simInfo.gridL +
                                      curNode.y() * simInfo.gridL + curNode.z();
+                        MPM_ASSERT(0 <= index && index < simInfo.gridSize, " PARTICLE OUT OF GRID at UpdateGridForce");
                         // MPM course p43
                         grids[index].force -= volP * (piola * F.transpose()) * gradWip;
                     }
@@ -402,18 +424,22 @@ namespace mpm {
     }
 
     void MpmSimulator::UpdateGridVelocity(float dt) {
+#if using_tbb == 1
         tbb::parallel_for(0, (int) activeNodes.size(), [&](int i) {
             int index = activeNodes[i];
             grids[index].vel = grids[index].vel_in + dt * grids[index].force / grids[index].mass;
         });
-        //        for (int i = 0; i < activeNodes.size(); i++) {
-        //            int index = activeNodes[i];
-        //            grids[index].vel = grids[index].vel_in + dt * grids[index].force / grids[index].mass;
-        //        }
+#else
+                for (int i = 0; i < activeNodes.size(); i++) {
+                    int index = activeNodes[i];
+                    grids[index].vel = grids[index].vel_in + dt * grids[index].force / grids[index].mass;
+                }
+#endif
     }
 
     void MpmSimulator::UpdateF(float dt) {
         // mpm course p42
+#if using_tbb == 1
         tbb::parallel_for(0, (int) simInfo.particleSize, [&](int iter) {
             auto F = particles[iter].F;
             auto h = simInfo.h;
@@ -428,38 +454,45 @@ namespace mpm {
                                           wp(i, 0) * dwp(j, 1) * wp(k, 2) / h,
                                           wp(i, 0) * wp(j, 1) * dwp(k, 2) / h};
                         int index = curr_node[0] * simInfo.gridH * simInfo.gridL + curr_node[1] * simInfo.gridL + curr_node[2];
-
+                        MPM_ASSERT(0 <= index && index < simInfo.gridSize, "PARTICLE OUT OF GRID at UpdateF");
                         weight += grids[index].vel * grad_wip.transpose();
                     }
                 }
             }
             particles[iter].F = F + dt * weight * F;
+            if (particles[iter].F.determinant() < 0) {
+                MPM_ERROR("particles[{}]'s determinat(F) is negative!\n{}", iter,
+                          particles[iter].F);
+                assert(false);
+            }
         });
-        //        for (int iter = 0; iter < simInfo.particleSize; iter++) {
-        //            auto F = particles[iter].F;
-        //            auto h = simInfo.h;
-        //            auto [base_node, wp, dwp] = quatraticInterpolation(particles[iter].pos / h);
-        //
-        //            Matrix3f weight = Matrix3f::Zero();
-        //            for (int i = 0; i < 3; i++) {
-        //                for (int j = 0; j < 3; j++) {
-        //                    for (int k = 0; k < 3; k++) {
-        //                        Vector3i curr_node = base_node + Vector3i(i, j, k);
-        //                        Vector3f grad_wip{dwp(i, 0) * wp(j, 1) * wp(k, 2) / h,
-        //                                          wp(i, 0) * dwp(j, 1) * wp(k, 2) / h,
-        //                                          wp(i, 0) * wp(j, 1) * dwp(k, 2) / h};
-        //                        int index = curr_node[0] * simInfo.gridH * simInfo.gridL
-        //                                    + curr_node[1] * simInfo.gridL + curr_node[2];
-        //
-        //                        weight += grids[index].vel * grad_wip.transpose();
-        //                    }
-        //                }
-        //            }
-        //            particles[iter].F = F + dt * weight * F;
-        //        }
+#else
+        for (int iter = 0; iter < simInfo.particleSize; iter++) {
+            auto F = particles[iter].F;
+            auto h = simInfo.h;
+            auto [base_node, wp, dwp] = quatraticInterpolation(particles[iter].pos / h);
+
+            Matrix3f weight = Matrix3f::Zero();
+            for (int i = 0; i < 3; i++) {
+                for (int j = 0; j < 3; j++) {
+                    for (int k = 0; k < 3; k++) {
+                        Vector3i curr_node = base_node + Vector3i(i, j, k);
+                        Vector3f grad_wip{dwp(i, 0) * wp(j, 1) * wp(k, 2) / h,
+                                          wp(i, 0) * dwp(j, 1) * wp(k, 2) / h,
+                                          wp(i, 0) * wp(j, 1) * dwp(k, 2) / h};
+                        int index = curr_node[0] * simInfo.gridH * simInfo.gridL + curr_node[1] * simInfo.gridL + curr_node[2];
+                        MPM_ASSERT(0 <= index && index < simInfo.gridSize, "PARTICLE OUT OF GRID at UpdateF");
+                        weight += grids[index].vel * grad_wip.transpose();
+                    }
+                }
+            }
+            particles[iter].F = F + dt * weight * F;
+        }
+#endif
     }
 
     void MpmSimulator::G2P() {
+#if using_tbb == 1
         tbb::parallel_for(0, (int) simInfo.particleSize, [&](int iter) {
             Vector3f gs_particle_pos = particles[iter].pos / simInfo.h;
             auto [base_node, wp, dwp] = quatraticInterpolation(gs_particle_pos);
@@ -474,7 +507,7 @@ namespace mpm {
                         Vector3i curr_node = base_node + Vector3i(i, j, k);
                         auto wijk = wp(i, 0) * wp(j, 1) * wp(k, 2);
                         int index = curr_node[0] * simInfo.gridH * simInfo.gridL + curr_node[1] * simInfo.gridL + curr_node[2];
-                        assert(0 <= index && index < simInfo.gridSize);
+                        MPM_ASSERT(0 <= index && index < simInfo.gridSize, "PARTICLE OUT OF GRID at G2P");
 
                         v_pic += wijk * grids[index].vel;
                         v_flip += wijk * (grids[index].vel - grids[index].vel_in);
@@ -493,49 +526,53 @@ namespace mpm {
                 }
             }
         });
-        //        for (int iter = 0; iter < simInfo.particleSize; iter++) {
-        //            Vector3f gs_particle_pos = particles[iter].pos / simInfo.h;
-        //            auto [base_node, wp, dwp] = quatraticInterpolation(gs_particle_pos);
-        //
-        //            Vector3f v_pic = Vector3f::Zero();
-        //            Vector3f v_flip = particles[iter].vel;
-        //            particles[iter].Bp = Matrix3f::Zero();
-        //
-        //            for (int i = 0; i < 3; i++) {
-        //                for (int j = 0; j < 3; j++) {
-        //                    for (int k = 0; k < 3; k++) {
-        //                        Vector3i curr_node = base_node + Vector3i(i, j, k);
-        //                        auto wijk = wp(i, 0) * wp(j, 1) * wp(k, 2);
-        //                        int index = curr_node[0] * simInfo.gridH * simInfo.gridL
-        //                                    + curr_node[1] * simInfo.gridL + curr_node[2];
-        //                        assert(0 <= index && index < simInfo.gridSize);
-        //
-        //                        v_pic += wijk * grids[index].vel;
-        //                        v_flip += wijk * (grids[index].vel - grids[index].vel_in);
-        //                        particles[iter].Bp += wijk * grids[index].vel *
-        //                                              (curr_node.cast<float>() - gs_particle_pos).transpose();
-        //
-        //                        switch (transferScheme) {
-        //                            case TransferScheme::APIC:
-        //                                particles[iter].vel = v_pic;
-        //                            case TransferScheme::FLIP99:
-        //                            case TransferScheme::FLIP95:
-        //                                particles[iter].vel =
-        //                                        (1 - simInfo.alpha) * v_pic + simInfo.alpha * v_flip;
-        //                        }
-        //                    }
-        //                }
-        //            }
-        //        }
+#else
+        for (int iter = 0; iter < simInfo.particleSize; iter++) {
+            Vector3f gs_particle_pos = particles[iter].pos / simInfo.h;
+            auto [base_node, wp, dwp] = quatraticInterpolation(gs_particle_pos);
+
+            Vector3f v_pic = Vector3f::Zero();
+            Vector3f v_flip = particles[iter].vel;
+            particles[iter].Bp = Matrix3f::Zero();
+
+            for (int i = 0; i < 3; i++) {
+                for (int j = 0; j < 3; j++) {
+                    for (int k = 0; k < 3; k++) {
+                        Vector3i curr_node = base_node + Vector3i(i, j, k);
+                        auto wijk = wp(i, 0) * wp(j, 1) * wp(k, 2);
+                        int index = curr_node[0] * simInfo.gridH * simInfo.gridL + curr_node[1] * simInfo.gridL + curr_node[2];
+                        MPM_ASSERT(0 <= index && index < simInfo.gridSize, "PARTICLE OUT OF GRID at G2P");
+
+                        v_pic += wijk * grids[index].vel;
+                        v_flip += wijk * (grids[index].vel - grids[index].vel_in);
+                        particles[iter].Bp += wijk * grids[index].vel *
+                                              (curr_node.cast<float>() - gs_particle_pos).transpose();
+
+                        switch (transferScheme) {
+                            case TransferScheme::APIC:
+                                particles[iter].vel = v_pic;
+                            case TransferScheme::FLIP99:
+                            case TransferScheme::FLIP95:
+                                particles[iter].vel =
+                                        (1 - simInfo.alpha) * v_pic + simInfo.alpha * v_flip;
+                        }
+                    }
+                }
+            }
+        }
+#endif
     }
 
     void MpmSimulator::Advection(float dt) {
+#if using_tbb == 1
         tbb::parallel_for(0, (int) simInfo.particleSize, [&](int i) {
             particles[i].pos += dt * particles[i].vel;
         });
-        //        for (int i = 0; i < simInfo.particleSize; i++) {
-        //            particles[i].pos += dt * particles[i].vel;
-        //        }
+#else
+        for (int i = 0; i < simInfo.particleSize; i++) {
+            particles[i].pos += dt * particles[i].vel;
+        }
+#endif
     }
 
     void MpmSimulator::SolveGridBoundary(int thickness) {
@@ -549,7 +586,7 @@ namespace mpm {
                     if (grids[index1].vel[0] < 0) {
                         grids[index1].vel[0] = 0.0f;
                     }
-                    if (grids[index2].vel[0] < 0) {
+                    if (grids[index2].vel[0] > 0) {
                         grids[index2].vel[0] = 0.0f;
                     }
                 }
@@ -566,7 +603,7 @@ namespace mpm {
                     if (grids[index1].vel[1] < 0) {
                         grids[index1].vel[1] = 0.0f;
                     }
-                    if (grids[index2].vel[1] < 0) {
+                    if (grids[index2].vel[1] > 0) {
                         grids[index2].vel[1] = 0.0f;
                     }
                 }
@@ -582,13 +619,14 @@ namespace mpm {
                     if (grids[index1].vel[2] < 0) {
                         grids[index1].vel[2] = 0.0f;
                     }
-                    if (grids[index2].vel[2] < 0) {
+                    if (grids[index2].vel[2] > 0) {
                         grids[index2].vel[2] = 0.0f;
                     }
                 }
             }
         }
     }
+
 
 
 }// namespace mpm

@@ -60,7 +60,7 @@ add_executable(learn_opengl learn_opengl.cpp)
 target_link_libraries(learn_opengl PRIVATE eigen spdlog::spdlog renderer math physics)
 
 add_executable(MpmTest MpmTest.cpp)
-target_link_libraries(MpmTest PRIVATE renderer physics spdlog::spdlog)
+target_link_libraries(MpmTest PRIVATE eigen spdlog::spdlog renderer math physics)
 #add_executable(testeigen testEigen.cpp)
 #target_link_libraries(testeigen PRIVATE eigen spdlog::spdlog renderer math physics)
 #######################################

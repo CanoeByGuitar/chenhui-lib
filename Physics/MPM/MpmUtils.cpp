@@ -53,6 +53,7 @@ namespace mpm{
         return {baseNode, wp, dwp};
     }
 
+    std::shared_ptr<spdlog::logger> MPMLog::s_logger;
     MPMProfiler::MPMProfiler(const std::string &tag) {
         start = std::chrono::high_resolution_clock::now();
     }

@@ -1004,8 +1004,10 @@ Physics/CMakeFiles/physics.dir/MPM/MpmSimulationBase.cpp.o
  ../external/spdlog/include/spdlog/fmt/bundled/core.h
  ../external/spdlog/include/spdlog/fmt/bundled/format-inl.h
  ../external/spdlog/include/spdlog/fmt/bundled/format.h
+ ../external/spdlog/include/spdlog/fmt/bundled/ostream.h
  ../external/spdlog/include/spdlog/fmt/bundled/xchar.h
  ../external/spdlog/include/spdlog/fmt/fmt.h
+ ../external/spdlog/include/spdlog/fmt/ostr.h
  ../external/spdlog/include/spdlog/fmt/xchar.h
  ../external/spdlog/include/spdlog/formatter.h
  ../external/spdlog/include/spdlog/logger-inl.h
@@ -1016,6 +1018,8 @@ Physics/CMakeFiles/physics.dir/MPM/MpmSimulationBase.cpp.o
  ../external/spdlog/include/spdlog/sinks/ansicolor_sink.h
  ../external/spdlog/include/spdlog/sinks/sink-inl.h
  ../external/spdlog/include/spdlog/sinks/sink.h
+ ../external/spdlog/include/spdlog/sinks/stdout_color_sinks-inl.h
+ ../external/spdlog/include/spdlog/sinks/stdout_color_sinks.h
  ../external/spdlog/include/spdlog/sinks/wincolor_sink-inl.h
  ../external/spdlog/include/spdlog/sinks/wincolor_sink.h
  ../external/spdlog/include/spdlog/spdlog-inl.h
@@ -1297,8 +1301,10 @@ Physics/CMakeFiles/physics.dir/MPM/MpmUtils.cpp.o
  ../external/spdlog/include/spdlog/fmt/bundled/core.h
  ../external/spdlog/include/spdlog/fmt/bundled/format-inl.h
  ../external/spdlog/include/spdlog/fmt/bundled/format.h
+ ../external/spdlog/include/spdlog/fmt/bundled/ostream.h
  ../external/spdlog/include/spdlog/fmt/bundled/xchar.h
  ../external/spdlog/include/spdlog/fmt/fmt.h
+ ../external/spdlog/include/spdlog/fmt/ostr.h
  ../external/spdlog/include/spdlog/fmt/xchar.h
  ../external/spdlog/include/spdlog/formatter.h
  ../external/spdlog/include/spdlog/logger-inl.h
@@ -1309,6 +1315,8 @@ Physics/CMakeFiles/physics.dir/MPM/MpmUtils.cpp.o
  ../external/spdlog/include/spdlog/sinks/ansicolor_sink.h
  ../external/spdlog/include/spdlog/sinks/sink-inl.h
  ../external/spdlog/include/spdlog/sinks/sink.h
+ ../external/spdlog/include/spdlog/sinks/stdout_color_sinks-inl.h
+ ../external/spdlog/include/spdlog/sinks/stdout_color_sinks.h
  ../external/spdlog/include/spdlog/sinks/wincolor_sink-inl.h
  ../external/spdlog/include/spdlog/sinks/wincolor_sink.h
  ../external/spdlog/include/spdlog/spdlog-inl.h

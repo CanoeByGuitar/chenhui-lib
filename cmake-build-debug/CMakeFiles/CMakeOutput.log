@@ -1378,3 +1378,48 @@ make[1]: Leaving directory '/home/wch/github/chenhui-lib/cmake-build-debug/CMake
 
 Source file was:
 int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_SUPPORT_std=cpp03 succeeded with the following output:
+Change Dir: /home/wch/github/chenhui-lib/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_78112/fast && /usr/bin/make -f CMakeFiles/cmTC_78112.dir/build.make CMakeFiles/cmTC_78112.dir/build
+make[1]: Entering directory '/home/wch/github/chenhui-lib/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_78112.dir/src.cxx.o
+/usr/bin/g++-9    -DCOMPILER_SUPPORT_std=cpp03   -std=c++03 -o CMakeFiles/cmTC_78112.dir/src.cxx.o -c /home/wch/github/chenhui-lib/cmake-build-debug/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_78112
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_78112.dir/link.txt --verbose=1
+/usr/bin/g++-9   -DCOMPILER_SUPPORT_std=cpp03    CMakeFiles/cmTC_78112.dir/src.cxx.o  -o cmTC_78112 
+make[1]: Leaving directory '/home/wch/github/chenhui-lib/cmake-build-debug/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_SUPPORT_std=cpp03 succeeded with the following output:
+Change Dir: /home/wch/github/chenhui-lib/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_a0c3b/fast && /usr/bin/make -f CMakeFiles/cmTC_a0c3b.dir/build.make CMakeFiles/cmTC_a0c3b.dir/build
+make[1]: Entering directory '/home/wch/github/chenhui-lib/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_a0c3b.dir/src.cxx.o
+/usr/bin/g++-9    -DCOMPILER_SUPPORT_std=cpp03   -std=c++03 -o CMakeFiles/cmTC_a0c3b.dir/src.cxx.o -c /home/wch/github/chenhui-lib/cmake-build-debug/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_a0c3b
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a0c3b.dir/link.txt --verbose=1
+/usr/bin/g++-9   -DCOMPILER_SUPPORT_std=cpp03    CMakeFiles/cmTC_a0c3b.dir/src.cxx.o  -o cmTC_a0c3b 
+make[1]: Leaving directory '/home/wch/github/chenhui-lib/cmake-build-debug/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_SUPPORT_std=cpp03 succeeded with the following output:
+Change Dir: /home/wch/github/chenhui-lib/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_f19e8/fast && /usr/bin/make -f CMakeFiles/cmTC_f19e8.dir/build.make CMakeFiles/cmTC_f19e8.dir/build
+make[1]: Entering directory '/home/wch/github/chenhui-lib/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_f19e8.dir/src.cxx.o
+/usr/bin/g++-9    -DCOMPILER_SUPPORT_std=cpp03   -std=c++03 -o CMakeFiles/cmTC_f19e8.dir/src.cxx.o -c /home/wch/github/chenhui-lib/cmake-build-debug/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_f19e8
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f19e8.dir/link.txt --verbose=1
+/usr/bin/g++-9   -DCOMPILER_SUPPORT_std=cpp03    CMakeFiles/cmTC_f19e8.dir/src.cxx.o  -o cmTC_f19e8 
+make[1]: Leaving directory '/home/wch/github/chenhui-lib/cmake-build-debug/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main() { return 0; }

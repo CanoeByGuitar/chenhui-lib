@@ -19,7 +19,7 @@
 
 using namespace Eigen;
 
-#define using_tbb true
+#define using_tbb 1
 
 namespace mpm{
     struct SimInfo{
@@ -64,6 +64,8 @@ namespace mpm{
 
         std::vector<Vector3f> GetPosition() const;
 
+        std::vector<float> GetPositionToRenderer() const;
+
         void ClearSimulation();
 
     private:
@@ -73,6 +75,7 @@ namespace mpm{
         tbb::spin_mutex *gridMutexs;
         std::shared_ptr<ConstitutionModel> consitutionModel = std::make_shared<NeoHookean_Piola>();
         TransferScheme transferScheme = TransferScheme::APIC;
+
         tbb::concurrent_vector<int> activeNodes;
 
         void Prestep();

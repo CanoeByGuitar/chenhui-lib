@@ -1245,7 +1245,7 @@ physics_LIB_DEPENDS:STATIC=general;TBB::tbb;general;spdlog::spdlog;general;parti
 pkgcfg_lib_HWLOC_hwloc:FILEPATH=/usr/lib/x86_64-linux-gnu/libhwloc.so
 
 //Dependencies for the target
-renderer_LIB_DEPENDS:STATIC=general;glfw;general;/usr/lib/x86_64-linux-gnu/libOpenGL.so;general;/usr/lib/x86_64-linux-gnu/libGLX.so;general;/usr/lib/x86_64-linux-gnu/libGLU.so;
+renderer_LIB_DEPENDS:STATIC=general;glfw;general;/usr/lib/x86_64-linux-gnu/libOpenGL.so;general;/usr/lib/x86_64-linux-gnu/libGLX.so;general;/usr/lib/x86_64-linux-gnu/libGLU.so;general;TBB::tbb;
 
 //Value Computed by CMake
 spdlog_BINARY_DIR:STATIC=/home/wch/github/chenhui-lib/cmake-build-debug/external/spdlog

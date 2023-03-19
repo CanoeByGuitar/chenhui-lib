@@ -27,5 +27,23 @@ namespace Renderer {
         return m_shader;
     }
 
-};
+    Particles::~Particles() {
+        if(m_data){
+            delete[] m_data;
+            m_data = nullptr;
+        }
+
+        if(m_shader){
+            delete[] m_shader;
+            m_shader = nullptr;
+        }
+
+
+    }
+
+    void Particles::updateData(std::vector<float> &&data){
+        m_data = data.data();
+        std::vector<float>().swap(data);
+    }
+}
 

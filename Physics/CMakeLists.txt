@@ -15,7 +15,12 @@ target_sources(physics
         ${CMAKE_CURRENT_LIST_DIR}/MPM/MpmParticle.h
         ${CMAKE_CURRENT_LIST_DIR}/MPM/ConstitutionModel.h
         ${CMAKE_CURRENT_LIST_DIR}/MPM/MpmUtils.h
-)
+        )
 
-find_package(TBB CONFIG REQUIRED)
-target_link_libraries(physics PRIVATE eigen TBB::tbb spdlog::spdlog partio)
+if (APPLE)
+    target_link_libraries(physics PRIVATE eigen  spdlog::spdlog partio)
+ELSEIF (UNIX)
+    find_package(TBB CONFIG REQUIRED)
+    target_link_libraries(physics PRIVATE eigen TBB::tbb spdlog::spdlog partio)
+ENDIF ()
+

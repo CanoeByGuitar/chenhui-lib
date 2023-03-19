@@ -26,6 +26,7 @@ namespace Renderer {
         void Init();
 
         void AddModel(Particles* particles);
+
         void Draw();
 
         static void FrameBufferSizeCallback(GLFWwindow* window, int width, int height);
@@ -34,6 +35,7 @@ namespace Renderer {
 
         void ProcessInput();
         bool ShouldWindowClose();
+
 
 
     private:
@@ -48,7 +50,6 @@ namespace Renderer {
     public:
         Particles *m_particleModel;
         Camera m_camera;
-//        static Camera *m_cameraPointer;
     };
 
 

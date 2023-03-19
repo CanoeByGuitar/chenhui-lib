@@ -2032,10 +2032,6 @@ spdlog-inl.h
 
 ../external/spdlog/include/spdlog/version.h
 
-/home/wch/github/chenhui-lib/Renderer/Buffer/FrameBuffer.cpp
-FrameBuffer.h
-/home/wch/github/chenhui-lib/Renderer/Buffer/FrameBuffer.h
-
 /home/wch/github/chenhui-lib/Renderer/Buffer/FrameBuffer.h
 memory
 -
@@ -2049,44 +2045,6 @@ Renderer/Texture.h
 /home/wch/github/chenhui-lib/Renderer/Buffer/IBuffer.h
 cstdint
 -
-
-/home/wch/github/chenhui-lib/Renderer/Buffer/IndexBuffer.cpp
-IndexBuffer.h
-/home/wch/github/chenhui-lib/Renderer/Buffer/IndexBuffer.h
-
-/home/wch/github/chenhui-lib/Renderer/Buffer/IndexBuffer.h
-vector
--
-cstdint
--
-glad/glad.h
-/home/wch/github/chenhui-lib/Renderer/Buffer/glad/glad.h
-IBuffer.h
-/home/wch/github/chenhui-lib/Renderer/Buffer/IBuffer.h
-
-/home/wch/github/chenhui-lib/Renderer/Buffer/VertexArray.cpp
-VertexArray.h
-/home/wch/github/chenhui-lib/Renderer/Buffer/VertexArray.h
-
-/home/wch/github/chenhui-lib/Renderer/Buffer/VertexArray.h
-stdint.h
--
-glad/glad.h
-/home/wch/github/chenhui-lib/Renderer/Buffer/glad/glad.h
-VertexBuffer.h
-/home/wch/github/chenhui-lib/Renderer/Buffer/VertexBuffer.h
-
-/home/wch/github/chenhui-lib/Renderer/Buffer/VertexBuffer.cpp
-VertexBuffer.h
-/home/wch/github/chenhui-lib/Renderer/Buffer/VertexBuffer.h
-
-/home/wch/github/chenhui-lib/Renderer/Buffer/VertexBuffer.h
-vector
--
-glad/glad.h
--
-IBuffer.h
-/home/wch/github/chenhui-lib/Renderer/Buffer/IBuffer.h
 
 /home/wch/github/chenhui-lib/Renderer/Camera.h
 glad/glad.h
@@ -2105,6 +2063,10 @@ Particle.h
 /home/wch/github/chenhui-lib/Renderer/Particle.h
 Shader.h
 /home/wch/github/chenhui-lib/Renderer/Shader.h
+vector
+-
+tbb/parallel_for.h
+-
 
 /home/wch/github/chenhui-lib/Renderer/Scene.cpp
 Scene.h
@@ -2147,14 +2109,4 @@ iostream
 -
 glm/glm.hpp
 -
-
-/home/wch/github/chenhui-lib/Renderer/Texture.cpp
-Texture.h
-/home/wch/github/chenhui-lib/Renderer/Texture.h
-
-/home/wch/github/chenhui-lib/Renderer/Texture.h
-cstdint
--
-glad/glad.h
-/home/wch/github/chenhui-lib/Renderer/glad/glad.h
 

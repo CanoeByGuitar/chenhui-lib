@@ -1003,8 +1003,10 @@ Physics/CMakeFiles/physics.dir/MPM/MpmSimulationBase.cpp.o: ../external/spdlog/i
 Physics/CMakeFiles/physics.dir/MPM/MpmSimulationBase.cpp.o: ../external/spdlog/include/spdlog/fmt/bundled/core.h
 Physics/CMakeFiles/physics.dir/MPM/MpmSimulationBase.cpp.o: ../external/spdlog/include/spdlog/fmt/bundled/format-inl.h
 Physics/CMakeFiles/physics.dir/MPM/MpmSimulationBase.cpp.o: ../external/spdlog/include/spdlog/fmt/bundled/format.h
+Physics/CMakeFiles/physics.dir/MPM/MpmSimulationBase.cpp.o: ../external/spdlog/include/spdlog/fmt/bundled/ostream.h
 Physics/CMakeFiles/physics.dir/MPM/MpmSimulationBase.cpp.o: ../external/spdlog/include/spdlog/fmt/bundled/xchar.h
 Physics/CMakeFiles/physics.dir/MPM/MpmSimulationBase.cpp.o: ../external/spdlog/include/spdlog/fmt/fmt.h
+Physics/CMakeFiles/physics.dir/MPM/MpmSimulationBase.cpp.o: ../external/spdlog/include/spdlog/fmt/ostr.h
 Physics/CMakeFiles/physics.dir/MPM/MpmSimulationBase.cpp.o: ../external/spdlog/include/spdlog/fmt/xchar.h
 Physics/CMakeFiles/physics.dir/MPM/MpmSimulationBase.cpp.o: ../external/spdlog/include/spdlog/formatter.h
 Physics/CMakeFiles/physics.dir/MPM/MpmSimulationBase.cpp.o: ../external/spdlog/include/spdlog/logger-inl.h
@@ -1015,6 +1017,8 @@ Physics/CMakeFiles/physics.dir/MPM/MpmSimulationBase.cpp.o: ../external/spdlog/i
 Physics/CMakeFiles/physics.dir/MPM/MpmSimulationBase.cpp.o: ../external/spdlog/include/spdlog/sinks/ansicolor_sink.h
 Physics/CMakeFiles/physics.dir/MPM/MpmSimulationBase.cpp.o: ../external/spdlog/include/spdlog/sinks/sink-inl.h
 Physics/CMakeFiles/physics.dir/MPM/MpmSimulationBase.cpp.o: ../external/spdlog/include/spdlog/sinks/sink.h
+Physics/CMakeFiles/physics.dir/MPM/MpmSimulationBase.cpp.o: ../external/spdlog/include/spdlog/sinks/stdout_color_sinks-inl.h
+Physics/CMakeFiles/physics.dir/MPM/MpmSimulationBase.cpp.o: ../external/spdlog/include/spdlog/sinks/stdout_color_sinks.h
 Physics/CMakeFiles/physics.dir/MPM/MpmSimulationBase.cpp.o: ../external/spdlog/include/spdlog/sinks/wincolor_sink-inl.h
 Physics/CMakeFiles/physics.dir/MPM/MpmSimulationBase.cpp.o: ../external/spdlog/include/spdlog/sinks/wincolor_sink.h
 Physics/CMakeFiles/physics.dir/MPM/MpmSimulationBase.cpp.o: ../external/spdlog/include/spdlog/spdlog-inl.h
@@ -1296,8 +1300,10 @@ Physics/CMakeFiles/physics.dir/MPM/MpmUtils.cpp.o: ../external/spdlog/include/sp
 Physics/CMakeFiles/physics.dir/MPM/MpmUtils.cpp.o: ../external/spdlog/include/spdlog/fmt/bundled/core.h
 Physics/CMakeFiles/physics.dir/MPM/MpmUtils.cpp.o: ../external/spdlog/include/spdlog/fmt/bundled/format-inl.h
 Physics/CMakeFiles/physics.dir/MPM/MpmUtils.cpp.o: ../external/spdlog/include/spdlog/fmt/bundled/format.h
+Physics/CMakeFiles/physics.dir/MPM/MpmUtils.cpp.o: ../external/spdlog/include/spdlog/fmt/bundled/ostream.h
 Physics/CMakeFiles/physics.dir/MPM/MpmUtils.cpp.o: ../external/spdlog/include/spdlog/fmt/bundled/xchar.h
 Physics/CMakeFiles/physics.dir/MPM/MpmUtils.cpp.o: ../external/spdlog/include/spdlog/fmt/fmt.h
+Physics/CMakeFiles/physics.dir/MPM/MpmUtils.cpp.o: ../external/spdlog/include/spdlog/fmt/ostr.h
 Physics/CMakeFiles/physics.dir/MPM/MpmUtils.cpp.o: ../external/spdlog/include/spdlog/fmt/xchar.h
 Physics/CMakeFiles/physics.dir/MPM/MpmUtils.cpp.o: ../external/spdlog/include/spdlog/formatter.h
 Physics/CMakeFiles/physics.dir/MPM/MpmUtils.cpp.o: ../external/spdlog/include/spdlog/logger-inl.h
@@ -1308,6 +1314,8 @@ Physics/CMakeFiles/physics.dir/MPM/MpmUtils.cpp.o: ../external/spdlog/include/sp
 Physics/CMakeFiles/physics.dir/MPM/MpmUtils.cpp.o: ../external/spdlog/include/spdlog/sinks/ansicolor_sink.h
 Physics/CMakeFiles/physics.dir/MPM/MpmUtils.cpp.o: ../external/spdlog/include/spdlog/sinks/sink-inl.h
 Physics/CMakeFiles/physics.dir/MPM/MpmUtils.cpp.o: ../external/spdlog/include/spdlog/sinks/sink.h
+Physics/CMakeFiles/physics.dir/MPM/MpmUtils.cpp.o: ../external/spdlog/include/spdlog/sinks/stdout_color_sinks-inl.h
+Physics/CMakeFiles/physics.dir/MPM/MpmUtils.cpp.o: ../external/spdlog/include/spdlog/sinks/stdout_color_sinks.h
 Physics/CMakeFiles/physics.dir/MPM/MpmUtils.cpp.o: ../external/spdlog/include/spdlog/sinks/wincolor_sink-inl.h
 Physics/CMakeFiles/physics.dir/MPM/MpmUtils.cpp.o: ../external/spdlog/include/spdlog/sinks/wincolor_sink.h
 Physics/CMakeFiles/physics.dir/MPM/MpmUtils.cpp.o: ../external/spdlog/include/spdlog/spdlog-inl.h

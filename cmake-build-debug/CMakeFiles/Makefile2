@@ -3388,6 +3388,7 @@ CMakeFiles/MpmTest.dir/all: external/glfw/src/CMakeFiles/glfw.dir/all
 CMakeFiles/MpmTest.dir/all: external/partio/src/lib/CMakeFiles/partio.dir/all
 CMakeFiles/MpmTest.dir/all: Renderer/CMakeFiles/renderer.dir/all
 CMakeFiles/MpmTest.dir/all: Physics/CMakeFiles/physics.dir/all
+CMakeFiles/MpmTest.dir/all: Math/CMakeFiles/math.dir/all
 	$(MAKE) -f CMakeFiles/MpmTest.dir/build.make CMakeFiles/MpmTest.dir/depend
 	$(MAKE) -f CMakeFiles/MpmTest.dir/build.make CMakeFiles/MpmTest.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wch/github/chenhui-lib/cmake-build-debug/CMakeFiles --progress-num= "Built target MpmTest"

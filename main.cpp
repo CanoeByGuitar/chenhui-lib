@@ -8,12 +8,11 @@ int main(){
     Renderer::Scene scene(800, 600);
 
     // add model
-    float particles[] = {
-            -0.5f, -0.5f, 0.0f, // left
-            0.5f, 0.5f, 0.0f, // right
-            0.5f,  -0.5f, 0.0f  // top
-    };
-    int particleNum = sizeof(particles) / sizeof(particles[0]) / 3;
+    std::vector<float> vec = {-0.5f, -0.5f, -1.0f, // left
+                               0.5f, 0.5f, -1.0f, // right
+                               0.5f,  -0.5f, -1.0f};  // top
+    float *particles = vec.data();
+    int particleNum = 3;
 #ifdef __APPLE__
     Renderer::Particles model(particles, particleNum,
                               "/Volumes/disk2/ChenhuiLib/resources/shader/particle.vert",
@@ -33,7 +32,5 @@ int main(){
 //        spdlog::debug("frame{}", frame);
         frame++;
     }
-
-
 
 }

@@ -442,9 +442,6 @@ CMAKE_STRIP:FILEPATH=/usr/bin/strip
 // Studio IDE projects all commands are done without /nologo.
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 
-//Test COMPILER_SUPPORT_std=cpp03
-COMPILER_SUPPORT_std:UNINITIALIZED=cpp03:INTERNAL=1
-
 //Path to the coverage program that CTest uses for performing coverage
 // inspection
 COVERAGE_COMMAND:FILEPATH=/usr/bin/gcov
@@ -1245,7 +1242,7 @@ physics_LIB_DEPENDS:STATIC=general;TBB::tbb;general;spdlog::spdlog;general;parti
 pkgcfg_lib_HWLOC_hwloc:FILEPATH=/usr/lib/x86_64-linux-gnu/libhwloc.so
 
 //Dependencies for the target
-renderer_LIB_DEPENDS:STATIC=general;glfw;general;/usr/lib/x86_64-linux-gnu/libOpenGL.so;general;/usr/lib/x86_64-linux-gnu/libGLX.so;general;/usr/lib/x86_64-linux-gnu/libGLU.so;
+renderer_LIB_DEPENDS:STATIC=general;glfw;general;/usr/lib/x86_64-linux-gnu/libOpenGL.so;general;/usr/lib/x86_64-linux-gnu/libGLX.so;general;/usr/lib/x86_64-linux-gnu/libGLU.so;general;TBB::tbb;
 
 //Value Computed by CMake
 spdlog_BINARY_DIR:STATIC=/home/wch/github/chenhui-lib/cmake-build-release/external/spdlog
