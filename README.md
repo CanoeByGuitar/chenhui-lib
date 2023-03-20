@@ -20,7 +20,14 @@ For now(2023.3) there are the following parts:
   - Shader interface where different objects can be shadered independently
 
 ## Results
-Fluid mpm exported to Houdini
-Solid mpm exported to Houdini
-Simple Ray tracing 
+### Fluid mpm exported to Houdini
+![Fluid MPM](resources/demo/1.png)
+
+
+### Solid mpm exported to Houdini
+![Solid MPM](resources/demo/2.png)
+
+
+### Simple Ray tracing
+![SimpleRayTracing](resources/demo/3.png)
 
