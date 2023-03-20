@@ -27,6 +27,7 @@ namespace mpm {
 
 
         Material *mtl;
+        int id;
     };
 }
 

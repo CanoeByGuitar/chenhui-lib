@@ -195,7 +195,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/MpmTest.dir/DependInfo.cmake"
   "CMakeFiles/learn_opengl.dir/DependInfo.cmake"
-  "CMakeFiles/opengl_renderer.dir/DependInfo.cmake"
+  "CMakeFiles/main.dir/DependInfo.cmake"
   "external/eigen/CMakeFiles/uninstall.dir/DependInfo.cmake"
   "external/eigen/CMakeFiles/ContinuousSubmit.dir/DependInfo.cmake"
   "external/eigen/CMakeFiles/NightlyMemCheck.dir/DependInfo.cmake"

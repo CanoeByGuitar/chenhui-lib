@@ -26,7 +26,7 @@ namespace Renderer{
 
         int m_num;
         Shader* m_shader;
-        float* m_data;
+        float* m_data; // [(x, y, z, id), (x, y, z, id) , ...]
     };
 }
 

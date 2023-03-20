@@ -63,7 +63,7 @@ namespace mpm {
     }
 
     void MpmSimulator::AddObject(const std::vector<Vector3f> &positions, const std::vector<Vector3f> &velocities,
-                                 Material *mtl) {
+                                 Material *mtl, int id) {
         assert(positions.size() == velocities.size() && mtl != nullptr);
         auto newSize = simInfo.particleSize + positions.size();
 
@@ -84,12 +84,13 @@ namespace mpm {
             particles[i].Fp = Matrix3f::Identity();
             particles[i].Bp = Matrix3f::Zero();
             particles[i].mtl = mtl;
+            particles[i].id = id;
         }
 
         simInfo.particleSize = newSize;
     }
 
-    void MpmSimulator::AddObject(const std::vector<Vector3f> &positions, Material *mtl, Vector3f transform) {
+    void MpmSimulator::AddObject(const std::vector<Vector3f> &positions, Material *mtl, Vector3f transform, int id) {
         assert(mtl != nullptr);
         auto newSize = simInfo.particleSize + positions.size();
 
@@ -109,12 +110,13 @@ namespace mpm {
             particles[i].Fp = Matrix3f::Identity();
             particles[i].Bp = Matrix3f::Zero();
             particles[i].mtl = mtl;
+            particles[i].id = id;
         }
 
         simInfo.particleSize = newSize;
     }
 
-    void MpmSimulator::AddObject(const std::vector<Vector3f> &positions, Material *mtl) {
+    void MpmSimulator::AddObject(const std::vector<Vector3f> &positions, Material *mtl, int id) {
         assert(mtl != nullptr);
         auto newSize = simInfo.particleSize + positions.size();
 
@@ -134,6 +136,7 @@ namespace mpm {
             particles[i].Fp = Matrix3f::Identity();
             particles[i].Bp = Matrix3f::Zero();
             particles[i].mtl = mtl;
+            particles[i].id = id;
         }
 
         simInfo.particleSize = newSize;
@@ -193,6 +196,22 @@ namespace mpm {
         simInfo.curStep++;
     }
 
+
+    std::vector<int> MpmSimulator::GetObjID() const {
+        std::vector<int> ids(simInfo.particleSize);
+#if using_tbb == 1
+        tbb::parallel_for(0, simInfo.particleSize, [&](int i) {
+            ids[i] = particles[i].id;
+        });
+#else
+        for (int i = 0; i < simInfo.particleSize; i++) {
+            ids[i] = particles[i].id;
+        }
+#endif
+        return ids;
+    }
+
+
     std::vector<Vector3f> MpmSimulator::GetPosition() const {
         std::vector<Vector3f> positions(simInfo.particleSize);
 #if using_tbb == 1
@@ -224,6 +243,18 @@ namespace mpm {
 #endif
         return positions;
     }
+
+    std::vector<float> MpmSimulator::GetPositionWithIdToRenderer() const {
+        std::vector<float> positions(simInfo.particleSize * 4);
+        tbb::parallel_for(0, simInfo.particleSize, [&](int i) {
+            positions[4 * i] = particles[i].pos[0];
+            positions[4 * i + 1] = particles[i].pos[1];
+            positions[4 * i + 2] = particles[i].pos[2];
+            positions[4 * i + 3] = particles[i].id;
+        });
+        return positions;
+    }
+
 
     void MpmSimulator::ClearSimulation() {
         if (particles) {

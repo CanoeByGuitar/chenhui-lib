@@ -15,6 +15,7 @@ namespace Renderer {
     Scene::Scene(int w, int h) {
         m_w = w;
         m_h = h;
+        m_paused = false;
         m_cameraPointer = &m_camera;
         lastX = ((float)w * 0.5f);
         lastY = ((float)h * 0.5f);
@@ -83,11 +84,18 @@ namespace Renderer {
         glGenBuffers(1, &VBO);
         glBindVertexArray(VAO);
         glBindBuffer(GL_ARRAY_BUFFER, VBO);
-        glBufferData(GL_ARRAY_BUFFER, m_particleModel->getNum() * 3 * sizeof(float), m_particleModel->getData(),
+        glBufferData(GL_ARRAY_BUFFER, m_particleModel->getNum() * 4 * sizeof(float), m_particleModel->getData(),
                      GL_STATIC_DRAW);
-        glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 3 * sizeof(float),
+
+        // position attribute
+        glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 4 * sizeof(float),
                               (void *) 0);
         glEnableVertexAttribArray(0);
+
+        // object id attribute
+        glVertexAttribPointer(1, 1, GL_FLOAT, GL_FALSE, 4 * sizeof(float),
+                              (void *)(3 * sizeof(float)));
+        glEnableVertexAttribArray(1);
 
         glBindBuffer(GL_ARRAY_BUFFER, 0);
 
@@ -143,6 +151,16 @@ namespace Renderer {
     void Scene::ProcessInput() {
         if (glfwGetKey(m_window, GLFW_KEY_ESCAPE) == GLFW_PRESS)
             glfwSetWindowShouldClose(m_window, true);
+
+        if (glfwGetKey(m_window, GLFW_KEY_Q) == GLFW_PRESS){
+            m_paused = true;
+            spdlog::info("m_paused{}",m_paused);
+        }
+
+        if (glfwGetKey(m_window, GLFW_KEY_E) == GLFW_PRESS){
+            m_paused = false;
+            spdlog::info("m_paused{}",m_paused);
+        }
 
         if (glfwGetKey(m_window, GLFW_KEY_W) == GLFW_PRESS) {
             m_camera.ProcessOnKeyboard(FORWARD, m_dt);

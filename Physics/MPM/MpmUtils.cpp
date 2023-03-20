@@ -27,7 +27,6 @@ namespace mpm{
         Partio::ParticlesDataMutable *parts = Partio::create();
         Partio::ParticleAttribute pos_attr = parts->addAttribute("position", Partio::VECTOR, 3);
         Partio::ParticleAttribute index_attr = parts->addAttribute("index", Partio::INT, 1);
-
         for(auto i = 0; i < positions.size(); i++){
             int idx = parts->addParticle();
             auto *p = parts->dataWrite<Vector3f>(pos_attr, idx);
@@ -39,6 +38,26 @@ namespace mpm{
         parts->release();
         return true;
     }
+
+    bool writeParticles(const std::string &write_path, const std::vector<Vector3f> &positions, const std::vector<int> &ids){
+        Partio::ParticlesDataMutable *parts = Partio::create();
+        Partio::ParticleAttribute pos_attr = parts->addAttribute("position", Partio::VECTOR, 3);
+        Partio::ParticleAttribute index_attr = parts->addAttribute("index", Partio::INT, 1);
+        Partio::ParticleAttribute id_attr = parts->addAttribute("id", Partio::INT, 1);
+        for(auto i = 0; i < positions.size(); i++){
+            int idx = parts->addParticle();
+            auto *p = parts->dataWrite<Vector3f>(pos_attr, idx);
+            auto *index = parts->dataWrite<int>(index_attr, idx);
+            auto *objID = parts->dataWrite<int>(id_attr, idx);
+            *p = positions[i];
+            *objID = ids[i];
+            *index = i;
+        }
+        Partio::write(write_path.c_str(), *parts);
+        parts->release();
+        return true;
+    }
+
     std::tuple<Vector3i, Matrix3f, Matrix3f> quatraticInterpolation(const Vector3f &pos){
         Vector3i baseNode = floor(pos.array() - 0.5f).cast<int>();
         Matrix3f wp, dwp;

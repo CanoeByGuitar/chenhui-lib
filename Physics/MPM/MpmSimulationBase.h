@@ -48,13 +48,13 @@ namespace mpm{
 
         void AddObject(const std::vector<Vector3f> &positions,
                        const std::vector<Vector3f> &velocities,
-                       Material *mtl);
+                       Material *mtl, int id);
 
         void AddObject(const std::vector<Vector3f> &positions,
-                       Material *mtl);
+                       Material *mtl, int id);
 
         void AddObject(const std::vector<Vector3f> &positions,
-                       Material *mtl, Vector3f transform);
+                       Material *mtl, Vector3f transform, int id);
 
         void SetConstitutionModel(const std::shared_ptr<ConstitutionModel> &cm);
 
@@ -64,7 +64,10 @@ namespace mpm{
 
         std::vector<Vector3f> GetPosition() const;
 
+        std::vector<int> GetObjID() const;
+
         std::vector<float> GetPositionToRenderer() const;
+        std::vector<float> GetPositionWithIdToRenderer() const;
 
         void ClearSimulation();
 

@@ -55,7 +55,7 @@ CMAKE_BINARY_DIR = /home/wch/github/chenhui-lib/cmake-build-release
 # The main recursive "all" target.
 all: CMakeFiles/MpmTest.dir/all
 all: CMakeFiles/learn_opengl.dir/all
-all: CMakeFiles/opengl_renderer.dir/all
+all: CMakeFiles/main.dir/all
 all: external/eigen/all
 all: external/spdlog/all
 all: external/glm/all
@@ -84,7 +84,7 @@ preinstall: MyRenderer/preinstall
 # The main recursive "clean" target.
 clean: CMakeFiles/MpmTest.dir/clean
 clean: CMakeFiles/learn_opengl.dir/clean
-clean: CMakeFiles/opengl_renderer.dir/clean
+clean: CMakeFiles/main.dir/clean
 clean: external/eigen/clean
 clean: external/spdlog/clean
 clean: external/glm/clean
@@ -3444,36 +3444,36 @@ CMakeFiles/learn_opengl.dir/clean:
 .PHONY : CMakeFiles/learn_opengl.dir/clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/opengl_renderer.dir
+# Target rules for target CMakeFiles/main.dir
 
 # All Build rule for target.
-CMakeFiles/opengl_renderer.dir/all: external/spdlog/CMakeFiles/spdlog.dir/all
-CMakeFiles/opengl_renderer.dir/all: external/glfw/src/CMakeFiles/glfw.dir/all
-CMakeFiles/opengl_renderer.dir/all: external/partio/src/lib/CMakeFiles/partio.dir/all
-CMakeFiles/opengl_renderer.dir/all: Renderer/CMakeFiles/renderer.dir/all
-CMakeFiles/opengl_renderer.dir/all: Physics/CMakeFiles/physics.dir/all
-CMakeFiles/opengl_renderer.dir/all: Math/CMakeFiles/math.dir/all
-	$(MAKE) -f CMakeFiles/opengl_renderer.dir/build.make CMakeFiles/opengl_renderer.dir/depend
-	$(MAKE) -f CMakeFiles/opengl_renderer.dir/build.make CMakeFiles/opengl_renderer.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wch/github/chenhui-lib/cmake-build-release/CMakeFiles --progress-num= "Built target opengl_renderer"
-.PHONY : CMakeFiles/opengl_renderer.dir/all
+CMakeFiles/main.dir/all: external/spdlog/CMakeFiles/spdlog.dir/all
+CMakeFiles/main.dir/all: external/glfw/src/CMakeFiles/glfw.dir/all
+CMakeFiles/main.dir/all: external/partio/src/lib/CMakeFiles/partio.dir/all
+CMakeFiles/main.dir/all: Renderer/CMakeFiles/renderer.dir/all
+CMakeFiles/main.dir/all: Physics/CMakeFiles/physics.dir/all
+CMakeFiles/main.dir/all: Math/CMakeFiles/math.dir/all
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/depend
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wch/github/chenhui-lib/cmake-build-release/CMakeFiles --progress-num= "Built target main"
+.PHONY : CMakeFiles/main.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/opengl_renderer.dir/rule: cmake_check_build_system
+CMakeFiles/main.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/wch/github/chenhui-lib/cmake-build-release/CMakeFiles 1
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/opengl_renderer.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/main.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/wch/github/chenhui-lib/cmake-build-release/CMakeFiles 0
-.PHONY : CMakeFiles/opengl_renderer.dir/rule
+.PHONY : CMakeFiles/main.dir/rule
 
 # Convenience name for target.
-opengl_renderer: CMakeFiles/opengl_renderer.dir/rule
+main: CMakeFiles/main.dir/rule
 
-.PHONY : opengl_renderer
+.PHONY : main
 
 # clean rule for target.
-CMakeFiles/opengl_renderer.dir/clean:
-	$(MAKE) -f CMakeFiles/opengl_renderer.dir/build.make CMakeFiles/opengl_renderer.dir/clean
-.PHONY : CMakeFiles/opengl_renderer.dir/clean
+CMakeFiles/main.dir/clean:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/clean
+.PHONY : CMakeFiles/main.dir/clean
 
 #=============================================================================
 # Target rules for target external/eigen/CMakeFiles/uninstall.dir
@@ -3946,7 +3946,7 @@ external/eigen/CMakeFiles/check.dir/all: external/eigen/CMakeFiles/buildtests.di
 
 # Build rule for subdir invocation for target.
 external/eigen/CMakeFiles/check.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/wch/github/chenhui-lib/cmake-build-release/CMakeFiles 60
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wch/github/chenhui-lib/cmake-build-release/CMakeFiles 61
 	$(MAKE) -f CMakeFiles/Makefile2 external/eigen/CMakeFiles/check.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/wch/github/chenhui-lib/cmake-build-release/CMakeFiles 0
 .PHONY : external/eigen/CMakeFiles/check.dir/rule
@@ -4831,7 +4831,7 @@ external/eigen/CMakeFiles/buildtests.dir/all: external/eigen/unsupported/test/CM
 
 # Build rule for subdir invocation for target.
 external/eigen/CMakeFiles/buildtests.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/wch/github/chenhui-lib/cmake-build-release/CMakeFiles 60
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wch/github/chenhui-lib/cmake-build-release/CMakeFiles 61
 	$(MAKE) -f CMakeFiles/Makefile2 external/eigen/CMakeFiles/buildtests.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/wch/github/chenhui-lib/cmake-build-release/CMakeFiles 0
 .PHONY : external/eigen/CMakeFiles/buildtests.dir/rule
@@ -5156,7 +5156,7 @@ external/eigen/doc/CMakeFiles/doc.dir/all: external/eigen/doc/CMakeFiles/doc-eig
 
 # Build rule for subdir invocation for target.
 external/eigen/doc/CMakeFiles/doc.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/wch/github/chenhui-lib/cmake-build-release/CMakeFiles 24
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wch/github/chenhui-lib/cmake-build-release/CMakeFiles 23
 	$(MAKE) -f CMakeFiles/Makefile2 external/eigen/doc/CMakeFiles/doc.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/wch/github/chenhui-lib/cmake-build-release/CMakeFiles 0
 .PHONY : external/eigen/doc/CMakeFiles/doc.dir/rule
@@ -5212,7 +5212,7 @@ external/eigen/doc/CMakeFiles/doc-eigen-prerequisites.dir/all: external/eigen/do
 
 # Build rule for subdir invocation for target.
 external/eigen/doc/CMakeFiles/doc-eigen-prerequisites.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/wch/github/chenhui-lib/cmake-build-release/CMakeFiles 24
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wch/github/chenhui-lib/cmake-build-release/CMakeFiles 23
 	$(MAKE) -f CMakeFiles/Makefile2 external/eigen/doc/CMakeFiles/doc-eigen-prerequisites.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/wch/github/chenhui-lib/cmake-build-release/CMakeFiles 0
 .PHONY : external/eigen/doc/CMakeFiles/doc-eigen-prerequisites.dir/rule
@@ -5309,7 +5309,7 @@ external/eigen/doc/CMakeFiles/all_examples.dir/all: external/eigen/doc/special_e
 
 # Build rule for subdir invocation for target.
 external/eigen/doc/CMakeFiles/all_examples.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/wch/github/chenhui-lib/cmake-build-release/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wch/github/chenhui-lib/cmake-build-release/CMakeFiles 3
 	$(MAKE) -f CMakeFiles/Makefile2 external/eigen/doc/CMakeFiles/all_examples.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/wch/github/chenhui-lib/cmake-build-release/CMakeFiles 0
 .PHONY : external/eigen/doc/CMakeFiles/all_examples.dir/rule
@@ -5466,12 +5466,12 @@ external/eigen/doc/examples/CMakeFiles/tut_arithmetic_add_sub.dir/clean:
 external/eigen/doc/examples/CMakeFiles/matrixfree_cg.dir/all:
 	$(MAKE) -f external/eigen/doc/examples/CMakeFiles/matrixfree_cg.dir/build.make external/eigen/doc/examples/CMakeFiles/matrixfree_cg.dir/depend
 	$(MAKE) -f external/eigen/doc/examples/CMakeFiles/matrixfree_cg.dir/build.make external/eigen/doc/examples/CMakeFiles/matrixfree_cg.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wch/github/chenhui-lib/cmake-build-release/CMakeFiles --progress-num=65 "Built target matrixfree_cg"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wch/github/chenhui-lib/cmake-build-release/CMakeFiles --progress-num= "Built target matrixfree_cg"
 .PHONY : external/eigen/doc/examples/CMakeFiles/matrixfree_cg.dir/all
 
 # Build rule for subdir invocation for target.
 external/eigen/doc/examples/CMakeFiles/matrixfree_cg.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/wch/github/chenhui-lib/cmake-build-release/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wch/github/chenhui-lib/cmake-build-release/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 external/eigen/doc/examples/CMakeFiles/matrixfree_cg.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/wch/github/chenhui-lib/cmake-build-release/CMakeFiles 0
 .PHONY : external/eigen/doc/examples/CMakeFiles/matrixfree_cg.dir/rule
@@ -16037,12 +16037,12 @@ external/eigen/test/CMakeFiles/rvalue_types_5.dir/clean:
 external/eigen/test/CMakeFiles/num_dimensions.dir/all:
 	$(MAKE) -f external/eigen/test/CMakeFiles/num_dimensions.dir/build.make external/eigen/test/CMakeFiles/num_dimensions.dir/depend
 	$(MAKE) -f external/eigen/test/CMakeFiles/num_dimensions.dir/build.make external/eigen/test/CMakeFiles/num_dimensions.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wch/github/chenhui-lib/cmake-build-release/CMakeFiles --progress-num= "Built target num_dimensions"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wch/github/chenhui-lib/cmake-build-release/CMakeFiles --progress-num=68 "Built target num_dimensions"
 .PHONY : external/eigen/test/CMakeFiles/num_dimensions.dir/all
 
 # Build rule for subdir invocation for target.
 external/eigen/test/CMakeFiles/num_dimensions.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/wch/github/chenhui-lib/cmake-build-release/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wch/github/chenhui-lib/cmake-build-release/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 external/eigen/test/CMakeFiles/num_dimensions.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/wch/github/chenhui-lib/cmake-build-release/CMakeFiles 0
 .PHONY : external/eigen/test/CMakeFiles/num_dimensions.dir/rule
@@ -19983,7 +19983,7 @@ external/eigen/test/CMakeFiles/buildsmoketests.dir/all: external/eigen/test/CMak
 
 # Build rule for subdir invocation for target.
 external/eigen/test/CMakeFiles/buildsmoketests.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/wch/github/chenhui-lib/cmake-build-release/CMakeFiles 9
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wch/github/chenhui-lib/cmake-build-release/CMakeFiles 10
 	$(MAKE) -f CMakeFiles/Makefile2 external/eigen/test/CMakeFiles/buildsmoketests.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/wch/github/chenhui-lib/cmake-build-release/CMakeFiles 0
 .PHONY : external/eigen/test/CMakeFiles/buildsmoketests.dir/rule
@@ -21255,12 +21255,12 @@ external/eigen/test/CMakeFiles/bug1213.dir/clean:
 external/eigen/test/CMakeFiles/mixingtypes_6.dir/all:
 	$(MAKE) -f external/eigen/test/CMakeFiles/mixingtypes_6.dir/build.make external/eigen/test/CMakeFiles/mixingtypes_6.dir/depend
 	$(MAKE) -f external/eigen/test/CMakeFiles/mixingtypes_6.dir/build.make external/eigen/test/CMakeFiles/mixingtypes_6.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wch/github/chenhui-lib/cmake-build-release/CMakeFiles --progress-num=66 "Built target mixingtypes_6"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wch/github/chenhui-lib/cmake-build-release/CMakeFiles --progress-num= "Built target mixingtypes_6"
 .PHONY : external/eigen/test/CMakeFiles/mixingtypes_6.dir/all
 
 # Build rule for subdir invocation for target.
 external/eigen/test/CMakeFiles/mixingtypes_6.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/wch/github/chenhui-lib/cmake-build-release/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wch/github/chenhui-lib/cmake-build-release/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 external/eigen/test/CMakeFiles/mixingtypes_6.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/wch/github/chenhui-lib/cmake-build-release/CMakeFiles 0
 .PHONY : external/eigen/test/CMakeFiles/mixingtypes_6.dir/rule
@@ -22084,12 +22084,12 @@ external/eigen/test/CMakeFiles/hessenberg_5.dir/clean:
 external/eigen/test/CMakeFiles/mapstaticmethods_6.dir/all:
 	$(MAKE) -f external/eigen/test/CMakeFiles/mapstaticmethods_6.dir/build.make external/eigen/test/CMakeFiles/mapstaticmethods_6.dir/depend
 	$(MAKE) -f external/eigen/test/CMakeFiles/mapstaticmethods_6.dir/build.make external/eigen/test/CMakeFiles/mapstaticmethods_6.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wch/github/chenhui-lib/cmake-build-release/CMakeFiles --progress-num=62 "Built target mapstaticmethods_6"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wch/github/chenhui-lib/cmake-build-release/CMakeFiles --progress-num= "Built target mapstaticmethods_6"
 .PHONY : external/eigen/test/CMakeFiles/mapstaticmethods_6.dir/all
 
 # Build rule for subdir invocation for target.
 external/eigen/test/CMakeFiles/mapstaticmethods_6.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/wch/github/chenhui-lib/cmake-build-release/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wch/github/chenhui-lib/cmake-build-release/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 external/eigen/test/CMakeFiles/mapstaticmethods_6.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/wch/github/chenhui-lib/cmake-build-release/CMakeFiles 0
 .PHONY : external/eigen/test/CMakeFiles/mapstaticmethods_6.dir/rule
@@ -23556,12 +23556,12 @@ external/eigen/test/CMakeFiles/adjoint_10.dir/clean:
 external/eigen/test/CMakeFiles/mapstaticmethods_5.dir/all:
 	$(MAKE) -f external/eigen/test/CMakeFiles/mapstaticmethods_5.dir/build.make external/eigen/test/CMakeFiles/mapstaticmethods_5.dir/depend
 	$(MAKE) -f external/eigen/test/CMakeFiles/mapstaticmethods_5.dir/build.make external/eigen/test/CMakeFiles/mapstaticmethods_5.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wch/github/chenhui-lib/cmake-build-release/CMakeFiles --progress-num= "Built target mapstaticmethods_5"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wch/github/chenhui-lib/cmake-build-release/CMakeFiles --progress-num=62 "Built target mapstaticmethods_5"
 .PHONY : external/eigen/test/CMakeFiles/mapstaticmethods_5.dir/all
 
 # Build rule for subdir invocation for target.
 external/eigen/test/CMakeFiles/mapstaticmethods_5.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/wch/github/chenhui-lib/cmake-build-release/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wch/github/chenhui-lib/cmake-build-release/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 external/eigen/test/CMakeFiles/mapstaticmethods_5.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/wch/github/chenhui-lib/cmake-build-release/CMakeFiles 0
 .PHONY : external/eigen/test/CMakeFiles/mapstaticmethods_5.dir/rule
@@ -24324,12 +24324,12 @@ external/eigen/test/CMakeFiles/integer_types.dir/clean:
 external/eigen/test/CMakeFiles/nomalloc_6.dir/all:
 	$(MAKE) -f external/eigen/test/CMakeFiles/nomalloc_6.dir/build.make external/eigen/test/CMakeFiles/nomalloc_6.dir/depend
 	$(MAKE) -f external/eigen/test/CMakeFiles/nomalloc_6.dir/build.make external/eigen/test/CMakeFiles/nomalloc_6.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wch/github/chenhui-lib/cmake-build-release/CMakeFiles --progress-num= "Built target nomalloc_6"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wch/github/chenhui-lib/cmake-build-release/CMakeFiles --progress-num=67 "Built target nomalloc_6"
 .PHONY : external/eigen/test/CMakeFiles/nomalloc_6.dir/all
 
 # Build rule for subdir invocation for target.
 external/eigen/test/CMakeFiles/nomalloc_6.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/wch/github/chenhui-lib/cmake-build-release/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wch/github/chenhui-lib/cmake-build-release/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 external/eigen/test/CMakeFiles/nomalloc_6.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/wch/github/chenhui-lib/cmake-build-release/CMakeFiles 0
 .PHONY : external/eigen/test/CMakeFiles/nomalloc_6.dir/rule
@@ -24676,12 +24676,12 @@ external/eigen/test/CMakeFiles/sparse_vector.dir/clean:
 external/eigen/test/CMakeFiles/mixingtypes_5.dir/all:
 	$(MAKE) -f external/eigen/test/CMakeFiles/mixingtypes_5.dir/build.make external/eigen/test/CMakeFiles/mixingtypes_5.dir/depend
 	$(MAKE) -f external/eigen/test/CMakeFiles/mixingtypes_5.dir/build.make external/eigen/test/CMakeFiles/mixingtypes_5.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wch/github/chenhui-lib/cmake-build-release/CMakeFiles --progress-num= "Built target mixingtypes_5"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wch/github/chenhui-lib/cmake-build-release/CMakeFiles --progress-num=66 "Built target mixingtypes_5"
 .PHONY : external/eigen/test/CMakeFiles/mixingtypes_5.dir/all
 
 # Build rule for subdir invocation for target.
 external/eigen/test/CMakeFiles/mixingtypes_5.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/wch/github/chenhui-lib/cmake-build-release/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wch/github/chenhui-lib/cmake-build-release/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 external/eigen/test/CMakeFiles/mixingtypes_5.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/wch/github/chenhui-lib/cmake-build-release/CMakeFiles 0
 .PHONY : external/eigen/test/CMakeFiles/mixingtypes_5.dir/rule
@@ -25735,12 +25735,12 @@ external/eigen/test/CMakeFiles/diagonal_2.dir/clean:
 external/eigen/test/CMakeFiles/mapped_matrix_1.dir/all:
 	$(MAKE) -f external/eigen/test/CMakeFiles/mapped_matrix_1.dir/build.make external/eigen/test/CMakeFiles/mapped_matrix_1.dir/depend
 	$(MAKE) -f external/eigen/test/CMakeFiles/mapped_matrix_1.dir/build.make external/eigen/test/CMakeFiles/mapped_matrix_1.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wch/github/chenhui-lib/cmake-build-release/CMakeFiles --progress-num= "Built target mapped_matrix_1"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wch/github/chenhui-lib/cmake-build-release/CMakeFiles --progress-num=61 "Built target mapped_matrix_1"
 .PHONY : external/eigen/test/CMakeFiles/mapped_matrix_1.dir/all
 
 # Build rule for subdir invocation for target.
 external/eigen/test/CMakeFiles/mapped_matrix_1.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/wch/github/chenhui-lib/cmake-build-release/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wch/github/chenhui-lib/cmake-build-release/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 external/eigen/test/CMakeFiles/mapped_matrix_1.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/wch/github/chenhui-lib/cmake-build-release/CMakeFiles 0
 .PHONY : external/eigen/test/CMakeFiles/mapped_matrix_1.dir/rule
@@ -29883,12 +29883,12 @@ external/eigen/test/CMakeFiles/integer_types_5.dir/clean:
 external/eigen/test/CMakeFiles/numext.dir/all:
 	$(MAKE) -f external/eigen/test/CMakeFiles/numext.dir/build.make external/eigen/test/CMakeFiles/numext.dir/depend
 	$(MAKE) -f external/eigen/test/CMakeFiles/numext.dir/build.make external/eigen/test/CMakeFiles/numext.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wch/github/chenhui-lib/cmake-build-release/CMakeFiles --progress-num=68 "Built target numext"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wch/github/chenhui-lib/cmake-build-release/CMakeFiles --progress-num= "Built target numext"
 .PHONY : external/eigen/test/CMakeFiles/numext.dir/all
 
 # Build rule for subdir invocation for target.
 external/eigen/test/CMakeFiles/numext.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/wch/github/chenhui-lib/cmake-build-release/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wch/github/chenhui-lib/cmake-build-release/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 external/eigen/test/CMakeFiles/numext.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/wch/github/chenhui-lib/cmake-build-release/CMakeFiles 0
 .PHONY : external/eigen/test/CMakeFiles/numext.dir/rule
@@ -30532,12 +30532,12 @@ external/eigen/test/CMakeFiles/nullary_4.dir/clean:
 external/eigen/test/CMakeFiles/nomalloc_7.dir/all:
 	$(MAKE) -f external/eigen/test/CMakeFiles/nomalloc_7.dir/build.make external/eigen/test/CMakeFiles/nomalloc_7.dir/depend
 	$(MAKE) -f external/eigen/test/CMakeFiles/nomalloc_7.dir/build.make external/eigen/test/CMakeFiles/nomalloc_7.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wch/github/chenhui-lib/cmake-build-release/CMakeFiles --progress-num=67 "Built target nomalloc_7"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wch/github/chenhui-lib/cmake-build-release/CMakeFiles --progress-num= "Built target nomalloc_7"
 .PHONY : external/eigen/test/CMakeFiles/nomalloc_7.dir/all
 
 # Build rule for subdir invocation for target.
 external/eigen/test/CMakeFiles/nomalloc_7.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/wch/github/chenhui-lib/cmake-build-release/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wch/github/chenhui-lib/cmake-build-release/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 external/eigen/test/CMakeFiles/nomalloc_7.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/wch/github/chenhui-lib/cmake-build-release/CMakeFiles 0
 .PHONY : external/eigen/test/CMakeFiles/nomalloc_7.dir/rule
@@ -31142,12 +31142,12 @@ external/eigen/test/CMakeFiles/stable_norm_3.dir/clean:
 external/eigen/test/CMakeFiles/mapped_matrix_10.dir/all:
 	$(MAKE) -f external/eigen/test/CMakeFiles/mapped_matrix_10.dir/build.make external/eigen/test/CMakeFiles/mapped_matrix_10.dir/depend
 	$(MAKE) -f external/eigen/test/CMakeFiles/mapped_matrix_10.dir/build.make external/eigen/test/CMakeFiles/mapped_matrix_10.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wch/github/chenhui-lib/cmake-build-release/CMakeFiles --progress-num=61 "Built target mapped_matrix_10"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wch/github/chenhui-lib/cmake-build-release/CMakeFiles --progress-num= "Built target mapped_matrix_10"
 .PHONY : external/eigen/test/CMakeFiles/mapped_matrix_10.dir/all
 
 # Build rule for subdir invocation for target.
 external/eigen/test/CMakeFiles/mapped_matrix_10.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/wch/github/chenhui-lib/cmake-build-release/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wch/github/chenhui-lib/cmake-build-release/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 external/eigen/test/CMakeFiles/mapped_matrix_10.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/wch/github/chenhui-lib/cmake-build-release/CMakeFiles 0
 .PHONY : external/eigen/test/CMakeFiles/mapped_matrix_10.dir/rule
@@ -39976,12 +39976,12 @@ external/eigen/failtest/CMakeFiles/ref_3_ko.dir/clean:
 external/eigen/failtest/CMakeFiles/map_nonconst_ctor_on_const_ptr_0_ok.dir/all:
 	$(MAKE) -f external/eigen/failtest/CMakeFiles/map_nonconst_ctor_on_const_ptr_0_ok.dir/build.make external/eigen/failtest/CMakeFiles/map_nonconst_ctor_on_const_ptr_0_ok.dir/depend
 	$(MAKE) -f external/eigen/failtest/CMakeFiles/map_nonconst_ctor_on_const_ptr_0_ok.dir/build.make external/eigen/failtest/CMakeFiles/map_nonconst_ctor_on_const_ptr_0_ok.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wch/github/chenhui-lib/cmake-build-release/CMakeFiles --progress-num=60 "Built target map_nonconst_ctor_on_const_ptr_0_ok"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wch/github/chenhui-lib/cmake-build-release/CMakeFiles --progress-num= "Built target map_nonconst_ctor_on_const_ptr_0_ok"
 .PHONY : external/eigen/failtest/CMakeFiles/map_nonconst_ctor_on_const_ptr_0_ok.dir/all
 
 # Build rule for subdir invocation for target.
 external/eigen/failtest/CMakeFiles/map_nonconst_ctor_on_const_ptr_0_ok.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/wch/github/chenhui-lib/cmake-build-release/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wch/github/chenhui-lib/cmake-build-release/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 external/eigen/failtest/CMakeFiles/map_nonconst_ctor_on_const_ptr_0_ok.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/wch/github/chenhui-lib/cmake-build-release/CMakeFiles 0
 .PHONY : external/eigen/failtest/CMakeFiles/map_nonconst_ctor_on_const_ptr_0_ok.dir/rule
@@ -40435,12 +40435,12 @@ external/eigen/failtest/CMakeFiles/selfadjointview_on_const_type_actually_const_
 external/eigen/failtest/CMakeFiles/map_nonconst_ctor_on_const_ptr_0_ko.dir/all:
 	$(MAKE) -f external/eigen/failtest/CMakeFiles/map_nonconst_ctor_on_const_ptr_0_ko.dir/build.make external/eigen/failtest/CMakeFiles/map_nonconst_ctor_on_const_ptr_0_ko.dir/depend
 	$(MAKE) -f external/eigen/failtest/CMakeFiles/map_nonconst_ctor_on_const_ptr_0_ko.dir/build.make external/eigen/failtest/CMakeFiles/map_nonconst_ctor_on_const_ptr_0_ko.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wch/github/chenhui-lib/cmake-build-release/CMakeFiles --progress-num= "Built target map_nonconst_ctor_on_const_ptr_0_ko"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wch/github/chenhui-lib/cmake-build-release/CMakeFiles --progress-num=60 "Built target map_nonconst_ctor_on_const_ptr_0_ko"
 .PHONY : external/eigen/failtest/CMakeFiles/map_nonconst_ctor_on_const_ptr_0_ko.dir/all
 
 # Build rule for subdir invocation for target.
 external/eigen/failtest/CMakeFiles/map_nonconst_ctor_on_const_ptr_0_ko.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/wch/github/chenhui-lib/cmake-build-release/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wch/github/chenhui-lib/cmake-build-release/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 external/eigen/failtest/CMakeFiles/map_nonconst_ctor_on_const_ptr_0_ko.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/wch/github/chenhui-lib/cmake-build-release/CMakeFiles 0
 .PHONY : external/eigen/failtest/CMakeFiles/map_nonconst_ctor_on_const_ptr_0_ko.dir/rule
@@ -44163,12 +44163,12 @@ external/eigen/unsupported/test/CMakeFiles/EulerAngles_1.dir/clean:
 external/eigen/unsupported/test/CMakeFiles/matrix_exponential_4.dir/all:
 	$(MAKE) -f external/eigen/unsupported/test/CMakeFiles/matrix_exponential_4.dir/build.make external/eigen/unsupported/test/CMakeFiles/matrix_exponential_4.dir/depend
 	$(MAKE) -f external/eigen/unsupported/test/CMakeFiles/matrix_exponential_4.dir/build.make external/eigen/unsupported/test/CMakeFiles/matrix_exponential_4.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wch/github/chenhui-lib/cmake-build-release/CMakeFiles --progress-num= "Built target matrix_exponential_4"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wch/github/chenhui-lib/cmake-build-release/CMakeFiles --progress-num=63 "Built target matrix_exponential_4"
 .PHONY : external/eigen/unsupported/test/CMakeFiles/matrix_exponential_4.dir/all
 
 # Build rule for subdir invocation for target.
 external/eigen/unsupported/test/CMakeFiles/matrix_exponential_4.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/wch/github/chenhui-lib/cmake-build-release/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wch/github/chenhui-lib/cmake-build-release/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 external/eigen/unsupported/test/CMakeFiles/matrix_exponential_4.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/wch/github/chenhui-lib/cmake-build-release/CMakeFiles 0
 .PHONY : external/eigen/unsupported/test/CMakeFiles/matrix_exponential_4.dir/rule
@@ -44190,12 +44190,12 @@ external/eigen/unsupported/test/CMakeFiles/matrix_exponential_4.dir/clean:
 external/eigen/unsupported/test/CMakeFiles/matrix_power_10.dir/all:
 	$(MAKE) -f external/eigen/unsupported/test/CMakeFiles/matrix_power_10.dir/build.make external/eigen/unsupported/test/CMakeFiles/matrix_power_10.dir/depend
 	$(MAKE) -f external/eigen/unsupported/test/CMakeFiles/matrix_power_10.dir/build.make external/eigen/unsupported/test/CMakeFiles/matrix_power_10.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wch/github/chenhui-lib/cmake-build-release/CMakeFiles --progress-num= "Built target matrix_power_10"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wch/github/chenhui-lib/cmake-build-release/CMakeFiles --progress-num=64 "Built target matrix_power_10"
 .PHONY : external/eigen/unsupported/test/CMakeFiles/matrix_power_10.dir/all
 
 # Build rule for subdir invocation for target.
 external/eigen/unsupported/test/CMakeFiles/matrix_power_10.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/wch/github/chenhui-lib/cmake-build-release/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wch/github/chenhui-lib/cmake-build-release/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 external/eigen/unsupported/test/CMakeFiles/matrix_power_10.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/wch/github/chenhui-lib/cmake-build-release/CMakeFiles 0
 .PHONY : external/eigen/unsupported/test/CMakeFiles/matrix_power_10.dir/rule
@@ -44663,12 +44663,12 @@ external/eigen/unsupported/test/CMakeFiles/polynomialsolver_7.dir/clean:
 external/eigen/unsupported/test/CMakeFiles/matrix_exponential_5.dir/all:
 	$(MAKE) -f external/eigen/unsupported/test/CMakeFiles/matrix_exponential_5.dir/build.make external/eigen/unsupported/test/CMakeFiles/matrix_exponential_5.dir/depend
 	$(MAKE) -f external/eigen/unsupported/test/CMakeFiles/matrix_exponential_5.dir/build.make external/eigen/unsupported/test/CMakeFiles/matrix_exponential_5.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wch/github/chenhui-lib/cmake-build-release/CMakeFiles --progress-num=63 "Built target matrix_exponential_5"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wch/github/chenhui-lib/cmake-build-release/CMakeFiles --progress-num= "Built target matrix_exponential_5"
 .PHONY : external/eigen/unsupported/test/CMakeFiles/matrix_exponential_5.dir/all
 
 # Build rule for subdir invocation for target.
 external/eigen/unsupported/test/CMakeFiles/matrix_exponential_5.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/wch/github/chenhui-lib/cmake-build-release/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wch/github/chenhui-lib/cmake-build-release/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 external/eigen/unsupported/test/CMakeFiles/matrix_exponential_5.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/wch/github/chenhui-lib/cmake-build-release/CMakeFiles 0
 .PHONY : external/eigen/unsupported/test/CMakeFiles/matrix_exponential_5.dir/rule
@@ -44999,12 +44999,12 @@ external/eigen/unsupported/test/CMakeFiles/polynomialutils_8.dir/clean:
 external/eigen/unsupported/test/CMakeFiles/matrix_power_11.dir/all:
 	$(MAKE) -f external/eigen/unsupported/test/CMakeFiles/matrix_power_11.dir/build.make external/eigen/unsupported/test/CMakeFiles/matrix_power_11.dir/depend
 	$(MAKE) -f external/eigen/unsupported/test/CMakeFiles/matrix_power_11.dir/build.make external/eigen/unsupported/test/CMakeFiles/matrix_power_11.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wch/github/chenhui-lib/cmake-build-release/CMakeFiles --progress-num=64 "Built target matrix_power_11"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wch/github/chenhui-lib/cmake-build-release/CMakeFiles --progress-num= "Built target matrix_power_11"
 .PHONY : external/eigen/unsupported/test/CMakeFiles/matrix_power_11.dir/all
 
 # Build rule for subdir invocation for target.
 external/eigen/unsupported/test/CMakeFiles/matrix_power_11.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/wch/github/chenhui-lib/cmake-build-release/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wch/github/chenhui-lib/cmake-build-release/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 external/eigen/unsupported/test/CMakeFiles/matrix_power_11.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/wch/github/chenhui-lib/cmake-build-release/CMakeFiles 0
 .PHONY : external/eigen/unsupported/test/CMakeFiles/matrix_power_11.dir/rule
@@ -45640,7 +45640,7 @@ external/eigen/unsupported/test/CMakeFiles/matrix_square_root.dir/all: external/
 
 # Build rule for subdir invocation for target.
 external/eigen/unsupported/test/CMakeFiles/matrix_square_root.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/wch/github/chenhui-lib/cmake-build-release/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wch/github/chenhui-lib/cmake-build-release/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 external/eigen/unsupported/test/CMakeFiles/matrix_square_root.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/wch/github/chenhui-lib/cmake-build-release/CMakeFiles 0
 .PHONY : external/eigen/unsupported/test/CMakeFiles/matrix_square_root.dir/rule
@@ -46159,7 +46159,7 @@ external/eigen/unsupported/test/CMakeFiles/BuildUnsupported.dir/all: external/ei
 
 # Build rule for subdir invocation for target.
 external/eigen/unsupported/test/CMakeFiles/BuildUnsupported.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/wch/github/chenhui-lib/cmake-build-release/CMakeFiles 7
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wch/github/chenhui-lib/cmake-build-release/CMakeFiles 8
 	$(MAKE) -f CMakeFiles/Makefile2 external/eigen/unsupported/test/CMakeFiles/BuildUnsupported.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/wch/github/chenhui-lib/cmake-build-release/CMakeFiles 0
 .PHONY : external/eigen/unsupported/test/CMakeFiles/BuildUnsupported.dir/rule
@@ -46322,12 +46322,12 @@ external/eigen/unsupported/test/CMakeFiles/matrix_function.dir/clean:
 external/eigen/unsupported/test/CMakeFiles/matrix_square_root_5.dir/all:
 	$(MAKE) -f external/eigen/unsupported/test/CMakeFiles/matrix_square_root_5.dir/build.make external/eigen/unsupported/test/CMakeFiles/matrix_square_root_5.dir/depend
 	$(MAKE) -f external/eigen/unsupported/test/CMakeFiles/matrix_square_root_5.dir/build.make external/eigen/unsupported/test/CMakeFiles/matrix_square_root_5.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wch/github/chenhui-lib/cmake-build-release/CMakeFiles --progress-num= "Built target matrix_square_root_5"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wch/github/chenhui-lib/cmake-build-release/CMakeFiles --progress-num=65 "Built target matrix_square_root_5"
 .PHONY : external/eigen/unsupported/test/CMakeFiles/matrix_square_root_5.dir/all
 
 # Build rule for subdir invocation for target.
 external/eigen/unsupported/test/CMakeFiles/matrix_square_root_5.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/wch/github/chenhui-lib/cmake-build-release/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wch/github/chenhui-lib/cmake-build-release/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 external/eigen/unsupported/test/CMakeFiles/matrix_square_root_5.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/wch/github/chenhui-lib/cmake-build-release/CMakeFiles 0
 .PHONY : external/eigen/unsupported/test/CMakeFiles/matrix_square_root_5.dir/rule

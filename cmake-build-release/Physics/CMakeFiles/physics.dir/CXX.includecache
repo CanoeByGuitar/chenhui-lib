@@ -1890,10 +1890,6 @@ spdlog-inl.h
 
 ../external/spdlog/include/spdlog/version.h
 
-/home/wch/github/chenhui-lib/Physics/MPM/ConstitutionModel.cpp
-ConstitutionModel.h
-/home/wch/github/chenhui-lib/Physics/MPM/ConstitutionModel.h
-
 /home/wch/github/chenhui-lib/Physics/MPM/ConstitutionModel.h
 Eigen/Core
 -
@@ -1902,19 +1898,11 @@ Eigen/Dense
 MpmParticle.h
 /home/wch/github/chenhui-lib/Physics/MPM/MpmParticle.h
 
-/home/wch/github/chenhui-lib/Physics/MPM/MpmGrid.cpp
-MpmGrid.h
-/home/wch/github/chenhui-lib/Physics/MPM/MpmGrid.h
-
 /home/wch/github/chenhui-lib/Physics/MPM/MpmGrid.h
 Eigen/Core
 -
 Eigen/Dense
 -
-
-/home/wch/github/chenhui-lib/Physics/MPM/MpmParticle.cpp
-MpmParticle.h
-/home/wch/github/chenhui-lib/Physics/MPM/MpmParticle.h
 
 /home/wch/github/chenhui-lib/Physics/MPM/MpmParticle.h
 Eigen/Core
@@ -1952,10 +1940,6 @@ tbb/spin_mutex.h
 tbb/concurrent_vector.h
 -
 
-/home/wch/github/chenhui-lib/Physics/MPM/MpmUtils.cpp
-MpmUtils.h
-/home/wch/github/chenhui-lib/Physics/MPM/MpmUtils.h
-
 /home/wch/github/chenhui-lib/Physics/MPM/MpmUtils.h
 Eigen/Core
 -
@@ -1977,14 +1961,10 @@ spdlog/fmt/ostr.h
 /home/wch/github/chenhui-lib/Physics/MPM/spdlog/fmt/ostr.h
 spdlog/sinks/stdout_color_sinks.h
 /home/wch/github/chenhui-lib/Physics/MPM/spdlog/sinks/stdout_color_sinks.h
-
-/home/wch/github/chenhui-lib/Physics/MassSpringSim.cpp
-MassSpringSim.h
-/home/wch/github/chenhui-lib/Physics/MassSpringSim.h
-
-/home/wch/github/chenhui-lib/Physics/MassSpringSim.h
-Eigen/Dense
+sys/stat.h
 -
-vector
+sys/types.h
+-
+system_error
 -
 

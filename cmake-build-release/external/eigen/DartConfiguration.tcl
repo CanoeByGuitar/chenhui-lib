@@ -11,7 +11,7 @@ BuildDirectory: /home/wch/github/chenhui-lib/cmake-build-release/external/eigen
 CostDataFile: 
 
 # Site is something like machine.domain, i.e. pragmatic.crd
-Site: DESKTOP-PE9RO90
+Site: desktop-pe9ro90
 
 # Build name is osname-revision-compiler, i.e. Linux-2.4.2-2smp-c++
 BuildName: linux-5.15.90.1-microsoft-standard-wsl2-g++-9.4.0-sse2-64bit

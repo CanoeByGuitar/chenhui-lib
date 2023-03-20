@@ -10,7 +10,6 @@ namespace Renderer {
     Particles::Particles(float *data, int num, const char *vertexPath, const char *fragmentPath) {
         m_data = data;
         m_num = num;
-
         // 编译shader 需要放在glfw建立后
         m_shader = new Shader(vertexPath, fragmentPath);
     }

@@ -50,6 +50,7 @@ namespace Renderer {
     public:
         Particles *m_particleModel;
         Camera m_camera;
+        bool m_paused;
     };
 
 

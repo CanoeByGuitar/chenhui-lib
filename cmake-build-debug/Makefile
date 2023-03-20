@@ -183,17 +183,17 @@ learn_opengl/fast:
 .PHONY : learn_opengl/fast
 
 #=============================================================================
-# Target rules for targets named opengl_renderer
+# Target rules for targets named main
 
 # Build rule for target.
-opengl_renderer: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 opengl_renderer
-.PHONY : opengl_renderer
+main: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 main
+.PHONY : main
 
 # fast build rule for target.
-opengl_renderer/fast:
-	$(MAKE) -f CMakeFiles/opengl_renderer.dir/build.make CMakeFiles/opengl_renderer.dir/build
-.PHONY : opengl_renderer/fast
+main/fast:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
+.PHONY : main/fast
 
 #=============================================================================
 # Target rules for targets named uninstall
@@ -19937,7 +19937,7 @@ main.o: main.cpp.o
 
 # target to build an object file
 main.cpp.o:
-	$(MAKE) -f CMakeFiles/opengl_renderer.dir/build.make CMakeFiles/opengl_renderer.dir/main.cpp.o
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -19946,7 +19946,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	$(MAKE) -f CMakeFiles/opengl_renderer.dir/build.make CMakeFiles/opengl_renderer.dir/main.cpp.i
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -19955,7 +19955,7 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	$(MAKE) -f CMakeFiles/opengl_renderer.dir/build.make CMakeFiles/opengl_renderer.dir/main.cpp.s
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 # Help Target
@@ -19972,7 +19972,7 @@ help:
 	@echo "... edit_cache"
 	@echo "... MpmTest"
 	@echo "... learn_opengl"
-	@echo "... opengl_renderer"
+	@echo "... main"
 	@echo "... uninstall"
 	@echo "... ContinuousSubmit"
 	@echo "... NightlyMemCheck"

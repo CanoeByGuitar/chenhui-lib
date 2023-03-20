@@ -15,16 +15,56 @@
 #include <spdlog/fmt/bundled/color.h>
 #include "spdlog/fmt/ostr.h"
 #include "spdlog/sinks/stdout_color_sinks.h"
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <system_error>
 #define TICK(x) auto bench_##x = tbb::tick_count::now();
 #define TOCK(x) spdlog::info("---------{}:{:.1f}ms", #x, (tbb::tick_count::now() - bench_##x).seconds() * 1000);
 
 using namespace Eigen;
 
 namespace mpm {
+/**
+  Creates a directory if it does not exist
+*/
+    inline void createDir(const std::string& dir)
+    {
+        if (dir.empty()) {
+            throw(std::runtime_error("Can't create directory with no name"));
+        }
+        struct stat info;
+        if (stat(dir.c_str(), &info) != 0) {
+            int status;
+#ifdef _WIN32
+            status = _mkdir(dir.c_str());
+#else
+            status = mkdir(dir.c_str(), S_IRWXU | S_IRWXG | S_IROTH | S_IXOTH);
+#endif
+            if (status == 0)
+                return;
+            if (errno != EEXIST)
+                throw(std::system_error(errno, std::system_category()));
+        }
+    }
+
+/**
+  Creates a whole path of directories if any don't exist
+  like mkdir -p
+*/
+inline void createPathToDir(const std::string& dir){
+    size_t temp = 1;
+    while(dir.find("/", temp) != dir.npos){
+        temp = dir.find("/", temp) + 1;
+        std::string s = dir.substr(0, temp);
+        createDir(s);
+    }
+    if(dir.back() != '/') createDir(dir);
+}
+
     bool readParticles(const std::string &model_path, std::vector<Vector3f> &positions);
 
     bool writeParticles(const std::string &write_path, const std::vector<Vector3f> &positions);
-
+    bool writeParticles(const std::string &write_path, const std::vector<Vector3f> &positions, const std::vector<int> &id);
 
     inline Vector3f calcQuadratic(float o, float x) {
         // +-(o)------------(o+1)--(x)-(o+1.5)--(o+2)-+
