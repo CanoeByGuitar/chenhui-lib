@@ -10,7 +10,7 @@
 #include <memory>
 
 
-#define TEST 4
+#define TEST 3
 #define WRITE_OUTPUT 1
 #define OPENGL_SHOW 1
 #define BASE_DIR "./output_mpm/"
@@ -175,6 +175,47 @@ int main() {
             sim->Init(gravity, area, h);
             sim->SetConstitutionModel(cm_solid);
             sim->SetTransferScheme(mpm::MpmSimulator::TransferScheme::APIC);
+
+            std::vector<Vector3f> positions;
+            auto model_path = "../../resources/models/small_cube.obj";
+            if (mpm::readParticles(model_path, positions)) {
+                sim->AddObject(positions, mtl_jello_1, Vector3f(-0.6, 0, -0.3), 0);
+                sim->AddObject(positions, mtl_jello_2, Vector3f(-0.3, 0, 0), 1);
+                sim->AddObject(positions, mtl_jello_3, Vector3f(0, 0, 0.3), 2);
+            } else {
+                return -1;
+            }
+        }
+        if (TEST == 5) {
+            output_dir = std::string(BASE_DIR) + "fluids/";
+            frame_rate = 24;
+            dt = 1e-4;
+            steps_per_frame = (int) ceil((1.0f / frame_rate) / dt);
+
+
+            spdlog::info("Simulation start, Meta Informations:\n"
+                         "\tframe_rate: {}\n"
+                         "\tdt: {}\n"
+                         "\tsteps_per_frame: {}\n",
+                         frame_rate, dt, steps_per_frame);
+
+
+            auto mtl_jello_1 = new mpm::Material(50.0f, 0.3f, 10.0f, 1.0f);
+            auto mtl_jello_2 = new mpm::Material(50.0f, 0.3f, 10.0f, 1.0f);
+            auto mtl_jello_3 = new mpm::Material(50.0f, 0.3f, 10.0f, 1.0f);
+
+            auto cm_solid = std::make_shared<mpm::NeoHookean_Piola>();
+            auto cm_fluid = std::make_shared<mpm::NeoHookean_Fluid>();
+            auto cm_fluid_2 = std::make_shared<mpm::CDMPM_Fluid>();
+
+            sim->ClearSimulation();
+            Vector3f gravity{0.0f, -9.8f, 0.0f};
+            Vector3f area{1.0f, 1.0f, 1.0f};
+            float h = 0.02f;
+
+            sim->Init(gravity, area, h);
+            sim->SetConstitutionModel(cm_fluid);
+            sim->SetTransferScheme(mpm::MpmSimulator::TransferScheme::FLIP99);
 
             std::vector<Vector3f> positions;
             auto model_path = "../../resources/models/small_cube.obj";

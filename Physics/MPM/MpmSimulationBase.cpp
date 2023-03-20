@@ -549,6 +549,7 @@ namespace mpm {
                             case TransferScheme::APIC:
                                 particles[iter].vel = v_pic;
                             case TransferScheme::FLIP99:
+                                (1 - 0.99) * v_pic + 0.99 * v_flip;
                             case TransferScheme::FLIP95:
                                 particles[iter].vel =
                                         (1 - simInfo.alpha) * v_pic + simInfo.alpha * v_flip;
