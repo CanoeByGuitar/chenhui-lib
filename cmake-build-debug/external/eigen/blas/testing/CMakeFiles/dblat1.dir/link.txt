@@ -1,1 +1,0 @@
-/usr/bin/f95   -g CMakeFiles/dblat1.dir/dblat1.f.o  -o ../../../../../build/bin/dblat1  -Wl,-rpath,/home/wch/github/chenhui-lib/build/bin ../../../../../build/bin/libeigen_blas.so 

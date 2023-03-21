@@ -1,1 +1,0 @@
-/usr/bin/g++-9  -O3 -DNDEBUG   CMakeFiles/myrenderer.dir/main.cpp.o  -o ../../build/bin/myrenderer 

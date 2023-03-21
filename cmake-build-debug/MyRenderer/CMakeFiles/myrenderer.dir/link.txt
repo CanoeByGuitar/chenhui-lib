@@ -1,1 +1,0 @@
-/usr/bin/g++-9  -g   CMakeFiles/myrenderer.dir/main.cpp.o  -o ../../build/bin/myrenderer 
