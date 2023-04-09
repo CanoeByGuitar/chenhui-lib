@@ -20,14 +20,17 @@ namespace mpm {
         Matrix3f F; // deformation gradient
         Matrix3f Bp; // for APIC
 
-        Matrix3f Fe;
-        Matrix3f Fp;
-
         Matrix3f Dp; // inertia tensor
-
-
         Material *mtl;
         int id;
+    };
+
+    class SandParticle : public Particle{
+    public:
+        Matrix3f Fe;
+        Matrix3f Fp;
+        float sand_alpha; // yield surface size
+        float sand_q; // hardening state
     };
 }
 

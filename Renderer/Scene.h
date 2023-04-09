@@ -19,15 +19,22 @@
 
 
 namespace Renderer {
-
+    enum DrawType{
+        POINT,
+        LINE,
+        TRIANGLE
+    };
     class Scene {
+        // TODO: change to pure virtual
+        // represents Particle Scene for now
     public:
         Scene(int w = 800, int h = 600);
         void Init();
 
         void AddModel(Particles* particles);
 
-        void Draw();
+        virtual void SetRenderData(){};
+        virtual void Draw();
 
         static void FrameBufferSizeCallback(GLFWwindow* window, int width, int height);
         static void MouseCallBack(GLFWwindow* window, double xposIn, double yposIn);
@@ -37,8 +44,7 @@ namespace Renderer {
         bool ShouldWindowClose();
 
 
-
-    private:
+    protected:
         GLFWwindow *m_window;
         int m_w;
         int m_h;
@@ -51,6 +57,44 @@ namespace Renderer {
         Particles *m_particleModel;
         Camera m_camera;
         bool m_paused;
+    };
+
+    class TriangleScene: public Scene{
+    public:
+        explicit TriangleScene(int w = 800, int h = 600, int extraSize = 0)
+                : Scene(w, h), m_extraSize(extraSize)
+        {}
+
+        void Draw() override;
+
+    protected:
+        int m_extraSize;
+    };
+
+    class LearnOpenGLScene_1: public TriangleScene{
+    public:
+        explicit LearnOpenGLScene_1(int w = 800, int h = 600, int extraSize = 0)
+            : TriangleScene(w, h, extraSize)
+        {}
+
+        void SetRenderData() override;
+        void Draw() override;
+    private:
+        unsigned int m_VAO;
+        unsigned int m_VBO;
+    };
+
+    class LearnOpenGLScene_BlinnPhong : public TriangleScene{
+    public:
+        explicit LearnOpenGLScene_BlinnPhong(int w = 800, int h = 600, int extraSize = 0)
+            : TriangleScene(w, h, extraSize)
+        {}
+
+        void SetRenderData() override;
+        void Draw() override;
+    private:
+        unsigned int m_VAO;
+        unsigned int m_VBO;
     };
 
 

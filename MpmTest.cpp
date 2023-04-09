@@ -3,14 +3,15 @@
 //
 
 // filesystem need gcc-9 and cpp17
-#include <Physics/MPM/MpmSimulationBase.h>
+
 #include <Physics/MPM/MpmUtils.h>
 #include <Renderer/Scene.h>
 #include <iostream>
 #include <memory>
+#include <Physics/MPM/SandMpmSimulation.h>
+#include <Physics/MPM/MpmSimulation.h>
 
-
-#define TEST 3
+#define TEST 2
 #define WRITE_OUTPUT 1
 #define OPENGL_SHOW 1
 #define BASE_DIR "./output_mpm/"
@@ -18,7 +19,7 @@
 int main() {
     mpm::MPMLog::init();
     spdlog::set_level(spdlog::level::info);
-    auto sim = std::make_shared<mpm::MpmSimulator>();
+    auto sim = std::make_shared<mpm::MpmSimulatorBase>();
     std::string output_dir = BASE_DIR;
     int frame_rate = 24;
     float dt = 1e-4;
@@ -29,7 +30,8 @@ int main() {
     // test case
     {
         if (TEST == 1) {
-            output_dir = std::string(BASE_DIR) + "test1";
+            sim = std::make_shared<mpm::MpmSimulator>();
+            output_dir = std::string(BASE_DIR) + "solids/";
             frame_rate = 24;
             dt = 1e-4;
             steps_per_frame = (int) ceil((1.0f / frame_rate) / dt);
@@ -41,51 +43,16 @@ int main() {
                          "\tsteps_per_frame: {}\n",
                          frame_rate, dt, steps_per_frame);
 
+            auto cm_solid = new mpm::NeoHookean_Piola;
+            auto cm_fluid = new mpm::NeoHookean_Fluid;
+            auto cm_fluid_2 = new mpm::CDMPM_Fluid;
+            auto cm_sand = new mpm::DruckerPrager;
 
-            auto mtl_jello = new mpm::Material(50.0f, 0.3f, 10.0f, 1.0f);
-            auto mtl_water = new mpm::Material(500.0f, 0.40f, 0.001f, 1.0f);
-
-            auto cm_solid = std::make_shared<mpm::NeoHookean_Piola>();
-            auto cm_fluid = std::make_shared<mpm::NeoHookean_Fluid>();
-            auto cm_fluid_2 = std::make_shared<mpm::CDMPM_Fluid>();
-
-            sim->ClearSimulation();
-            Vector3f gravity{0.0f, -9.8f, 0.0f};
-            Vector3f area{1.0f, 1.0f, 1.0f};
-            float h = 0.02f;
-
-            sim->Init(gravity, area, h);
-            sim->SetConstitutionModel(cm_fluid_2);
-            sim->SetTransferScheme(mpm::MpmSimulator::TransferScheme::FLIP99);
-
-            std::vector<Vector3f> positions;
-            auto model_path = "../../resources/models/small_cube.obj";
-            if (mpm::readParticles(model_path, positions)) {
-                sim->AddObject(positions, mtl_water, Vector3f(0, 0, 0), 0);
-            } else {
-                return -1;
-            }
-        }
-        if (TEST == 2) {
-            output_dir = std::string(BASE_DIR) + "test2/";
-            frame_rate = 24;
-            dt = 1e-4;
-            steps_per_frame = (int) ceil((1.0f / frame_rate) / dt);
+            auto mtl_jello_1 = new mpm::Material(5.0f, 0.3f, 10.0f, 1.0f, cm_solid, mpm::TransferScheme::APIC);
+            auto mtl_jello_2 = new mpm::Material(50.0f, 0.3f, 10.0f, 1.0f, cm_solid, mpm::TransferScheme::APIC);
+            auto mtl_jello_3 = new mpm::Material(500.0f, 0.40f, 0.001f, 1.0f, cm_fluid_2,mpm::TransferScheme::FLIP99);
 
 
-            spdlog::info("Simulation start, Meta Informations:\n"
-                         "\tframe_rate: {}\n"
-                         "\tdt: {}\n"
-                         "\tsteps_per_frame: {}\n",
-                         frame_rate, dt, steps_per_frame);
-
-
-            auto mtl_jello = new mpm::Material(50.0f, 0.3f, 10.0f, 1.0f);
-            auto mtl_water = new mpm::Material(500.0f, 0.40f, 0.001f, 1.0f);
-
-            auto cm_solid = std::make_shared<mpm::NeoHookean_Piola>();
-            auto cm_fluid = std::make_shared<mpm::NeoHookean_Fluid>();
-            auto cm_fluid_2 = std::make_shared<mpm::CDMPM_Fluid>();
 
             sim->ClearSimulation();
             Vector3f gravity{0.0f, -9.8f, 0.0f};
@@ -93,48 +60,6 @@ int main() {
             float h = 0.02f;
 
             sim->Init(gravity, area, h);
-            sim->SetConstitutionModel(cm_solid);
-            sim->SetTransferScheme(mpm::MpmSimulator::TransferScheme::FLIP99);
-
-            std::vector<Vector3f> positions;
-            auto model_path = "../../resources/models/small_cube.obj";
-            if (mpm::readParticles(model_path, positions)) {
-                sim->AddObject(positions, mtl_jello, Vector3f(0, 0, 0), 0);
-            } else {
-                return -1;
-            }
-        }
-        if (TEST == 3) {
-            output_dir = std::string(BASE_DIR) + "youngs/";
-            frame_rate = 24;
-            dt = 1e-4;
-            steps_per_frame = (int) ceil((1.0f / frame_rate) / dt);
-
-
-            spdlog::info("Simulation start, Meta Informations:\n"
-                         "\tframe_rate: {}\n"
-                         "\tdt: {}\n"
-                         "\tsteps_per_frame: {}\n",
-                         frame_rate, dt, steps_per_frame);
-
-
-            auto mtl_jello_1 = new mpm::Material(5.0f, 0.3f, 10.0f, 1.0f);
-            auto mtl_jello_2 = new mpm::Material(50.0f, 0.3f, 10.0f, 1.0f);
-            auto mtl_jello_3 = new mpm::Material(500.0f, 0.3f, 10.0f, 1.0f);
-
-            auto cm_solid = std::make_shared<mpm::NeoHookean_Piola>();
-            auto cm_fluid = std::make_shared<mpm::NeoHookean_Fluid>();
-            auto cm_fluid_2 = std::make_shared<mpm::CDMPM_Fluid>();
-
-            sim->ClearSimulation();
-            Vector3f gravity{0.0f, -9.8f, 0.0f};
-            Vector3f area{1.0f, 1.0f, 1.0f};
-            float h = 0.02f;
-
-            sim->Init(gravity, area, h);
-            sim->SetConstitutionModel(cm_solid);
-            sim->SetTransferScheme(mpm::MpmSimulator::TransferScheme::FLIP99);
-
             std::vector<Vector3f> positions;
             auto model_path = "../../resources/models/small_cube.obj";
             if (mpm::readParticles(model_path, positions)) {
@@ -145,8 +70,10 @@ int main() {
                 return -1;
             }
         }
-        if (TEST == 4) {
-            output_dir = std::string(BASE_DIR) + "nu/";
+
+        if(TEST == 2){
+            sim = std::make_shared<mpm::SandMpm>();
+            output_dir = std::string(BASE_DIR) + "sand/";
             frame_rate = 24;
             dt = 1e-4;
             steps_per_frame = (int) ceil((1.0f / frame_rate) / dt);
@@ -158,71 +85,21 @@ int main() {
                          "\tsteps_per_frame: {}\n",
                          frame_rate, dt, steps_per_frame);
 
-
-            auto mtl_jello_1 = new mpm::Material(50.0f, 0.1f, 10.0f, 1.0f);
-            auto mtl_jello_2 = new mpm::Material(50.0f, 0.25f, 10.0f, 1.0f);
-            auto mtl_jello_3 = new mpm::Material(50.0f, 0.48f, 10.0f, 1.0f);
-
-            auto cm_solid = std::make_shared<mpm::NeoHookean_Piola>();
-            auto cm_fluid = std::make_shared<mpm::NeoHookean_Fluid>();
-            auto cm_fluid_2 = std::make_shared<mpm::CDMPM_Fluid>();
-
+//            auto cm_sand = new mpm::DruckerPrager();
+            auto cm_sand = new mpm::DruckerPrager;
+            auto cm_solid = new mpm::NeoHookean_Piola;
+            auto mtl_jello_1 = new mpm::Material(350, 0.3f, 2200.0f, 1.0f, cm_sand, mpm::TransferScheme::APIC);
+            auto mtl_jello_2 = new mpm::Material(5.0f, 0.3f, 10.0f, 1.0f, cm_solid, mpm::TransferScheme::APIC);
             sim->ClearSimulation();
             Vector3f gravity{0.0f, -9.8f, 0.0f};
             Vector3f area{1.0f, 1.0f, 1.0f};
             float h = 0.02f;
 
             sim->Init(gravity, area, h);
-            sim->SetConstitutionModel(cm_solid);
-            sim->SetTransferScheme(mpm::MpmSimulator::TransferScheme::APIC);
-
             std::vector<Vector3f> positions;
             auto model_path = "../../resources/models/small_cube.obj";
             if (mpm::readParticles(model_path, positions)) {
-                sim->AddObject(positions, mtl_jello_1, Vector3f(-0.6, 0, -0.3), 0);
-                sim->AddObject(positions, mtl_jello_2, Vector3f(-0.3, 0, 0), 1);
-                sim->AddObject(positions, mtl_jello_3, Vector3f(0, 0, 0.3), 2);
-            } else {
-                return -1;
-            }
-        }
-        if (TEST == 5) {
-            output_dir = std::string(BASE_DIR) + "fluids/";
-            frame_rate = 24;
-            dt = 1e-4;
-            steps_per_frame = (int) ceil((1.0f / frame_rate) / dt);
-
-
-            spdlog::info("Simulation start, Meta Informations:\n"
-                         "\tframe_rate: {}\n"
-                         "\tdt: {}\n"
-                         "\tsteps_per_frame: {}\n",
-                         frame_rate, dt, steps_per_frame);
-
-
-            auto mtl_jello_1 = new mpm::Material(50.0f, 0.3f, 10.0f, 1.0f);
-            auto mtl_jello_2 = new mpm::Material(50.0f, 0.3f, 10.0f, 1.0f);
-            auto mtl_jello_3 = new mpm::Material(50.0f, 0.3f, 10.0f, 1.0f);
-
-            auto cm_solid = std::make_shared<mpm::NeoHookean_Piola>();
-            auto cm_fluid = std::make_shared<mpm::NeoHookean_Fluid>();
-            auto cm_fluid_2 = std::make_shared<mpm::CDMPM_Fluid>();
-
-            sim->ClearSimulation();
-            Vector3f gravity{0.0f, -9.8f, 0.0f};
-            Vector3f area{1.0f, 1.0f, 1.0f};
-            float h = 0.02f;
-
-            sim->Init(gravity, area, h);
-            sim->SetConstitutionModel(cm_fluid);
-            sim->SetTransferScheme(mpm::MpmSimulator::TransferScheme::FLIP99);
-
-            std::vector<Vector3f> positions;
-            auto model_path = "../../resources/models/small_cube.obj";
-            if (mpm::readParticles(model_path, positions)) {
-                sim->AddObject(positions, mtl_jello_1, Vector3f(-0.6, 0, -0.3), 0);
-                sim->AddObject(positions, mtl_jello_2, Vector3f(-0.3, 0, 0), 1);
-                sim->AddObject(positions, mtl_jello_3, Vector3f(0, 0, 0.3), 2);
+                sim->AddObject(positions, mtl_jello_1, Vector3f(-0.68, -0.17, -0.35), 0);
             } else {
                 return -1;
             }
@@ -261,6 +138,7 @@ int main() {
 
             TICK(draw_one_frame)
             for (int i = 0; i < steps_per_frame; i++) {
+//                spdlog::info("------substep#{}", i);
                 sim->Substep(dt);
             }
             TOCK(draw_one_frame)

@@ -11,12 +11,15 @@ using namespace Eigen;
 
 
 int main(){
-    Vector3f a = {1, 1, 1};
-    Vector3f b = {2, 1, 3};
-    Vector3f c = {4, 4, 1};
+    Matrix2f F;
+    F << 1, 2, 3, 4;
+    Matrix2f C;
+    C << 2, 0, 0, 1;
+    F = F * C;
+    std::cout << F;
+//    JacobiSVD<MatrixXf> svd(F, ComputeFullU | ComputeFullV);
+//    auto s = svd.singularValues();
+//    auto logs = s.array();
+//    std::cout << logs;
 
-    Matrix3f m;
-    m << a, b, c;
-
-    std::cout << m.determinant() << " " << a.cross(b).dot(c);
 }

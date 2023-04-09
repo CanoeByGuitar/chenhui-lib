@@ -23,78 +23,56 @@ using namespace Eigen;
 
 namespace mpm{
     struct SimInfo{
-        int particleSize = 0;
-        int gridSize = 0;
-        int gridW = 0;
-        int gridH = 0;
-        int gridL = 0;
-
+        int particleSize = 0 ;
+        int gridSize  = 0;
+        int gridW  = 0;
+        int gridH  = 0;
+        int gridL  = 0;
 
         float alpha = 0.95f; // 0.95 flip/pic
 
         Vector3f gravity = Vector3f::Zero();
         Vector3f worldArea = Vector3f::Zero();
         float h = 0.0f;
-        int curStep = 0;
+        int curStep  ;
+        float friction_mu= 0.5;
+
+        ////// sand
+        float h0, h1, h2, h3;
     };
 
-    class MpmSimulator{
+    class MpmSimulatorBase{
     public:
-        MpmSimulator();
-        virtual ~MpmSimulator();
-        enum TransferScheme {FLIP99, FLIP95, APIC};
-
-        void Init(const Vector3f &gravity, const Vector3f &worldArea, float h);
-
-        void AddObject(const std::vector<Vector3f> &positions,
+        MpmSimulatorBase();
+        virtual ~MpmSimulatorBase();
+        virtual void Init(const Vector3f &gravity, const Vector3f &worldArea, float h)  ;
+        virtual void AddObject(const std::vector<Vector3f> &positions,
                        const std::vector<Vector3f> &velocities,
-                       Material *mtl, int id);
+                       Material *mtl, int id)  ;
+        virtual void AddObject(const std::vector<Vector3f> &positions,
+                       Material *mtl, int id)  ;
+        virtual  void AddObject(const std::vector<Vector3f> &positions,
+                       Material *mtl, Vector3f transform, int id)  ;
+        virtual void Substep(float dt)  ;
+        virtual std::vector<Vector3f> GetPosition() const  ;
+        virtual std::vector<int> GetObjID() const  ;
+        virtual std::vector<float> GetPositionToRenderer() const  ;
+        virtual std::vector<float> GetPositionWithIdToRenderer() const  ;
+        virtual void ClearSimulation()  ;
 
-        void AddObject(const std::vector<Vector3f> &positions,
-                       Material *mtl, int id);
+    protected:
+        virtual void Prestep()  ;
+        virtual void P2G()  ;
+        virtual void AddGravity()  ;
 
-        void AddObject(const std::vector<Vector3f> &positions,
-                       Material *mtl, Vector3f transform, int id);
-
-        void SetConstitutionModel(const std::shared_ptr<ConstitutionModel> &cm);
-
-        void SetTransferScheme(TransferScheme ts);
-
-        void Substep(float dt);
-
-        std::vector<Vector3f> GetPosition() const;
-
-        std::vector<int> GetObjID() const;
-
-        std::vector<float> GetPositionToRenderer() const;
-        std::vector<float> GetPositionWithIdToRenderer() const;
-
-        void ClearSimulation();
-
-    private:
-        SimInfo simInfo;
-        Particle *particles;
-        Grid *grids;
-        tbb::spin_mutex *gridMutexs;
-        std::shared_ptr<ConstitutionModel> consitutionModel = std::make_shared<NeoHookean_Piola>();
-        TransferScheme transferScheme = TransferScheme::APIC;
-
-        tbb::concurrent_vector<int> activeNodes;
-
-        void Prestep();
-        void P2G();
-        void AddGravity();
-
-        void UpdateGridForce();
-        void UpdateGridVelocity(float dt);
-        void UpdateF(float dt);
-        void G2P();
-        void Advection(float dt);
-
-        // handle collision
-        void SolveGridBoundary(int thickness = 2);
-
+        virtual void UpdateGridForce()  ;
+        virtual void UpdateGridVelocity(float dt)  ;
+        virtual void UpdateF(float dt)  ;
+        virtual void G2P()  ;
+        virtual void Advection(float dt)  ;
+        virtual void SolveGridBoundary(int thickness)  ;
     };
+
 
 }
 #endif //CHENHUI_MPMSIMULATIONBASE_H

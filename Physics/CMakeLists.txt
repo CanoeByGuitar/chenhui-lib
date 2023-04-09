@@ -8,6 +8,9 @@ target_sources(physics
         MPM/MpmParticle.cpp
         MPM/ConstitutionModel.cpp
         MPM/MpmUtils.cpp
+        MPM/AnisoClothMpmSimulation.cpp
+        MPM/SandMpmSimulation.cpp
+        MPM/MpmSimulation.cpp
         PUBLIC
         ${CMAKE_CURRENT_LIST_DIR}/MassSpringSim.h
         ${CMAKE_CURRENT_LIST_DIR}/MPM/MpmSimulationBase.h
@@ -15,6 +18,9 @@ target_sources(physics
         ${CMAKE_CURRENT_LIST_DIR}/MPM/MpmParticle.h
         ${CMAKE_CURRENT_LIST_DIR}/MPM/ConstitutionModel.h
         ${CMAKE_CURRENT_LIST_DIR}/MPM/MpmUtils.h
+        ${CMAKE_CURRENT_LIST_DIR}/MPM/AnisoClothMpmSimulation.h
+        ${CMAKE_CURRENT_LIST_DIR}/MPM/SandMpmSimulation.h
+        ${CMAKE_CURRENT_LIST_DIR}/MPM/MpmSimulation.h
         )
 
 if (APPLE)

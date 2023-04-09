@@ -24,6 +24,34 @@
 using namespace Eigen;
 
 namespace mpm {
+    inline Matrix3f diagLog(const Matrix3f &A){
+        Matrix3f ret = A;
+        ret(0, 0) = log(A(0, 0));
+        ret(1, 1) = log(A(1, 1));
+        ret(2, 2) = log(A(2, 2));
+        return  ret;
+    }
+
+    inline Matrix3f diagExp(const Matrix3f &A){
+        Matrix3f ret = A;
+        ret(0, 0) = exp(A(0, 0));
+        ret(1, 1) = exp(A(1, 1));
+        ret(2, 2) = exp(A(2, 2));
+        return  ret;
+    }
+
+
+    inline bool isEqual(const Matrix3f &lhs, const Matrix3f &rhs, float p = 1e-5){
+        for(int i = 0; i < 3; i++){
+            for(int j = 0; j < 3; j++){
+                if(abs(lhs(i,j) - rhs(i,j)) > p) return false;
+            }
+        }
+        return true;
+    }
+
+
+
 /**
   Creates a directory if it does not exist
 */
