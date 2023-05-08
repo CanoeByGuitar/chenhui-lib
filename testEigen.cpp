@@ -8,15 +8,11 @@
 #include <iostream>
 
 using namespace Eigen;
-
+using namespace std;
 
 int main(){
-    Matrix2f F;
-    F << 1, 2, 3, 4;
-    Matrix2f C;
-    C << 2, 0, 0, 1;
-    F = F * C;
-    std::cout << F;
+    auto a = Matrix<float, Dynamic, 1>::Zero(3, 1);
+    cout << a;
 //    JacobiSVD<MatrixXf> svd(F, ComputeFullU | ComputeFullV);
 //    auto s = svd.singularValues();
 //    auto logs = s.array();

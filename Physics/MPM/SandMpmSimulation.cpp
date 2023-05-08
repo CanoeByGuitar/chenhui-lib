@@ -707,7 +707,7 @@ namespace mpm {
 //            float phi = 40.f;
 
             particles[iter].sand_alpha = sqrt(2.f / 3.f) * (2 * sin(phi)) / (3 - sin(phi));
-//            spdlog::info("alpha:{}", phi);
+//            spdlog::info("phi:{}", phi);
         });
     }
 
@@ -716,7 +716,7 @@ namespace mpm {
         Matrix3f kesi_hat = kesi - (kesi.trace() / 3) * Matrix3f::Identity();
 
         // case 2
-        if (isEqual(kesi_hat, Matrix3f::Zero()) || kesi.trace() > 0) {
+        if (isEqual(kesi_hat, Matrix3f::Zero(), 1e-12) || kesi.trace() > 0) {
 //            spdlog::info("case1: {}", kesi.norm());
             return {Matrix3f::Identity(), kesi.norm()};
         }
@@ -730,7 +730,7 @@ namespace mpm {
 
         // case 3
         auto H = kesi - delta * kesi_hat / kesi_hat.norm();
-//        spdlog::info("case3: {}", delta);
+//        std::cout << "case3: "<< delta << std::endl;
 //        std::cout << H << std::endl;
         return {diagExp(H), delta};
     }

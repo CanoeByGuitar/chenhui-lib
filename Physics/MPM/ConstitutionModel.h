@@ -47,8 +47,8 @@ namespace mpm {
 
     enum TransferScheme {FLIP99, FLIP95, APIC};
     struct Material{
-        float E = 50.0f; // Young's modules
-        float nu = 0.3f; // Possion's ratio
+        float E; // Young's modules
+        float nu; // Possion's ratio
         float K;// bulk modulus
 
         float mass;

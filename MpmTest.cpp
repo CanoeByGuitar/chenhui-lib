@@ -88,7 +88,7 @@ int main() {
 //            auto cm_sand = new mpm::DruckerPrager();
             auto cm_sand = new mpm::DruckerPrager;
             auto cm_solid = new mpm::NeoHookean_Piola;
-            auto mtl_jello_1 = new mpm::Material(350, 0.3f, 2200.0f, 1.0f, cm_sand, mpm::TransferScheme::APIC);
+            auto mtl_jello_1 = new mpm::Material(100, 0.4f, 2200.0f, 1.0f, cm_sand, mpm::TransferScheme::APIC);
             auto mtl_jello_2 = new mpm::Material(5.0f, 0.3f, 10.0f, 1.0f, cm_solid, mpm::TransferScheme::APIC);
             sim->ClearSimulation();
             Vector3f gravity{0.0f, -9.8f, 0.0f};
@@ -99,7 +99,7 @@ int main() {
             std::vector<Vector3f> positions;
             auto model_path = "../../resources/models/small_cube.obj";
             if (mpm::readParticles(model_path, positions)) {
-                sim->AddObject(positions, mtl_jello_1, Vector3f(-0.68, -0.17, -0.35), 0);
+                sim->AddObject(positions, mtl_jello_1, Vector3f(-0.6, -0.17, -0.3), 0);
             } else {
                 return -1;
             }
